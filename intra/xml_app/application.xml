@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Hint: Rename all the anodyne demo things to change the filename (and thus install path) -->
+<application xmlns="http://ns.adobe.com/air/application/3.7">
+  <supportedProfiles>extendedDesktop</supportedProfiles>
+  <id>Anodyne</id>
+
+	<versionNumber>1.53</versionNumber>
+  <filename>Anodyne</filename>
+  <name>Anodyne</name>
+  <initialWindow>
+    <title>Anodyne</title>
+    <content>Anodyne.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <width>480</width>
+    <height>540</height>
+    <resizable>false</resizable>
+    <minimizable>false</minimizable>
+    <maximizable>false</maximizable>
+    <x>0</x>
+    <y>0</y>
+  </initialWindow>
+  <!-- 
+	More options:
+	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
+	-->
+  <description>The game Anodyne.</description>
+  <icon>
+    <image32x32>icons/IntraAIR32.png</image32x32>
+  </icon>
+</application>
