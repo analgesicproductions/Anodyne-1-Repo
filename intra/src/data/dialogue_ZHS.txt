@@ -1,0 +1,2665 @@
+### ENGLISH DIALOGUE - CHINESE TRANSLATION - by 一只小雨###
+
+####################
+### INSTRUCTIONS ###
+####################
+# 0. If you could comment out the english version when you translate that would be useful for me!
+#
+# 1.  - Any line starting with "#" doesn't need to be translated
+#
+# 2. SPECIAL KEYWORDS THAT SHOULDN'T BE TRANSLATED:
+# Any line starting with: (where "..." is some other keyword , usually an NPC name or area name)
+#
+# does reset 
+# LOOP 
+# TOP
+# npc ...
+# area ...
+# scene ...
+# end scene 
+# end npc 
+# end area
+# DONE
+#
+# 3. SPECIAL INSTRUCTIONS SYMBOLS 
+# ----------------------------
+# [SOMEKEY-C] means that this can change depending on what controls the user uses - it would be "C", "A", "ENTER", etc. Sometimes in the dialogue file I write
+# Press
+# [SOMEKEY-LEFT]
+#  set controls.
+#
+# And that implies that in-game, it will read "Press LEFT to set controls."
+#
+# 4. SPECIAL CHARACTERS IN DIALOGUE TO BE TRANSLATED
+# -----------------------------------------------
+# \" and \' are for escaping the quotation characters. You can leave them like that. 
+#
+# ^  Denotes the player will have to press the progress-dialogue-button again to continue the dialogue - you can leave it there (or move it around as needed in the translated sentence)
+# \n denotes newline, you can leave it there.
+
+##################
+# BEGIN DIALOGUE #
+##################
+
+### 'test' NPC - In DEBUG
+npc test
+does reset
+    area DEBUG
+        scene scene_1
+#Like music? Talk to that terminal!
+喜欢音乐吗？ 那就和那个终端机对话吧！
+#Like pain? Head on down south!
+喜欢疼痛吗？ 那就一路向南行吧！
+        end scene
+    end area
+end npc
+
+### 'arthur' - In CIRCUS
+npc arthur
+    area CIRCUS
+        scene alone
+#That acrobat is losing balance!  Where is the safety net?
+那名杂技演员快要失去平衡了！ 安全网在哪里？
+...
+        end scene
+		
+		scene holyshit
+WOOAH
+		end scene
+    end area
+end npc
+
+### 'javiera' - In CIRCUS
+npc javiera
+    area CIRCUS
+        scene alone
+#The lions are closing in on that juggler!
+狮子们正在包围那名杂耍人！
+...
+        end scene
+    end area
+end npc
+
+### 'briar' 
+
+npc briar
+	area GO
+		scene before_fight
+#Briar: I’m tired, Young.  I’m tired of all of these cycles.  I feel like I’m living the same dream, the same nightmare over and over again.
+荆棘：我累了，扬。 我已经厌倦了这样的循环。 我感觉自己活在同一个美梦中、同一个噩梦里，不断地循环。
+荆棘：…
+#Briar: It’s not going to change, Young.  This is all we’ll ever be.
+荆棘：事情是不会发生改变的，扬。 我们永远都无能为力。
+		end scene
+		
+		scene after_fight
+#Briar:  Goodbye, Young.
+荆棘：再见了，扬。
+		end scene
+		
+		scene final
+#Briar: Dude, Young.
+荆棘：老兄啊，扬呀。
+#Briar: Kick your feet.  Move your arms.  Jeez, you wouldn’t last a minute without me!
+荆棘：抬起脚步，挥动手臂吧。 呀，如果没有了我，你一分钟也活不下去！
+#Briar: Well, come on, let’s go get a sandwich or something.
+荆棘：好吧，走，我们去弄个三明治或者别的什么好了。 
+#Sage: You... you did adequately.  Until we meet again.
+贤者：你…你已经做了很多了。
+		end scene
+	end area
+end npc
+
+### 'sage'
+npc sage
+    area BLANK
+        scene intro
+#Mysterious voice: Hello? ...Young?  ^HEY!  ... oh, you can hear me?  Good, now listen.  You are about to wake up.  You will use the arrow keys to move around.
+神秘的声音：喂？…扬？ ^嘿！…噢，你能听到我的声音吗？ 太好了，听着，你马上就要醒过来了。 你可以使用方向键四周围移动。
+# Note, these next two lines should be assumed to have the keybinding between them when translated (hence the single quotes)
+#You will press the \'
+你需要按下\'
+#\' key to interact with objects and people around you.
+\'键来与周围的物体和他人互动。
+#And you will press the \'
+同时，你需要按下\'
+#\' key to access the menu, which will provide you with information about yourself and your surroundings.
+\'键调出菜单，那里将会提供有关你自身以及周围环境的相关信息。
+        end scene
+    end area
+	
+	area GO
+	
+	
+		scene posthappy_sage
+#Young...  I just wanted to fix everything for you.
+扬…我只是想帮你处理好一切。
+#I hope... I hope you can do better than me.
+我希望…我希望你可以做得比我好。
+		end scene
+		
+		scene posthappy_mitra
+#Good luck, Young.
+祝你好运，扬。
+#Sage is right, in a way.  I want everything to be nice and work out perfectly, and sometimes that makes me ignore reality.
+贤者在某种程度上来说是对的。 我总希望一切既美好又完美，可是有时我却会忽略掉现实。
+#I don’t know what you need to do to help The Briar.  I don’t understand how this world works or why everything seems so strange.  But I do want to be your friend, Young.
+我不知道你应该怎样去帮助荆棘。 我也不知道这个世界究竟是怎样运转，更不知道为什么所有事情都那么奇怪。 可是我真的很想成为你的朋友，扬。
+#You are fighting, Young.  You are trying to understand.  I hope you can work things out.
+你一直在努力，扬。 你在努力去明白这一切。 我希望你能弄清楚这一切。
+		end scene
+		scene one
+TOP
+#Sage: Young... this is my final warning... wait, who is that?
+贤者：扬… 这是我的最后告诫… 等等，是谁？
+#Mitra: My name is Mitra, and this is my bike, Wares!
+麦卓：我叫麦卓，这是我的自行车，东西！
+#Sage: I didn’t ask the name of your bicycle, what are you doing here?  I don’t remember you.
+贤者：我没在问你自行车的名字，我是说你在这里干嘛？ 我并不记得你。
+#Mitra: I’m here to help my friend, Young..
+麦卓：我是来这里帮助朋友的啊，扬…
+#Sage: Young doesn’t have friends.  Young doesn’t even have Briar.  And if you’re egging him on, then I want you out of my world!
+贤者：扬可没朋友。 扬也没有“荆棘”。 如果你胆敢怂恿他，我会让你永远滚出我的世界！
+#Mitra: What do you mean?  Wares and I--
+麦卓：你说这话是什么意思？ 东西和我——
+#Sage: SHUT UP ABOUT YOUR STUPID BICYCLE!!! 
+贤者：闭嘴！ 别再和我提你那愚蠢的自行车了！！！
+		end scene 
+		
+		scene hit
+TOP
+贤者：…
+#Mitra: Young!  Are you okay?  That was a beautiful thing you just did... You go on and finish this final punk-ass area!  We know you can do it!
+麦卓：扬！ 你还好吗？ 你干得真是太漂亮了… 你坚持把这个糟糕的地方搞定了！ 我们知道你能办到的！
+麦卓：东西！！！ 
+麦卓：东西…
+#Mitra: Look, mysterious hooded character, I don’t know who you think you are, but why don’t you just leave us alone?
+麦卓：瞧瞧，神秘的蒙面人，你觉得自己是何等角色？ 你就不能让我们静静待一会吗？
+#Sage: You think you’re Young’s friend because you’ll lie to him and tell him that deep down he’s just perfect and everything will work out.  Well, if that’s what you want, FINE.  Get out of my face, Young.
+贤者：你之所以觉得自己是扬的朋友，那是因为你会对他撒谎。 你会对他说，他是完美的。 一切都会得到解决。 好吧，如果你是这样想的话，算了。 从我面前消失吧，扬。
+#Sage: Go talk to your \"friend\".
+贤者：去和你的\"amiga\"说话。
+#Mitra: We're just doing the best we can...
+麦卓：我们只是在尽力而为…
+		end scene
+	end area
+	area NEXUS
+	
+	
+		scene enter_nexus
+TOP
+#Cloaked Man: Well, it’s about time.  Er...^I mean...^ Greetings, Young!  I am Sage, the Village Elder.  You have been summoned here because The Darkness has spread across The Land.  The Darkness seeks The Legendary Briar, to use The Briar’s power for evil.  You must reach it first. You must protect The Briar.	
+戴斗篷的男人：好了，是时候了。 呃…^我是说…^你好啊，扬！ 我是贤者，村里的长者。 因为这片“大地”被邪恶力量所笼罩，所以你被召唤来此。 邪恶力量正在寻找传说荆棘，企图利用荆棘之力达成他们邪恶的目的。 所以你必须抢先一步找到荆棘，并且保护它。
+#Enter the active portal on your left to begin your quest.
+走进你左边那个已经激活的传送门开始任务吧。
+#*Sigh* it doesn’t bode well that you’re still dallying about here.  Enter the portal to begin your quest.  The Briar and, by extension, the world are in dire need!
+*叹息* 你还在这里逗留可不是个好兆头啊。 进入传送门然后开始你的任务去呀。 荆棘乃至整个世界都需要你去拯救！
+LOOP
+#Just go in the damn door!
+你只要走进那扇该死的门就好了！
+		end scene
+		
+	# After entering STREET for the first time
+		scene after_ent_str
+#Why are you still here?
+你怎么还在这儿？
+		end scene
+	# After finishing BEDROOM
+		scene after_bed
+#Continue on, Young. That key you have found, there may be others like it - seek them out.
+继续，扬。 你刚刚找到钥匙也许只是九牛一毛罢了——把它们全都找出来吧。
+#Travel to the far reaches of The Land, Young. This is the only way to stop The Darkness.
+远方就是“大地”了，扬。 这是阻止邪恶力量的唯一途径。
+		end scene
+	# After finishing first 3 dungeons
+		scene before_windmill
+#Take those three keys, Young, and unlock the way to the deeper realms of The Land.
+拿着这三把钥匙，扬。 你可以利用它们前往“大地”更深处。
+		end scene
+#After windmill, but disappears after Sage fight
+		scene after_windmill
+#You have done what I have asked, Young, though there is still much to be done.  Perhaps if you explore the deeper realms of The Land you will come to greater realizations... perhaps you'll be worth anything to Briar.
+你已经达成了我所要求的事情，扬。 尽管你需要做的事情还有太多太多。 也许探索“大地”更深处能帮助你更好地理解… 也许你会懂得你为荆棘做的一切都是值得的。
+		end scene
+		
+		scene all_card_first
+#Good work, Young. You have found all of the cards in one area of The Land, and as a result, a gem has appeared on top of the area's portal.
+好样的，扬。 你已经找齐了“大地”其中一个区域的所有卡片。 这样一来，在该区域的传送门顶部就会出现一颗宝石。
+		end scene
+	end area
+	
+	area OVERWORLD
+		scene bedroom_entrance
+#Sage: Soon your skills will be put to the test, Young.  In order to make it through this temple alive, you will need both strength and intellect.  And I assume that by this point you have found a weapon?
+贤者：你的技能很快就可以在测试中展现了，扬。 这座神殿是为了考验你而存在。 你需要集力量与智慧才能通过考验。 我想你应该已经找到一件武器了吧？
+# Young swipes a few times
+#Wha-??  ... I-I mean...  Yes of course... a broom!  Er... just as was foretold in The Legend...
+什么玩——？？ …我、我是说… 当然了… 你找到了一根扫帚！ 呃… 正如同传说所言…
+#*grumble grumble* ... of all the incompetent--Hey!  What are you still standing here for?
+*抱怨声* … 简直就是没用的东西——嘿！ 你还傻站在这儿干嘛？
+LOOP
+#Keep your wits about you, Young.
+时刻保持头脑清醒，扬。
+		end scene
+	end area
+	
+	area BEDROOM
+		scene after_boss
+# Sage fades into room.	
+#Sage: At this point, you are still weak. If you hope to protect The Briar from The Darkness, you must face your fears.  The card you will find in this chest, and others like it, are symbols of your growth, so acquiring them is absolutely vital to your quest.
+贤者：现在的你还是很弱小。 如果你希望保护荆棘不受邪恶力量的伤害，你必须面对自己的恐惧。 你在这个箱子里找到的卡片，以及别的类似卡片，都是你成长的象征。 所以找到它们对你完成任务至关重要。
+#That key will also play an important role in your quest. You must seek out other keys, as well.  Select the map on the menu screen to teleport back to the temple's entrance, and continue your heroic quest.
+那个钥匙对你的任务而言也很重要。 你必须找到其它钥匙。 在菜单界面选择地图可以传送回神殿的入口然后继续你的英雄任务。
+#Travel East and South through the temple grounds... you will find a use for that key.
+往东南方向穿过神殿… 你会找到一处使用那把钥匙的地方。
+LOOP
+#What, do you want a piggy back ride to the gate or something??
+什么？ 你想要回大门那儿去吗？？
+		end scene
+	end area
+	
+	area TERMINAL
+		scene before_fight
+#Sage: Why won’t you listen to me?!  If you rush into this like an idiot, you’ll only endanger The Briar, The Land, and everything I’ve worked for!  I’m sorry Young, but if you won’t listen to me, then I’ll have to convince you another way...
+贤者：你怎么不听我的话呢？！ 如果你像个傻子一样的冲进这里，你只会危及荆棘，“大地”，还有我一直以来在保护的一切！ 抱歉，扬。 如果你不听我的话，那我只能用另一种方式来劝你…
+		end scene
+		scene after_fight
+#Sage: Young...  This is not how I mean things to be... I meant for you to become a better person.  I meant for you to be able to help The Briar.  But all of this is just a silly game...  I can’t stop you from reaching The Briar.  Just remember what I said when it all goes to hell.
+贤者：扬… 我并不希望事情变成这样… 我希望你能成为更好的人。 我希望你能帮助荆棘。 但是所有这一切不过是一场愚蠢的游戏… 我没办法阻止你找到荆棘。 只不过当事情变得很糟糕的时候，别忘了我对你说过的话。
+		end scene
+		scene entrance
+#Sage: Hello, Young.  When you have become a stronger and wiser individual, this path will lead you to The Briar.
+贤者：你好，扬。 当你变得更加强大而聪慧的时候，这条路便会引导你找到荆棘。
+#Sage: You’re not ready Young, first you must face more trials in The Land.
+贤者：你还没准备好呢，扬。 首先，你需要这片“大地”上接受更多的考验。
+#Sage: You have made progress, Young, but you must collect at least 36 cards to pass this gate.
+贤者：你已经有所进展了，扬。 但是你必须收集齐全部36张卡片才能通过这扇大门。
+		end scene
+# non idlnig stuff
+		scene etc
+#Sage: Oh... uh... you have at least 36 cards?  But I am not certain that you are ready for the true test.  In fact, look, we were reading this gate wrong, you actually need...\n...\n........\n92 cards to pass this gate, not 36!
+贤者：哦… 呃… 你已经找齐36张卡片了吗？ 但是我还不确定你是否能接受真正的考验。 其实，瞧啊，我们理解错了这扇门的意思，你其实需要…\n…\n…………\n92张卡片才能通过这扇门，而非36张！
+#Sage: Young, don’t go there, you’re not ready yet!  Think of The Briar!  The Land!  All of this will be for nothing if you are not ready! 
+贤者：扬，别进去，你还没准备好！ 为荆棘考虑一下吧！ 还有“大地”！ 如果你还没准备好，那一切都毫无意义了！
+		end scene
+	end area
+	
+	
+	
+	area REDCAVE
+		scene one
+TOP
+#Sage: Excellent work, Young.  You had to conquer not only this monster but also your own fears to prevail!!!
+贤者：干得漂亮，扬。 你需要战胜的不止是这只怪兽，还有你自己的恐惧！！！
+#Sage: Of course, you still have a long way to go.  Have you been exploring The Land?
+贤者：当然了，你还有漫漫长路要走呢。 你已经探索过“大地”了吗？
+		end scene
+	end area
+	
+	area CROWD
+		scene one
+#Sage: Well done, Young. However, there are still trials to face. Do not let your guard down.
+贤者：干得好，扬。 可是还有许多试炼等待着你。 千万别放松警惕。
+#Sage: Have you found all of the keys yet, Young? If not, go to the beach.
+贤者：你已经找齐了所有钥匙吗，扬？ 如果没有的话，那就去海滩上看看。
+		end scene
+	end area
+	
+	
+
+end npc
+
+npc cliff_dog
+	area CLIFF
+		scene top_left
+#I'm not like the others! *woof* I won't harm you...
+我和别人不一样！ *低鸣* 我不会伤害你的…
+#It is a quiet existence up here.
+这是一个安静的存在。
+#You smell like swiss chard.
+你闻起来就是一股甜菜味儿。
+LOOP
+*低鸣*
+		end scene
+	end area
+end npc
+
+npc happy_npc
+	area HAPPY
+		scene beautiful
+#You did it, Young!  You defeated The Darkness!  Look at this place!  It’s beautiful!
+你做到了，扬！ 你打败了邪恶力量！ 看看这个地方！ 多么美丽！
+#So beautiful...
+实在是太美丽了…
+		end scene
+		
+		scene dump
+#Oh thank god you’re here!  I was worried you’d get stuck in that snowy dump... It’s fucking depressing over there!  Ha!
+呀，你在这里真是太好了！ 我还担心你被困在雪里了呢… 在那里的时候感觉真是很绝望吧！ 哈！
+#Hahaha. Hahahahaha. HAHAHAHAHAHAHA!
+哈哈哈。 哈哈哈哈哈。 哈哈哈哈哈哈！
+		end scene
+		
+		scene drink
+#Hey sexy, I’ll buy you a drink!
+嘿，小可人儿，我请你喝一杯吧！
+#Have another drink, you little shit!  Hahaha!
+再和一杯吧，小混球！ 哈哈哈！
+		end scene
+		
+		scene hot
+#Fuck, it’s hot here...  I’m so hot... and sweatyyy...
+我靠，这里好热… 太热了… 我流了好多汗…
+#Damn, working out makes me horny!
+该死的，我越想弄明白怎么回事却更加饥渴难耐！
+		end scene
+		
+		scene gold
+#Did you know this place is made of gold?  Like actual gold!  We could run away together and live off this brick right here!  Wahahahaha!
+你知道这个地方是用金子做的吗？ 跟真金一模一样！我们可以带着那块砖跑掉，然后不愁吃穿一辈子！ 哇哈哈哈哈！
+#Seriously, why are you just standing there?  Help me jack this brick!
+说真的，你为什么一直站在那儿？ 赶快过来帮我撬砖啊！
+		end scene
+		
+		scene briar
+#???: Young... You finally maDe IT!  YuO SsavED ME!  nOE EvERtyhinG WILL bE OKYA AGaIN!!!!!
+？？？：扬… 你终于做到了！ 你救了我！ 现在一切都恢复如初了！！！！
+		end scene
+	end area
+end npc
+
+### 'mitra'
+npc mitra
+	area OVERWORLD
+		scene initial_overworld
+#HEADS UP!
+当心！
+#Mitra swerves to avoid you and crashes
+#Sorry about that... I was going way too fast.  Oh, I’ve never seen you before!  Are you a fellow traveller? ... Huh?  You want to protect the Briar from the Evil Darkness?  ...  ^Well... I have no clue what you’re talking about, but sounds cool, I guess!	
+抱歉… 我走路太急了。 嘿，我从来没见过你呢！ 你也是旅行者吗？ …哈？ 你想保护荆棘不受邪恶力量的伤害？ … ^好吧… 虽然我不明白你在说些什么，但是听起来蛮酷的呢！
+#I’ve just been out and about, peddling my wares.... What?  No, I’m not a salesman.  Wares is the name of my bicycle!  
+我只不过带着我的东西四处走走罢了… 什么？ 不不，我可不是商人。 东西是我自行车的名字！
+#Plays if you talk 3 times, or if you leave the screen
+#Well, maybe we’ll run into each other again sometime.  I’ll let you know if I hear anything about that Briar. 
+也许我们还会再见的。 如果我听说有关荆棘的事情我会告诉你的。
+#Mitra bikes away
+		end scene
+	end area
+	area BLUE
+		scene one
+#HEADS UP!  All right Wares, let’s do this!
+当心！ 好了东西，来吧！
+#Annnd presto!
+赶快！
+#Keep going, Young, we’ve got your back!
+继续前进吧，扬，我们会一直支持你！
+		end scene
+	end area
+	
+	area FIELDS
+		scene init
+#Remember me?  I forgot to introduce myself the last time, I only introduced my bicycle, Wares.  My name is Mitra.
+你还记得我吗？ 上次我只顾着介绍我的自行车--东西而忘记介绍我自己了。 我叫麦卓。
+#Remember me?  I forgot to introduce myself the last time, I’m Mitra, and this fine young bicycle is named Wares.
+你还记得我吗？上次我忘记介绍我自己了，我叫麦卓，这是我优秀的自行车，它叫东西。
+LOOP
+#Mitra: So how have you been, Young?  ...what?  How did I know your name?  You think it’s weird, eh?  Well, I saw it on the back of your hoodie.  
+麦卓：你最近过得如何，扬？ …什么？ 我怎么知道你的名字？ 你觉得很奇怪吧？ 嗯，其实你衣服背后写着的呢。
+#Mitra: See you around, Young!
+麦卓：回见，扬！
+		end scene
+		scene quest_event
+#Mitra: Hey, I just remembered - someone said they were trying to find something earlier. I wasn't sure what they were talking about, so they said they were going to the mountains - ran off in a hurry.
+麦卓：嘿，我只记得--有人说他们在找一些过去的东西。 我不太理解他们在说什么，但是他们急匆匆地往山上去了。
+		end scene
+		
+# Hints for the game - not cards
+		scene game_hints
+# The ordering matters in these (indexed in-game, so just keep them numbered)
+# 0 ignore this
+#Nothing.
+什么也没有。
+# 1. Beach hint (no dungeons finished)
+#Oh, you're lost? Have you looked around the beach? Maybe someone there can help you out. It looks like that key of yours comes in a set. Maybe you need to find more?
+噢，你迷路了吗？ 你去过海滩了吗？ 也许那儿有东西能帮到你。 看上去你的那些钥匙是有一整组的。 你可能需要找到更多钥匙？
+# 2. Forest hint (no dungeons finished)
+#Oh, you're lost? Have you looked in the forest to the east?  That key you have - it looks like it comes in a set. Maybe you need to find others?
+噢，你迷路了吗？ 你去过东边的森林了吗？ 你找到的那把钥匙--看起来应该是有一整组的。 你可能需要找到更多钥匙？
+# 3. Windmill hint
+#Look at all of those keys! I think I saw some gates to the southeast. Maybe you could use them there?
+看看那些钥匙啊！ 我记得我在东南方向看过有许多大门。 也许你可以去那边试试？
+# 4. Generic hint to go past statues
+#Hey, I saw that you turned on the wind turbine!  Do you know if it had any effect on The Land?
+嘿，我看到你把风力涡轮机开启了！ 你知道这会对“大地”产生什么样的影响吗？
+# 5. finished 6 bosses, all 36...
+#Hey Young.  Wow!  You've really been racking up those cards!  Have you figured out what they're for yet?  Seems like you could really cash in with all those!
+嘿，扬。 哇！ 你已经找到那么多卡片了！ 你现在弄明白它们用来干嘛的吗？ 看起来你可以用它们来兑换东西呢！
+# 6. hints for go things
+#What is that new broom attachment you have?  It lets you alter the structure of the world...?  Honestly, that is really scary Young.  I'm glad it doesn't seem to work anywhere, perhaps just in the deepest, strangest recesses of the Land
+那个新的扫帚附件是什么？ 它可以让你改变这个世界的结构吗…？ 说实话，那可真可怕啊扬。 真庆幸它不是在任何地方都能起作用，也许只能在“大地”最深处发挥效用。
+# 7.  crowd finished but not redcave
+#How are my jump shoes working for you?  Pretty nifty, eh?  I’m loving my new bike shoes.  They make Wares and I an even better team!
+我的跳跳鞋你用得怎样了？ 一定很棒吧？ 我好喜欢我的新自行车鞋。 它们让我和东西成为了更棒的组合！
+#8. redcave finished but not crowd
+#Cool, Young, you found another key!  Wares likes the color!  Have you found a place to use them yet?
+真棒，扬，你又找到一把钥匙！ 东西很喜欢这个颜色呢！ 你找到用钥匙的地方了吗？
+		end scene
+# Hints for the cards. Play after the 6 dungeons are finished.		
+		scene card_hints
+#Mitra: Hey Young, looking for a card?\nHave you checked around the area of the Seeing One's temple?
+麦卓：嘿，扬，你在找卡片吗？\n你去“观察者”的神殿找过吗？
+
+#Mitra: Hey Young, looking for a card?\nI heard there's a maze around the back exit of the Seeing One's temple.
+麦卓：嘿，扬，你在找卡片吗？\n我听说“观察者”的神殿的后门有一个迷宫。
+
+#Mitra: Hey Young, looking for a card?\nYou might find something near the Seeing One's lair.
+麦卓：嘿，扬，你在找卡片吗？\n你可以在“观察者”的藏匿之所找到一些东西。
+
+#Mitra: Hey Young, looking for a card?\nThere was a room filled with enemies in the Seeing One's temple, right?
+麦卓：嘿，扬，你在找卡片吗？\n“观察者”的神殿里有一个满是敌人的房间，对吧？
+
+#Mitra: Hey Young, looking for a card?\nHave you looked all over the Seeing One's temple?
+麦卓：嘿，扬，你在找卡片吗？\n你有没有仔细查看一下“观察者”的神殿呢？
+
+#Mitra: Hey Young, looking for a card?\nTry looking in the vestigial area near the back exit of the Seeing One's lair.
+麦卓：嘿，扬，你在找卡片吗？\n去试试“观察者”的神殿后门附近的那片荒废的区域吧。
+
+#Mitra: Hey Young, looking for a card?\nMaybe your neighbor knows something about it.
+麦卓：嘿，扬，你在找卡片吗？\n也许你的邻居知道些什么呢。
+
+#Mitra: Hey Young, looking for a card?\nI know the guy in your apartment was hiding something...
+麦卓：嘿，扬，你在找卡片吗？\n我知道在你公寓的那个家伙在隐藏着什么…
+
+#Mitra: Hey Young, looking for a card?\nSomewhere near the entrance of your apartment...look around there!
+麦卓：嘿，扬，你在找卡片吗？\n在你公寓入口附近…去那儿看看！
+
+#Mitra: Hey Young, looking for a card?\nHave you looked *everywhere* in your apartment?
+麦卓：嘿，扬，你在找卡片吗？\n你有没有检查过你公寓的*里里外外*呢？
+
+#Mitra: Hey Young, looking for a card?\nJust south of here is an island! I haven't gone there, but you should check it out.
+麦卓：嘿，扬，你在找卡片吗？\n这里以南就是一个岛屿！ 我没去过那儿，但是你可以去看看。
+
+#Mitra: Hey Young, looking for a card?\nThere's a lot of stuff to be found if you follow the rivers. Look around!
+麦卓：嘿，扬，你在找卡片吗？\n如果你一直沿着河流走，应该能找到好些东西。四周围看看吧！
+
+#Mitra: Hey Young, looking for a card?\nI know someone left a card near the windmill.
+麦卓：嘿，扬，你在找卡片吗？\n我知道有人在风车那儿留了一张卡片。
+
+#Mitra: Hey Young, looking for a card?\nLook around the rivers in the forest...
+麦卓：嘿，扬，你在找卡片吗？\n去森林里的河流附近找找看吧…
+
+#Mitra: Hey Young, looking for a card?\nTry poking around the base of the mountains.
+麦卓：嘿，扬，你在找卡片吗？\n去山底下找找看吧。
+
+#Mitra: Hey Young, looking for a card?\nTry going to the summit of the mountains.
+麦卓：嘿，扬，你在找卡片吗？\n去山顶找找看吧。
+
+#Mitra: Hey Young, looking for a card?\nThe far end of the beach may hold something.
+麦卓：嘿，扬，你在找卡片吗？\n在海滩的远处也许可以找到点什么。
+
+#Mitra: Hey Young, looking for a card?\nTake a walk in the crimson woods.
+麦卓：嘿，扬，你在找卡片吗？\n去深红色树林里逛逛吧。
+
+#Mitra: Hey Young, looking for a card?\nThere were a lot of locked doors in one of those red caves, right?
+麦卓：嘿，扬，你在找卡片吗？\n在那些红色洞穴里面有许多上锁的门，对吧？
+
+#Mitra: Hey Young, looking for a card?\nGo to the northern red cave, check out the source of the river!
+麦卓：嘿，扬，你在找卡片吗？\n去北边的红色洞穴，寻找河流的源头！
+
+#Mitra: Hey Young, looking for a card?\nHmm...did you look all over that dark labyrinth?
+麦卓：嘿，扬，你在找卡片吗？\n唔…你在黑暗迷宫里仔细找过了吗？
+
+#Mitra: Hey Young, looking for a card?\nI remember there was a pretty grim looking path of flamethrowers somewhere. Something's gotta be at the end of it!
+麦卓：嘿，扬，你在找卡片吗？\n我记得某个地方有一条很可怕的、会喷火的路。 在路的尽头应该有些什么！
+
+#Mitra: Hey Young, looking for a card?\nThose circus folks have got to be hiding something. Did you look everywhere?
+麦卓：嘿，扬，你在找卡片吗？\n那些马戏团的人一定在隐藏着什么。 你有没有仔细找过呢？
+
+#Mitra: Hey Young, looking for a card?\nHave you looked around the area on the perimeter of that couple's large pit?
+麦卓：嘿，扬，你在找卡片吗？\n你在那对夫妇的大坑边缘仔细找过了吗？
+
+#Mitra: Hey Young, looking for a card?\nThere's this couple that like to hang around a pit. They must be hiding something.
+麦卓：嘿，扬，你在找卡片吗？\n这对夫妇在大坑附近游走。 他们肯定在隐藏着什么。
+
+#Mitra: Hey Young, looking for a card?\nSometimes there are things hidden across chasms - especially in mountain caves!
+麦卓：嘿，扬，你在找卡片吗？\n有些时候裂缝中可能会隐藏着些什么--特别是山洞里！
+
+#Mitra: Hey Young, looking for a card?\nHave you scoured the highest parts of the mountain cave?
+麦卓：嘿，扬，你在找卡片吗？\n你有探索过最高处的山洞吗？
+
+#Mitra: Hey Young, looking for a card?\nIs there anything in the depths of that mountain cave?
+麦卓：嘿，扬，你在找卡片吗？\n你在山洞深处找到什么东西了吗？
+
+#Mitra: Hey Young, looking for a card?\nThat colorful cube in that weird place - it has probably got something!
+麦卓：嘿，扬，你在找卡片吗？\n那个在诡异之处的彩色方块--应该有东西在那儿！
+
+#Mitra: Hey Young, looking for a card?\nHave you talked to that grayscale cube in that wild-lookin' area? Maybe it knows something.
+麦卓：嘿，扬，你在找卡片吗？\n你和那个在看上去很荒凉的区域里的灰度方块对话了吗？ 也许它知道些什么。
+
+#Mitra: Hey Young, looking for a card?\nThe top floor of that hotel is a little run down, but it's gotta have something!
+麦卓：嘿，扬，你在找卡片吗？\n酒店的顶层虽然有些破败，但是应该藏着些什么！
+
+#Mitra: Hey Young, looking for a card?\nDid you walk into all of the rooms on the 3rd floor of the hotel?
+麦卓：嘿，扬，你在找卡片吗？\n你去酒店第三层的所有房间看过了吗？
+
+#Mitra: Hey Young, looking for a card?\nI bet someone left something lying around the 2nd floor of the hotel.
+麦卓：嘿，扬，你在找卡片吗？\n我敢打赌，有人肯定在酒店第二层留下了什么东西。
+
+#Mitra: Hey Young, looking for a card?\nThe owner of the hotel might have left something for you! 
+麦卓：嘿，扬，你在找卡片吗？\n酒店的主人肯定留了些东西给你！
+
+#Mitra: Hey Young, looking for a card?\nThose broken bridges to the northwest...look around there!
+麦卓：嘿，扬，你在找卡片吗？\n那些西北方向的断桥…去那儿看看吧！
+
+# and a bonus one if for some reason you make it this far without finding any...
+#...What? You haven't found *any* cards? Man, Young, that's crazy! Sometimes in life you just need to be adventurous, open a few boxes, you know? 
+…什么？ 你一张卡片都没找到？ 拜托，扬，这实在是太扯了吧！ 人活一辈子总该有些冒险精神吧，比如开几个箱子什么的，你懂我的意思吧？
+		end scene
+		
+#General random stuff 
+		scene general_banter
+#Did you find that guy who was looking for something in the mountains?
+你遇见那个在山里寻找东西的家伙了吗？
+#Do you know what my bike’s surname is?  ...Waldo!  Get it?  Wares Waldo!  ...Just kidding, bicycles don’t have surnames.
+你知道我的自行车姓什么吗？ …操纵者！ 你知道吗？ 东西·操纵者！！ …我开玩笑的，自行车怎么会有姓氏呢。
+#Do you think I should get a U-Lock?  I’d hate to tie up Wares like that, but you do hear a lot about stolen bikes these days...
+你觉得我应该弄一把U型锁吗？ 可是我不喜欢把东西锁成那样，可是最近又听说了很多偷自行车的案例…
+#So what is The Briar?  Some sort of ancient artifact from a lost culture?
+所以荆棘到底是什么？ 是从失落文明中遗留下来的古代手工艺品吗？
+#I wonder why I haven't heard anything about The Darkness coming.  I guess most people in the land are just caught up in their own daily struggles.
+我想知道为什么我从来没听说过什么邪恶力量入侵的事情。 我猜这儿大部分人都只在烦恼各自的琐碎事。
+#Hey Young, I just wanted to tell you... your hair is awesome.
+嘿，扬，我想告诉你… 你头发真好看。
+		end scene
+		
+	end area
+end npc
+
+### Statue (wise crackin' statue) 
+npc statue
+	area NEXUS
+		scene enter_nexus
+#Statue: The Village Elder in name only, for he is neither.
+雕像：那个村庄长者只不过是名义上的角色罢了。
+		end scene
+	end area
+	
+	area OVERWORLD
+		scene bedroom_entrance
+#Statue: I’ve seen a broom in a legend... it was on the map of a janitor closet. 	
+雕像：我见过一把传说的扫帚… 它在看门人衣橱里的地图上。
+		end scene
+	end area
+	
+	area BEDROOM
+		scene after_boss
+#Statue: Acquiring cards is vital to your quest.  Acquiring cards is also vital for other quests, such as earning credit or purchasing alcoholic beverages.		
+雕像：获得卡片对你而言至关重要。 当然，它们在其它方面也很重要。 比如获取分数或是购买酒精饮料什么的。
+		end scene
+	end area
+	area REDCAVE
+		scene one
+#Statue: Excellent work, Sage.  You had to conquer not only your temperament but also your own self-respect to deliver such a cheesy line!!!
+雕像：做得好，贤者。 你需要克服的除了你的坏脾气之外，还有你的自尊心！ 这样你才能好好讲出你那俗套的对白！！！
+		end scene
+	end area
+	area TERMINAL
+		scene one
+#When you have become a more stressed and apathetic individual, this path will lead you to the Breyers.  Comfort by the pint, loser!  
+当你成为一个更加有压力和冷漠的角色之后，这条路会带你去找布雷耶。 放松一下吧，失败者！
+		end scene
+	end area
+end npc
+
+### sadbro (outside of bedroom)
+npc sadbro
+	area OVERWORLD
+		scene initial_forced
+# This line must be played once before anything else can
+#Edward: Once a man came and installed a mirror in our bathroom.  I was afraid that there was a hidden camera inside of it.  I scoured every inch of the wooden frame, spraying Merphi’s Oil Soap into the cracks, thinking I might short-circuit the wires.  Of course, I never found anything.
+爱德华：有一个男人走进来，在我们的浴室里安了一面镜子。 所以我担心里面会有隐藏摄像头。 我把镜子的木框仔细翻找了一下，我喷了一些梅非的油皂在木框的裂口处，我觉得这样应该可以让里面的电路短路。 当然了，虽然我什么也没找到。
+LOOP
+#Edward: This temple is dedicated to The Seeing One.  I don’t know why I came here, and I’m too afraid to go inside.
+爱德华：这座神殿是献给“观察者”的。 我不知道我为什么会来这里，我很害怕走进去。
+		end scene
+		
+		scene bedroom_not_done
+#Edward: Having trouble?  Well I’d imagine so.  All you have is a broom, and all brooms can do is move dirt.
+爱德华：遇到麻烦了吗？ 好吧，我能想象到。 你只有一把扫帚而已。 而一把扫帚只能用来扫扫灰尘。
+		end scene
+		
+		scene bedroom_done
+#Edward: You say you defeated the Seeing One?  Ha.  Don’t you get that it doesn’t work that way?  You’re just spraying oil soap in the cracks.	
+爱德华：你说你打败了“观察者”？ 哈哈。 你没发觉事情不应该如此吗？ 你只不过是把油皂喷在了裂缝上。
+		end scene
+		
+	end area
+end npc
+
+# sun_guy (Bedroom boss)
+npc sun_guy
+	area BEDROOM
+		scene before_fight
+#Oh, isn’t it cute?  Precious little Young, playing the hero.  But I have witnessed every step you have taken in "The Land", and let me tell you, Young, not everyone here is as honest as me.  Be careful who you trust!
+噢，这难道不可爱吗？ 弱小的扬，在扮演着英雄的角色。 但是我见证着你在这片“大地”上所做的每一分努力。 让我来告诉你吧，扬。 这里不是所有人都会诚实对待你。 当心你信任的人！
+		end scene
+		scene after_fight
+#I will be with you, Young, whenever you are alone.  And remember my advice on your little "adventure".
+当你孤单之时，我会与你同在，扬。 别忘了我对你小小“冒险之旅”的建议。
+		end scene
+	end area
+end npc
+
+# rock (Rock with words)
+npc rock
+
+	area BEDROOM
+		scene one
+#Rock: Peripheral vision is the hive of demons.	
+石头：周围的幻觉便是恶魔的巢穴。
+		end scene
+		scene two
+#Rock: To-do: Construct method of transportation to Nexus. Progress: Halted - Seeing One will not give the required funds to make the venture possible. We will have to revert to the original method of the inexplicable door portal. 
+石头：待办事项：构建运输到节点的方法。 进程：停顿--“观察者”拒绝提供项目运作资金。 我们将不得不使用原始的传送门方法。
+		end scene
+		scene three
+#Rock: I'm trapped here all by myself. Work is steady on this tunnel, and at least I can see a little bit of progress every day.
+石头：我被孤独地困在这里。 这个隧道里的工作很稳定，至少每天都能看到有进展。
+		end scene
+	end area
+	
+	area BLUE
+		scene one
+#This wheel is used to lift the dam.
+这个轮子曾经被用来升起大坝的。
+		end scene
+	end area
+	area CIRCUS
+
+		scene one
+#June 24th, 1957: Trapeze swing breaks.  Alice Rutgers is flung into the ground, resulting in two fractured shins.
+1957年6月24日：秋千坏掉了。 爱丽丝·罗格斯摔到地里去了。 2根胫骨骨折。
+		end scene
+		scene two
+#July 17th, 1957: Seven clowns retire with near fatal lung issues.  LANDBLEND brand makeup is suspect, but no formal investigation occurs.
+1957年7月17日：七名小丑因为严重的肺部问题而退休。 兰德布兰德牌化妆品非常可疑，可是却没有对其进行任何正式调查。
+		end scene
+		scene three
+#July 21st, 1957: Following a cage malfunction, my face and side are severely mauled by an untamed lion.  I survive, but now shudder to look at my own reflection.
+1957年7月21日：由于有个兽笼出现问题，我的脸和侧身都被一只尚未驯服的狮子所咬伤。 我活了下来，但现在我只要看见自己的模样就会瑟瑟发抖。
+		end scene
+		scene four
+#August 5th, 1957: In my dream, I saw a stone face with fierce, shining eyes.  He spoke of the truth of our existence and was the first to offer freedom from the pain.
+1957年8月5日：在我的梦里，我看见了有一双凶猛却闪闪发光的眼睛的石头脸。 他道出了我们存在的真实情况，是第一个在痛苦中给予自由的人。
+		end scene
+		scene five
+#August 7th, 1957: How many of us will suffer before we accept the truth of the Seeing One?
+1957年8月7日：在我们接受“观察者”的真相之前，还有多少人要受苦？
+		end scene
+		
+		scene six
+#August 8th, 1957: I have come to my decision.  A few of the others have said they will follow me.  This will be my final entry.  May the Seeing One look favorably upon us all.
+1957年8月8日：我已经做出了决定。 有些人说会追随我。 这是我的最后一搏。 愿“观察者”保佑我们诸事顺利。
+		end scene
+	end area
+	area CLIFF
+		scene one
+#(Indecipherable markings)
+(难以辨认的记号)
+		end scene
+		scene two
+#December 7th, 2010. (name unreadable). There's nothing up here, except this stupid rock!
+2010年12月7日。（姓名无法知晓）。 这里除了愚蠢的石头已经没有别的东西了！
+		end scene
+		scene three
+#Danger! This cave is unexplored.
+危险！ 这个洞窟未经勘查。
+		end scene
+		scene four
+#These cliffs extend far and upwards, though I've never gone high enough to find out where they lead.
+这些峭壁E向远处延伸，然而我从没有爬到高处去看它们通向哪里。
+		end scene
+	end area
+	
+	
+	area CROWD
+		scene one
+#Rock: How?
+石头：怎样？
+		end scene
+		scene two
+#Rock: Warning! Vertical drop, jump at your own risk.
+石头：当心！垂直降落你需要自行承担风险。
+		end scene
+	end area
+	
+	area DEBUG
+		scene one
+#This used to be a placeholder animation for the card gates. Approach it twice to see the locked and open animations! 
+这个曾经是卡片大门的占位符动画。 碰触两次可以查看锁住或开启的动画！
+#I forget why we ended up scrapping it. Perhaps too dramatic.
+我已经忘记为什么我们将它弃之不用了。也许是因为它太引人注目了。
+		end scene
+		
+		scene two
+#Here are tests for various tile layers and collisions! I couldn't get one way tiles from both sides (i.e., walls) working very well so I just ended up scrapping the idea entirely...or something. 
+这里是许多材质图层与碰撞的测试点！我没办法一个素材用到底（比如墙的两面）。所以我完全放弃了这个主意…
+
+#There was some reason why we didn't use them. Simplifying design, which was important for us to finish the game.
+我们不用它们是有原因的。最主要的原因是为了简化设计，让我们更好地完成游戏制作。
+		end scene
+		
+		scene three
+#Enemies used to be able to drop keys. I scrapped this idea even though it was slightly amusing. 
+敌人被击败时有几率掉落钥匙。虽然这个主意很有趣，但是我还是放弃了。
+
+#Another idea we played with was having challenge gates, which lay at the end of a gauntlet, and only opened when you reached them without getting hurt. 
+我们还有一个点子，就是设计一些挑战大门，把它们放在考验的最后。你只有无伤过关后才能开启这些大门。
+
+#We wanted to model all dungeons around this and scrap health entirely, but that turned out to be far too hard!
+我们想把所有的地牢都放在这周围，然后掉血之后无法恢复。不过这样实在是太难了！
+		end scene
+		
+		scene four
+#PRISON!!!
+监狱！！！
+#Save us!!!
+救救我们！！！
+#Please!
+拜托了！
+		end scene
+		
+		scene five
+#Welcome to the DEBUG WORLD! You've stepped outside of \"The Land\", so consider this world (90 PER-CENT) \"Non-canon\". Anyways.
+欢迎来到“调试世界”！现在，你已经走出了\"大地\"，所以这个世界可以说（至少有90%）都是\"非正式\"内容。
+#Before there were tilesets for many of the areas I used silly tiles like these to mark where doors went. In fact, every dungeon was mocked up in this area's tileset, and then Marina tiled over them with his tilesets.
+在使用大量地图素材之前，我用了一些很傻的素材来标记出大门的位置。实际上每个地牢都是用这里的地图素材勾勒出大概的。然后Marina再用他的素材去精细构建。
+		end scene
+		
+		scene six
+# Translator's note: since this word comes from French, I'll leave it as it is
+# Equivalence (for reference) --> French: fille -- English: girl -- Spanish: chica
+fille
+		end scene
+	end area
+	
+	area DRAWER
+		scene five
+#-ARCHIVES-
+-档案-
+#PROCEED WITH CAUTION
+谨慎行事
+		end scene
+		scene four
+#West. Rift. Reality! Low real estate values, hurricane, old, run down. Relaxing. 
+西部。裂缝。真实！房产价值低、飓风、老旧、缩减。放松。
+		end scene
+		scene three
+#The Seeing One from what I can rem- rmrr,,,,,,a Good Time At The Home.
+“观察者”让我记、记起…………在家的美好时光。
+		end scene
+		scene two
+#COLD STORAGE\n\n^  -- THE MGMT
+冷藏\n\n^  --管理员
+		end scene
+		scene one
+#CONTINUE
+继续
+		end scene
+	end area
+	
+	area FIELDS
+		scene one
+#West: Beach\n\nEast: Forest\n\nSoutheast:\n  Rainy Area\n\nNorth: \nTemple Grounds\n\nNorthwest: Chasm
+西部：海滩\n\n东部：森林\n\n东南部：\n 多雨地区\n\n北部：\n神殿遗迹\n\n西北部：峡谷
+		end scene
+	end area
+	
+	area FOREST
+		scene one
+#West: Land Lake\nSouth, then east: Cliffs
+西部：湖泊\n南部以东：峭壁
+		end scene
+		scene two
+#Relaxation pond. Stay a while, we know you have the time.
+放松池塘。停下来歇息一会吧，我们知道你有时间的。
+		end scene
+		scene three
+#I'm afraid I may be stuck on this tiny corner forever.
+我担心自己可能永远被困在这个小角落里了。
+		end scene
+		scene four
+#East: Cliffs
+东部：峭壁
+		end scene
+	end area
+	
+	area GO
+		scene one
+# The path will open when the dark guardian tiles are replaced by the stone of their spirit color on the square grid below.
+当黑暗守卫素材被底下色的方格网替换时，路径才会打开。
+		end scene
+		
+		scene two
+#When the blue stone statue shifted\nThere a new path was revealed\nPast the cliffs, through strange dimensions\nStands a travelers' hotel\n\n\n\"Who is the guardian?\" I ask,\n\"Who rules this crowded business place?\"\nDespite the many human souls\nI still feel alone.
+当蓝色石像移动\n新的路径将会出现\n翻过峭壁，穿过奇怪的区域\n你将会看到一间旅行者旅店\n\n\n\"谁是守卫？\" 我问道，\n\"谁掌管这个繁忙的地方？\"\n尽管这里有许多人类的灵魂\n我依旧感到很孤单。
+		end scene
+		
+		scene three
+#The red and rusty statue moved\nAnd paved the way to deeper pits\nA labyrinthine dungeon follows\nThen a big-top circus tent\n\n\n\"Who are the guardians?\" I ask,\n\"Who gave up life to flee this place?\"\nI fear the pain, the same as they\nBut fear it more to die.
+锈蚀的红色雕像移动了\n这是在为更深处铺路\n伴随而来的是迷宫般的地牢\n然后是马戏团的大帐篷\n\n\n\"谁是守卫？\"我问道，\n\"谁放弃了生命，逃到这样一个地方来？\"\n我如他们一样害怕痛苦\n但更害怕死亡。
+		end scene
+		
+		scene four
+#The green, metallic statue shifted\nOpening a deeper trail\nSuburban homes and sidewalks form\nA path to an apartment.\n\n\n\"Who is the guardian?\" I ask,\n\"Who looks for comfort in the stars?\"\nAlone, I feel like I am watched\nAnd not by friendly starlight.
+绿色的金属雕像移动了\n更深的道路开启了\n郊外的房屋和道路慢慢形成\n那是通往公寓的道路。\n\n\n\"谁是守卫？\"我问道，\n\"谁在星辰之中找寻慰藉？\"\n虽然孤身一人，但却感觉被人注视\n注视我的定然不是那友好的星光。
+		end scene
+		
+
+	end area
+	
+	area BLANK
+	#initial entrance from windmill
+		scene one
+#Rock: This is unclaimed territory - not yet a part of The Land. 
+石头：这是一片无人认领的领土--它尚未成为“大地”的一部分。
+		end scene
+		#concentric circles
+		scene two
+#Rock: These -^ me and my^ - circles are^ - promises...I'll^ - concentric^ - really try to get everything done...^ - circles. Bzrt, bzrt.
+石头：这些==^ 我和我的^ --圆圈是^ --约定…我会^ --围绕中心^ --努力完成所有使命…^ --圆圈。吱吱、吱吱。
+		end scene
+			#islands
+		scene three
+#Rock: Watch^ -...but I always^  - your step^ - manage to reappear no?^ - when here! 
+石头：看呀^ --…可我依然^ --你的脚步^ --是否将重新出现？^ --当在这里之时！
+		end scene
+		#mazeish place, not near the portal
+		scene four
+#Rock: Looking down^ - And I realized:^ - from here, you- ^ I'm in love with him.^ - can see...nothing, really.
+石头：往下看^ --我发现：^ --从此开始，你--^ 我爱上了他。^ --于是什么也…看不清。
+		end scene
+		#left part of the 48 gate
+		scene five
+#Rock: My apologies -^ But yeah, we -^  on the mess here -^ ought to keep in touch-^ but that portal should^ - and I will try give you my opinions - ^ return you to to The Land.
+石头：我很抱歉--^ 但是，嗯，我们--^ 在这里混乱不清--^ 应该保持联系--^ 但是那扇传送门应该^ --我会努力让你知道我的想法--^ 将你带回“大地”。
+		end scene
+	end area
+	
+	
+	area NEXUS
+		scene one
+#Sometimes if you talk to people multiple times, they have new things to say.
+有时如果你和人们对话多次之后，他们可能会和你聊点新话题。
+#But not rocks.  Rocks don’t do that.
+但是石头不会这样。 石头才不做那样的事情。
+		end scene
+		#before 49 card agate
+		scene two
+#Rock: So close! If only...
+石头：很接近了！只要…
+		end scene
+		#door that goes nowhere
+		scene three
+#Rock: Curiosity is a great thing.
+石头：好奇心是个好东西。
+		end scene
+		#below treasure box
+		scene four
+#Rock: Oh!...?
+石头：噢！…？
+		end scene
+		scene five
+#The computer terminal has an e-mail open. Parts of the screen are broken, so only parts of the message are visible in between black blotches. The e-mail reads: \"Hello, Young! It seems that [...] fiftieth card [...] maybe you shouldn't... [...] worth thinking about! Do you think you're ready? Wake up...\" 
+电脑终端打开了一封电子邮件。由于部分显示屏已经坏掉，所以只能看见信息的一部分。电子邮件写到：\"你好，扬！似乎[...]第五十张卡片[...]也许你不该…[...]值得思考！你觉得自己已经准备好了吗？醒醒吧…\"
+		end scene
+	end area
+	
+	
+	area OVERWORLD
+		scene one
+#Rock: I’ll bet you’re reading a rock because you don’t have any friends.
+石头：我打赌你肯定是因为没朋友所以才会度一块石头上的内容。
+		end scene
+		scene two
+#Rock: Welcome to Overworld Station. We hope you enjoyed your time in The Land. 
+石头：欢迎来到主世界的站点。希望你很享受在“大地”的时光。
+		end scene
+		scene three
+#Rock: An explorer is you!
+石头：你就是探索者！
+#Rock: Please don't go south. It's under construction.
+石头：请不要去南部。因为那里正在施工中。
+		end scene
+		scene four
+#Rock: Treasure in 5,3!
+石头：财宝在5、3！
+		end scene
+		scene five
+#Rock: Haha, gotcha!
+石头：哈哈，明白了！
+		end scene
+	end area
+	
+	area REDCAVE
+		scene one
+#WE ARE BORN INTO THE DECAY OF OUR MOTHER’S BODY.
+我们出生于正在衰老的母亲的身体中。
+		end scene
+		scene two
+#ONE DAY OUR MOTHER LEFT HER MOTHER AND VENTURED INTO THE POISONOUS FOG.
+有一天，我们的母亲离开了她的母亲，独自去寻找有毒的青蛙。
+		end scene
+		scene three
+#WE NEVER ASKED FOR THIS.  WE WOULD NOT HAVE BOUGHT OUR LIVES WITH HER SUFFERING.
+我们从没问起过此事。 我们不能让她遭受痛苦。
+		end scene
+	end area
+# area for redsea
+	area REDSEA
+		scene one
+#Rock: Signs indicate the trees have not been active for an extended period of time.
+石头：标志上说到，树木们已经有很长一段时间处于沉睡状态了。
+		end scene
+		scene two
+#Rock: South: ???^   North: ???
+石头：南部：？？？^   北部：？？？
+		end scene
+		scene three
+#Rock: The uneven terrain is said to have been formed by the ancestors of the area's inhabitants.
+石头：这并不平坦的地面据说是由曾经居住在这片土地上的祖先们构成的。
+		end scene
+		scene four
+#Rock: They appear to be a peaceful species.
+石头：他们似乎是非常热爱和平的物种。
+		end scene
+	end area
+	
+	
+	area SPACE
+		#middle
+		scene one
+			#Scribbled in what appears to be permanent marker: Greetings, fellow traveler of SPACE and TIME. You have stepped into a rift far away from the juxtaposing area of YOUNG. You've crossed an OCEAN or two, so to speak. Don't worry about the CONTRAST, you can return to your normal adventure shortly. Do not FEAR this place, though it appears FORBODING and DANGEROUS you will find its denizens to be quite FRIENDLY.\n      -- The MGMT
+			某人用永不褪色记号笔字迹潦草地写道：你好，时空旅行者同僚。你已经踏入了远离扬所在的平行区域的裂缝中。你大概已经穿越了一片或者两片海洋。别担心有什么差别，你很快会重新回到你正常的冒险中去。别害怕这个地方，尽管这里到处都是禁忌和危险，这儿的人还是相当友善的。\n      --管理员
+
+			#(Below the message, an engraving:) Here lies ____ (unreadable). He got lost in the woods.
+			(在这条消息下面，刻着这样一段话：) ____（看不清）长眠于此。他在森林里迷了路。
+
+			#(Even further below the message:) (just don't go too far south.)
+			(消息最下面还写到：) (别往太南边走就好。)
+
+		end scene
+		# extra color
+		scene two
+#Here lies ____ (unreadable. Who wrote this?). He was impaled by rainbows!
+____长眠于此（看不清，究竟是谁写的这个？）他被彩虹刺穿了！
+#Would've been better with achievements.
+原本应有更好的成就。
+		end scene
+		#grey graves
+		scene three
+#Here lies Burd. The cliffs weren't feeling too friendly.
+伯德长眠于此。只因峭壁对其不太友好。
+		end scene
+		scene four
+#Here lies bag. It never had a chance.
+袋子长眠于此。它从没有被人使用的机会。
+#Pretentious!
+做作！
+		end scene
+		# color graves
+		scene five
+#Here lies Savitch. He tried to fix my computer in the garage once, and didn't take up much space while doing so. Three years later, he still hadn't finished. Then, he dropped dead.
+萨维奇长眠于此。他曾经试着在仓库里帮我修电脑。由于他拥有的空间实在太小，三年之后他还是没有修好。所以，他该死。
+		end scene
+		scene six
+#Here lies Dave. He wasn't very inspirational.
+戴夫长眠于此。他是一个缺乏灵感的人。
+		end scene
+	
+	end area
+	
+	area SUBURB
+		scene one
+			#---YOUNG TOWN---^\nWelcome to Young Town. Please beware of some of the citizens. They do not play well with others...tread carefully. Now, Young Town was founded sometime in the '90s by Mayor Ying as a part of a series of ongoing housing projects, the name chosen as a reflection of Ying's denial of possessing the name Ying, and assertion of possessing the name Young. We'll hope you enjoy your stay.
+			---扬市---^\n请多加注意部分市民。他们不太擅长和人打交道…他们行事特别小心。扬市建立于90年代，市长英为了要开展一系列的住房计划而打造了这个城市。英拒绝使用“英”来命名此城市，而坚持要使用“扬”这个字。希望你在这儿玩儿得愉快。
+		end scene
+		
+		scene two
+			#To the west are the legendary temples of the Seeing One. To the east is our wonderful Mayor Ying's apartment, which has been since closed off from visits to the public - trespassers beware. 
+			往西走是“观察者”的传说神殿。往东走是我们伟大的市长英的公寓，这里是不对外公开的--擅闯者自重。
+		end scene
+		
+		scene three
+			#On his fifth visit, Mayor Ying grew frustrated at the lack of parking lots. This parking lot reflects Ying's frustration of the lack of parking lots. Ying would occasionally park in this parking lot on subsequent visits.
+			在他的第五次造访时，市长英因为找不到停车位而感到不快。后来他再次来访时，他会偶尔把车停在这个停车位。
+		end scene
+		
+		scene four
+			#I remember the long sentences I used to write. Ha! Fragmented.
+			我记得我曾经写下的长句子。哈！断断续续的。
+		end scene
+		
+		scene five
+			#A DANGEROUS SITUATION
+			危险的处境
+		end scene
+	end area
+	
+	
+# Area for TRAIN (it's actually CELL sorry)
+	area TRAIN
+		scene one
+#The Seeing One knows all and will lead one to enlightenment. The road to enlightenment is unlit by any torches.
+“观察者”知道一切，并会启迪我们。启迪之路是无法用任何火把点燃的。
+		end scene
+		scene two
+#Do not stray from the way of the Seeing One, not even for the treasures lying at the far corners of the maze.
+不要偏离“观察者”之路，就算为了在遥远的迷宫角落里的财宝也不要。
+		end scene
+		scene three
+#Move along.
+继续前进。
+		end scene
+		scene four
+#Do not anger the Chasers with violence.
+别激怒暴力的追踪者。
+		end scene
+	end area
+	
+	area WINDMILL
+		scene one
+#SCENIC LANDMARK: Partner Towers. Built some time ago, the Partner Towers overlook the distant mountains. The first tower was damaged a while ago and has since been repurposed. The second still stands to the east, reaching into the sky. Due to safety concerns, the path to the tower has been cut off until further notice.
+景观地标：情人塔。情人塔修建于很早之前。站在塔上可以眺望远山。第一座塔在不久前损坏了，然后被重新改造。第二座塔还在东边屹立不倒、直插云间。出于安全考虑，通往塔的道路被封锁了。什么时候重新开启还需要另行通知。
+		end scene
+		scene two
+#PUBLIC SAFETY NOTICE:^\nThis tower, while not damaged, has been said to have a dimensional rift at the top. Proceed with caution and an open mind.^\n      -- The MGMT
+公共安全须知：^\n这座塔，尽管完好无损，但是据说塔顶有空间裂缝。请对此保持谨慎与宽松的心态。^\n      --管理员
+		end scene
+	end area 
+end npc
+
+# dungeon statue (Dungeon statue)
+npc dungeon_statue
+	area BEDROOM
+		scene one
+#The statue does not look like it will be moving anytime soon.
+这座雕像看起来似乎马上就会移动似的。
+		end scene
+		scene two
+#The statue has moved.
+雕像移动了。
+		end scene
+	end area
+	
+	area REDCAVE
+		scene one
+#It looks like this statue is firmly in place.
+看上去这座雕像非常坚固。
+		end scene
+		scene two
+#The statue has moved.
+雕像移动了。
+		end scene
+	end area
+	
+	area CROWD
+		scene one
+#This statue does not seem to be movable.
+看上去这座雕像不可移动。
+		end scene
+		scene two
+#The statue has moved.
+雕像移动了。
+		end scene
+	end area
+end npc
+
+# APT splitboss
+npc splitboss
+		area APARTMENT
+		scene before_fight
+#Fire is beautiful, isn't it?  What a shame that the glow and glare of streetlights hides the fire of the stars.
+火焰很漂亮，是不是？路灯的光芒把星星的火焰盖过了，实在是太可惜。
+		end scene
+		scene after_fight
+#Okay, so stars aren't really made of fire.  ^Who gives a shit anyway?
+好吧，星星其实不是真的由火焰形成的。 ^谁会关心这个啊？
+		end scene
+	end area
+end npc
+
+npc cube_king
+	area SPACE
+	# kings are supposed to offer info on 
+		scene color
+			#How are you today? I'm the ruler of this partition and interpretation of space.
+			你今天怎么样呀？我是这个空间的统治者。
+
+			#You want to know why I'm the ruler of this place? I'll tell you, but it will take a while. Like, a long while. An obnoxiously long while.
+			你想知道我为什么是这儿的统治者吗？我会让你知道的，不过这还需要一点时间。需要很长一段时间。需要很漫长的一段时间。
+
+			#Like, quite a while. No really, I'm warning you! I tend to ramble. Maybe you'd be better off just scooping out the contents of that chest over there. Or heading off to the hotel in the distance. Don't know how that got there, I heard they have relatively cheap rates. Not that money matters here.
+			反正就是挺长的啦。我可先给你提个醒啊！我打算去散散步。你呢，可以去看看那边的箱子里都有些什么。或者去远处的酒店瞧瞧。我不知道那儿有什么，不过我听说那儿的东西还挺便宜的。在那儿不会有什么钱财的问题。
+
+			LOOP
+			#Why am I the ruler?^...I'm not sure why, but my friends around here saw it fit to put me in this position, because of the immediate state of this space. Maybe this is the case because cubes are best at sitting still on flat surfaces. As for why someone needs to sit up here - that's beyond me!
+			我为什么是这儿的统治者？^…我也不知道原因，但是我在这儿的朋友都觉得，基于这里的状态，由我来担任这个职位非常合适。这可能是因为方块比较适合一直坐在平台的表面上把。除了我之外，没人需要一直坐在这儿了！
+
+			#The others - my friends over there - have merits of their own. It's not like they couldn't sit up here in the future, they just can't do it now. Sometimes, we switch off who is the ruler, but every time, we always have to reinterpret this region of space! Perhaps Mr. or Ms. Pyramid comes up here because we decide to make the throne shaped in a way that best fits them, by re-imagining this world, so to speak. Does that sound silly? It might be. But that's how it is. It happens quite fast. Minutes, hours - not necessarily a long reign.
+			那些人--在那边的我的朋友们--都有各自的优点。他们说不定以后也有机会坐在这儿，只不过现在做不到而已。有时候，我们也会互相交换一下身份，但是每一次，我们都还是需要有人来诠释这个空间啊！也许金字塔先生或者夫人可以坐在我的位置上，因为我们打算为他们打造适合他们形状的王座。这听起来很傻吗？也许吧。但是事情就是如此。一切都发生得那样迅速。几分钟、几小时--统治永远都不是长久的。
+
+			#Though, when I am ruler, it feels slightly strange...I somewhat feel isolated, wanting to be avoidant of others...
+			尽管如此，当我作为统治者的时候，感觉还是有点怪怪的…我有种与世隔绝的感觉，觉得和别人都格格不入…
+
+			#...but isolation is not the right word, though it covers parts of the feeling. I'm not isolated, and I don't dislike the others. We consider ourselves all friends, but you know, no one really comes up here except to say a few words. So I have to think about things or I might go crazy! Maybe that's part of the isolation. 
+			…但是与世隔绝也不能正确去形容我的感受。这只能算是部分感受吧。我没有被孤立，我也不是不喜欢别人。我们都把彼此当朋友，但是你懂的，没人会专门跑来就为了和你随便聊几句。所以我不得不思考事情，否则我会发疯的！也许那也是与世隔离之感的一部分吧。
+
+			#Outside of those inane questions about *why* we're here occupying this space, I'm curious as to why we're even friends.
+			除了那些愚蠢的、关于*为什么*我们会在这儿占据这个空间的问题，我更好奇为什么我们是朋友。
+
+			#I like to think that whenever we're under the interpretations that I'm best to rule, that they give me comfort in being able to hold this position for as long as it takes to reach the next interpretation. You know, encouragement and the like, their physical presence, those are comforting.
+			我喜欢思考的是，不管是什么时候，大家都认为我是最好的统治者。而他们让我有充分的时间去适应这个角色。你知道的，这就是一种鼓励。这样的存在让我很是宽慰。
+
+			#I suppose that's enough to satisfy me, though it would be nice to have one or two of them try and understand how I feel about being a ruler. Not that I'm complaining about encouragement! But maybe then, we could have multiple rulers...what a thought! Maybe that implies that when I am not ruler, I must act the same way I sometimes wish they would...who knows if that can be done.
+			我觉得仅仅是这样就已经很让我满足了。虽然如果他们能有一两个人明白我作为一个统治者的感受会更好。我不是在抱怨这样的鼓励！但是也许我们会有不同的统治者呀…是吧！也许有一天我不是统治者了，那么我会去做我希望他们现在做到的事情…尽管我也不知道他们是不是会如我所愿。
+
+			#I've gone on too long. If you head off in the other direction, there's another similar region of space, though I think it smells a bit different. 
+			我已经走了很久了。如果你去另外一个方向，那边也有一个和这里类似的区域。不过那儿和这儿的感觉还是有些不同的。
+
+			#It was nice to meet you.
+			见到你我很高兴。
+
+			#Oh, you want to hear my story again?
+			噢，你还想再听一遍我的故事吗？
+
+			#Okay, sit tight.
+			好，请好好坐着。
+
+		end scene
+		
+		scene gray
+		#Hello there. I'm the ruler of this part of space.
+		你好呀，我是这里的统治者。
+
+		#What's that? You want to know why I'm here? Are you sure? It'll take me quite a few words to explain why!
+		什么？你想知道我为什么会在这儿？你确定吗？我会长话短说给你解释的！
+
+		#Well, if you insist. Though you might be better off just walking off to that hotel in the distance. Don't know why they went through with the construction of it. If I had any money to be taxed, I'd surely be complaining!
+		既然你这样坚持，那好吧。虽然你最好是先去那个远处的酒店。我都不知道他们为什么要把它修出来。如果任何人要让我交税，那我肯定怨声不断！
+
+		LOOP
+		#Well, even though I'm the ruler of this part of space, I am not really ruling over anyone.
+		好吧，虽然我是这儿的统治者，但是没有任何人让我统治。
+
+		#Those friends of mine - they're all rulers of their own parts of space. Ruling no one really, either - we're all alone in that respect. But we're not alone in that we talk to each other, and in other ways we are not alone, too. This is just one place in which I exist.
+		我的那些朋友们--他们都是各自区域的统治者。虽然也都没有实际统治着谁--我们都是孤独的。但是只要我们互相聊天，就不会感到孤独了。毕竟这是我唯一存在过的地方啊。
+		
+		#My friends and I - our parts of space have a lot of commonality to them in why they exist and how they're organized. Similar interests and desires, and the like. We like to talk a lot about how to rule, and so forth.
+		我的朋友和我--我们所在的区域在某些方面都有共通点，比如它们为什么会存在、它们是怎样被安排的。我们在利益和欲望上都是相同的。所以我们喜欢谈论如何去统治。
+
+		#But the tragic thing is that we rarely, if ever, get to meet eachother in the physical form. 
+		但是，其实我们根本没有从物质形态上见过彼此。
+
+		#So you're not actually talking to their physical forms, but a representation of them in some holographic form.
+		所以你也不是在和他们的意识形态对话，而是以全息的形态。
+
+		#I know, it's unfortunate. It's unfortunate because we share so much in common, but we can only help eachother as friends so much.
+		我知道，这样有些不幸。不幸的是，我们有太多的共同点。可是这样的我们只能彼此成为朋友呀。
+		
+		#There's just a small thing lacking when you can't have a one-on-one physical conversation all the time.
+		当你不能够一对一的实际交谈时，其实也只是欠缺了一小部分真实罢了。
+
+		#But I'm not complaining. It's better than nothing at all! I can't imagine what it would be like otherwise. Something terrible.
+		我不是在抱怨什么。可是这样聊胜于无啊！要是连一个说话的人都没有，我简直不敢想象那种情况。一定非常糟糕吧。
+
+		#It was nice talking at you, good luck with whatever you're up to.
+		能和你说这些真是太好了，祝你一切都顺利吧。
+
+		#You're still here? I can tell you everything again, if you'd like.
+		你还在这儿吗？如果你愿意，我可以从头到尾再和你说一遍。
+
+		end scene
+	end area
+end npc
+
+npc forest_npc
+	area FOREST
+		scene bunny
+#Crickson: Hey ya big bully!  I’m not afraid of you!
+克里克森：嘿呀，大恶霸！ 我可不怕你！
+#Crickson: Ya big lunkhead!  I won’t run away!  Not even if you try to slug me a good one!
+克里克森：你个大傻瓜！ 我才不会逃跑呢！ 就算你要揍我也不会！
+#Crickson: Yer just a big dumb broomy pants, that’s what you are!  You oughtta be ashamed of yourself!
+克里克森：你只不过是个穿着喇叭裤的大傻个！你应该以你自己为耻！
+		end scene
+		
+		scene thorax
+#Thorax: I am the thorax, I speak for the bees.\n^Their fate is uncertain, it’s not the bee’s knees!\n^Some colonies’ workers have all took to flight!\n^These colonies die then, it’s no pretty sight!
+胸腔：我是胸腔，我要为蜜蜂们发声。\n^它们的命运充满了不确定性，这不是它们想要的！\n^那些工蜂们不得不到处飞！\n^然后它们就这样白白死掉…这样的场景实在是太残酷了！
+
+#Thorax: Perhaps it’s a virus or new pesticide,\n^perhaps it’s the larva of foul phorid flies!\n^That’s making these honeybees all act so strange.\n^Whatever it is, it must certainly change!
+胸腔：也许这是病毒或是新型杀虫剂造成的，\n^也许这是那些臭苍蝇的幼虫造成的！\n^反正这个原因让这些蜜蜂的行为都变得很古怪。\n^不管原因是什么，这个状况必须被改变！
+
+#Thorax: Okay, so I don’t really know what’s the matter\n^I worry my efforts are nothing but chatter.\n^But how can I sit and do nothing to help?\n^So I’ll post it to Facebook and Twitter and Yelp! 
+胸腔：好吧，其实我也不清楚事情是如何\n^我也担心我所做的努力都是徒劳。\n^可是试问我怎么能冷眼旁观呢？\n^所以我一定会把这件事放到Facebook、Twitter还有Yelp上去！
+		end scene
+	end area
+end npc
+
+npc shopkeeper
+	area FIELDS
+		scene init
+#Buy my stuff
+买我的东西吧
+		end scene
+	end area
+end npc
+
+npc goldman
+	area FIELDS
+		scene outside
+TOP
+#What are you doing here, punk?  Get lost!  I caught it fair and square!  
+你在这儿干嘛，废材？ 滚开！ 我做的事情都是公平公正的！
+#I won’t let it go!  Not in a million years!
+我不会就这么罢休的! 永远都不会！
+		end scene
+		
+		scene inside
+#Oh, did you come here to terrorize me some more?
+哦，你来这里是为了再一次恐吓我吗？
+#You’re just siding with the cats because they are cute and furry.
+你支持那些猫咪只是因为它们可爱又毛绒绒。
+		end scene
+		
+		scene etc
+TOP
+#What are you doing here, punk?  Get lost!  I caught it fair and square!^  Wauugh!^  Is that--?^  ANOTHER CAT???^  WAUUGHHH!!! 
+你在这儿干嘛，废材？ 滚开！ 我做的事情都是公平公正的！^ 嗷呜！^ 是不是这样--？^ 再来一只猫？？？^ 嗷呜呜！！！
+
+#You... you cleaned up my house...  I’m touched!  Here, I want to give you my most beautiful possession! 
+你…你把我的房子打扫了… 我被感动了！ 来，我要把我最美丽的东西送给你！
+
+#Young opens and takes the box. Something is inside it!
+扬拿起了盒子。这里面有东西！
+
+#Icky: Oh.  Hey Miao.^\n\n苗：I’m so glad you’re safe!^\n\nIcky: Uh... thanks for the hand, Young.
+黏黏：噢。嘿，苗。^\n\n苗：真高兴你安然无恙！^\n\n黏黏：啊…谢谢你的帮忙，扬。
+LOOP
+#Icky: To be honest, I kind of like sitting in boxes.
+黏黏：说实话，我还蛮喜欢坐在盒子里的。
+		end scene
+	end area
+end npc
+
+npc miao
+	area FIELDS
+	
+		scene init
+#Oh!!  You are Young, The Chosen One!!!  Omigosh, what an honor!  My name is Miao Xiao Tuan Er, Chosen One-in-training!
+噢！！ 你是扬，那个天选之人啊！！！ 天啦噜，真是荣幸啊！ 我叫苗小团儿，正在接受培训的天选之人！
+
+#Could I follow you around for a bit to watch a Chosen One in action? 
+我能跟着你一小会，看看天选之人是怎样做事的吗？
+
+LOOP
+#Hello again, Young!  Can I shadow you today? 
+你好啊，扬！ 我今天可以跟着你吗？
+		end scene
+		
+		scene randoms
+# 0. after talk to shopkeep
+#Miao: Hey, Young... have you ever stolen anything?
+苗：嘿，扬… 你偷过东西吗？
+
+# 1. AFter talk to mitra
+#Miao: I like Mitra... and isn’t Wares a handsome bike?
+苗：我喜欢麦卓… 东西是一辆很帅的自行车吧？
+
+# 2. Nexus pad
+#Miao: What’s that cool stone thing, Young?  Does it make you go back in time?!
+苗：那块酷酷的石头是什么，扬？ 它可以让你及时回去吗？！
+
+# 3. Random if Icky not saved
+#Miao: I’m starting to get worried about Icky... Young, have you seen a bigger cat around recently? Icky last said he was going to walk around the small forest to the east.
+苗：我有点担心黏黏…扬，你最近在这周围见到过一只大猫咪吗？黏黏最后一次见我的时候告诉我说他要去东边的森林转转。
+
+# 4. leave map
+#Miao: Icky said I shouldn’t go where it's unsafe. I’ll see you later, Young.
+苗：黏黏说我不应该去危险的地方。所以回见啦，扬。
+
+# 5, 6, 7 - only after you've seen 0, 1, 2
+#Miao: Have you ever sat in a bunch of grocery bags?
+苗：你曾经在购物袋里待过吗？
+#Miao: Hey Young, do you think it’s wrong to do catnip?
+苗：嘿，扬。你觉得用猫薄荷是种错误的行为吗？
+#Miao: I bet it must have taken a lot of work to become The Chosen One, huh, Young?
+苗：我敢打赌，要成为天选之人一定要花很多功夫的对吧，扬？
+		end scene
+# musing after you save icky	
+		scene philosophy 
+#That scary situation with Icky got me thinking...  What do you think happens after we die?  How could any of us fulfill our full purpose in the span of one life?  
+我不禁在想黏黏会遇到怎样可怕的情况… 你觉得我们死后会发生什么事？ 你觉得我们如何能在短短一生之内完成所有想做的事情？
+
+#Maybe we are reincarnated again and again until we fulfill our destiny.  Or would that make things too easy?
+也许我们会不断重生，直至我们完成所有目标。 这样会不会更容易一些？
+
+#And then what is our reward for completing our journey?  Do we just fade away?
+可是当我们走完旅程之后，有什么样的奖励等着我们呢？ 难道我们只是消失无踪吗？
+LOOP
+#Hmm...
+唔…
+		end scene
+# icky talking after yoh save icky
+		scene icky
+#Oh.  Hi, Young.  
+噢，你好啊，扬。
+#My name’s not really Icky.  It’s Ichabod.
+其实我并不叫黏黏。 我叫伊卡博德。
+#I hope Miao Xiao Tuan Er hasn’t been too much trouble.
+我希望苗小团儿没给你造成太多麻烦。
+#See you later, Young.
+回见，扬。
+		end scene
+	end area
+end npc
+
+npc generic_npc
+
+	area DEBUG
+		scene melos
+#Oh howdy, how is it going? You found me! I'm going to stay here, though. It's cold outside.
+你好，一切都还好吗？你找到我了！虽然我准备就待在这儿的。外面实在太冷了。
+#You can blame me for all of those awful rooms! I made them with the DAME map editor.
+你可以因为这些可怕的房间而责怪我！我是用DAME地图编辑器把它们做出来的。
+#I made this game with FlashDevelop IDE and the Flixel AS3 framework!
+这游戏是我用FlashDevelop IDE和Flixel AS3做出来的！
+#Oh yeah, and I made the music using the REAPER DAW. And sometimes Audacity.
+噢，对了，游戏的音乐是我用REAPER DAW做的。有时候我还用Audacity。
+#I actually get my nutrition from the radiation from all of these computers... ^what do you mean that's not biologically accurate?
+我是从所有的电脑辐射中获取营养的…^你说的这不符合生物学准确性是什么意思？
+#Hi mom! ^And dad!
+嗨老妈！^还有老爸！
+#Want to know how to finish the game in 20 minutes?
+你想知道如何在20分钟之内通关这个游戏吗？
+#Ha! Like I'd tell you!
+哈！你以为我会告诉你吗！
+#(...maybe if you ask me nicely...)
+（…不过如果你能温柔一点问我的话…）
+		end scene
+		scene marina
+#Woah hey!
+哇喔！嘿！
+#I wrote a ton of dialogue for this game!^ (...but not this dialogue. Melos is doing this.)
+这个游戏里好多好多对话都是我写的！^ （…不过这句对话不是。现在是Melos在写哦。）
+#I used Adobe Photoshop CS5 , Graphics Gale Free Edition and Windows 7 Snipping Tool to do the art!
+我用了Adobe Photoshop CS5、Graphics Gale Free Edition以及Windows 7的截图工具来制作画面！
+		end scene
+	end area
+# both redsea done in Redsea_NPC.as
+	area REDSEA
+		scene first
+#The humidity here is good for your skin, but bad for your hair.
+这里的湿度对你的皮肤很有好处，不过却不利于你的头发。
+
+#I like standing here.  These days, people spend the whole summer rushing back and forth between sweltering heat and freezing cold AC.  Those quick temperature changes weaken your bones.
+我喜欢站在这儿。 这些日子以来，人们在酷热和极寒之间反复折腾。 气温的急剧变化对你的骨骼可不太好。
+
+#It’s like that rotten habit of chewing your ice cubes.  My mother chewed her ice cubes into her late 20s.  Now she’s got hairline cracks all over her molars.
+这就像是咀嚼冰块的坏习惯一样。 我的母亲咀嚼冰块直至她二十多岁。 现在她的发际线已经突破天际。
+		end scene
+
+		scene second
+#Make sure you change out of those shoes and stuff them with newspapers to dry them out.  Wouldn’t want to create a breeding ground for bacteria.
+你得确保换掉蝎子，然后把它们用报纸包住弄干。 你也不想制造出一个细菌滋生地吧。
+
+#Why do buffets only ever have RED jello cubes?  It’s like they want us to get cancer.
+为什么要弄出一个只有红色果冻块儿的自助餐呢？ 仿佛他们想让我们得癌症一样。
+		end scene	
+
+		scene bomb
+#Get away from me.
+离我远点儿。
+#I’m serious... leave me alone now.
+我认真的… 别靠近我。
+		end scene
+
+	end area
+    area BLUE
+		scene one
+#I don’t need your pity, Young.
+我不需要你的同情，扬。
+
+#Right, just go on living in your happy little world, "Chosen One"...
+嗯，你就这样在你的快乐小世界中一直生活下去吧，\"天选之人\"…
+
+#You know, Young, friendship is just a trick people play on themselves.  We’re all assholes, and in the end, we’re all alone.  
+你知道的，扬，友情只是人们相互之间的小把戏罢了。 我们都是混蛋，人生之路走到最后，我们都只是孤身一人。
+
+#Hah, I knew you hated me, Young.
+哈，我知道你讨厌我，扬。
+
+#I’m doing fine.
+我做得很好。
+
+#Of course you don’t care, no one does.
+你当然不关心，也没人关心。
+		end scene
+	end area
+
+	area HOTEL
+		scene one
+#I know cities can be dirty and crowded and everything, but I like to come out here and look out over all the lights.
+我知道城市可以很脏乱差，但是我喜欢看看外面的万家灯火。
+
+#It's beautiful in its own way.  It’s not nearly as infinite as the stars, but there is something about its humanness that adds a layer of wonderful complexity.
+它以自己独特的方式美丽着。 虽然不像星星那样无穷无尽，但是却又在人情味上增添了一些美妙的复杂性。
+
+#Behind every light is a person with hopes and fears and secrets... looking out is both terrifyingly lonely and fiercely personal.
+每盏灯后，都有一个怀揣着希望、恐惧和秘密的人… 往外看是一种充满恐惧和孤独的个人行为。
+
+#I think I love every person behind every window.  I love you, people, for being my stars.  I love you no matter how fucked up your life is or how far you think you’ve fallen.  You are lovely for tonight...
+我觉得自己是爱着每一个窗户后面的人的。 我爱你、爱着人们，你们都是我的星星。 不管你的人生轨迹是怎样，不管你认为自己有多么堕落，我都爱着你。 今夜你最可爱…
+
+#I’m sorry, I’m babbling.  Thanks for listening.
+抱歉，我又在胡说八道了。 不过谢谢你的聆听。
+		end scene
+	end area
+	
+	area REDCAVE
+		scene easter_egg
+#Heeyyyy, mannn...take a load off, stay a whilleee, eh?
+嘿——，伙计…卸下行囊，待一小会儿可好？
+		end scene
+	end area
+	
+	area APARTMENT
+		scene easter_egg
+#Ah! You found me!
+啊！你找到我了！
+		end scene
+	end area
+	
+# quest_normal and quest_event are the dialogue quest (pseudo-trading) people.
+# quest_normal is what they say normally, quest_event is what they say when it's their turn for a clue.
+	area CLIFF
+	
+		scene quest_normal
+#Golem: Did you get hit by a boulder on your way up?  Sometimes I throw boulders when I’m angry.  I’m sorry if I hit you.
+石人：你来的路上有没有被一块大石头击中？ 有时当我生气了，我就会扔石头。 如果你被击中了，那么我得和你道歉。
+
+#Golem: My mother always said that if I kept doing it, I’d run out of mountain to throw.  Back before she was fracked.
+石人：我母亲总说，如果我再这样继续下去，我最好离开山里再丢。 只要在她粉碎之前回来就好。
+		end scene
+		
+		scene second
+#Golem: When you’re a rock, you see many generations of people come and go.  You become ancient and wiser than the wisest among men.
+石人：当你是一块石头，你可以目睹人类很多代的更迭。 你可以比最聪明的人类更加智慧。
+
+#Golem: At least, that’s the idea.  I broke my binoculars a while back so I haven’t been able to tell what’s going on.
+石人：至少那确实是个办法。 我前不久把我的望远镜弄坏了，所以我没办法给你说到底发生了什么事。
+
+#Golem: Actually, I don’t miss watching people much, it’s a bore.
+石人：其实观察人类一点也不好玩，我觉得很无聊。
+
+		end scene
+		
+		scene quest_event
+#Golem: Oh, yes, I met someone who was little lost...they told me they were going off to look around the beach.
+石人：噢，是的，我遇见过似乎迷路的人…他们告诉我，他们想去看看海滩。
+		end scene
+	end area
+	
+	
+	area BEACH
+		scene quest_normal
+#I’m not a lobster, I’m a langostino.  The name’s Hews.
+我不是一只龙虾，我是海螯虾。 我的名字是砍砍。
+LOOP
+#Hews: You know what the best part of the ocean is?  Being able to see the horizon.
+砍砍：你知道海洋最棒的地方在哪里吗？ 是可以看到地平线。
+
+#Hews: The ocean is like a salty taste of infinity.
+砍砍：海洋就像是充满咸味的无穷大符号。
+
+#Hews: A crowded beach is robbed of its grace.
+砍砍：可是拥挤的沙滩却剥夺了它的优雅。
+		end scene
+		
+		scene second
+#Hews: Have you heard of the mantis shrimp?  It has 16 photoreceptors that allow it to perceive ultraviolet light.  Can you imagine seeing a wider range of colors?
+砍砍：你听说过虾蛄吗？ 它有16个光感受器可以用来感知紫外线。 你能想象看到更加广泛的色彩是什么样的感受吗？
+
+#Hews: Maybe it would be beautiful.  Then again, we’ve found plenty of ways to hate each other with just the colors we have.
+砍砍：也许会很漂亮。 然后，我们就会因为各自看到的颜色而用各种理由讨厌起他人来。
+		end scene
+		
+		scene quest_event
+#Hews: You're looking for someone, huh? I remember I was sitting here when a few clouds passed by the sun. While the sun was occluded, someone walked up to me and asked where something was. I don't remember what it was, but the person ran off, saying they were heading to the forest.
+砍砍：你在找人对吗？我记得当云朵飘过太阳的时候我就坐在这儿了。当太阳被遮挡住，有人向我走来，向我询问某件东西在哪里。我不记得他们问的是什么了，但是他们离开了，说准备前往森林。
+		end scene
+	end area
+	
+	area FOREST
+		scene quest_normal	
+#npc james
+#James: Berries are a good kind of food.  I like berries.
+詹姆斯：浆果是很棒的一类食物。 我喜欢浆果。
+
+#James: Please make sure not to defecate on the berries.
+詹姆斯：请一定不要在浆果上便便。
+
+#James: So far I have had sexual intercourse 18 times this season.  Also, I have eaten 389 pawfuls of berries.
+詹姆斯：这个季节里我已经啪啪啪过18次了。 而且，我已经吃了389串浆果了。
+
+#James: Do you have any berries for James?
+詹姆斯：你给詹姆斯带浆果了吗？
+		end scene
+		
+		scene second
+# -- Spanish translator's note: Literal meaning changed in order to perform a language trick
+#James: I wrote a poem:\n^I like to eat berries\n^They make me merry\n^How much do I like berries?\n^I would have to say very!
+詹姆斯：我写了一首诗：\n^我喜欢吃浆果\n^它们让我快乐\n^你要问我喜欢有多深？\n^月亮代表我的心！
+
+#James: Do you like blueberries or raspberries more?
+詹姆斯：你喜欢蓝莓多一点还是树莓多一点？
+
+#James: Do you have any berries for James?
+詹姆斯：你给詹姆斯带浆果了吗？
+		end scene
+		
+		scene quest_event
+#James: Someone came by. They did not want berries. Went to southeast part of lake to the west.
+詹姆斯：有人来过。他们不是为了浆果来的。他们去了西边湖泊的东南方向。
+		end scene
+		
+	end area
+#npc rank
+#npc olive
+	area FIELDS
+		scene easter_egg
+#Olive: Hi, I'm Olive the rabbit.
+奥利弗：嗨，我是兔子奥利弗。
+
+#Olive: I have so much cereal left to eat! I love cereal.
+奥利弗：我还有好多谷物没吃呢！我超爱谷物的。
+
+#Olive: The box is so big. It never ends!
+奥利弗：这个盒子太大了。感觉永远没有尽头！
+
+#Olive: Neverending cereal!
+奥利弗：永远吃不完的谷物！
+
+#Olive: Hmmm...maybe that's not such a bad thing.
+奥利弗：唔…也许这样也不错。
+		end scene
+		
+		scene bush
+#Rank: Eheheh, silly Young! A broom’s no tool for cutting bushes!
+兰克：哦呵呵，愚蠢的扬！扫帚可不是用来砍灌木的工具！
+		end scene
+		scene quest_normal
+#Rank: I cut down the bushes for a living.  Sometimes when you cut the bushes you find gold!  Eheheh!
+兰克：我砍掉这些灌木是为了生存。 有时候砍灌木的时候你能找到金子！ 哦呵呵！
+
+#Rank: The economy has been really struggling under this bush...
+兰克：这里的经济状况不太好…
+
+#Rank: Sometimes it’s tough to support the wife and kids on bush cutting--we don’t always have enough to eat... but we’ve always got a roaring fireplace!  Eheheh!
+兰克：有时候光靠砍掉灌木真的很难养活妻子和孩子——我们很多时候连足够的食物都没有…不过我们倒是从来不缺可以点火的地方！ 哦呵呵呵！
+		end scene
+		scene quest_event
+#Rank: Eh? Yes! Someone came by here. Said they were going to an underground labyrinth...I bet they've got a lot of bushes there, eh Young? Eheheh!
+兰克：呃？对！有人来过。他们说要去什么地底迷宫…我敢打赌，他们在那儿能遇到好多灌木，你说是吧，扬？哦呵呵呵！
+		end scene
+		
+		scene marvin
+#Marvin: Oh hey, how are you feeling?
+马文：哦，嘿，感觉怎样？
+#Marvin: Where is Justin?
+马文：贾斯汀在哪儿？
+# -- Chinese translator's note: Literal meaning changed
+#Marvin: There's no bottle rockets around...
+马文：这附近并没有六月天乐队啊…
+		end scene
+		
+		scene chikapu
+#Chika Chi!
+奇卡奇！
+#Chika Chika!!
+奇卡 奇卡！
+#CHIIIII^\nKAAAA^\nPUUUUUUUUUU!!!!
+奇——^\n卡——^\n噗————————！！！
+		end scene
+		
+		scene hamster
+#Bob: Bob the Hamster likes to refer to himself in the third person.
+鲍勃：仓鼠鲍勃喜欢以第三人称来形容自己。
+
+#Bob: Apostrophes are the root of all e'vil.
+鲍勃：省略符号是一切不好事情的根源。
+
+#Bob: quiet! I am busy exuding an aura of hamstery ambiance.
+鲍勃：安静！我忙着散发仓鼠光环呢！
+
+#Bob: ... I suppose you only get better by doing... But... if you do something wrong, are you just getting better at doing it wrong?
+鲍勃：……我想你最好是这么做…但是… 如果你做错了，你会因为做错而把事情变得更好吗？
+
+#Bob: A real man never cries... well, maybe he lets a single tear slide back from the corner of his eye across his sun-hardened face as he rides his bad, bad, Harley across the wind-swept Mohave desert wearing no helmet or goggles. But he never cries.
+鲍勃：真男人从不哭泣…好吧，也许他只是让一滴眼泪在眼眶里来回打转。哈利穿过了刮着大风的莫哈维沙漠，而且没戴头盔和护目镜。可是他从来没流过泪。
+
+#Bob: This game was created by an infinite number of monkeys working on an infinite number of typewriters.
+鲍勃：这个游戏是由为无数多的打字员工作的无数多的猴子们设计的。
+
+#Bob: I miss James...
+鲍勃：我想念詹姆斯…
+		end scene
+		
+		scene electric
+#Kuribu: Curry is yellow and spicy!
+基路伯：咖喱又黄又辣！
+
+#Kuribu: For the clever opponent, injure increase!
+基路伯：对聪明的对手使用，伤害将增加！
+
+#Kuribu: You got the experience of 2!
+基路伯：你获得2点经验！
+
+#Kuribu: I tell you my phone number!  0*1-51*7-*4386
+基路伯：听着，我的电话号码是0*1-51*7-*4386
+		end scene
+		
+	end area
+	
+	
+	area TRAIN
+		scene quest_normal
+#What AM I doing here? Good question! I just stumbled upon here. I'm in hiding. It's safe here, if you don't venture too far out and let those guys get you.
+我在这儿干嘛？问得好！我只是偶然在这儿的。我正在忙着躲藏呢，这儿很安全，只要你不要离开太远，让那些家伙找到你。
+
+#It looks like I'm relatively fortunate. All these dead people strewn all over the place - how did they die? It's a little fascinating, to try and think of how it happened. Were they attacked by the monsters? Tripped and fell onto the spikes?
+似乎我还是比较幸运的。这些死去之人的躯体遍布此地——他们是怎么死的？实在让人太想弄明白这件事是怎样发生的。他们是被什么怪兽攻击了吗？所以被推倒，跌落在那些尖刺上？
+
+#It is a a bit grim. I hope it doesn't happen to me. Physical pain is a terrible prospect.
+这样真是有些糟糕。我希望这种事情不要发生在我身上。身体上的疼痛实在是太可怕了。
+
+		end scene
+		scene quest_event
+#Oh...now that I think about it, a person walked by here a while ago. Said they were looking for something...even looked a bit like you! I don't remember when, sorry. It's hard to tell the time in here. But they said they were going to head off to a nearby town.
+噢…现在我在想啊，方才有人从这儿路过，说他们在寻找什么东西…他们看起来和你有点像呢！抱歉，我不记得是什么时候的事儿了。在这里真的很难有时间概念。但是他们说准备去附近的小镇上。
+		end scene
+	end area
+	
+	area SUBURB
+		scene quest_normal
+#Hello.
+你好。
+
+#Are you looking for something?
+你在找东西吗？
+
+#What are you looking at?
+你在看什么？
+
+#No, I'm not a citizen of this town. What's weird is you can see and talk to me, but I can't interact with any of them. There are all of these killers running around, and no one seems to notice. It is strange. 
+不，我不是这镇上的居民。你能看见我并且和我说话可真是件诡异的事情啊，因为我完全无法和其他人互动。这样的杀手在这儿还有很多，似乎都没被人察觉呢。真是奇怪。
+
+		end scene
+		scene quest_event
+#Yes. I observed a person walk by. They were looking for something. I don't know where their 'something' could be. The person went off in a hurry. Said they needed to head to an alternate area of space. Sounds fancy.
+是的，我看到有人路过。他们在找什么东西。我不知道那件“东西”在哪儿能找到。而他们匆匆离开了，说是要去太空的交替区，这听起来好棒啊。
+		end scene
+	end area
+	
+	area SPACE
+		scene quest_normal
+#WHOA WHOA WHOA - - - WHO ARE YOU ? ? ? 
+哇啊 哇啊 哇啊————你、是、谁？？？
+
+#I AM A DRIFTER . . . THIS IS ONE OF THE MORE POPULAR PIT STOPS ALONG THE JOURNEY FROM A TO B .
+我是一名流浪者…这是从A地到B地的著名的旅途休息站之一。
+
+#WHAT IS 'A' ? ? ? IT'S MY HOME TOWN . . . I AM VISITING AN OLD FRIEND IN B . . . IT IS A LONG JOURNEY . . . BUT I MAKE SACRIFICES . . . DON'T YOU ? ? ? MAKES LIFE MORE EXCITING ! ! !
+什么是“A”？？？这是我的故乡…而我要去B看望一位老朋友…旅途很是漫长…但是我已经做好牺牲的准备了…你呢？？？让生活充满挑战与刺激吧！！！
+		end scene
+		scene quest_event
+#OHH - - - LOOKING FOR ANOTHER HUMAN - - - I SEE . ^ LET ME ACCESS MY MEMORY . . . READ ( 0X0C00400 , STDOUT , 100 ) ; \n . . . . . . \n . . . . . . \n A HA . . . \n THE PERSON HAD A FLASH OF INSIGHT AND SAID THEY WERE HEADING OFF TO A SHED IN SOME WELL-KEPT FIELD. \n NOW THAT I THINK ABOUT IT . . . YOU LOOK SIMILAR TO THEM ! ! ! ARE YOU SURE IT WASN'T YOU ? ?  HUH ? MM ?
+噢——在找另一个人类——我知道了。^让我读取一下内存…读取(0X0C00400 , STDOUT , 100 )；\n………………\n………………\n啊、哈…\n 那个人有闪电般敏锐的洞察力，他们说要去一个维护得很好的旷野里的小屋。\n现在我在想啊…你长得真像他们呢！！！你真的不是他们本人吗？？哈？嗯？
+		end scene
+	end area
+	
+	area GO
+		scene quest_normal
+#You actually were...uh, ah. Well done.
+你真的是…啊，呃。很棒。
+LOOP
+#The shiny rock reflects only a bit of the light from the room. There is writing etched into it: \"Quickly, before I have to leave again (It is getting very light in here, this always happens) - the northwest part of the blue forest - I saw another temple entrance just to the north, past those trees - if only I could switch things at will to get through there...maybe I'll do this the next time I revisit this world.\"
+发光的石头反射出房间里的一点点光芒。石头上蚀刻着：\"快点，在我再次离开之前（这里将变得非常明亮，这样的事情总是不断发生着）——蓝色森林的西北部——我看见另一座神殿的入口，入口就在穿过那些树木的北边——要是我能有转换事物的能力该有多好，我就能到达那里…也许下一次当我重新造访这个世界的时候可以一试。\"
+		end scene
+		scene quest_event
+#The shiny rock reflects only a bit of the light from the room. There is writing etched into it: \"Quickly, before I have to leave again (It is getting very light in here, this always happens) - the northwest part of the blue forest - I saw another temple entrance just to the north, past those trees - if only I could switch things at will to get through there...maybe I'll do this the next time I revisit this world.\"
+发光的石头反射出房间里的一点点光芒。石头上蚀刻着：\"快点，在我再次离开之前（这里将变得非常明亮，这样的事情总是不断发生着）——蓝色森林的西北部——我看见另一座神殿的入口，入口就在穿过那些树木的北边——要是我能有转换事物的能力该有多好，我就能到达那里…也许下一次当我重新造访这个世界的时候可以一试。\"
+		end scene
+	end area
+end npc
+npc geoms
+	area SPACE
+		scene gray1
+#HELLO. HAVE YOU MET cube YET?
+你好呀，你见过方块了吗？
+
+#cube IS A VERY GOOD RULER OF THIS PORTION OF SPACE. US OTHER RULERS DO OUR BEST IN OUR SPACES AS WELL.
+方块是空间里很棒的统治者。当然，这儿的其他统治者也都在尽力做到最好。
+		end scene
+		
+		scene gray2
+#WHAT DO YOU THINK OF THIS CHUNK OF SPACE? IT IS A NICE WAYPOINT, NO?
+你觉得这块空间如何？还算漂亮吧，不是吗？
+
+#AN INTERSECTION OF WORLDS!
+世界的交汇点！
+		end scene
+		scene gray3
+#NONE OF US GRAY PYRAMIDS ARE ACTUALLY HERE. WE USE SPECIAL DEVICES THAT LET US PROJECT OURSELVES HERE.
+我们这里没有灰色金字塔。我们使用了特殊的设备让我们能投射到这儿。
+
+#WHY DO WE DO THAT? BECAUSE WE WANT TO TALK TO OUR FRIEND cube AND KEEP cube COMPANY.
+我们为什么要那么做？因为我们想要和方块朋友们说话，让所有方块联合起来。
+		end scene
+		
+		
+		scene graydead
+*bzrrrrt* 
+		end scene
+		
+		scene grayspin
+#...IS THE HOLOGRAM DEVICE WORKING CORRECTLY?
+…这个全息投影设备运作正常吗？
+#NO?^...^DAMN!
+不正常？^…^靠！
+		end scene
+		
+		
+		scene color1
+#Have you met CUBE? It does such cool things! I heard once it stood on an edge for nearly twelve seconds. Oh man! Do you know what that means for the League of Edge Standers? No? Well, a lot!
+你见过方块了吗？它做的事情都好酷哦！我听说有一次它站在一个悬崖边上将近12秒这么多。天呐！你知道那对于悬崖挺立者联盟来说意味着什么吗？你不知道？好吧，意味可大了！
+		end scene
+		
+		scene color2
+#CUBE does a lot of interesting work!
+方块做了许多有趣的事情！
+
+#Did you hear? Apparently, it will be my turn to rule soon! In just a few minutes, I believe.
+你听到了吗？很明显，马上就轮到我来统治了！我想，再过几分钟就好。
+		end scene
+		
+		scene color3
+#I'm from Sugar Loaf, in transit to Taipei. Why am I here? Oh, I stopped by to say hi to CUBE!
+我来自塔糖，要被运送到台北。你问我为什么会在这儿？噢，我只是想和方块打声招呼！
+
+#Don't look so down! This place is just an odd representation so as to not shock all of the visitors. It's mostly harmless, as far as we can tell.
+别这么沮丧啊！这个地方是有点奇怪，所以才没能打动所有的访客吧。可是我们只能给你说，这个地方是全无恶意的。
+		end scene
+		
+		scene colordead
+#(...is it taking a nap?)
+（…它在小憩吗？）
+		end scene
+	end area
+end npc
+
+npc redboss
+	area REDCAVE
+		scene before_fight
+#EACH GENERATION IS BORN FROM PAIN TO DIE IN PAIN.  WE WILL NOT SUFFER TO REPRODUCE THE CYCLE.  WE WILL NOT GO OUTSIDE.
+我们都是从痛苦中出生，又在痛苦中死去。 我们经历着如此的循环。 永远无法逃离。
+		end scene
+		scene after_fight
+#IS THIS YOUR PUNISHMENT FOR OUR REBELLION?
+这就是你对于反抗者的惩罚吗？
+		end scene
+	end area
+end npc
+
+npc circus_folks
+	area CIRCUS
+		scene before_fight
+#Why did you deprive the Seeing One of his sacrifices?  Why did you steal from us our salvation?
+你为什么不让“观察者”牺牲？ 你为什么不让我们得到救赎？
+		end scene
+		scene after_fight
+#...We have failed to make you pay for your interference.  And yet... you have given us back our chance to be free.  Thank you, Young.  May the Seeing One look upon you in favor once more.  
+…我们没能让你为你对我们造成的干扰而付出代价。 然而…你却回报给我们以自由。 谢谢你，扬。 愿“观察者”永远庇佑你。
+		end scene
+	end area
+end npc
+
+npc wallboss
+	area CROWD
+		scene before_fight
+#So good to see you, Yang.  Been too long.  Still playing those nintendos, I see?
+见到你正好啊，扬。 好久没见了。 你现在还在玩任地狱的游戏吗？
+		end scene
+		scene after_fight
+#Jesus, Yon, when are you just going to grow up?  You know, you're going to have to learn to deal with people sooner or later.
+天啊，扬，你什么时候长大的？ 你知道的，你迟早得学会如何他人相处。
+		end scene
+	end area
+end npc
+
+npc eyeboss
+	area HOTEL
+		scene before_fight
+#We have all the finest amenities here.  How do you like the Pool?
+我们这儿有所有最好的便利设施。 你觉得这个水池怎么样？
+		end scene
+		scene middle_fight
+#How about our state-of-the-art fitness center?
+我们最先进的健身中心你觉得如何？
+		end scene
+		scene after_fight
+#We hope you enjoyed your stay!
+希望你在这儿度过开心的时光！
+		end scene
+	end area
+end npc
+
+npc suburb_walker
+	area SUBURB
+		scene words_adult
+#Today is a nice day.
+今天是美好的一天。
+
+#Thanks for scratching that itch on my neck - I can't seem to reach it.
+谢谢你帮我挠背上的痒痒——我根本碰不到那儿。
+
+#I've heard the eggs at the local diner are quite good. I have a coupon for them, too.
+我听说当地餐馆做的蛋挺好吃的。我有优惠券哦。
+
+#Did you see the car accident today? So horrible! He was texting. Such a shame, so young!
+你目睹了今天的车祸没？太可怕了！那人正发着信息呢。太可怜了，他还那么年轻！
+
+#My son did not make the junior varsity team. Such a disappointment. We invested so much in his sports career.
+我儿子没能成功加入初中校队里。实在是太可惜了。我们为他的运动生涯已经投入了太多心血。
+
+#Thanksgiving is today. I am thankful for a lot of things. Can't wait for tomorrow's early morning sales. Gonna get a lot of bargains.
+今天是感恩节。我要感谢的事情有许多。我已经等不及要参加明天早上的甩卖了。我要交易好多东西。
+
+#Ah, I think I might be late for work.
+啊，我觉得我上班要迟到了。
+
+#I am in a bit of a rush to get home, I need to tidy up before the in-laws come over.
+我急着回家呢，在亲家上门之前我得赶紧收拾收拾。
+
+#We're having a garage sale!
+走过路过不要错过我们的大甩卖！
+
+#Welcome!
+欢迎大家来看看！
+		end scene
+		
+		scene words_teen
+#I didn't see the latest movie.
+我没有去看最新的电影。
+		end scene
+		
+		scene words_kid
+#I never gotta see the new cartoon!
+我绝对不会去看新的卡通片！
+		end scene
+		
+		scene family
+# inside of a house, parent (insightful kid) - 73
+#Welcome to our house, stranger! You look familiar. This is a peaceful town. Pretty quiet, not many visitors.
+欢迎来到我们的家，陌生人！你看起来很眼熟啊。这是个和平的小镇。非常宁静，很少有访客到来。
+
+#inside of house, younger kid
+#Do you like Davement? My brother Dave showed me this really cool song by them!
+你喜欢戴夫状态吗？我的兄弟戴夫给我听了这首他写的超酷的曲子！
+		end scene
+		
+		scene older_kid
+# inside of a house, olderkid
+#My friends like to listen to that 'None Surprises' song by 'Rayhead' and complain about this place. Sure, it's a bit of a bubble, but hell, at least show some gratitude! Or do something about it! They're all just...oh, sorry. I tend to do that sometimes..
+我的朋友喜欢听“雷黑德”写的“毫无惊喜”的曲子，然后抱怨着这个地方。是啊，这里是有些缺点，可是，至少你得心存感激啊！或者至少为这个地方做点什么吧！那些人简直是…噢，抱歉。有时候我就想做点什么…
+
+#I guess I'll just go write in my blog.
+我觉得我得去我的博客上写点什么。
+
+#You sure look like you're in a daze.
+你看起来很茫然。
+
+#I have trouble hearing my thoughts with sports and the like playing on the TV, but my parents like it.
+我在电视上播放的体育新闻里根本听不到和我观点相同的看法，不过我的爸妈就是很喜欢看。
+		end scene
+		
+#inside of hanged man house 74
+		scene hanged
+#A note on the corpse: \"Placing myself in danger no more.\"
+尸体上有行字：\"将自己置身危险之中。\"
+		end scene
+		
+		scene festive
+#Inside of another house, (festival people) - 75
+#Oh, is there something going on outside? A festival? A parade?
+噢，外面发生什么事了吗？在庆祝节日还是举办庆典？
+
+#There seems to be quite the commotion outside! Have you looked out the window recently? I wonder what it could be.
+外面好像有骚动！你最近往窗外看了吗？我好想知道到底是什么情况。
+		end scene
+#78 
+		scene paranoid
+#My house has a lot of windows. I don't like windows. It's as if someone is always looking in. And you know there HAS to be something going on outside there. It can't just be that silent all the time, so silent and calm - it's disturbing to me.
+我的房子有许多窗户。我不喜欢窗户。因为总感觉有人在往里看。而且你知道的，外面总是在不停发生着各种事情。我无法总是那么安静——因为外面对我有干扰。
+
+#Murderers? What? Outside? What are you talking about? Are you kidding me? There haven't been any murders in this town before, but still...you're starting to worry me...maybe you should just leave.
+杀人犯？什么？外面？你在说什么啊？你在开玩笑吧？这个镇上从来就没出现过谋杀案，但是…你这样一说还真把我吓到了…也许你该离开了。
+
+#Please get out.
+请出去。
+		end scene
+# 76
+		scene dead 
+#The body of this woman has been beaten to death by a blunt weapon.
+从尸体上看来，这名女性是被人用钝器殴打致死的。
+
+# --> Spanish translator's note: if a pun were intended here, no way has been found in order to emulate the relation of both expressions \"blunt weapon\" and \"to put it bluntly\" in Spanish since they share completely different words in all their sayings.
+#The man, to put it bluntly, well...
+伙计，坦白讲，好吧…
+		end scene
+		
+	end area
+end npc
+
+npc suburb_blocker
+	area SUBURB
+		scene one
+#Oh, it's you! You look familiar...I can't move until you keep killing more of these townsfolk, remember? Come back in a bit.
+噢，是你！你看起来好眼熟…在你杀死更多居民之前我是不能动的，你记得吗？过来一点。
+
+#According to this pamphlet...you only need to kill a few more people! Keep it up.
+根据这本小册子所说…你只需要再杀几个人就可以了！继续吧。
+
+#We only need one more body, and then we can keep going.
+我们还需要一具尸体就够了，继续吧。
+
+#Well done. Feel free to go inside. I have no idea what's there. I'll see you again, same time tomorrow, right? Or the night after?
+做得好。你可以随意进去。我也不知道里面有什么。明天同一时间再见吧，好吗？或者晚上？
+
+		end scene
+	end area
+end npc
+# dialogue for the cards
+# don't enclose in quotes
+npc card
+	area ETC
+		scene one
+#0 sadbro
+#I don't mind being watched by the trees.
+我不介意被树木盯着。
+
+#1 Bat(?) - extra overworld area
+#Where is she?!
+她在哪里？！
+
+#2 sunguy
+#I will be with you Young, whenever you are alone.
+当你孤单之时，我会与你同在，扬。
+
+#3 Shieldy
+#Are you an Ookchot?  My mom always warned me about the Dangerous Ookchot.
+你是奥柯乔特吗？ 我妈妈总是给我说要当心危险的奥柯乔特。
+
+#4 slime
+# --> Spanish translator's note: Phew! I did my best here! I'm very happy with it!
+#Jello there, Young!  So goo to flanly meet you!  Why don't you set for a minute?  I was just pudding on some tea!
+泥猴啊，扬！ 在介里见到你真高兴！ 泥要不要在这儿坐一会儿？ 偶正在泡茶哦！
+
+#5 post-statue area in BEDROOM
+#Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Chancel, Pulpit, Altar, Stained Glass Windows...
+呼、呼、呼、呼、呼、呼、呼、呼、呼、圣坛、讲道坛、祭坛、彩色玻璃窗…
+
+#6 SUBURB inside of house past blocker
+#Limited time offer! Buy one, get one free - only today!
+限时优惠！买一送一——仅此一天！
+
+# 7 APT Boss
+#Remember the time that you lit a candle when the power was out?
+还记得停电那天你点亮蜡烛的时候吗？
+
+# 8 APT Silverfish
+#Mmmm, your pillow was cozy last night.
+唔，昨晚你的枕头真舒适。
+
+# 9 APT gasguy
+#This'll teach 'em for calling me the fumi-GAY-tion guy.
+这样他们就会记得称我为“画着烟熏妆”的家伙。
+
+# 10 FIELDS 1 (island) - mitra 
+#Wares and I make a good team.
+东西和我是超棒的组合。
+
+# 11 FIELDS 2 (alcove) - Miao
+#I'm the Chosen One-in-training!!!
+我是正在接受培训的天选之人！！！
+
+#12 Base of WINDMILL windmill
+#Do you ever feel like, no matter what you do, you can't stop the world from dying?
+你会否觉得，不管你做什么，你都无法阻止这个世界消亡？
+
+#13 Hidden up a river in FOREST
+#Beware the forest mushrooms...
+当心森林蘑菇…
+
+#14 Bottom of ladder-mini-maze on CLIFF
+#I am sorry.  It is my nature.
+抱歉。 这是我性格使然。
+
+#15 Top of Cliff
+#What do you mean, 'Only a rock'??  Rocks can be on cards too, you know!
+你说“只是一块石头”是什么意思？？ 你知道不，石头也有资格上卡牌！
+
+#16 Western end of BEACH past spikes
+#Give a man a fish and he will eat for a day.  Teach a man to fish, and he will have bonding times with his son, Jimmy.
+授人以鱼不如授人以渔。这样他就可以和他儿子吉米有时间好好相处了。
+
+#17 At end of path through the woods in REDSEA
+#Sometimes the answer is taking a walk.
+有时候解决问题只需要去散散步。
+
+#18 MOVER Redcave  - Past 2 locks in central redcave
+#Why do bats suddenly fly down, every time you're around?
+为什么每次你四处走动的时候，蝙蝠就会突然飞下来？
+
+#19 SLASHER Redcave - West end of Northern redcveave
+#NO, *YOU* NEED BRACES!
+不，是*你*需要背带！
+
+#20 REDBOSS Redcave - post boss
+#ARE YOU HAPPY NOW?
+你现在高兴了吗？
+
+#21 NW corner of CELL - chaser
+#Don't get violent around me.
+别在我周围制造暴力。
+
+#22 FIRE PILLAR circus -  the field of fire pillars north of entrance
+#I've always wanted to be on Iron Chef.
+我一直都想成为料理铁人。
+
+#23 CONTORT circus - contort + firepillar room in SW chunk
+#My mom always told me, 'If you do that arch long enough, your spine will stay that way!'
+我妈妈总是给我说，“如果你弯腰太久，你的脊椎就回不了原样了！”
+
+#24 LION circus - end of northern gauntlet bordering boss room
+#Are you amused yet, human?
+你觉得开心吗，人类？
+
+#25 A+J BOSS circus - basement (post boss)
+...
+
+#26 FROG crowd - North of entrance
+#Scientifically speaking, toads are a subset of frogs.
+从科学的角度来讲，蟾蜍是青蛙的一种。
+
+#27 CROWD GUY crowd - 2nd floor
+#HAHAHAHA!  Yeah!  I know!
+哈哈哈！ 耶！ 我知道！
+
+#28 WALL BOSS crowd - post boss
+#Oh, you collect cards, too?  Real classy, Ying.
+哦，你也在收集卡牌吗？ 真棒啊，英。
+
+#29 end of grey end of space, for grey cube king
+#They always said, \"Get off the computer! Or you'll never make friends!\"
+他们总是说：\"离开你的电脑！否则你永远交不到朋友！\"
+
+#30 end of colorful end of SPACE, for color cube king
+#I'm only the ruler for the extent of a conversation.
+我只是名义上的统治者罢了。
+
+#31 DUSTER hotel - end of 4th floor moving platform area
+#I'll bet you think you're 'making my job interesting'!
+我敢打赌，你觉得你“让我的工作变得有趣”了！
+
+#32 DASH TRAP hotel - Dash trap room on 3rd floor
+#I hate diagonals.
+我讨厌斜线。
+
+#33 BURST PLANT hotel - SE corner floor 2
+#Don't even try that claritin clear shit with me.
+别给我用抗过敏药物。
+
+#34 EYE BOSS hotel - post-boss
+#Swipe this card to unlock the door to your room!
+刷这张卡就可以解锁你房间里的门！
+
+#35 end of left-most TERMINAL bridge - sage
+#I'm doing a great job.
+我做得很棒。
+
+#36 Young (drawer APT)
+#.......??
+……………？？
+
+#37 old BDRM (dialogue rock)
+#Who carved all of us anyways?
+谁雕刻出我们的？
+
+#38 hotel room
+#I hope you enjoyed your stay.
+希望你在这儿度过开心的时光！
+
+#39 end of debug minidungeon (old player sprite)
+#Seening as you've gotten to this point, you must be quite Intrasting.
+既然你能走到这里，证明你还是有点本事的。
+
+#40 end of cell - Torch? 
+#I'm just here to lead you astray.
+我来这儿是为了将你带入歧途。
+
+#41 end of SPACE - faces/entities
+#You like like a pyramid to us, too!
+你也喜欢金字塔吗！
+
+#42 end uf suburb (killer)
+#It's the same damn play, night after night, and the pay sucks.
+这是个相同的该死游戏，日复一日进行着，而报酬却少得可怜。
+
+#43 GOldma's room - goldman
+#Leave me alone! My last name isn't Sachs!
+让我静静！我的姓氏才不是什么萨克斯！
+
+#44 blank, ISlands - Broom
+#At least I'm not a stick.
+至少我不是根棍子。
+
+#45 fields, bottom right - (Rank)
+#What do you mean money doesn't grow on trees? Eheheheh!
+你说钱不会对树造成任何影响是什么意思？哦呵呵呵呵！
+
+#46 street, bottom (Follower bro)
+#I'm nothing but an illusion.
+我只是一个幻觉罢了。
+
+#47 redsea, bottom eft (Bomb npc)
+#I'LL TAKE IT OUT ON YOU.
+我要把气出在你身上。
+		end scene
+	end area
+end npc
+
+npc misc
+	area any
+	
+		scene controls 
+#Press
+按下
+# [SOMEKEY-LEFT]
+#to set controls. 
+以设置控制选项。
+# [SOMEKEY-ENTER]
+#to cancel.
+以取消。
+#Up
+上
+#Down
+下
+#5
+#Left
+左
+#Right
+右
+#Jump
+跳跃
+#Attack
+攻击
+#Menu
+菜单
+#10
+#Press
+按下
+# [SOMEKEY-ENTER]
+#to exit
+以退出
+# [SOMEKEY-LEFT]
+#to set controls.
+以设置控制选项。
+		end scene 
+		
+		scene title
+#Please use the\narrow keys to resize\nthe window until\nyou cannot see\nany black around\n the borders.\n\nPress
+请使用\n方向键来调整\n窗口大小\n直至你无法看见\n黑框\n\n按下
+# [SOMEKEY-C]
+#when done.
+当完成之后。
+ANODYNE 镇痛
+Melos Han-Tani\nMarina Kittaka 
+#any key
+任意键
+#5
+#Press
+按下
+# [SOMEKEY-C]
+#to start
+以开始
+#Version
+版本
+#Continue 
+继续游戏 
+#New Game 
+新的游戏
+#10
+#Are you sure?\nNo\nYes
+你确定吗？\n否\n是
+#Really?\nNah\nYeah 
+真的吗？\n不是\n是呀
+#No going back!\nForget it\nI know
+不能后悔哦！\n算了吧\n我知道
+#deaths
+死亡数  
+#cards
+卡牌数
+#15
+#Anodyne supports\nmost controllers.\n\nWill you use one?\n\nYes   No\n\nIf so, connect it now.\n\nMove with arrow keys\n\nSelect with\nC, SPACE, or ENTER\n\nDefaulting to yes in\n
+《镇痛》支持\n多种手柄。\n\n你打算用手柄玩儿吗？\n\n是   否\n\n如果是的话，请现在连接。\n\n使用方向键移动\n\n使用C键、空格键或回车键\n进行选择\n\n选“是”使用系统默认设置\n
+
+#NOTE\n\nIf you have input\nlag during gameplay,\nreturn to your\nhome screen and\nre-enter Anodyne.\n\nPRESS C TO CONTINUE\n\nGUI displaying wrong?\nPress button below\nthen reorient device.
+#Press BACK again\nto exit.\nUnsaved progress\nwill be lost.
+注意事项\n\n如果你在游戏中遇到输入延迟\n你需要返回主界面\n重新进入《镇痛》\n\n按下C键以继续\n\n图形用户界面显示错误？\n按下下列键可重调设备。
+再次按下返回键可退出。\n未保存的进度将丢失。
+		end scene
+		
+		scene gui
+# Note - this below one is a sprite that fits into the gui
+#menu=enter
+菜单=进入
+
+# Shows up when you save at a checkpoint
+#Saving...
+保存中…
+		end scene
+		
+		scene map
+#Map
+地图
+#Current Room  
+当前房间
+#Door/Exit 
+门/退出 
+#No Map
+无地图
+#Return to\nNexus
+返回\n连结处
+#Return to\nentrance
+返回\n入口处
+		end scene
+		
+		scene items
+#Items
+物品
+#Normal
+正常
+#Swap
+调换
+#Extend
+延伸
+#Widen
+宽度
+#5
+#A pair of spring-loaded shoes - press 
+一双弹力鞋——按下
+# [SOMEKEY-X]
+#to jump!
+以跳跃！
+#A pair of shoes for biking.
+一双自行车鞋。
+#An empty cardboard box.
+一个空纸箱。
+#A key found in the Temple of the Seeing One.
+一把在“观察者”的神殿找到的钥匙。
+#10
+#A key found in a red, underground cave.
+一把在红色地底洞穴找到的钥匙。
+#A key found in a mountain cave.
+一把在山洞中找到的钥匙。
+		end scene
+		
+		scene cards
+#Cards
+卡牌
+#cards
+卡牌
+		end scene
+		
+		scene save
+#Save
+保存
+#Saved!
+已保存！
+#ERROR
+错误
+#Save and go\nto title
+保存并返回\n标题界面
+#Go to title
+返回标题界面
+#5
+#Save and quit
+保存并退出
+#Quit game
+退出游戏
+#Deaths:		
+死亡数：	
+		end scene
+		
+		scene config
+#Config
+配置
+#Set keybinds
+设置键位
+#Set volume 
+设置音量
+#Autosave at\ncheckpoints:
+在保存点可\n自动保存：
+#On
+开启
+# 5
+#Off
+关闭
+#Change\nResolution:
+更改分辨率：
+#Config UI
+UI配置
+#Touch+D-Pad
+触摸+方向键
+#D-Pad Only
+仅启用方向键
+# 10
+#Touch Only
+仅启用触摸
+#Move Input:
+移动输入：
+#Resolution:
+分辨率：
+#Windowed
+窗口模式
+#Int. Scaled
+按比例缩小
+# 15
+#Stretch
+伸展
+#Scaling:
+缩放：
+#Language:
+语言：
+ja
+en
+ko
+# 20
+#Drag the\nbuttons\nuntil you're\nsatisfied.\n\nThen, tap\nthe menu\nto continue.\n\n
+拉拽按钮直至满意为止。\n\n点击菜单以继续。\n\n
+#Resize Window
+调整窗口大小
+#Config Joypad
+配置手柄
+		end scene
+		
+		scene secrets
+#You\'re rolling in it!
+你正在前往中！
+#Once the property of a famous Bubble Mage.
+曾经是一位著名的泡泡魔法师的财物。
+#If your graphics become scrambled, look at the pokedex entry of an official Pokemon.
+如果你的图像受到了干扰，就去看看官方口袋妖怪图鉴。
+#This heart has no name.
+这颗心没有名字。
+#Please visit the electric monsters\' world.
+请参观电子怪兽的世界。
+#5
+#A kitty statue. Cute, but useless.
+一座猫咪雕像。可爱而无用。
+#Oh my!!!!
+噢天啊！！！！
+#Oh no!!!!
+噢不！！！！
+#It\'s black.
+这是黑色的。
+#It\'s red.
+这是红色的。
+#10
+#It\'s green.
+这是绿色的。
+#It\'s blue.
+这是蓝色的。
+#It\'s white.
+这是白色的。
+#SOMEKEY-C
+#:Select
+：选择
+#SOMEKEY-X
+#:Back
+：返回
+		end scene
+		
+		scene swap
+#Sorry!
+抱歉！
+#The swap won't work here.
+在这里无法进行调换。
+#Young could not muster the strength to use the swap here.
+扬无法在此使用力量进行调换。
+
+		end scene
+		
+		scene keyblock
+#This door is locked.		
+这扇门上了锁。
+		end scene
+		
+		scene treasure
+#Some strange force stops this treasure box from being opened.
+某种神秘力量阻止了这个宝箱被人打开。
+#An engraving on the broom handle reads: Press
+扫帚的把手上雕刻着：按下
+#SOMEKEY-C
+#to sweep.
+来扫动。
+#This key may be used a single time to open up a locked barrier.
+这把一次性使用的钥匙可以开启一个锁住的障碍物。
+#A mysterious pair of boots has nothing but the branding on it, which says \"Press
+一双神秘的靴子，没什么特别的，不过上面写着\"按下
+#SOMEKEY-X
+#5
+\"。
+#A few words on the broom extension read \"Equip the WIDEN upgrade in the menu to have the broom release harmful dust to the left and right.\"
+扫帚的延伸处上写着\"装备菜单里的宽度升级可以使扫帚朝左右方向释放有害灰尘。\"
+
+#A few words on the broom extension read \"Equip the EXTEND upgrade in the menu for the broom to release harmful dust in front of the broom's normal reach.\"
+扫帚的延伸处上写着\"装备菜单里的延伸升级可以使扫帚朝前方释放有害灰尘。\"
+
+#A note next to the broom extension: \"Hello, Young. Use this SWAP upgrade on two tiles to switch their places. It may be a while before you can use this everywhere, but it should serve you well for the time being.\"
+扫帚的延伸出上写着：\"你好，扬。使用调换升级可以改变两块砖的位置。你可能还需要好一阵才能到处使用此功能，但是它会对你大有帮助。\"
+
+#YOU FOUND A HEART!!! Maximum Health increased by...zero.
+你找到了一颗心！！！最大生命值增长了…零。
+#10
+#Goldman: What? It's not there? That shopkeeper must have stolen it!	
+戈德曼：什么？不在这儿？那个店主肯定把它偷了！
+		end scene
+		
+		scene dust
+#Your broom is now full of dust!  Attack again to place it.
+现在你的扫帚已经充满了灰尘！再次攻击可以释放灰尘。
+		end scene
+		
+		scene checkpoint
+#Save game?\n  Yes\n  No
+保存游戏？\n  是\n  否
+#While standing on a checkpoint, press
+站在检查点上，按下
+#SOMEKEY-C
+#to save your progress and set it as your respawn point if you die.
+以储存你的游戏进度。如若死亡，此处将为你的重生点。
+		end scene
+		
+		scene rock
+#There is writing scrawled on this rock:
+石头上潦草地写着：
+#YA AINT GOT NO FRIENDS		
+你没朋友
+		end scene
+		
+		scene door
+#The portal does not appear to be active.
+此传送门似乎没有被激活。
+		end scene
+		
+		scene keyblockgate
+#The gate stares, petrified. It won't open until it senses four cards...
+大门稳稳地立在那里。如果它没有感知到有四张卡牌的存在，它是不会打开的…
+#Sensing four cards, the gate decides to open.
+感知到四张卡牌的存在，大门决定打开。
+#The gate stubbornly remains in place.
+大门倔强地紧闭着。
+#The gate senses all of the cards, and decides to open.
+大门感知到了全部卡牌的存在，它决定打开。
+#The gate senses enough cards, and decides to open.
+大门感知到了足够卡牌的存在，它决定打开。
+#5
+#It opens!
+大门打开了！
+#It remains closed.
+大门还是紧闭着。
+		end scene
+		
+		scene solidsprite
+#The sign points to the east but the words on it are faded.
+路牌指向东方，但是路牌上的文字已经看不太清。
+#The sign points to the west but the words on it are faded.
+路牌指向西方，但是路牌上的文字已经看不太清。
+#The words on the sign are faded.	
+路牌上的文字已经看不太清。
+		end scene
+		
+		scene mitra
+#Hey, Young!
+嘿，扬！
+
+#Are those bike shoes for me?  Wow!  Thanks, Young!  I\'ve been thinking about getting these, since Wares has those pedals where you can clip in bike shoes.  Here, Young, take my boots in exchange!  They have these cool springs that let you jump really high! You press
+这双自行车鞋是给我的吗？ 哇哦！ 谢谢你，扬！ 我一直想要这个呢，这样踩在东西的踏板上就更搭配啦。 这儿，扬，我用我的鞋子和你交换！ 它们可以让你跳得很高！只要你按下
+
+#[SOMEKEY-X] 
+#to jump with them on!
+就可以使用它们跳起来了！
+
+#Hi Young!  Notice anything new? ^... ^... Oh, well, I got new biking shoes, see!  They clip into Wares' pedals.  Since I'll no longer be needing my old boots, I want you to have them, Young!  They have these cool springs that let you jump really high! You press 
+你好，扬！ 你注意到我有什么不同了吗？^… ^… 哦，好吧，我有一双新的自行车鞋了，你看！ 它们可以卡入东西的踏板里面。因为我已经不需要旧的鞋子了，我想把它们送给你！它们可以让你跳得很高！只要你按下
+
+#[SOMEKEY-X] 
+#to jump with them on!
+就可以使用它们跳起来了！
+
+#5
+#Alright, take care!
+好了，保重吧！
+#Go on, try them out!  ...They're not THAT smelly.
+来吧，试试它们！ …它们没什么味儿的。
+#Cool, huh?
+很酷吧？
+#Wow, are those the biking shoes from Finty's shop?  You're giving them to me?  Thanks, Young, I really appreciate it!  Here, try out my old shoes in return--I think you'll find them really useful!  There's an engraving on the shoes that says \"Press
+哇哦，这双自行车鞋是从芬缇的店里买来的吗？ 你准备把它们送给我？ 谢谢你，扬，太感谢你了！ 这儿，我把我的旧鞋子给你作为回报吧——我想它们会对你很有帮助的！ 鞋子上面写着\"按下
+#somekey-x
+#to jump\".  I've never understood that, though, because there's no \"
+以跳跃\"。 我完全不明白这是什么意思，因为鞋子上面根本没有\"
+#somekey-x
+#10
+#\" anywhere on the shoes...
+\"键啊…
+		end scene
+		
+		scene tradenpc
+#Finty: Welcome, welcome, my friend Young!  The name's Prasandhoff--Finty Prasandhoff!  Take a look around at my shop and see if anything catches your eye!
+芬缇：欢迎欢迎，我亲爱的朋友，扬！ 我的名字是帕拉珊德和夫——芬缇帕拉珊德和夫！ 在我店里随便看看吧，也许你会发现什么想要的东西！
+
+#Finty: I still appreciate that box!
+芬缇：感谢给我盒子！
+
+#Finty: Ah, a box! Thank you so much! Now I can carry all my inventory home at night and back in the morning!
+芬缇：啊，一个盒子！太谢谢你了！这样我就可以在晚上把我的存货带回家，早上再运过来了！
+
+#Wait a minute...it's not here! What happened to it? Well, here, let me ease your wounds instead!
+等等…不在这儿！它到哪儿去了？好吧，是这儿，让我来抚平你的伤口！
+
+#As a token of my gratitude, take these stylish biking shoes!
+为了表示感谢，你把这双时尚的自行车鞋拿去吧！
+
+# 5
+#Fine morning out, isn't it, my friend?  A fine morning for shopping! I just wish I had a box to carry my inventory around.
+多么晴朗的造成啊，是吧，我的朋友？ 一个适合购物的早晨！我希望能有一个盒子，这样我就可以装着我的货物到处走。
+
+#Too bad, looks like you can't afford this item!  Come back later, when you have the cash!
+太糟糕了，看起来你的钱不够啊！ 等你有足够的钱之后再回来吧！
+
+#Finty: Ah, you have a fine eye! You need a better weapon, don't you? Blow your enemies to pieces for only $499.99!
+芬缇：啊，你眼光真不错！你需要一件更好的武器对吧？只需要$499.99！你就可以将敌人杀个片甲不留！
+
+#Finty: That money sack will allow you to accumulate money that you find in The Land! It's yours for a mere $869.99!
+芬缇：那个钱袋可以存放你在“大地”中找到的钱币！仅需$869.99你就可以拥有它！
+
+#Finty: Oh ho ho, here's a specialty item indeed: clip-in bike shoes so you can be speedy AND stylish! On sale now for just $299.99!
+芬缇：哦吼吼，这儿有一件特殊的物品：夹入式自行车鞋，穿上它你就是时尚时尚最时尚的人！现在特价，只要$299.99！
+
+#10
+#Finty: Tired of shoving dust around with your piddling little broom?  Eradicate harmful dust particles with this state-of-The-Art vacuum cleaner! Just $749.99, or four easy, monthly payments of $199.99!
+芬缇：用你的小扫帚扫开灰尘实在是太累了对吗？ 要想根除有害灰尘的烦恼，就使用这款最先进的吸尘器吧！仅需$749.99或者你也可以选择分期付款，每月只要$199.99！
+
+#As a token of my gratitude, take this ugly--I mean beautiful, collector's edition card!^
+为了表示感谢，这个丑陋的——我是说，漂亮的，收藏版的卡牌你就拿去吧^
+		end scene
+		
+		#(Translate as much or as little as you see fit - note this is a little different than normal dialogue, so you'll have to keep at most 19 characters on each line, delimited by newlines - if there are multiple newlines keep them there though, but if a translated line goes over, feel free to add a newline in the middle)
+		scene ending
+Anodyne 镇痛\n-------\n\n\n\n游戏由\n\nMelos Han-Tani\n\n和\n\nMarina Kittaka\n\n为您呈献\n\n-------------
+游戏于\n\n2012年三月\n\n至\n\n2013年一月间制作
+游戏设计\n------\n两人协同
+程序\n-----------\nMelos，使用\nFlixel库来制作\n动作脚本 3.\n\n\n\n美术\n---\nMarina\n
+音乐和音效\n---------\nMelos，使用REAPER\n和一系列免费音色库。\n\n\n\n对话\n--------------\n大部分由Marina制作\n
+故事\n-----\n两人协同\n中文本地化：\n一只小雨
+特别感谢\n我们辛勤工作的测试员！\n--------------\n\nMarina，辛勤地为游戏排错。\n\nEtan，一直以来给予的支持，\n并且帮忙找到许多错漏。
+O——\n谢谢你，姐姐！\n\nRunnan、Nick\nReineke、\nEmmett、Poe、\nAD1337、\n Dennis、Andrew、\nAndrew MM\n Carl、Max、Amidos、\nLyndsey、Nathan\n
+Melos想感谢：\n\n母亲和父亲的长期支持。\n\nSandy\n\n许多TIGSourcers以及\n其他与我们交流过的开发者！\n\nMarina，\n为整个游戏的开发作出了\n不可估量的付出。
+Adobe、Adam\nSaltsman、\nFlashDevelop开发者、\nREAPER开发者、\nDAME制作者\nDesura、\nGamersgate\nIndieDB、\nTIGSource\n\n\n以及其他支持我的朋友们\n感谢你们！！\n\n最后，我想感谢\nTina Chen\n我一直以来的朋友\n她不仅给予我长期支持\n还介绍我与Marina相识。
+Marina想感谢\n\nColin Meloy，\n扩展了我的词汇量\n\nTsugumo，问我\n“你想要成为一位像素艺术家吗”？\n\n我的家人，\n给予我支持与食物。\n\nDaniel，作为一名\n\"独立游戏开发者\"\n，一直伴随着我成长。
+Mo，给予我充分的信任。\n\nTina，\n介绍我与Melos认识。\n\nMelos，和我一同制作游戏\n并且给予我信任。
+演员表\n----\n\n\n史莱姆\n\n\n烦恼之物\n\n\n呼呼\n\n\n谢尔迪\n\n\n希尔
+搬运者\n\n\n开开关关\n\n\n四射\n\n\砍伐者\n\n\n流氓\n
+狗\n\n\n青蛙\n\n\n旋转体\n\n\n人\n\n\n墙\n\n
+老鼠\n\n\n气态人\n\n\n银鱼\n\n\n冲撞者\n\n\n翻滚者\n\n\n看守人\n\n
+清洁女工\n\n\n爆炸植物\n\n\n管理者\n\n\n
+狮子\n\n\n扭曲\n\n\n火焰柱\n\n\n仆人\n亚瑟\n哈韦拉
+追随者\n\n\n爱德华\n\n\n渔夫\n\n\n红沃克\n\n休斯
+兔子\n\n\n黏黏\n\n\n店主\n\n苗小团儿\n\n兰克\n\n戈德曼
+胸腔\n\n詹姆斯\n\n蘑菇\n\n克里克森\n\n石人\n\n居民
+追踪者\n\n\n实体\n\n\n空间面\n\n\方块王
+扬\n\n\n麦卓\n\n\n贤者\n\n\n荆棘
+我们要感谢的还有\n亲爱的你！\n谢谢你玩我们的游戏！\n\n\n希望你喜欢它。
+\n\n\n\n\n\n\n\n    
+现在，你可以使用调换功能\n无拘无束地探索\n扬的世界。\n
+		end scene
+		
+		scene elevator
+#Floor?
+要去几楼呢？
+1\n
+2\n
+3\n
+4\n
+#Cancel
+取消
+		end scene
+	end area
+end npc
+
+# Tell the python script you're done.
+DONE

@@ -1,0 +1,2396 @@
+﻿
+#
+#
+# 'test' NPC - In DEBUG
+npc test
+does reset
+ area DEBUG
+ scene scene_1
+音楽好きなら,ターミナルに話しかけてみよう!
+#Like music? Talk to that terminal!
+イタイの好きなら,南へ行ってみよう!
+#Like pain? Head on down south!
+ end scene
+ end area
+end npc
+
+
+#
+#
+# 'arthur' - In CIRCUS
+npc arthur
+ area CIRCUS
+ scene alone
+サーカスの団員が落ちそうだ! 安全ネットはどこに?
+#That acrobat is losing balance! Where is the safety net?
+...
+ end scene
+		scene holyshit
+
+ウワーー
+#WOOAH
+		end scene
+ end area
+end npc
+
+
+#
+#
+# 'javiera' - In CIRCUS
+npc javiera
+ area CIRCUS
+ scene alone
+ライオンたちがジャグラーに近づいてる!
+#The lions are closing in on that juggler!
+...
+ end scene
+ end area
+end npc
+
+
+#
+#
+# 'briar' 
+
+npc briar
+	area GO
+		scene before_fight
+ブライア:ボクはねヤング つかれたんだ 同じ事のくり返し 同じ夢のくり返し... 終わらない悪夢だ
+#Briar:I’m tired, Young. I’m tired of all of these cycles. I feel like I’m living the same dream, the same nightmare over and over again.
+ブライア:...
+#Briar:...
+ブライア:永遠に変わらないんだよ ヤング ずっとこのままなんだ
+#Briar:It’s not going to change, Young. This is all we’ll ever be.
+		end scene
+		scene after_fight
+
+ブライア:さよならだ ヤング
+#Briar:Goodbye, Young.
+		end scene
+		scene final
+
+ブライア:おいおい ヤング
+#Briar:Dude, Young.
+ブライア:ほら足動かして 手もだ オレがいないと何にもできないのかよ!
+#Briar:Kick your feet. Move your arms. Jeez, you wouldn’t last a minute without me!
+ブライア:ほら 行こうぜ サンドイッチかなんか食おう
+#Briar:Well, come on, let’s go get a sandwich or something. 
+賢者:まあ... 及第点だよ... 次に会うまではな
+# Sage:You... you did adequately. Until we meet again.
+		end scene
+	end area
+end npc
+
+
+#
+#
+# 'sage'
+npc sage
+ area BLANK
+ scene intro
+なぞの声:こほん... ヤングよ... 私の声が聞こえるかね? ^もしもーし! お 聞こえるようだね... いいかい 間もなくキミは目をさます そうしたら 矢印キーで歩き回れるはずだ
+#Mysterious voice:Hello? ...Young? ^HEY! ... oh, you can hear me? Good, now listen. You are about to wake up. You will use the arrow keys to move around.
+
+# Note, these next two lines should be assumed to have the keybinding between them when translated (hence the single quotes)
+人と話したりモノを使ったりするには \'
+#You will press the \'
+\' キーを押すように
+#\' key to interact with objects and people around you.
+それからメニューを開くには \'
+#And you will press the \'
+\' キーだ ここでは自分や世界についての情報が見られる
+#\' key to access the menu, which will provide you with information about yourself and your surroundings. 
+ end scene
+ end area
+	area GO
+
+	scene posthappy_sage
+
+
+ヤング... 私はただキミのためにすべてを正したかったのだ
+#Young... I just wanted to fix everything for you.
+キミは... もっとうまくやってくれることをねがうよ
+#I hope... I hope you can do better than me.
+		end scene
+		scene posthappy_mitra
+
+ヤング... がんばってね
+#Good luck, Young.
+賢者の言ったこと それなりに合ってる わたしはすべてがステキで完ぺきであってほしくて そのせいで ときには現実だって無視してた
+#Sage is right, in a way. I want everything to be nice and work out perfectly, and sometimes that makes me ignore reality.
+ブライアを助けるために何するべきかなんて わからない 世界のしくみも...ここが色々おかしく見える原因だって...でもねヤング わたしはキミの友だちになりたいよ
+#I don’t know what you need to do to help The Briar. I don’t understand how this world works or why everything seems so strange. But I do want to be your friend, Young.
+キミはたたかってる 分かろうとしてるじゃない 早くカイケツできるといいね
+#You are fighting, Young. You are trying to understand. I hope you can work things out.
+		end scene
+		scene one
+TOP
+賢者:ヤングよ... 私からのさいごのけいこくだ... ん?なんだ だれだ?
+#Sage:Young... this is my final warning... wait, who is that?
+ミトラ:わたしはミトラっていうの こちらはわたしの自転車でウェアズ!
+#Mitra:My name is Mitra, and this is my bike, Wares!
+賢者:自転車の名前など聞いておらんよ 知らないかおだな ここで何をしている?
+#Sage:I didn’t ask the name of your bicycle, what are you doing here? I don’t remember you.
+ミトラ:友だちのヤングを助けにきたのよ
+#Mitra:I’m here to help my friend, Young..
+賢者:ヤングに友だちなどおらんよ ブライアもおらんというのに ヤングにいらぬことを吹きこむのなら私の世界から出て行ってもらおう!
+#Sage:Young doesn’t have friends. Young doesn’t even have Briar. And if you’re egging him on, then I want you out of my world!
+ミトラ:どういうイミ? わたしとウェアズは --
+#Mitra:What do you mean? Wares and I--
+賢者:アホみたいな自転車のことは 聞いておらんと言っている!!!
+#Sage:SHUT UP ABOUT YOUR STUPID BICYCLE!!! 
+		end scene 
+		scene hit
+
+TOP
+賢者:...
+#Sage:...
+ミトラ:ヤング! 大丈夫?! ウェアズのために...ありがとう... さあ このろくでもない場所を おわらせちゃって! キミならできるよ!
+#Mitra:Young! Are you okay? That was a beautiful thing you just did... You go on and finish this final punk-ass area! We know you can do it!
+ミトラ:ウェアズ!!!!
+#Mitra:Wares!!! 
+ミトラ:ウェアズ......
+#Mitra:Wares... 
+ミトラ:ちょっとフードのヒト! アナタがなにさまか知らないけど わたしたちのことはほっといてよ!
+#Mitra:Look, mysterious hooded character, I don’t know who you think you are, but why don’t you just leave us alone?
+賢者:きさまがヤングの友だちだと? ヤングは本当は完ぺきで 最後には何もかもうまくいくとウソをつくことが友だちだとでも? そうか いいだろう それがお前の望みだというのなら 勝手にすればいい さっさと失せるがいい
+#Sage:You think you’re Young’s friend because you’ll lie to him and tell him that deep down he’s just perfect and everything will work out. Well, if that’s what you want, FINE. Get out of my face, Young.
+賢者:\"友だち\"と話せばよかろう
+#Sage:Go talk to your friend.
+ミトラ:わたしたちはただベストを尽くしてるだけなのに...
+#Mitra:We're just doing the best we can...
+		end scene
+	end area
+	area NEXUS
+	scene enter_nexus
+
+
+TOP
+フードをかぶった男:さてと そろそろ時間かな ええと...^その...^ やあヤング! 私は賢者 まあ村の長老だ 君に来てもらったのは他でもない 実はセカイに広まった\"クラヤミ\"が 伝説のブライアをさがしているのだ その力を邪悪なことに使うためにね キミにはクラヤミよりも先にブライアを見つけて 守ってほしい
+#Cloaked Man:Well, it’s about time. Er...^I mean...^ Greetings, Young! I am Sage, the Village Elder. You have been summoned here because The Darkness has spread across The Land. The Darkness seeks The Legendary Briar, to use The Briar’s power for evil. You must reach it first. You must protect The Briar.	
+さあ 左に使えるようになったポータルがある そこから冒険に出かけなさい
+#Enter the active portal on your left to begin your quest.
+ハァ... 何だってまだ うろついてるんだね 早くポータルから出かけてくれ ブライアの ひいては世界の ききだというのに!
+#*Sigh* it doesn’t bode well that you’re still dallying about here. Enter the portal to begin your quest. The Briar and, by extension, the world are in dire need!
+LOOP
+さあ さっさと行かんか!
+#Just go in the damn door!
+		end scene
+		
+# After entering STREET for the first time
+
+		scene after_ent_str
+どうしたのだ?早く進みたまえ
+#Why are you still here?
+		end scene
+	
+# After finishing BEDROOM
+		scene after_bed
+いいぞ ヤング そのようなカギは 他にもあるはず すべてさがし出すんだ
+#Continue on, Young. That key you have found, there may be others like it - seek them out.
+さあヤング この世界を歩きつくすのだ \"クラヤミ\"を止めるにはそれしかないのだから
+#Travel to the far reaches of The Land, Young. This is the only way to stop The Darkness.
+		end scene
+	
+# After finishing first 3 dungeons
+		scene before_windmill
+その3つのカギがあれば \"ザ ランド\"のさらに おくまで 歩みを進められるだろう
+#Take those three keys, Young, and unlock the way to the deeper realms of The Land.
+		end scene
+
+#After windmill, but disappears after Sage fight
+		scene after_windmill
+たのんだ通りにやってくれたようだね ヤング だがまだザ ランドでやるべき事は残ってる ザ ランドをくまなく冒険し より多くを成しとげれば... ブライアにまた近づくことになるかもしれん
+#You have done what I have asked, Young, though there is still much to be done. Perhaps if you explore the deeper realms of The Land you will come to greater realizations... perhaps you'll be worth anything to Briar.
+		end scene
+		scene all_card_first
+
+フム エリアにあるカードをすべて集めたようだね ポータルの上にある宝石が赤くかがやくのは カードを集めた あかし なのだ 
+#Good work, Young. You have found all of the cards in one area of The Land, and as a result, a gem has appeared on top of the area's portal.
+		end scene
+	end area
+	area OVERWORLD
+
+		scene bedroom_entrance
+賢者:間もなくキミは 力をためされることになるだろう この寺院を生き抜くには 力と知性の両方が求められる さて もう武器は手に入れたかね?
+#Sage:Soon your skills will be put to the test, Young. In order to make it through this temple alive, you will need both strength and intellect. And I assume that by this point you have found a weapon?
+
+# Young swipes a few times
+ハァ?... ちがっ いや もちろんホウキだとも! えーっと... まさに言い伝えの通りだ
+#Wha-?? ... I-I mean... Yes of course... a broom! Er... just as was foretold in The Legend...
+... 何でよりによってゴニョゴニョ... おい! 何を突っ立っているだね!
+#*grumble grumble* ... of all the incompetent--Hey! What are you still standing here for?
+LOOP
+気を引き締めてな ヤング
+#Keep your wits about you, Young.	
+		end scene
+	end area
+	area BEDROOM
+
+		scene after_boss
+
+# Sage fades into room.	
+賢者:キミはまだ とてもよわい クラヤミからブライアを守るには 己の恐怖を克服しなければならん そこのハコに入っているようなカードは キミの成長のあかしだ たびの間は できるだけ集めるようにしなさい
+#Sage:At this point, you are still weak. If you hope to protect The Briar from The Darkness, you must face your fears. The card you will find in this chest, and others like it, are symbols of your growth, so acquiring them is absolutely vital to your quest.
+それからカギ これも大事だ カギは他にもあるから よくさがしなさい ああ それからメニューの\"マップ\"からは寺院の入り口までテレポートできる さあ先をいそぎなさい
+#That key will also play an important role in your quest. You must seek out other keys, as well. Select the map on the menu screen to teleport back to the temple's entrance, and continue your heroic quest.
+寺院庭園の東と南にすすめば カギがやくだつ 場所があるだろう
+#Travel East and South through the temple grounds... you will find a use for that key.
+LOOP
+何だ? 私にくっついて ゲートにもぐりこもうとでも?
+#What, do you want a piggy back ride to the gate or something??
+		end scene
+	end area
+	area TERMINAL
+
+		scene before_fight
+なぜ言うことを聞かない! バカみたいに突っ込めば ブライアとザ ランドを危険にさらすだけなのだぞ! これまでの じゅんびもオシャカだ! すまんがヤング キミが話を聞かぬなら 別の方法で聞かせるしかないようだ
+#Sage:Why won’t you listen to me?! If you rush into this like an idiot, you’ll only endanger The Briar, The Land, and everything I’ve worked for! I’m sorry Young, but if you won’t listen to me, then I’ll have to convince you another way...
+		end scene
+		scene after_fight
+賢者:ヤング... こんなハズではなかったのだ... 私はただ キミにより良い人間になって欲しかった ブライアを助けられるようになって欲しかった しかしすべては くだらぬゲームにすぎない... もう私には キミがブライアのもとへ行くのを止められぬ すべてが じごくになったとき 私が今言ったことを思い出すといい
+#Sage:Young... This is not how I mean things to be... I meant for you to become a better person. I meant for you to be able to help The Briar. But all of this is just a silly game... I can’t stop you from reaching The Briar. Just remember what I said when it all goes to hell.
+		end scene
+		scene entrance
+賢者:やあ ヤングよ キミがよりつよく よりかしこくなったとき ブライアへとつづくこの道は開かれるだろう
+#Sage:Hello, Young. When you have become a stronger and wiser individual, this path will lead you to The Briar.
+賢者:だが今はまだ早い まずは\"ザ ランド\"にのこる試練を のりこえねばな
+#Sage:You’re not ready Young, first you must face more trials in The Land.
+賢者:ずいぶん成長したな ヤングよ しかしこの門をくぐるには カードが36枚はひつようだぞ
+#Sage:You have made progress, Young, but you must collect at least 36 cards to pass this gate.
+		end scene
+
+# non idlnig stuff
+		scene etc
+賢者:ううむ...フム... 36枚以上カードを集めてきたと? しかし本当の試練に立ち向かうには まだ早い気がせんでもない... そうだ... 門に書いてある数字も...36じゃないし...\n...\n......\nほら門には92枚ひつようって書いてあるな!
+#Sage:Oh... uh... you have at least 36 cards? But I am not certain that you are ready for the true test. In fact, look, we were reading this gate wrong, you actually need...\n...\n........\n92 cards to pass this gate, not 36!
+賢者:ヤング 行ってはならん まだ早いのだ! ブライアも ザ ランドも 早まってしまっては ぜんぶ おわってしまう!
+#Sage:Young, don’t go there, you’re not ready yet! Think of The Briar! The Land! All of this will be for nothing if you are not ready! 
+		end scene
+	end area
+	area REDCAVE
+
+
+
+		scene one
+TOP
+賢者:見事だったぞ ヤング モンスターを倒すだけでなく 己の恐怖にも 打ち勝ったのだから!
+#Sage:Excellent work, Young. You had to conquer not only this monster but also your own fears to prevail!!!
+賢者:もちろん道のりはまだ長い ザ ランドのぼうけんは進んでいるかね?
+#Sage:Of course, you still have a long way to go. Have you been exploring The Land?
+		end scene
+	end area
+	area CROWD
+
+		scene one
+賢者:見事だったよ ヤング しかし しれんはまだまだ続く 気をぬかんようにな
+#Sage:Well done, Young. However, there are still trials to face. Do not let your guard down.
+賢者:ところでカギはぜんぶ集まったかね? まだならビーチに行ってみなさい
+#Sage:Have you found all of the keys yet, Young? If not, go to the beach.
+		end scene
+	end area
+	end npc
+
+
+
+
+npc cliff_dog
+	area CLIFF
+		scene top_left
+ぼくはほかの犬とはちがうよ! ワフワフ おそったりしないから...
+#I'm not like the others! *woof* I won't harm you...
+ぼくは ちょうわとしずけさを好むからね 
+#It is a quiet existence up here.
+きみの匂い スイスチャードのはっぱ みたいだね
+#You smell like swiss chard.
+LOOP
+わんわん!
+#*woof*
+		end scene
+	end area
+end npc
+
+npc happy_npc
+	area HAPPY
+		scene beautiful
+やったわね ヤング! ついに\"クラヤミ\"をたおしたのね! ほら見てこの場所 本当にうつくしいわ!
+#You did it, Young! You defeated The Darkness! Look at this place! It’s beautiful!
+本当に美しいわ...
+#So beautiful...
+		end scene
+		scene dump
+
+ああ良かった! 無事だったか! あの雪だったから うもれちまったのかと思ったよ... それにしてもココは気が めいるよなあ! まいるぜ!
+#Oh thank god you’re here! I was worried you’d get stuck in that snowy dump... It’s fucking depressing over there! Ha!
+アハハハ ウハハハハハ アヒャヒャヒャヒャヒャヒャ!
+#Hahaha. Hahahahaha. HAHAHAHAHAHAHA!
+		end scene
+		scene drink
+
+キミかわいいねー 一杯おごっちゃうよ!
+#Hey sexy, I’ll buy you a drink!
+もう一杯どうだい このクソヤロー! ハハハハハ!
+#Have another drink, you little shit! Hahaha!
+		end scene
+		scene hot
+
+ここ クッソあつい... ホット!ホット! 汗ダラダラ...
+#Fuck, it’s hot here... I’m so hot... and sweatyyy...
+あー チキショー ワークアウトするとムラムラしてくる!
+#Damn, working out makes me horny!
+		end scene
+		scene gold
+
+この世界って金で できてるって知ってた? かね じゃなくて きん で! そこのレンガひとつ もらって かけおちしましょ 一生あそんでくらせるわよ! アハーハハハー!
+#Did you know this place is made of gold? Like actual gold! We could run away together and live off this brick right here! Wahahahaha!
+マジで つったってないで このレンガ外すの手伝ってよ!
+#Seriously, why are you just standing there? Help me jack this brick!
+		end scene
+		scene briar
+
+???:ヤング... ついやにったな! よやうく たかすった! もにうどと もにとは もらどんぞ!!!!
+#???:Young... You finally maDe IT! YuO SsavED ME! nOE EvERtyhinG WILL bE OKYA AGaIN!!!!!
+		end scene
+	end area
+end npc
+
+
+#
+#
+# 'mitra'
+npc mitra
+	area OVERWORLD
+		scene initial_overworld
+どーいてー!
+#HEADS UP!
+
+#Mitra swerves to avoid you and crashes
+ごめんね... ちょっととばしすぎてたわ... あれ 見ないカオね! キミも旅行中? へ? くらやみからブライアを守る...?^えーっと 何の話かサッパリだけど なんかカッコイイんじゃない!
+#Sorry about that... I was going way too fast. Oh, I’ve never seen you before! Are you a fellow traveller? ... Huh? You want to protect the Briar from the Evil Darkness? ... ^Well... I have no clue what you’re talking about, but sounds cool, I guess!		
+わたしはこのへんをウェアズで走ってたの え...? ちがうよ服のハナシじゃなくて わたしの自転車の名前!
+#I’ve just been out and about, peddling my wares.... What? No, I’m not a salesman. Wares is the name of my bicycle! 
+
+#Plays if you talk 3 times, or if you leave the screen
+きっとまた どこかで会うわよね ブライアのハナシを聞いたらちゃんとおぼえとくね
+#Well, maybe we’ll run into each other again sometime. I’ll let you know if I hear anything about that Briar. 
+
+#Mitra bikes away
+		end scene
+	end area
+	area BLUE
+		scene one
+よっし! ウェアズ! いっくよーーー!
+#HEADS UP! All right Wares, let’s do this!
+ドォーーン!
+#Annnd presto!
+ヤング がんばって! わたしたちも ついてるよ!
+#Keep going, Young, we’ve got your back!
+		end scene
+	end area
+	area FIELDS
+
+		scene init
+わたしのコト 覚えてる? この前は自己紹介してなかったね 自転車のウェアズだけ紹介して... わたしはミトラっていうの
+#Remember me? I forgot to introduce myself the last time, I only introduced my bicycle, Wares. My name is Mitra.
+わたしのコト 覚えてる? この前は自己紹介してなかったね わたしはミトラ それからこのハンサムでカッコイイ自転車はウェアズっていうの
+#Remember me? I forgot to introduce myself the last time, I’m Mitra, and this fine young bicycle is named Wares.
+LOOP
+ミトラ:で ヤングは元気だった? へ? なんで名前を知ってるかって? フシギ? えっと その服 背中に名前が書いてあったから
+#Mitra:So how have you been, Young? ...what? How did I know your name? You think it’s weird, eh? Well, I saw it on the back of your hoodie. 
+ミトラ:それじゃ またね!ヤング
+#Mitra:See you around, Young!
+		end scene
+		scene quest_event
+ミトラ:あ 今思い出した... 誰かがね 何かを先に見つけないととか言ってたの 何のハナシかは分からなかったんだけど とにかく山に行くって言ってた すごく急いでたよ
+#Mitra:Hey, I just remembered - someone said they were trying to find something earlier. I wasn't sure what they were talking about, so they said they were going to the mountains - ran off in a hurry.
+		end scene
+		
+# Hints for the game - not cards
+
+		scene game_hints
+# The ordering matters in these (indexed in-game, so just keep them numbered)
+
+# 0 ignore this
+んー 何でもない
+#Nothing.
+
+# 1. Beach hint (no dungeons finshed)
+ん? まよったの? ビーチのほうは もう行ってみた? だれか助けてくれるかもよ カギの使える場所もありそうだけど ほかのカギがいるかもね
+#Oh, you're lost? Have you looked around the beach? Maybe someone there can help you out. It looks like that key of yours comes in a set. Maybe you need to find more?
+# 2. Forest hint (no dungeons finished)
+ん? まよったの? 東にある森はもう行ってみた? あそこ カギの使える場所もありそうだけど ほかのカギがいるかもね
+#Oh, you're lost? Have you looked in the forest to the east? That key you have - it looks like it comes in a set. Maybe you need to find others?
+# 3. Windmill hint
+わぁ カギそろったのね! そういえば南東に カギがかかった門がいくつかあったような... そのカギで開けられるんじゃない?
+#Look at all of those keys! I think I saw some gates to the southeast. Maybe you could use them there?
+# 4. Generic hint to go past statues
+ふうりょくタービンを動かしたの見たよー! すごいね! あれだけ強いカゼだとさ 自然への影響とかもありそうじゃない?
+#Hey, I saw that you turned on the wind turbine! Do you know if it had any effect on The Land?
+# 5. finished 6 bosses, all 36...
+やっほ ヤング! わわ カードいっぱい集めたねえ! ところでこれって何につかえるのかな? 売ったらいいおかねになりそうだよね
+#Hey Young. Wow! You've really been racking up those cards! Have you figured out what they're for yet? Seems like you could really cash in with all those!
+# 6. hints for go things
+わー そのホウキの新しいアタッチメント 何? え? 世界のありかたを...変える? ヤング それなんかコワイよ でも何でもってわけじゃ ないみたいで良かった きっと ザ ランドでもホントにおくでしか使えないんじゃないかな
+#What is that new broom attachment you have? It lets you alter the structure of the world...? Honestly, that is really scary Young. I'm glad it doesn't seem to work anywhere, perhaps just in the deepest, strangest recesses of the Land
+# 7. crowd finished but not redcave
+ジャンプシューズのちょうしは どう? ケッコウ良いでしょ? わたしも新しいクツ気に入ってるよ ウェアズとの一体感もさらにアップしたし!
+#How are my jump shoes working for you? Pretty nifty, eh? I’m loving my new bike shoes. They make Wares and I an even better team!
+
+#8. redcave finished but not crowd
+わあヤング またカギ見つけたの? ウェアズもその色好きだって言ってる! それで カギが使えるトビラとかは見つかった?
+#Cool, Young, you found another key! Wares likes the color! Have you found a place to use them yet?
+		end scene
+# Hints for the cards. Play after the 6 dungeons are finished.		
+		scene card_hints
+ミトラ:あ ヤング カードさがしてるの?\n見通せし者の寺院のあたりはさがしてみた?
+#Mitra:Hey Young, looking for a card?\nHave you checked around the area of the Seeing One's temple?
+ミトラ:あ ヤング カードさがしてるの?\nそういえば見通せし者の寺院のうらぐちに迷路があるって聞いたなあ
+#Mitra:Hey Young, looking for a card?\nI heard there's a maze around the back exit of the Seeing One's temple.
+ミトラ:あ ヤング カードさがしてるの?\n見通せし者のすみかの近くで何か見つかるかもよ
+#Mitra:Hey Young, looking for a card?\nYou might find something near the Seeing One's lair.
+ミトラ:あ ヤング カードさがしてるの?\n見通せし者の寺院にさ てきが一杯の部屋 なかった?
+#Mitra:Hey Young, looking for a card?\nThere was a room filled with enemies in the Seeing One's temple, right?
+ミトラ:あ ヤング カードさがしてるの?\n見通せし者の寺院はくまなく さがしてみた?
+#Mitra:Hey Young, looking for a card?\nHave you looked all over the Seeing One's temple?
+ミトラ:あ ヤング カードさがしてるの?\n見通せし者のすみかにウラぐちあったでしょ?あの近くにある はいきょ はさがしてみた?
+#Mitra:Hey Young, looking for a card?\nTry looking in the vestigial area near the back exit of the Seeing One's lair.
+ミトラ:あ ヤング カードさがしてるの?\nキミのご近所さんが 何か知ってるかもよ?
+#Mitra:Hey Young, looking for a card?\nMaybe your neighbor knows something about it.
+ミトラ:あ ヤング カードさがしてるの?\nキミのアパートに住んでるヒト,何か かくしてるみたいだけど...
+#Mitra:Hey Young, looking for a card?\nI know the guy in your apartment was hiding something...
+ミトラ:あ ヤング カードさがしてるの?\nキミのアパートの入口近く...よーくさがしてみたら!?
+#Mitra:Hey Young, looking for a card?\nSomewhere near the entrance of your apartment...look around there!
+ミトラ:あ ヤング カードさがしてるの?\nキミのアパート ホントにすみずみまで さがしてみた?
+#Mitra:Hey Young, looking for a card?\nHave you looked *everywhere* in your apartment?
+ミトラ:あ ヤング カードさがしてるの?\nここから南に行くと 島があるみたいなの わたしは行ったことないけど 行ってみたらどう?
+#Mitra:Hey Young, looking for a card?\nJust south of here is an island! I haven't gone there, but you should check it out.
+ミトラ:あ ヤング カードさがしてるの?\n川ぞいには 色んなものが あるみたいよ よーくさがしてみたらどうかな!
+#Mitra:Hey Young, looking for a card?\nThere's a lot of stuff to be found if you follow the rivers. Look around!
+ミトラ:あ ヤング カードさがしてるの?\nふうしゃの近くに 誰かがカードを置いていったって聞いたけどなあ
+#Mitra:Hey Young, looking for a card?\nI know someone left a card near the windmill.
+ミトラ:あ ヤング カードさがしてるの?\n森の中にある川のあたり さがしてみるといいよ...
+#Mitra:Hey Young, looking for a card?\nLook around the rivers in the forest...
+ミトラ:あ ヤング カードさがしてるの?\n山のふもとあたりは もう回ってみた?
+#Mitra:Hey Young, looking for a card?\nTry poking around the base of the mountains.
+ミトラ:あ ヤング カードさがしてるの?\n山の頂上って 何かありそうよね
+#Mitra:Hey Young, looking for a card?\nTry going to the summit of the mountains.
+ミトラ:あ ヤング カードさがしてるの?\nビーチのはしっこって 何かありそうよね
+#Mitra:Hey Young, looking for a card?\nThe far end of the beach may hold something.
+ミトラ:あ ヤング カードさがしてるの?\n赤い森をさんぽしてみるってのはどうかな?
+#Mitra:Hey Young, looking for a card?\nTake a walk in the crimson woods.
+ミトラ:あ ヤング カードさがしてるの?\nそういえばさ 赤のどうくつのひとつに カギのかかったトビラがいっぱいあるトコロあったよねえ
+#Mitra:Hey Young, looking for a card?\nThere were a lot of locked doors in one of those red caves, right? 
+ミトラ:あ ヤング カードさがしてるの?\n北にある赤のどうくつはもうチェックした? 川に沿って進んでみるといいよ!
+#Mitra:Hey Young, looking for a card?\nTry looking around the northern red cave - follow the river to its end!
+ミトラ:あ ヤング カードさがしてるの?\n北にある赤のどうくつから 川の源泉までさかのぼってみたら?
+#Mitra:Hey Young, looking for a card?\nGo to the northern red cave, check out the source of the river!
+ミトラ:あ ヤング カードさがしてるの?\nえっと... やみの迷宮は すみずみまで回ったのよね?
+#Mitra:Hey Young, looking for a card?\nHmm...did you look all over that dark labyrinth?
+ミトラ:あ ヤング カードさがしてるの?\nそういえばさ 火がわんさか吹き出してる道あったじゃない? あのおくとか ゼッタイ何かありそうだよね!
+#Mitra:Hey Young, looking for a card?\nI remember there was a pretty grim looking path of flamethrowers somewhere. Something's gotta be at the end of it!
+ミトラ:あ ヤング カードさがしてるの?\nサーカスの団員たち 何かかくしているみたいだったけど あのへんはさがしてみた?
+#Mitra:Hey Young, looking for a card?\nThose circus folks have got to be hiding something. Did you look everywhere?
+ミトラ:あ ヤング カードさがしてるの?\n男女の二人組が落っこちた大きな穴あったじゃない?あの近くはさがしてみた?
+#Mitra:Hey Young, looking for a card?\nHave you looked around the area on the perimeter of that couple's large pit?
+ミトラ:あ ヤング カードさがしてるの?\n穴の近くでグルグルしてたあのカップル ゼッタイ何かかくしてるよ
+#Mitra:Hey Young, looking for a card?\nThere's this couple that like to hang around a pit. They must be hiding something.
+ミトラ:あ ヤング カードさがしてるの?\n深い谷とか いかにも何かありそうよね とくに山にあるどうくつとか!
+#Mitra:Hey Young, looking for a card?\nSometimes there are things hidden across chasms - especially in mountain caves!
+ミトラ:あ ヤング カードさがしてるの?\n山にあるどうくつの いちばん高いところとか もう行ってみた?
+#Mitra:Hey Young, looking for a card?\nHave you scoured the highest parts of the mountain cave?
+ミトラ:あ ヤング カードさがしてるの?\n山にあるあのどうくつ... あのおくって何があるのかな?
+#Mitra:Hey Young, looking for a card?\nIs there anything in the depths of that mountain cave?
+ミトラ:あ ヤング カードさがしてるの?\nあの変な空間にいるカラフルなキューブとか ゼッタイ何かかくしてるよ!
+#Mitra:Hey Young, looking for a card?\nThat colorful cube in that weird place - it has probably got something!
+ミトラ:あ ヤング カードさがしてるの?\nあのナゾ空間にいるモノクロのキューブとはもう話した? あのキューブなら何か知ってるんじゃないかな
+#Mitra:Hey Young, looking for a card?\nHave you talked to that grayscale cube in that wild-lookin' area? Maybe it knows something.
+ミトラ:あ ヤング カードさがしてるの?\nあのホテルのいちばん上のフロアさ 高級感はなかったけど 何か かくされてるかもよ!
+#Mitra:Hey Young, looking for a card?\nThe top floor of that hotel is a little run down, but it's gotta have something!
+ミトラ:あ ヤング カードさがしてるの?\nホテル3かいの部屋はくまなくさがした?
+#Mitra:Hey Young, looking for a card?\nDid you walk into all of the rooms on the 3rd floor of the hotel?
+ミトラ:あ ヤング カードさがしてるの?\nホテルの2かいフロアには誰か何か置いてきてると思うんだけどなあ
+#Mitra:Hey Young, looking for a card?\nI bet someone left something lying around the 2nd floor of the hotel.
+ミトラ:あ ヤング カードさがしてるの?\nホテルのオーナーさん,キミに何か置いていってくれたかもよ!
+#Mitra:Hey Young, looking for a card?\nThe owner of the hotel might have left something for you! 
+ミトラ:あ ヤング カードさがしてるの?\n北西のこわれたハシのとこ あのへんてアヤシイよね!
+#Mitra:Hey Young, looking for a card?\nThose broken bridges to the northwest...look around there!
+# and a bonus one if for some reason you make it this far without finding any...
+...えー!? い ち ま い も カード見つけてないの? ヤング そんなの絶対 おかしいよ!人生たまには冒険しなきゃ!ハコをあけてみるとかさ!
+#...What? You haven't found *any* cards? Man, Young, that's crazy! Sometimes in life you just need to be adventurous, open a few boxes, you know? 
+		end scene
+		
+#General random stuff 
+
+		scene general_banter
+そういえば 山で何かさがしてたヒトには会えたの?
+#Did you find that guy who was looking for something in the mountains?
+ウェアズのみょうじってねー...ウォーリーっていうの ウェアーズ・ウォーリー なんちゃって!ハハン 自転車に みょうじはないから!
+#Do you know what my bike’s surname is? ...Waldo! Get it? Wares Waldo! ...Just kidding, bicycles don’t have surnames.
+ねねヤング U字ロック売ってるとこ知らない? ウェアズをしばりつけたくは ないけど 自転車のとうなん 最近多いらしいから...
+#Do you think I should get a U-Lock? I’d hate to tie up Wares like that, but you do hear a lot about stolen bikes these days...
+ところでブライアって何なの? 古代文明の失われた いさんとか そういうの?
+#So what is The Briar? Some sort of ancient artifact from a lost culture?
+クラヤミが迫ってるとかって話 全然聞かないのよね みんな自分のコトで忙しいってコトなのかな
+#I wonder why I haven't heard anything about The Darkness coming. I guess most people in the land are just caught up in their own daily struggles.
+ヤング 今度会ったら言おうと思ってたんだけど キミのヘアスタイルって ステキよ
+#Hey Young, I just wanted to tell you... your hair is awesome.
+		end scene
+		end area
+
+end npc
+
+
+#
+#
+# Statue (wise crackin' statue) 
+npc statue
+	area NEXUS
+		scene enter_nexus
+石像:村の長老というのは名前だけ 村などないし 長老でもない
+#Statue:The Village Elder in name only, for he is neither.		
+		end scene
+	end area
+	area OVERWORLD
+
+		scene bedroom_entrance
+石像:ホウキについての言い伝え 用具入れロッカーに入っているとか
+#Statue:I’ve seen a broom in a legend... it was on the map of a janitor closet.		
+		end scene
+	end area
+	area BEDROOM
+
+		scene after_boss
+石像:冒険においてカード集めはとても大事 カードはいろいろ役に立つ クレジットとか みぶんしょうめいとか
+#Statue:Acquiring cards is vital to your quest. Acquiring cards is also vital for other quests, such as earning credit or purchasing alcoholic beverages.		
+		end scene
+	end area
+	area REDCAVE
+		scene one
+石像:見事だったぞ 賢者 かんしゃくを起こさず 自己陶酔もしないで ちゃんと定型文みたいなセリフを言ったのだから!
+#Statue:Excellent work, Sage. You had to conquer not only your temperament but also your own self-respect to deliver such a cheesy line!!!
+		end scene
+	end area
+	area TERMINAL
+		scene one
+キミが より冷たく けれども より甘くなったとき キミはアイスクリームかもしれんだろう
+#When you have become a more stressed and apathetic individual, this path will lead you to the Breyers. Comfort by the pint, loser! 
+		end scene
+	end area
+end npc
+
+
+#
+#
+# sadbro (outside of bedroom)
+npc sadbro
+	area OVERWORLD
+		scene initial_forced
+
+# This line must be played once before anything else can
+エドワード:トイレにかがみを取り付けてもらったときにさ 中にかくしカメラがついてるんじゃないかって不安で 不安で とにかくしらべまくって すきまというすきまに オイルソープをすり込んだんだ 回路をショートさせようと思って でも 当然というか カメラなんて入ってなかったんだけど
+#Edward:Once a man came and installed a mirror in our bathroom. I was afraid that there was a hidden camera inside of it. I scoured every inch of the wooden frame, spraying Merphi’s Oil Soap into the cracks, thinking I might short-circuit the wires. Of course, I never found anything.
+LOOP
+エドワード:ここは見通せし者をまつる寺院なんだ なんでここに来たのかよく 覚えてないけど とにかく こわくて 中には入れないんだ
+#Edward:This temple is dedicated to The Seeing One. I don’t know why I came here, and I’m too afraid to go inside.			
+		end scene
+		scene bedroom_not_done
+エドワード:お困りかい? たぶんそうだよね キミはホウキしか もってなくて ホウキはほこりを移動させる道具だ だよね?
+#Edward:Having trouble? Well I’d imagine so. All you have is a broom, and all brooms can do is move dirt.		
+		end scene
+		scene bedroom_done
+エドワード:見通せし者をたおしたって? ハハッ ちがうよ キミはいわば すきまにオイルソープすり込んだ だけなんだ
+#Edward:You say you defeated the Seeing One? Ha. Don’t you get that it doesn’t work that way? You’re just spraying oil soap in the cracks.		
+		end scene
+		end area
+end npc
+
+
+# sun_guy (Bedroom boss)
+npc sun_guy
+	area BEDROOM
+		scene before_fight
+おお ヤング なんとかわいらしい えいゆうごっこかね だがね 私はキミが\"ザ ランド\"に来てからの行ないをすべて知っている それから...この世界で私以上に正直なものはいない だれを信頼するのか よく考えることだね
+#Oh, isn’t it cute? Precious little Young, playing the hero. But I have witnessed every step you have taken in "The Land", and let me tell you, Young, not everyone here is as honest as me. Be careful who you trust!
+		end scene
+		scene after_fight
+ヤングよ 私は常にキミと共にある キミが一人のとき 私はそこにいる この先の冒険...私からのアドバイスを よくかみしめることだね
+#I will be with you, Young, whenever you are alone. And remember my advice on your little "adventure".		
+		end scene
+	end area
+end npc
+
+# rock (Rock with words)
+npc rock
+	area BEDROOM
+		scene one
+岩:周辺視野はアクマの巣
+#Rock:Peripheral vision is the hive of demons.	
+		end scene
+		scene two
+岩:次の仕事:ネクサスへの移動手段を建設する 現在の状況:中断 - 見通せし者から予算を得られず続行不可 今後もあの 謎のポータルを使用し続けるしか方法なし
+#Rock:To-do:Construct method of transportation to Nexus. Progress:Halted - Seeing One will not give the required funds to make the venture possible. We will have to revert to the original method of the inexplicable door portal. 
+		end scene
+		scene three
+岩:一人だけ残されてしまった トンネルの作業はじゅんちょうだ 少なくとも 毎日少しずつはすすんでいる
+#Rock:I'm trapped here all by myself. Work is steady on this tunnel, and at least I can see a little bit of progress every day.
+		end scene
+	end area
+	area BLUE
+		scene one
+ダムを開けるハンドル
+#This wheel is used to lift the dam.
+		end scene
+	end area
+	area CIRCUS
+		scene one
+1957年6月24日:空中ブランコこわれる アリス・ラトガーズが地面に落ちる 両足のスネを骨折
+#June 24th, 1957:Trapeze swing breaks. Alice Rutgers is flung into the ground, resulting in two fractured shins.
+		end scene
+		scene two
+1957年7月17日:道化師7人が引退 深刻な呼吸器の病 ランドブレンド社のメイク道具が原因と思われるが 公式なそうさは行なわれず
+#July 17th, 1957:Seven clowns retire with near fatal lung issues. LANDBLEND brand makeup is suspect, but no formal investigation occurs.
+		end scene
+		scene three
+1957年7月21日:オリの誤作動あり 調教前のライオンにおそわれ顔と体に深いキズを負った 生きてはいるがカガミを見るのが こわい
+#July 21st, 1957:Following a cage malfunction, my face and side are severely mauled by an untamed lion. I survive, but now shudder to look at my own reflection.
+		end scene
+		scene four
+1957年8月5日:夢の中で 顔だけの石像と話す 目を光らせたそれは 私たちの存在理由を話すと 次にいたみから解き放つと言った
+#August 5th, 1957:In my dream, I saw a stone face with fierce, shining eyes. He spoke of the truth of our existence and was the first to offer freedom from the pain.
+		end scene
+		scene five
+1957年8月7日:見通せし者が明かしてくださった真実 それを受け入れるまで どれだけの者が苦しむことになるのか
+#August 7th, 1957:How many of us will suffer before we accept the truth of the Seeing One?
+		end scene
+		scene six
+
+1957年8月8日:ついに決めた ついてくると言ってくれる者も何人かいる この日記もこれで最後だろう 見通せし者のご加護があらんことを
+#August 8th, 1957:I have come to my decision. A few of the others have said they will follow me. This will be my final entry. May the Seeing One look favorably upon us all.
+		end scene
+	end area
+	area CLIFF
+		scene one
+(知らない文字で何かが書いてある)
+#(Indecipherable markings)
+		end scene
+		scene two
+2010年12月7日(名前はよめない):何もない場所じゃないか!このろくでもない岩しかない!
+#December 7th, 2010. (name unreadable). There's nothing up here, except this stupid rock!
+		end scene
+		scene three
+キケン! このどうくつは せいびされていません
+#Danger! This cave is unexplored.
+		end scene
+		scene four
+このガケははるか上まで伸びているが その先がどうなっているかを見たことはないなあ
+#These cliffs extend far and upwards, though I've never gone high enough to find out where they lead.
+		end scene
+	end area
+	area CROWD
+
+
+		scene one
+岩:どうやって?
+#Rock:How?
+		end scene
+		scene two
+岩:キケン! ガケあり 飛び込みは自己責任で
+#Rock:Warning! Vertical drop, jump at your own risk.
+		end scene
+	end area
+	area DEBUG
+
+		scene one
+これはカードゲートの仮アニメーションとして つかってたものなんだ 近づいたりはなれたりすると ゲートが開いたり閉じたりするよ
+#This used to be a placeholder animation for the card gates. Approach it twice to see the locked and open animations! 
+なんでコレ使わなかったのかは忘れちゃったな... ドラマチックすぎたとかかな
+#I forget why we ended up scrapping it. Perhaps too dramatic.
+		end scene
+		scene two
+
+これは色んなタイルのレイヤーとかコリジョンをためしたところ! 一方通行タイルを両サイドに置いたりしていじってたんだけど 上手くいかなかったから ボツにした... とかだった気がする
+#Here are tests for various tile layers and collisions! I couldn't get one way tiles from both sides (i.e., walls) working very well so I just ended up scrapping the idea entirely...or something. 
+これをつかわなかったのは デザインをシンプルにしたからなんだ ゲームを完成させるには大事なことだったんだよ
+#There was some reason why we didn't use them. Simplifying design, which was important for us to finish the game.
+		end scene
+		scene three
+
+さいしょはてきを倒すとカギを手に入れられたんだけど けっきょくボツにしたんだ それなりに気に入っていたんだけど
+#Enemies used to be able to drop keys. I scrapped this idea even though it was slightly amusing. 
+他にもチャレンジゲートっていうアイデアもあったんだ これはダメージを食らわずに試練をクリアできた ときだけ開くってやつだったっけ
+#Another idea we played with was having challenge gates, which lay at the end of a gauntlet, and only opened when you reached them without getting hurt. 
+いちじは 全部のダンジョンにつけて HPをなくしちゃおうかみたいな話もあったんだけど けっきょく なんいどが高すぎてダメだったんだ!
+#We wanted to model all dungeons around this and scrap health entirely, but that turned out to be far too hard!
+		end scene
+		scene four
+ろうやです!
+#PRISON!!!
+助けて!
+#Save us!!!
+おねがい!
+#Please!
+		end scene
+		scene five
+デバッグワールドへようこそ!ここはザ ランドではないので ゲームのストーリーとは(9割がた)関係ないけれど ゆっくりしていってね
+#Welcome to the DEBUG WORLD! You've stepped outside of The Land, so consider this world (90 PER-CENT) Non-canon. Anyways.
+マップのタイルセットが完成するまでは こういう仮タイルでマップを仮組みしていたんだ このゲームのダンジョンは 実はぜんぶそうやって仮組みして それからジョンが本番用タイルで置きかえていったんだよ
+#Before there were tilesets for many of the areas I used silly tiles like these to mark where doors went. In fact, every dungeon was mocked up in this area's tileset, and then Marina tiled over them with his tilesets.
+		end scene
+		scene six
+若い女性
+#fille
+		end scene
+	end area
+	area DRAWER
+
+		scene five
+- 記録保存庫 -
+#-ARCHIVES-
+注意してお進みください
+#PROCEED WITH CAUTION
+		end scene
+		scene four
+西:裂け目->現実へ! 不動産価値ひくめ ハリケーンあり 年代物 荒れほうだい リラックス効果
+#West. Rift. Reality! Low real estate values, hurricane, old, run down. Relaxing. 
+		end scene
+		scene three
+見通せし者は おぼえているかぎりでばばばば......ヤー ヤッパリ ウチハ オチツクネー
+#The Seeing One from what I can rem- rmrr,,,,,,a Good Time At The Home.
+		end scene
+		scene two
+れいぞうしつ\n\n^ -- MGMT
+#COLD STORAGE\n\n^ -- THE MGMT
+		end scene
+		scene one
+つづきから
+#CONTINUE
+		end scene
+	end area
+	area FIELDS
+
+		scene one
+西:ビーチ\n\n東:森\n\n南東:\n 熱帯雨林\n\n北:\n寺院庭園\n\n北の果て:ふかい谷
+#West:Beach\n\nEast:Forest\n\nSoutheast:\n Rainy Area\n\nNorth:\nTemple Grounds\n\nNorthwest:Chasm
+		end scene
+	end area
+	area FOREST
+
+		scene one
+西:ランド湖\n南のち東:がけ
+#West:Land Lake\nSouth, then east:Cliffs
+		end scene
+		scene two
+森の小さなくつろぎの池 ちょっとひといき いかがです?
+#Relaxation pond. Stay a while, we know you have the time.
+		end scene
+		scene three
+おそらく私は このへんぴな場所にずっと いるんだろう
+#I'm afraid I may be stuck on this tiny corner forever.
+		end scene
+		scene four
+東:がけ
+#East:Cliffs
+		end scene
+	end area
+	area GO
+
+		scene one
+ 灰色のガーディアンタイルを そのスピリットカラーに対応する色の石で置きかえれば 道は開けるだろう
+#The path will open when the dark guardian tiles are replaced by the stone of their spirit color on the square grid below.
+		end scene
+		scene two
+
+青い石像が動く時\n新たな道が開ける\nガケを抜けてきみょうな次元へ\nその先にはホテルがある\n\n\n\"見守る者とは誰だ?\"ぼくはたずねる\n\"この場所を取り仕切っているのは?\"\nこれほど人の魂に囲まれているのに\nぼくはこどくを感じる
+#When the blue stone statue shifted\nThere a new path was revealed\nPast the cliffs, through strange dimensions\nStands a travelers' hotel\n\n\n\"Who is the guardian?\" I ask,\n\"Who rules this crowded business place?\"\nDespite the many human souls\nI still feel alone.
+		end scene
+		scene three
+
+赤くさびた像が動いた\nおくへと つづく道が開く\nその先には迷路のようなダンジョンがある\nそしてサーカスへ\n\n\n\"見守る者とは誰だ?\"ぼくはたずねる\n\"この場所から逃げるために 命をすてたのは誰だ?\"\nぼくはいたみを恐れる 他の人と同じように\nでも それよりも 死が怖い
+#The red and rusty statue moved\nAnd paved the way to deeper pits\nA labyrinthine dungeon follows\nThen a big-top circus tent\n\n\n\"Who are the guardians?\" I ask,\n\"Who gave up life to flee this place?\"\nI fear the pain, the same as they\nBut fear it more to die.
+		end scene
+		scene four
+
+にぶいかがやきを放つ緑色の像が動いた\nさらにおくへと進む\nこぢんまりとした町を抜けて\nとある住宅へ\n\n\n\"見守る者とは誰だ?\"ぼくはたずねる\n\"星になぐさめを求めるのは誰だ?\"\n誰かに見られている気がする\nそしてそれは やさしい星々のそれではない
+#The green, metallic statue shifted\nOpening a deeper trail\nSuburban homes and sidewalks form\nA path to an apartment.\n\n\n\"Who is the guardian?\" I ask,\n\"Who looks for comfort in the stars?\"\nAlone, I feel like I am watched\nAnd not by friendly starlight.
+		end scene
+		end area
+	area BLANK
+	
+#initial entrance from windmill
+		scene one
+岩:ここは未開の地 ザ ランドの外側
+#Rock:This is unclaimed territory - not yet a part of The Land. 
+		end scene
+		
+#concentric circles
+		scene two
+岩:これら^円と私は^やくそく^同心円に^全力でおわらせて...^...円が^ ビビービー... 
+#Rock:These -^ me and my^ - circles are^ - promises...I'll^ - concentric^ - really try to get everything done...^ - circles. Bzrt, bzrt.
+		end scene
+			
+#islands
+		scene three
+岩:見ててくれ^ -...でも僕はいつも^ - キミの歩みを^ - 再びキミがここに ^ - 現れてくれたらと
+#Rock:Watch^ -...but I always^ - your step^ - manage to reappear no?^ - when here! 
+		end scene
+		
+#mazeish place, not near the portal
+		scene four
+岩:ここから見下ろして^ - 私は気がついた^ - ここから見るあなたは^私は彼を愛している^ - 実は何も見えない
+#Rock:Looking down^ - And I realized:^ - from here, you- ^ I'm in love with him.^ - can see...nothing, really.
+		end scene
+		
+#left part of the 48 gate
+		scene five
+岩:申し訳ない - ^でもそうだね 僕らは -^このちらかった -^連絡は取ろうね -^でもポータルは^ - そしたら僕もいけんを -^君をザ ランドに帰すよ
+#Rock:My apologies -^ But yeah, we -^ on the mess here -^ ought to keep in touch-^ but that portal should^ - and I will try give you my opinions - ^ return you to to The Land.
+		end scene
+	end area
+	area NEXUS
+
+
+		scene one
+人によっては 何度も話すと ちがうことを言ってくれる ことがある
+#Sometimes if you talk to people multiple times, they have new things to say.
+岩はちがうけど 岩は いつも 同じ
+#But not rocks. Rocks don’t do that.
+		end scene
+		
+#before 49 card agate
+		scene two
+岩:本当に惜しかったんだ ああ もしも...
+#Rock:So close! If only...
+		end scene
+		
+#door that goes nowhere
+		scene three
+岩:好奇心てのはすばらしいね
+#Rock:Curiosity is a great thing.
+		end scene
+		
+#below treasure box
+		scene four
+岩:おおっ...!?
+#Rock:Oh!...?
+		end scene
+		scene five
+コンピューターたんまつには メールが開かれている 画面が一部こわれているので一部のテキストは よめない メールの中身は...\" やあ ヤング!どうやら [...] 15番目のカード [...] から さけたほうが [...] 考えてみてほしい さて じゅんびはいいかい? 起きてくれ\"
+#The computer terminal has an e-mail open. Parts of the screen are broken, so only parts of the message are visible in between black blotches. The e-mail reads:\"Hello, Young! It seems that [...] fiftieth card [...] maybe you shouldn't... [...] worth thinking about! Do you think you're ready? Wake up...\" 
+		end scene
+	end area
+	area OVERWORLD
+
+
+		scene one
+岩:岩に書かれた文字を よんでるなんて 友だち いないの
+#I’ll bet you’re reading a rock because you don’t have any friends.	
+		end scene
+		scene two
+岩:オーバーロードステーションへようこそ ザ ランドはお楽しみいただけましたか?
+#Rock:Welcome to Overworld Station. We hope you enjoyed your time in The Land. 
+		end scene
+		scene three
+岩:たんけんー はっけんー ぼくのせかーい!
+#Rock:An explorer is you!
+岩:南には行かないでください 建設中です
+#Rock:Please don't go south. It's under construction.
+		end scene
+		scene four
+岩:5,3にお宝!
+#Rock:Treasure in 5,3!
+		end scene
+		scene five
+岩:おお!見つけたねえ!
+#Rock:Haha, gotcha!
+		end scene
+	end area
+	area REDCAVE
+
+		scene one
+くずれゆく母の体内に 生まれ落ちた わたしたち
+#WE ARE BORN INTO THE DECAY OF OUR MOTHER’S BODY.
+		end scene
+		scene two
+私たちの母はある時 自らの母をすてて どくのキリの中へと歩み入った
+#ONE DAY OUR MOTHER LEFT HER MOTHER AND VENTURED INTO THE POISONOUS FOG.
+		end scene
+		scene three
+こんなこと 私たちは のぞんでなかった 母の苦しみの中に 産みおとされることなんて
+#WE NEVER ASKED FOR THIS. WE WOULD NOT HAVE BOUGHT OUR LIVES WITH HER SUFFERING.
+		end scene
+	end area
+
+# area for redsea
+	area REDSEA
+		scene one
+岩:状況から考えるに これらの植物はかなり長いあいだ かつどうをていし しているようだ
+#Rock:Signs indicate the trees have not been active for an extended period of time.
+		end scene
+		scene two
+岩:南:???^ 北:???
+#Rock:South:???^ North:???
+		end scene
+		scene three
+岩:このちいきのいびつな地形は 先住者の祖先が形作ったものだと言われている
+#Rock:The uneven terrain is said to have been formed by the ancestors of the area's inhabitants.
+		end scene
+		scene four
+岩:かれらは平和的な生物のようだ
+#Rock:They appear to be a peaceful species.
+		end scene
+	end area
+	area SPACE
+#middle
+		scene one
+油性マジックらしきもので書いてある:\"空間\"と\"時間\"の旅人よ かんげいします あなたが足を踏み入れたのは次元の裂け目 りんせつする\"ヤング\"の世界からはるか はなれた場所 いわばあなたは\"海\"をひとつふたつ こえてきたわけです この場所はいろいろ\"ちがい\"ますが恐れないでください あなたはすぐに元の世界にもどるのですから \"不吉\"あるいは\"危険\"に見えるかもしれませんが恐れないでください ここの住民はみなとても\"フレンドリー\"ですので\n -- MGMT
+#Scribbled in what appears to be permanent marker:Greetings, fellow traveler of SPACE and TIME. You have stepped into a rift far away from the juxtaposing area of YOUNG. You've crossed an OCEAN or two, so to speak. Don't worry about the CONTRAST, you can return to your normal adventure shortly. Do not FEAR this place, though it appears FORBODING and DANGEROUS you will find its denizens to be quite FRIENDLY.\n -- The MGMT
+			(メッセージの下には文字が刻まれている)森で迷った ____(よめない)ここに眠る
+#(Below the message, an engraving:) Here lies ____ (unreadable). He got lost in the woods.
+			(その下にまだメッセージがある)(とにかく南には行きすぎるな)
+#(Even further below the message:) (just don't go too far south.)
+		end scene
+		
+# extra color
+		scene two
+虹に刺された____(よめない)ここに眠る
+#Here lies ____ (unreadable. Who wrote this?). He was impaled by rainbow!
+ここに書けるようなじっせきがあれば 良かったんだけど
+#Would've been better with achievements.
+		end scene
+		
+#grey graves
+		scene three
+ガケに八つ当たりされちゃったバードここに眠る
+#Here lies Burd. The cliffs weren't feeling too friendly.
+		end scene
+		scene four
+一回も使われなかったバッグ ここに眠る
+#Here lies bag. It never had a chance.
+大事にされすぎたね!
+#Pretentious!
+		end scene
+		
+# color graves
+		scene five
+サヴィッチここに眠る - ぼくのPCを修理してくれると言ってガレージに来て きゅうくつそうに座り込んで作業しだした 3年後 修理はまだ終わっていなかった そしてかれはコロリと死んでしまった 
+#Here lies Savitch. He tried to fix my computer in the garage once, and didn't take up much space while doing so. Three years later, he still hadn't finished. Then, he dropped dead.
+		end scene
+		scene six
+とりたてて書くことのない男 デイブ ここに眠る
+#Here lies Dave. He wasn't very inspirational.
+		end scene
+	end area
+
+	area SUBURB
+		scene one
+			---ヤング タウン---^\nヤングタウンへようこそ 他人とうまくやれない者もいますので\n 移動のさいはご注意ください... ヤングタウンは市長のイン氏による\n 宅地開発政策の一環として90年代に開発された町です 町の名前は市長の\n イン(陰)氏が自らの名前を拒絶し 自ら選んだヤング(陽)と名乗ったことに由来します\n ごゆっくりお過ごしください
+#---YOUNG TOWN---^\nWelcome to Young Town. Please beware of some of the citizens. They do not play well with others...tread carefully. Now, Young Town was founded sometime in the '90s by Mayor Ying as a part of a series of ongoing housing projects, the name chosen as a reflection of Ying's denial of possessing the name Ying, and assertion of possessing the name Young. We'll hope you enjoy your stay.
+		end scene
+		scene two
+			西には伝説の見通せし者の寺院があり 東には我らがイン市長のアパートがあります なお市長のアパートは一般開放されていません 訪れるさいはご注意ください
+#To the west are the legendary temples of the Seeing One. To the east is our wonderful Mayor Ying's apartment, which has been since closed off from visits to the public - trespassers beware. 
+		end scene
+		scene three
+			5回めの訪問時 イン市長は駐車場の少なさに強い不満をおぼえました この駐車場は市長が感じた駐車場の少なさを表しています イン市長はそれ以来 来訪時にはこの駐車場を使うことがあります
+#On his fifth visit, Mayor Ying grew frustrated at the lack of parking lots. This parking lot reflects Ying's frustration of the lack of parking lots. Ying would occasionally park in this parking lot on subsequent visits.
+		end scene
+		scene four
+			昔は長い文章書いてたの思い出すなあ 全然まとまりなかったけど!
+#I remember the long sentences I used to write. Ha! Fragmented.
+		end scene
+		scene five
+			A DANGEROUS SITUATION
+		end scene
+	end area
+	
+# Area for TRAIN (it's actually CELL sorry)
+
+
+	area TRAIN
+		scene one
+見通せし者はすべてを知り なんじを悟りへとみちびく者 悟りへの道のりを照らす明かりはない
+#The Seeing One knows all and will lead one to enlightenment. The road to enlightenment is unlit by any torches.
+		end scene
+		scene two
+見通せし者の示す道から それてはならない たとえ迷路のかたすみに 宝箱があっても
+#Do not stray from the way of the Seeing One, not even for the treasures lying at the far corners of the maze.
+		end scene
+		scene three
+立ち止まるな
+#Move along.
+		end scene
+		scene four
+チェイサーは らんぼうすると おこり出す
+#Do not anger the Chasers with violence.
+		end scene
+	end area
+	area WINDMILL
+		scene one
+かんこうスポット:\"双子の塔\"しばらく前にけんせつされたこの塔からは 遠くの山々まで見渡すことができます 第一の塔は はそんして以来 別の目的に使われるようになりました 第二の塔は いまだ東にあり 天高くそびえています なお東の塔へ続く道は 安全上の理由から 現在ふうさされています
+#SCENIC LANDMARK:Partner Towers. Built some time ago, the Partner Towers overlook the distant mountains. The first tower was damaged a while ago and has since been repurposed. The second still stands to the east, reaching into the sky. Due to safety concerns, the path to the tower has been cut off until further notice.
+		end scene
+		scene two
+安全上のお知らせ:^\nこの塔は はそんしていませんが 最上部に次元の裂け目が生じています ちゅういして 広い心をもって すすんでください^\n -- MGMT
+#PUBLIC SAFETY NOTICE:^\nThis tower, while not damaged, has been said to have a dimensional rift at the top. Proceed with caution and an open mind.^\n -- The MGMT
+		end scene
+	end area 
+end npc
+
+
+# dungeon statue (Dungeon statue)
+npc dungeon_statue
+	area BEDROOM
+		scene one
+この像は動かせそうにないし 動いてもくれなそうだ
+#The statue does not look like it will be moving anytime soon.
+		end scene
+		scene two
+像は動いたようだ
+#The statue has moved.
+		end scene
+	end area
+	area REDCAVE
+		scene one
+この像はしっかり固定されているようだ
+#It looks like this statue is firmly in place.
+		end scene
+		scene two
+像は動いたようだ
+#The statue has moved.
+		end scene
+	end area
+	area CROWD
+		scene one
+この像は 動かせそうにない
+#This statue does not seem to be movable.
+		end scene
+		scene two
+像は動いたようだ
+#The statue has moved.
+		end scene
+	end area
+end npc
+
+
+# APT splitboss
+npc splitboss
+		area APARTMENT
+		scene before_fight
+火は美しい そう思わんかね? だが町のあかりは 星のはなつ火のかがやきを かくしてしまう なげかわしいことだ
+#Fire is beautiful, isn't it? What a shame that the glow and glare of streetlights hides the fire of the stars.
+		end scene
+		scene after_fight
+そうかね 星は火のかたまりじゃ ないのかね^キミは細かいな...
+#Okay, so stars aren't really made of fire. ^Who gives a shit anyway?
+		end scene
+	end area
+end npc
+
+npc cube_king
+	area SPACE
+# kings are supposed to offer info on 
+		scene color
+やあ 調子どう? 僕はこのパーティションの支配者であり この空間の成り立ちそのものだよ
+#How are you today? I'm the ruler of this partition and interpretation of space.
+なんで僕がこの場所の支配者か知りたい? いいけど長い話になるよ てか 超長いよ? じんじょうじゃないくらい長いよ
+#You want to know why I'm the ruler of this place? I'll tell you, but it will take a while. Like, a long while. An obnoxiously long while.
+マジで 相当かかるけど いやマジで 忠告はしたからね! 僕すぐ話をだっせんさせちゃうしさあ 多分そこにある宝箱の中身さらってサッサと先進んだほうがいいよ それかチョイ遠いけどあっちのホテルに向かうとか なんでココにつながってるのかは分かんないけど 値段はけっこう安いみたいよ まあココではお金とか意味ないんだけど
+#Like, quite a while. No really, I'm warning you! I tend to ramble. Maybe you'd be better off just scooping out the contents of that chest over there. Or heading off to the hotel in the distance. Don't know how that got there, I heard they have relatively cheap rates. Not that money matters here.
+LOOP
+なんで僕が支配者なのかって?^...じつは僕もよく分かんないんだよね ここらの友だちが この空間の現状を考えるとオマエがピッタリだよって言うからやってるんだけど アレかな? ココの支配者ってずっとここに座ってなきゃいけないんだけど キューブって平らな面に置くと安定するじゃない? そういうこと? 分かんないけど
+#Why am I the ruler?^...I'm not sure why, but my friends around here saw it fit to put me in this position, because of the immediate state of this space. Maybe this is the case because cubes are best at sitting still on flat surfaces. As for why someone needs to sit up here - that's beyond me!
+あっちの友だちにも やっぱり長所はあるワケ その友だちもいつか支配者になる可能性はあるし 今はできないってだけなのね 僕らってときどき支配者交代するからさ まあそのときは空間のなりたちを変えるわけだけど! たとえば次に定める世界の形によっては ピラミッドさんだか ピラミッドくんが次の支配者になることもあるんよ 彼らが世界にハマる形さえしてればね なりたちを変えるってのはそういう意味なのね アホっぽく聞こえる? まあそうなのかもね でもまあ そういうもんだからしゃあない 世界のなりたちなんて数分とか数時間で変わるしね 長い時間がかかるわけじゃないのよ
+#The others - my friends over there - have merits of their own. It's not like they couldn't sit up here in the future, they just can't do it now. Sometimes, we switch off who is the ruler, but every time, we always have to reinterpret this region of space! Perhaps Mr. or Ms. Pyramid comes up here because we decide to make the throne shaped in a way that best fits them, by re-imagining this world, so to speak. Does that sound silly? It might be. But that's how it is. It happens quite fast. Minutes, hours - not necessarily a long reign.
+ともあれ支配者ってのは やっぱ変な気分になるよ 何というか孤立してる感じとか 他人をさけたくなる というかさ
+#Though, when I am ruler, it feels slightly strange...I somewhat feel isolated, wanting to be avoidant of others...
+...ああ 孤立ってのはちょっと ちがうかな 部分的には合ってるんだけどね じっさい孤立はしてないし 他人も苦手なわけじゃないんだ 僕らはみんな友だちだと思ってるし でもさー みんなココに来ないし 来ても二言三言しか話さないし そういう点では孤立してるなあって思うよね
+#...but isolation is not the right word, though it covers parts of the feeling. I'm not isolated, and I don't dislike the others. We consider ourselves all friends, but you know, no one really comes up here except to say a few words. So I have to think about things or I might go crazy! Maybe that's part of the isolation. 
+まあ そういう\"どうしてこの空間に僕らが存在してるか\"みたいな話よりさ どうして僕らが友だちなのかのほうが気になるよ
+#Outside of those inane questions about *why* we're here occupying this space, I'm curious as to why we're even friends.
+まあ今の空間のなりたちでは 僕が支配者やるのがベストってことで なりたちが新しく変わるまでは みんな僕が支配者でいられるように気をつかってくれるし... 物理的にそこに存在してくれる事とかね そういうのは はげみになるよね
+#I like to think that whenever we're under the interpretations that I'm best to rule, that they give me comfort in being able to hold this position for as long as it takes to reach the next interpretation. You know, encouragement and the like, their physical presence, those are comforting.
+僕としては それで十分みたいだ まあ一人か二人くらい 支配者の気持ちを理解してくれる友だちがいたらベターだけど でも別に文句言ってるわけじゃないよ! でももしそんな友だちがいたら 支配者が一人じゃない空間とかもありじゃないかって... うわ これすごいアイデアじゃない?! まあ僕が支配者じゃなくなったら 今言ったみたいに ふるまうつもりだよ... できるのかどうかは分かんないけど
+#I suppose that's enough to satisfy me, though it would be nice to have one or two of them try and understand how I feel about being a ruler. Not that I'm complaining about encouragement! But maybe then, we could have multiple rulers...what a thought! Maybe that implies that when I am not ruler, I must act the same way I sometimes wish they would...who knows if that can be done.
+でも支配者も これ以上はいいかなあ あ そうだ あっちの方向に進むと また似たような空間があるよ まあ匂いはちょっと ちがうだろうけど
+#I've gone on too long. If you head off in the other direction, there's another similar region of space, though I think it smells a bit different. 
+いやあ でも会えてよかったよ
+#It was nice to meet you.
+ん? また僕の話ききたいの?
+#Oh, you want to hear my story again?
+オッケー んじゃ ココにすわっとく
+#Okay, sit tight.
+		end scene
+		scene gray
+やあ ボクはこの空間の支配者なんだー
+#Hello there. I'm the ruler of this part of space.
+ん? 何? なんでボクがここにいるか知りたいって? マジで言ってる? 説明し始めたら ちょう長いよ?
+#What's that? You want to know why I'm here? Are you sure? It'll take me quite a few words to explain why!
+うーん どうしてもって言うならね... ただ それよりホテルに向かったほうがいいとは思うけどね どうしてホテルを建設することにしたのかはサッパリ分かんないけどさ もし税金かかるとか言われたら ぜったい文句言わないと!
+#Well, if you insist. Though you might be better off just walking off to that hotel in the distance. Don't know why they went through with the construction of it. If I had any money to be taxed, I'd surely be complaining!
+LOOP
+やあ ボクはこの空間の支配者やってるんだ でも空間だけで人を支配してるわけじゃないよ
+#Well, even though I'm the ruler of this part of space, I am not really ruling over anyone.
+友だちもみんな それぞれの空間で支配者やってるけどさ あいつらも人を支配してはいないんだ そういうイミではみんな孤立してんのよね もちろんお互い話したりはするのよ? だからそういうイミでは全然孤立してないんだけど まあここは ボクが存在する空間のひとつってこと
+#Those friends of mine - they're all rulers of their own parts of space. Ruling no one really, either - we're all alone in that respect. But we're not alone in that we talk to each other, and in other ways we are not alone, too. This is just one place in which I exist.
+ボクと友だちが支配してる空間には 共通点がたくさんあるんだ 存在する理由とか こうぞう あるいはきょうみ よくぼう そういうものがね よく支配のしかたについても話し合うんだよ
+#My friends and I - our parts of space have a lot of commonality to them in why they exist and how they're organized. Similar interests and desires, and the like. We like to talk a lot about how to rule, and so forth.
+ひとつ切ないのは 物理的に会うきかいが ほぼ ないってことかな
+#But the tragic thing is that we rarely, if ever, get to meet eachother in the physical form. 
+だから話しあうっていっても 物理的に会ってるわけじゃなくて ホログラムに話しかけるカンジなんだ
+#So you're not actually talking to their physical forms, but a representation of them in some holographic form.
+そうなんだよ 切ないでしょ? こんなに共通のわだいがあって 助け合いもするのに 会えないんだからさ 
+#I know, it's unfortunate. It's unfortunate because we share so much in common, but we can only help eachother as friends so much.
+面と向かって話さないと伝わらない部分て どうしてもあるじゃない? そういうのがねえ...
+#There's just a small thing lacking when you can't have a one-on-one physical conversation all the time.
+あ 文句言ってるわけじゃないんよ? 話せるだけでもすごくウレシイし! 話せもしなかったら...それこそサイテーじゃん?
+#But I'm not complaining. It's better than nothing at all! I can't imagine what it would be like otherwise. Something terrible.
+いやあ 話せてよかったよ キミのほうもうまくいくといいね
+#It was nice talking at you, good luck with whatever you're up to.
+あれ まだいるの? もう一回話を聞きたいとか そういう系?
+#You're still here? I can tell you everything again, if you'd like.
+		end scene
+	end area
+end npc
+
+npc forest_npc
+	area FOREST
+		scene bunny
+クリックソン:来たなイジワル野郎! オメなんか怖くねえぞ!
+#Crickson:Hey ya big bully! I’m not afraid of you!
+クリックソン:バーカバーカ!オラは逃げたりしねっぞ! さあなぐるなら なぐれー!
+#Crickson:Ya big lunkhead! I won’t run away! Not even if you try to slug me a good one!
+クリックソン:アホー!とんまー! やーいやーい! こンの恥知らず!
+#Crickson:Yer just a big dumb broomy pants, that’s what you are! You oughtta be ashamed of yourself!
+		end scene
+		scene thorax
+ソラックス:オレはソラックス ハチたちの代弁者\n^ハチのうんめい いつも こんめい\n^はたらきバチが逃げ出したよ コロニー\n^そしてほろびたよ 切ないね 心に!
+#Thorax:I am the thorax, I speak for the bees.\n^Their fate is uncertain, it’s not the bee’s knees!\n^Some colonies’ workers have all took to flight!\n^These colonies die then, it’s no pretty sight!
+ソラックス:新種のウイルスか あるいはのうやくか\n^はたまた タイコバエの幼虫のしわざか!\n^ミツバチみんな うごき オカシイな\n^こんな状況 変えなきゃ オワリだ!
+#Thorax:Perhaps it’s a virus or new pesticide,\n^perhaps it’s the larva of foul phorid flies!\n^That’s making these honeybees all act so strange.\n^Whatever it is, it must certainly change!
+ソラックス:オゥケィ オレも原因サッパリ分からねえ\n^じゃあ このMCもたぶんムダじゃねえ?\n^だからってココに 座ってたら 結果はそう ゼツボウです!\n^ならTwitterで!Facebookで!さけぶぜオレらのSOS!
+#Thorax:Okay, so I don’t really know what’s the matter\n^I worry my efforts are nothing but chatter.\n^But how can I sit and do nothing to help?\n^So I’ll post it to Facebook and Twitter and Yelp! 
+		end scene
+	end area
+end npc
+
+npc shopkeeper
+	area FIELDS
+		scene init
+お買いものは こちらで
+#Buy my stuff
+		end scene
+	end area
+end npc
+
+npc goldman
+	area FIELDS
+		scene outside
+TOP
+何見てる? あっち行け! 正々堂々と捕まえたんだから いいだろ!
+#What are you doing here, punk? Get lost! I caught it fair and square! 
+ぜったい 逃がさないぞ! 何百年たっても ぜったい!
+#I won’t let it go! Not in a million years!
+		end scene
+		scene inside
+何だよう またおどかすつもりかよう?
+#Oh, did you come here to terrorize me some more?
+どうせオメーだって ネコがモフモフでかわいいから 味方してるんだろう
+#You’re just siding with the cats because they are cute and furry.
+		end scene
+		scene etc
+TOP
+何見てる? あっち行け! 正々堂々と捕まえたんだから いいだろ!^ えっ ウワッ!^ それって...?^ ネコがもういっぴき!???^ ウワアアアアアアアアア!!!!
+#What are you doing here, punk? Get lost! I caught it fair and square!^ Wauugh!^ Is that--?^ ANOTHER CAT???^ WAUUGHHH!!! 
+オメ... ウチをキレーにしてくれたのか...? うおおん オラ カンドーした! お礼にオラのたからもの あげるよ!
+#You... you cleaned up my house... I’m touched! Here, I want to give you my most beautiful possession! 
+ヤングはハコをあけた 中には何か入っている!
+#Young opens and takes the box. Something is inside it!
+イッキィ:あらま ミャオか^\n\nミャオ:無事でよかったよう!^\n\nイッキィ:えっと... ヤング 助けてくれてありがとうね
+#Icky:Oh. Hey Miao.^\n\nMiao:I’m so glad you’re safe!^\n\nIcky:Uh... thanks for the hand, Young.
+LOOP
+イッキィ:正直言えば ハコの中も悪くなかったんだけどね
+#Icky:To be honest, I kind of like sitting in boxes.
+		end scene
+	end area
+end npc
+
+npc miao
+	area FIELDS
+	scene init
+うわ...! 選ばれし者 ヤングさん!? ウワオ!光栄です!ボクはミャオ・シャオ・テュアン・アイ 選ばれし者見習いです!
+#Oh!! You are Young, The Chosen One!!! Omigosh, what an honor! My name is Miao Xiao Tuan Er, Chosen One-in-training!
+ぜひ少し お供させてください 選ばれし者のカツヤクを生で見たいです!
+#Could I follow you around for a bit to watch a Chosen One in action? 
+LOOP
+ヤングさん! どうもです 今日もお供していいですか?
+#Hello again, Young! Can I shadow you today? 
+		end scene
+		scene randoms
+# 0. after talk to shopkeep
+ミャオ:ドモーっす! そうだヤングさん 何か ぬすんだことって あります?
+#Miao:Hey, Young... have you ever stolen anything?
+# 1. AFter talk to mitra
+ミャオ:ボク ミトラさん好きっス... ウェアズもハンサムな自転車ですよねぇ
+#Miao:I like Mitra... and isn’t Wares a handsome bike?
+# 2. Nexus pad
+ミャオ:ヤングさん そのカッコイイ石なんスカ? タイムスリップとかできるヤツッスか?
+#Miao:What’s that cool stone thing, Young? Does it make you go back in time?!
+# 3. Random if Icky not saved
+ミャオ:だんだんイッキィのこと心配になってきたッス... ヤングさん このへんで大きなネコ見ませんでした?イッキィは 東の森をサンポしてくるって言ってたッスが...
+#Miao:I’m starting to get worried about Icky... Young, have you seen a bigger cat around recently? Icky last said he was going to walk around the small forest to the east.
+# 4. leave map
+ミャオ:イッキィから 危ないところには行っちゃダメって言われてるンス... ボクはここで帰るッス!
+#Miao:Icky said I shouldn’t go where it's unsafe. I’ll see you later, Young.
+# 5, 6, 7 - only after you've seen 0, 1, 2
+ミャオ:ヤングさんは ダンボールの中に入ったことあります?
+#Miao:Have you ever sat in a bunch of grocery bags?
+ミャオ:ヤングさん マタタビってやっぱ やっちゃだめスかね?
+#Miao:Hey Young, do you think it’s wrong to do catnip?
+ミャオ:やっぱ選ばれし者になるには イッパイしゅぎょうしたんスカ...?
+#Miao:I bet it must have taken a lot of work to become The Chosen One, huh, Young?
+		end scene
+
+# musing after you save icky	
+		scene philosophy 
+イッキィが怖い目にあって 考えたんスけど ボクらは死んだらどこへ行くんスかね? そんで 人生の目標をやりとげることなんて可能なンスかね?
+#That scary situation with Icky got me thinking... What do you think happens after we die? How could any of us fulfill our full purpose in the span of one life? 
+それともボクらは 運命をまっとうするまで 生まれ変わり続けるんスかね? あ... それじゃ簡単すぎッスか?
+#Maybe we are reincarnated again and again until we fulfill our destiny. Or would that make things too easy?
+そしてその旅路の果てには何があるんでしょう? ただ時間に流されて 消え去るんスかね?
+#And then what is our reward for completing our journey? Do we just fade away?
+LOOP
+フムー...
+#Hmm...
+		end scene
+
+# icky talking after yoh save icky
+		scene icky
+やあ ヤング
+#Oh. Hi, Young. 
+実はボク ホントの名前はイッキィじゃなくて イカボッドなんだ
+#My name’s not really Icky. It’s Ichabod.
+ミャオ・シャオ・テュアン・アイは迷惑かけてない?
+#I hope Miao Xiao Tuan Er hasn’t been too much trouble.
+それじゃあね ヤング
+#See you later, Young.
+		end scene
+	end area
+end npc
+
+npc generic_npc
+	area DEBUG
+		scene melos
+やあやあ 見つかっちゃったねえ! まあボクはここに残るよ 外はさむいしね
+#Oh howdy, how is it going? You found me! I'm going to stay here, though. It's cold outside.
+部屋がキタナいのはカンベンしてね このへんはボクが DAME マップエディタで作ったんだ
+#You can blame me for all of those awful rooms! I made them with the DAME map editor.
+あと このゲームはFlashDevelop IDEとFlixel AS3フレームワークを使って作ったよ!
+#I made this game with FlashDevelop IDE and the Flixel AS3 framework!
+ああ あと音楽は主にREAPER DAWで ときどきAudacityを使って作ったかな
+#Oh yeah, and I made the music using the REAPER DAW. And sometimes Audacity.
+ボクはまわりのコンピューターから出る放射線から栄養をとってるんだ^ん? それは生物学的に正しくない?...ってどういうこと?
+#I actually get my nutrition from the radiation from all of these computers... ^what do you mean that's not biologically accurate?
+やあ母さん^それから父さんも!
+#Hi mom! ^And dad!
+このゲーム20分でクリアする方法知りたい?
+#Want to know how to finish the game in 20 minutes?
+そりゃー教えらんないなー!
+#Ha! Like I'd tell you!
+(丁寧にきかれたら別かもだけど...)
+#(...maybe if you ask me nicely...)
+		end scene
+		scene marina
+うおー! やあやあ!
+#Woah hey!
+このゲームのセリフはだいたいボクがガリガリ書きまくったんだよ^(このセリフはショーンが書いてるけど)
+#I wrote a ton of dialogue for this game!^ (...but not this dialogue. Melos is doing this.)
+このゲームのアートはAdobe Photoshop CS5とGraphics Gale Free Edition,それからWindows 7 Snipping Toolを使って作ったんだ
+#I used Adobe Photoshop CS5 , Graphics Gale Free Edition and Windows 7 Snipping Tool to do the art!
+		end scene
+	end area
+
+# both redsea done in Redsea_NPC.as
+	area REDSEA
+		scene first
+ここはシットリしててお肌にはいいんだけど 髪の毛にはサイテーよね...
+#The humidity here is good for your skin, but bad for your hair.
+こうして立ってるのが好きなの 夏になるとさ みんな うだるように暑い外とエアコンの効きすぎた部屋を 行ったり来たり きゅうげきな温度変化は骨に良くないよ
+#I like standing here. These days, people spend the whole summer rushing back and forth between sweltering heat and freezing cold AC. Those quick temperature changes weaken your bones.
+氷をかむクセと同じよ わるいクセ うちのママとか 大人になっても氷をかんでたんだけど おかげで今じゃ おくば ヒビだらけなんだよ
+#It’s like that rotten habit of chewing your ice cubes. My mother chewed her ice cubes into her late 20s. Now she’s got hairline cracks all over her molars.
+		end scene
+
+		scene second
+クツは脱いだらちゃんと新聞紙つめて かわかしてね ジメジメのままだとバクテリアがはんしょくしちゃうからね
+#Make sure you change out of those shoes and stuff them with newspapers to dry them out. Wouldn’t want to create a breeding ground for bacteria.
+なんで食べほうだいのデザートって赤いゼリーばっかりなのかな? お客さんをガンにしたいとしか思えないよ
+#Why do buffets only ever have RED jello cubes? It’s like they want us to get cancer.
+		end scene	
+
+		scene bomb
+ボクに関わるな
+#Get away from me.
+マジで... ほっといて
+#I’m serious... leave me alone now.
+		end scene
+
+	end area
+ area BLUE
+		scene one
+同情はいらねえよ ヤング
+#I don’t need your pity, Young.
+そうかい そうやって幸せな世界の中で生きてりゃいいよ\"選ばれし者\"さんよ...
+#Right, just go on living in your happy little world, "Chosen One"...
+なあ ヤング 友情なんてさ みんなが自分をだましてるから成立するんだぜ オレたちはみんなクソヤローだし 最後にはみんな一人なんだ
+#You know, Young, friendship is just a trick people play on themselves. We’re all assholes, and in the end, we’re all alone. 
+ハッ! お前がオレをキラいなのは知ってたよ
+#Hah, I knew you hated me, Young.
+オレは調子よくやってるよ
+#I’m doing fine.
+もちろんお前は気にしないよな 誰も気にしやしない
+#Of course you don’t care, no one does.
+		end scene
+	end area
+
+	area HOTEL
+		scene one
+街は汚れて人だらけ それは分かってるんだけどさ それでもときどき ここに来て街の明かりを見るのが好きなんだ
+#I know cities can be dirty and crowded and everything, but I like to come out here and look out over all the lights.
+街には街の美しさがあるだろう? 星のかがやきみたいに永遠じゃないけれど 人間くささっていうのかな それが美しさに深みを持たせてると思うんだ
+#It's beautiful in its own way. It’s not nearly as infinite as the stars, but there is something about its humanness that adds a layer of wonderful complexity.
+明かり一つひとつのかたわらには だれかがいて 期待や恐れ 秘密なんかをかかえてて だから街の明かりは怖いほどこどくで だけどくっきりと人らしい
+#Behind every light is a person with hopes and fears and secrets... looking out is both terrifyingly lonely and fiercely personal.
+ここから見えるまどのおくにいる すべての人を 僕は愛してる 一人ひとりが僕の星だからね きみの人生がどれほど ろくでもなくても どこまで落ちていったと思ってても 僕はきみを愛してるんだよ 夜はかがやきにみちてるんだ
+#I think I love every person behind every window. I love you, people, for being my stars. I love you no matter how fucked up your life is or how far you think you’ve fallen. You are lovely for tonight...
+くだらない おしゃべりを聞かせちゃったね 聞いてくれてありがとう
+#I’m sorry, I’m babbling. Thanks for listening.
+		end scene
+	end area
+	area REDCAVE
+
+		scene easter_egg
+ヘーーーーイ! まあゆっくりして行きなよ!な!?
+#Heeyyyy, mannn...take a load off, stay a whilleee, eh?
+		end scene
+	end area
+	area APARTMENT
+		scene easter_egg
+わっ! 見つかっちゃったか!
+#Ah! You found me!
+		end scene
+	end area
+	
+# quest_normal and quest_event are the dialogue quest (pseudo-trading) people.
+# quest_normal is what htey say normally, quest_event is what they say when it's their turn for a clue.
+	area CLIFF
+	scene quest_normal
+ゴーレム:来るとちゅう でっかい岩が降ってきたりしなかった? イライラするとどうしても岩投げちゃうんだよねえ 当たったらゴメンね
+#Golem:Did you get hit by a boulder on your way up? Sometimes I throw boulders when I’m angry. I’m sorry if I hit you.
+ゴーレム:よく母さんに\"そんな事してたら そのうち山がなくなっちまうよ\"って言われたよ まさかポッキリいっちまうなんてなあ
+#Golem:My mother always said that if I kept doing it, I’d run out of mountain to throw. Back before she was fracked.
+		end scene
+		scene second
+ゴーレム:岩って長生きだから 何世代にもわたって人間を見ることになるんだ そうして年を重ねて どんな人よりもかしこくなる
+#Golem:When you’re a rock, you see many generations of people come and go. You become ancient and wiser than the wisest among men.
+ゴーレム:...というのがリクツなんだけど ずいぶん前に双眼鏡こわしちゃってさ じつは人の営みもそんなに見てないんだ
+#Golem:At least, that’s the idea. I broke my binoculars a while back so I haven’t been able to tell what’s going on.
+ゴーレム:じっさい 見ててもタイクツだから 別にいいんだけどね
+#Golem:Actually, I don’t miss watching people much, it’s a bore.
+		end scene
+		scene quest_event
+ゴーレム:ああ うん たしかに人が来たよ 困ってたみたいだった たしか ビーチに向かうって言ってたかな
+#Golem:Oh, yes, I met someone who was little lost...they told me they were going off to look around the beach.
+		end scene
+	end area
+	area BEACH
+
+
+		scene quest_normal
+ロブスター? ちがうよ オレはランゴスティーノさ 名前はヒュウズってんだ
+#I’m not a lobster, I’m a langostino. The name’s Hews.
+LOOP
+ヒュウズ:海はいい... 何がいいって 水平線が見えるだろう
+#Hews:You know what the best part of the ocean is? Being able to see the horizon.
+ヒュウズ:海ってのはいわば 塩味のついた無限の可能性なんだよ
+#Hews:The ocean is like a salty taste of infinity.
+ヒュウズ:混んでるビーチなんてのは くもった宝石みたいなもんさ
+#Hews:A crowded beach is robbed of its grace.
+		end scene
+		scene second
+ヒュウズ:シャコって知ってるかい? シャコには\"じゅようたい\"が16コもあって しがいせんも見えるらしいんだ たくさん色が見えるってどんなだろうね?
+#Hews:Have you heard of the mantis shrimp? It has 16 photoreceptors that allow it to perceive ultraviolet light. Can you imagine seeing a wider range of colors?
+ヒュウズ:きっと美しいんだろうな でも色がちがうだけで憎しみ合う今の世界を考えれば そうシンプルなハナシでもないのかね
+#Hews:Maybe it would be beautiful. Then again, we’ve found plenty of ways to hate each other with just the colors we have.
+		end scene
+		scene quest_event
+
+ヒュウズ:だれか 探してるのかい? そういえばオレがここで空を見てたとき あれはちょうど太陽が雲にかくれちまった時だったか 誰かが来て 何か探してるんだがって聞いてきたな 何だったか覚えてないが... そいつは森へ行かねばって言って走り去っちまったよ
+#Hews:You're looking for someone, huh? I remember I was sitting here when a few clouds passed by the sun. While the sun was occluded, someone walked up to me and asked where something was. I don't remember what it was, but the person ran off, saying they were heading to the forest.
+		end scene
+	end area
+	area FOREST
+
+		scene quest_normal	
+#npc james
+ジェームズ:木イチゴはいいよね 好物なんだ
+#James:Berries are a good kind of food. I like berries.
+ジェームズ:木イチゴにオシッコかけないようにね
+#James:Please make sure not to defecate on the berries.
+ジェームズ:今年は今のところ18回交尾したかな それから木イチゴは389回食べたかな
+#James:So far I have had sexual intercourse 18 times this season. Also, I have eaten 389 pawfuls of berries.
+ジェームズ:ジェームズに木イチゴのおみやげは ない?
+#James:Do you have any berries for James?
+		end scene
+		scene second
+ジェームズ:ポエムを かいたよ\n^食べたよ 木イチゴ\n^ハッピーな キモチよ\n^笑顔こぼれて みのり たわわに\n^冬が来るから さらに おかわり
+#James:I wrote a poem:\n^I like to eat berries\n^They make me merry\n^How much do I like berries?\n^I would have to say very!
+ジェームズ:ブルーベリーとラズベリーだと どっちが好き?
+#James:Do you like blueberries or raspberries more?
+ジェームズ:ジェームズに木イチゴのおみやげは ない?
+#James:Do you have any berries for James?
+		end scene
+		scene quest_event
+ジェームズ:誰か来たよ 木イチゴいらないって言ってた 湖の南まで行って 西に行ったよ
+#James:Someone came by. They did not want berries. Went to southeast part of lake to the west.
+		end scene
+		end area
+
+
+#npc rank
+#npc olive
+	area FIELDS
+		scene easter_egg
+オリーヴ:やほ アタシはウサギのオリーヴっていうの
+#Olive:Hi, I'm Olive the rabbit.
+オリーヴ:アタシ すっごくたくさん シリアル持ってるんだ シリアルって大好き
+#Olive:I have so much cereal left to eat! I love cereal.
+オリーヴ:アタシのもってるシリアルのハコ すっごく大きいの もうネバーエンディングなのよ!
+#Olive:The box is so big. It never ends!
+オリーヴ:ネバエンディン シーリアール!
+#Olive:Neverending cereal!
+オリーヴ:...うーん これじゃ ちっとも悪いことに聞こえないわね
+#Olive:Hmmm...maybe that's not such a bad thing.
+		end scene
+		scene bush
+ランク:ウハハ ヤング おめえバカだなー ホウキじゃ草は刈れねえって!
+#Rank:Eheheh, silly Young! A broom’s no tool for cutting bushes!
+		end scene
+		scene quest_normal
+ランク:オラはここで 低木を切って くらしてる 低木を刈ってると ゴールドが見つかる時があるんだぜ ウハハハ!
+#Rank:I cut down the bushes for a living. Sometimes when you cut the bushes you find gold! Eheheh!
+ランク:このあたりの低木も さいきんは景気が低迷しててな...
+#Rank:The economy has been really struggling under this bush...
+ランク:低木を切って ヨメと子供を食わせるのは 楽じゃねえよ ただ暖炉のマキだけは いつでもたっぷりあるがな ウハハハ!
+#Rank:Sometimes it’s tough to support the wife and kids on bush cutting--we don’t always have enough to eat... but we’ve always got a roaring fireplace! Eheheh!
+		end scene
+		scene quest_event
+ランク:ん? ああ そういやあ 誰か来たなァ 地下の迷宮に行くとかなんとか きっとそこには 刈り切れないほど草木があるんだろうなあ ウハハ!
+#Rank:Eh? Yes! Someone came by here. Said they were going to an underground labyrinth...I bet they've got a lot of bushes there, eh Young? Eheheh!
+		end scene
+		scene marvin
+マーヴィン:おっ やあやあ!
+#Marvin:Oh hey, how are you feeling?
+マーヴィン:ジャスティンどこだろ...?
+#Marvin:Where is Justin?
+マーヴィン:このへんにはボトルロケットはないみたいだね...
+#Marvin:There's no bottle rockets around...
+		end scene
+		scene chikapu
+チカチィー!
+#Chika Chi!
+チカ チカ!
+#Chika Chika!!
+チーー^\nカーー^\nプゥウーーー!!!
+#CHIIIII^\nKAAAA^\nPUUUUUUUUUU!!!!
+		end scene
+		scene hamster
+ボブ:ハムスターのボブは 自分のことを三人称で呼ぶんだ
+#Bob:Bob the Hamster likes to refer to himself in the third person.
+しかし句点ってむず,かしいよね 
+#Bob:Apostrophes are the root of all e'vil.
+ボブ:しずかに! 私は今 ハムスター的オーラをかもしだすべく 集中しているんだ
+#Bob:quiet! I am busy exuding an aura of hamstery ambiance.
+ボブ:...ものごとは実際にやらないと じょうたつしないらしいけれどさ... もしまちがった場合はやっぱり まちがえかたが上手になるのかな?
+#Bob:... I suppose you only get better by doing... But... if you do something wrong, are you just getting better at doing it wrong?
+ボブ:本物の男は泣かない... ああ 本物のハーレーに乗り かぜの強いモハーヴェさばくを走り抜ける男が たとえばヘルメットもゴーグルもかけてなかったら 日に焼けた顔についたその目から 涙がひとしずく スッとほほを流れたりするかもしれないけど うん 男は泣かないよね
+#Bob:A real man never cries... well, maybe he lets a single tear slide back from the corner of his eye across his sun-hardened face as he rides his bad, bad, Harley across the wind-swept Mohave desert wearing no helmet or goggles. But he never cries.
+ボブ:このゲームはぼうだいな数のサルが 同じくぼうだいな数のタイプライターを使って作ったものなんだ
+#Bob:This game was created by an infinite number of monkeys working on an infinite number of typewriters.
+ボブ:ジェームズが恋しいなあ...
+#Bob:I miss James...
+		end scene
+		scene electric
+クリブー:ざんぎゃくこうい手当 ほしいなあ!
+#Kuribu:Curry is yellow and spicy!
+クリブー:コイン いっこ いれて!
+#Kuribu:For the clever opponent, injure increase!
+クリブー:こだま分隊 に入りたい!
+#Kuribu:You got the experience of 2!
+クリブー:じゅーびょー!
+#Kuribu:I tell you my phone number! 0*1-51*7-*4386
+		end scene
+		end area
+	area TRAIN
+
+		scene quest_normal
+ここで何してるのかって? いい質問ですね! たまたまココに来ちゃって この場所にかくれているんだ ここは安全だし あの変なのに つかまりたくないからね
+#What AM I doing here? Good question! I just stumbled upon here. I'm in hiding. It's safe here, if you don't venture too far out and let those guys get you.
+どうも私は ひかく的 うんがいいようだ あのゾンビみたいなのはそこら中ウロウロしてるし... しかし彼らはどうして どうやって死んだのか気になるねえ モンスターにやられた? ラリってトゲにやられた? フムー
+#It looks like I'm relatively fortunate. All these dead people strewn all over the place - how did they die? It's a little fascinating, to try and think of how it happened. Were they attacked by the monsters? Tripped and fell onto the spikes?
+何にしても 楽しくはなさそうだ 僕はごめんこうむりたいね 物理的にイタいのはいやだもの
+#It is a a bit grim. I hope it doesn't happen to me. Physical pain is a terrible prospect.
+		end scene
+		scene quest_event
+ああ そういえば思い出した... たしかにしばらく前 だれか来ましたね 何かをさがしてると言ってたような... キミに似ていた気がするよ ん? いつだったかは思い出せないなあ ここにいると じかんってよくわからなくなるから... あ でも たしか ちかくの町に行くと 言っていたよ
+#Oh...now that I think about it, a person walked by here a while ago. Said they were looking for something...even looked a bit like you! I don't remember when, sorry. It's hard to tell the time in here. But they said they were going to head off to a nearby town.
+		end scene
+	end area
+	area SUBURB
+
+		scene quest_normal
+やあ
+#Hello.
+何かさがしているの?
+#Are you looking for something?
+何見てるの?
+#What are you looking at?
+いや ちがうよ ボクはココの住人じゃない しかし何でかな キミはボクが見えるし話せるのに 他の人はムリなんだ... さつじん者がウロウロしているっていうのに だれも気づかないし... 変だよ...
+#No, I'm not a citizen of this town. What's weird is you can see and talk to me, but I can't interact with any of them. There are all of these killers running around, and no one seems to notice. It is strange. 
+		end scene
+		scene quest_event
+うん 通りかかった人は いたよ 何かさがしてるって言ってた 何をかは分からなかったけど いそいでた ようすだったなあ 別の空間に行くとか言ってたけど... なんかヘンな言い方だよね
+#Yes. I observed a person walk by. They were looking for something. I don't know where their 'something' could be. The person went off in a hurry. Said they needed to head to an alternate area of space. Sounds fancy.
+		end scene
+	end area
+	area SPACE
+		scene quest_normal
+ちょっと え? え? キミ誰?
+#WHOA WHOA WHOA - - - WHO ARE YOU ? ? ? 
+ぼくは たんなる旅人だよ ここはAからBへ行く途中にある けっこう人気のあるきゅうけいスポットなんだ
+#I AM A DRIFTER . . . THIS IS ONE OF THE MORE POPULAR PIT STOPS ALONG THE JOURNEY FROM A TO B .
+Aって何かって? ? ? ぼくの地元だよ . . . 古い友だちに会いに行く途中なんだ . . . 長い旅だけど . . . ぎせいも払うさ . . . キミもだろ? ? ? そのほうが人生しげき的だしね! ! !
+#WHAT IS 'A' ? ? ? IT'S MY HOME TOWN . . . I AM VISITING AN OLD FRIEND IN B . . . IT IS A LONG JOURNEY . . . BUT I MAKE SACRIFICES . . . DON'T YOU ? ? ? MAKES LIFE MORE EXCITING ! ! !
+		end scene
+		scene quest_event
+ナルホド - - - ホカノ ニンゲン サガシテルノ^チョット メモリ ケンサク シテミマショ - READ ( 0X0C00400 , STDOUT , 100 ) ; \n . . . . . . \n . . . . . . \nフムフム. . . \nソノ ニンゲンハ トツゼン ナニカ ヒラメイタ ヨウスデ ナニヤラ テイレノ イキトドイタ タテモノニ ムカウト イッテマシタ\nイワレテミレバ アナタ ソックリ デシタヨ!! ホントニ アナタジャ ナカッタ? ホントニ? アレレ
+#OHH - - - LOOKING FOR ANOTHER HUMAN - - - I SEE . ^ LET ME ACCESS MY MEMORY . . . READ ( 0X0C00400 , STDOUT , 100 ) ; \n . . . . . . \n . . . . . . \n A HA . . . \n THE PERSON HAD A FLASH OF INSIGHT AND SAID THEY WERE HEADING OFF TO A SHED IN SOME WELL-KEPT FIELD. \n NOW THAT I THINK ABOUT IT . . . YOU LOOK SIMILAR TO THEM ! ! ! ARE YOU SURE IT WASN'T YOU ? ? HUH ? MM ?
+		end scene
+	end area
+	area GO
+		scene quest_normal
+あれ 今...あれ? うん まあ おみごと...!
+#You actually were...uh, ah. Well done.
+LOOP
+つるりとした岩が部屋の明かりを反射している 表面に何か刻んである:\"手短に すぐに出発することになるから(どんどん明るくなってきている いつものことだ)青い森の北西で 別の寺院の入り口を見た 北に森を抜けた先だ スイッチが自由に押せたらいいのだが... おそらく次にこの世界を訪れたときにでも\"
+#The shiny rock reflects only a bit of the light from the room. There is writing etched into it:\"Quickly, before I have to leave again (It is getting very light in here, this always happens) - the northwest part of the blue forest - I saw another temple entrance just to the north, past those trees - if only I could switch things at will to get through there...maybe I'll do this the next time I revisit this world.\"
+		end scene
+		scene quest_event
+つるりとした岩が部屋の明かりを反射している 表面に何か刻んである:\"手短に すぐに出発することになるから(どんどん明るくなってきている いつものことだ)青い森の北西で 別の寺院の入り口を見た 北に森を抜けた先だ スイッチが自由に押せたらいいのだが... おそらく次にこの世界を訪れたときにでも\"
+#The shiny rock reflects only a bit of the light from the room. There is writing etched into it:\"Quickly, before I have to leave again (It is getting very light in here, this always happens) - the northwest part of the blue forest - I saw another temple entrance just to the north, past those trees - if only I could switch things at will to get through there...maybe I'll do this the next time I revisit this world.\"
+		end scene
+	end area
+end npc
+npc geoms
+	area SPACE
+		scene gray1
+やあー! キューブにはもう会った?
+#HELLO. HAVE YOU MET cube YET?
+キューブはこのあたりの空間を支配してる すごくいい支配者なんだ ボクや他の支配者も自分の空間ではけっこう うまくやってるけどね
+#cube IS A VERY GOOD RULER OF THIS PORTION OF SPACE. US OTHER RULERS DO OUR BEST IN OUR SPACES AS WELL.
+		end scene
+		scene gray2
+
+このあたりの空間どう思う? 旅の途中に 立ちよるには けっこういいよね?
+#WHAT DO YOU THINK OF THIS CHUNK OF SPACE? IT IS A NICE WAYPOINT, NO?
+世界と世界の中間地点!
+#AN INTERSECTION OF WORLDS!
+		end scene
+		scene gray3
+ボクら灰色のピラミッドは ホントはここにはいないんだ 特別なマシンでホログラムを うつしてるってワケ
+#NONE OF US GRAY PYRAMIDS ARE ACTUALLY HERE. WE USE SPECIAL DEVICES THAT LET US PROJECT OURSELVES HERE.
+どうしてそんな事するかって? 友だちのキューブと話したり アイツを一人にしたくないからさ
+#WHY DO WE DO THAT? BECAUSE WE WANT TO TALK TO OUR FRIEND cube AND KEEP cube COMPANY.
+		end scene
+		scene graydead
+zzz... ムニャ...
+#*bzrrrrt* 
+		end scene
+		scene grayspin
+...ホログラムマシン ちゃんと動作してる?
+#...IS THE HOLOGRAM DEVICE WORKING CORRECTLY?
+してない?^...^あーもう!!
+#NO?^...^DAMN!
+		end scene
+		scene color1
+キューブにはもう会った? すごくクールなんだよ! 聞いた話じゃあ\n ガケぎりぎりの場所に12びょう近く立っていられるとか!ハンパないよね!\n\"ガケぎり立ちリーグ\"のメンバーならそのスゴさが分かると思うけど! え?\n 分かんない? うーん スゲエってことさ!
+#Have you met CUBE? It does such cool things! I heard once it stood on an edge for nearly twelve seconds. Oh man! Do you know what that means for the League of Edge Standers? No? Well, a lot!
+		end scene
+		scene color2
+キューブはいろいろ 面白いことしてるんだよ!
+#CUBE does a lot of interesting work!
+聞いた? どうやら次の支配者 ボクみたいなんだよね! たぶんあと何分かしたらじゃないかなあ!
+#Did you hear? Apparently, it will be my turn to rule soon! In just a few minutes, I believe.
+		end scene
+		scene color3
+僕はシュガーローフから来たんだ タイペイへ行く途中なんだ ここにいる理由? キューブにあいさつしていこうと思ってね!
+#I'm from Sugar Loaf, in transit to Taipei. Why am I here? Oh, I stopped by to say hi to CUBE!
+そんなに落ち込んだカオしないで! ここを訪れる人をおどろかさないように変なすがたしてるだけで キホン的には むがいだからさ
+#Don't look so down! This place is just an odd representation so as to not shock all of the visitors. It's mostly harmless, as far as we can tell.
+		end scene
+		scene colordead
+(...寝てるのかな...?)
+#(...is it taking a nap?)
+		end scene
+	end area
+end npc
+
+npc redboss
+	area REDCAVE
+		scene before_fight
+くつうのうちに生まれ くつうのうちに死ぬ そのくり返し 私たちは その苦しみを たち切る 私たちは 二度と外には出ない
+#EACH GENERATION IS BORN FROM PAIN TO DIE IN PAIN. WE WILL NOT SUFFER TO REPRODUCE THE CYCLE. WE WILL NOT GO OUTSIDE.
+		end scene
+		scene after_fight
+これが 私たちの反逆にたいする ばつなのか...
+#IS THIS YOUR PUNISHMENT FOR OUR REBELLION?
+		end scene
+	end area
+end npc
+
+npc circus_folks
+	area CIRCUS
+		scene before_fight
+どうして見通せし者の いけにえに なるのを拒む!? どうして私たちのきゅうさいを うばう!?
+#Why did you deprive the Seeing One of his sacrifices? Why did you steal from us our salvation?
+		end scene
+		scene after_fight
+...われらは しかるべき むくいを与えられなかった だが...きみは私たちをふたたび自由をくれた ありがとう ヤング 見通せし者のおみちびきが キミに再びあらんことを
+#...We have failed to make you pay for your interference. And yet... you have given us back our chance to be free. Thank you, Young. May the Seeing One look upon you in favor once more. 
+		end scene
+	end area
+end npc
+
+npc wallboss
+	area CROWD
+		scene before_fight
+しばらくぶりだねえ ヤン 本当に久しぶりだ まだあのファミコンで遊んでるようだねえ?
+#So good to see you, Yang. Been too long. Still playing those nintendos, I see?
+		end scene
+		scene after_fight
+ええい! いいかげん大人になれ ヤン! どうせさいごには 他人と付き合わなきゃ ならないというのに
+#Jesus, Yon, when are you just going to grow up? You know, you're going to have to learn to deal with people sooner or later.
+		end scene
+	end area
+end npc
+
+npc eyeboss
+	area HOTEL
+		scene before_fight
+私どもではさいこうのアメニティをご用意 しています プールはいかがでした?
+#We have all the finest amenities here. How do you like the Pool?
+		end scene
+		scene middle_fight
+私どもの さいしんフィットネスセンターは いかがだったでしょうか?
+#How about our state-of-the-art fitness center?
+		end scene
+		scene after_fight
+おくつろぎ いただけましたでしょうか!!!
+#We hope you enjoyed your stay!
+		end scene
+	end area
+end npc
+
+npc suburb_walker
+	area SUBURB
+		scene words_adult
+やあ 今日もいい日だね
+#Today is a nice day.
+背中をかいてくれてありがとう どうも届かなくてね
+#Thanks for scratching that itch on my neck - I can't seem to reach it.
+地元のダイナーで出してるタマゴが美味しいって聞いたんだ クーポンも持ってる
+#I've heard the eggs at the local diner are quite good. I have a coupon for them, too.
+今日の交通事故見たかい? ヒドい話だよ! メールしてたらしい...当てられたのは小さな男の子だったとか 気の毒に
+#Did you see the car accident today? So horrible! He was texting. Such a shame, so young!
+ウチの息子 ジュニア代表チームに入れなかったんだ ガッカリだよ あれだけ 力を入れてきたのに
+#My son did not make the junior varsity team. Such a disappointment. We invested so much in his sports career.
+今日は感謝祭だから 色んなものに感謝しないとなあ 明日は早朝セールがあるから たくさん買い物するぞー
+#Thanksgiving is today. I am thankful for a lot of things. Can't wait for tomorrow's early morning sales. Gonna get a lot of bargains.
+ああー 仕事に遅刻しちゃう
+#Ah, I think I might be late for work.
+早く家に帰らないと 義理の母さんが来るから そうじしないと!!
+#I am in a bit of a rush to get home, I need to tidy up before the in-laws come over.
+ガレージセールやってまーす!
+#We're having a garage sale!
+ようこそ!
+#Welcome!
+		end scene
+		scene words_teen
+最新の映画まだ見てないのに
+#I didn't see the latest movie.
+		end scene
+		scene words_kid
+もう アニメのつづき 見られないよ!
+#I never gotta see the new cartoon!
+		end scene
+		scene family
+# inside of a house, parent (insightful kid) - 73
+見ず知らずの方 我が家へようこそ! 見たことのあるカオね... ここは平和で しずかな町だから 外から来る人はほとんど いないのよ
+#Welcome to our house, stranger! You look familiar. This is a peaceful town. Pretty quiet, not many visitors.
+#inside of house, younger kid
+ねーねー デイブメントは好き? デイブ兄ちゃんが デイブメントのカッコイイ曲をきかせてくれたんだー!
+#Do you like Davement? My brother Dave showed me this really cool song by them!
+		end scene
+		scene older_kid
+# inside of a house, olderkid
+友だちはみんなレイヘッドの\"ノー・サプライズ\"って曲が好きなんだ この町の文句を言ってる歌なんだけど そりゃあ ここは天国じゃないけどさ 感謝くらいすべきだよ! それか自分で変えようとしなきゃ! みんなときたら... あ スミマセン ついアツくなっちゃいました
+#My friends like to listen to that 'None Surprises' song by 'Rayhead' and complain about this place. Sure, it's a bit of a bubble, but hell, at least show some gratitude! Or do something about it! They're all just...oh, sorry. I tend to do that sometimes..
+これは自分のブログに書くことにします
+#I guess I'll just go write in my blog.
+なんかフラフラしてません?
+#You sure look like you're in a daze.
+スポーツとかテレビ番組について話すの どうもニガテなんだけど 父さんも母さんも大好きなんだよね...
+#I have trouble hearing my thoughts with sports and the like playing on the TV, but my parents like it.
+		end scene
+		
+#inside of hanged man house 74
+		scene hanged
+死体の上にメモがある\"これで危険から はなれられる\"
+#A note on the corpse:\"Placing myself in danger no more.\"
+		end scene
+		scene festive
+
+
+#Inside of another house, (festival people) - 75
+ねえ 外は何かやってるの? お祭りとかパレードとか?
+#Oh, is there something going on outside? A festival? A parade?
+何だか外がおおさわぎだけど 最近マドの外のぞいたことある? 何がどうなってるのか...
+#There seems to be quite the commotion outside! Have you looked out the window recently? I wonder what it could be.
+		end scene
+
+#78 
+		scene paranoid
+ウチにはマドがたくさんあるんだ マドは好きじゃない ずっと誰かにのぞかれてるみたいじゃないか 外で何かが起きてるのは間違いない あまりに長い間しずかすぎるよ こんなにしずかじゃ 気がちって しょうがない
+#My house has a lot of windows. I don't like windows. It's as if someone is always looking in. And you know there HAS to be something going on outside there. It can't just be that silent all the time, so silent and calm - it's disturbing to me.
+さつじん? はあ? 外で? 何を言ってるんだ? からかってるのか? この町でさつじんなんか起きたことがないよ いや...君を見ているとなんだか不安になるよ 早く町を出たほうがいい
+#Murderers? What? Outside? What are you talking about? Are you kidding me? There haven't been any murders in this town before, but still...you're starting to worry me...maybe you should just leave.
+早く出て行ってくれ
+#Please get out.
+		end scene
+
+# 76
+		scene dead 
+女性の死体だ 鈍器で殴られたのが死因のようだ
+#The body of this woman has been beaten to death by a blunt weapon.
+男性の死体だ
+#The man, to put it bluntly, well...
+		end scene
+		end area
+end npc
+
+npc suburb_blocker
+	area SUBURB
+		scene one
+ああ キミか! 見覚えのあるカオだね... いやー ここはまだ通せないよ キミがもっと町の人を ころしまくらないと そういう話だったろう? じゃあ また後でな
+#Oh, it's you! You look familiar...I can't move until you keep killing more of these townsfolk, remember? Come back in a bit.
+このパンフレットによれば あと何人か ころせばOKだ さあその調子で行った行った
+#According to this pamphlet...you only need to kill a few more people! Keep it up.
+いいぞ あと1人だ さあチャッチャとやって先へ進もう
+#We only need one more body, and then we can keep going.
+いいぞ! さあ中へどうぞ 中に何があるのかは知らんけれど それじゃあまた明日 同じ時間に あ 明後日だったかな?
+#Well done. Feel free to go inside. I have no idea what's there. I'll see you again, same time tomorrow, right? Or the night after?
+		end scene
+	end area
+end npc
+
+# dialogue for the cards
+
+# don't enclose in quotes
+npc card
+	area ETC
+		scene one
+#0 sadbro
+もりの木々がボクを見てる でも ボクは気にしない
+#I don't mind being watched by the trees.
+#1 Bat(?) - extra overworld area
+ジョーカーを止めなければ...
+#Where is she?!
+#2 sunguy
+ヤングよ 私は常にキミと共にある キミが一人のとき 私はそこにいる
+#I will be with you Young, whenever you are alone.
+#3 Shieldy
+キミってオークチョット? ママからオークチョットはあぶないって言われてるんだ
+#Are you an Ookchot? My mom always warned me about the Dangerous Ookchot.
+#4 slime
+ぷるぷる ヤングさん お会いできてこうえいです あ そうだ ゼリーたべます?
+#Jello there, Young! So goo to flanly meet you! Why don't you set for a minute? I was just pudding on some tea!
+#5 post-statue area in BEDROOM
+ピーピーピーピーピーピーピーピーピーピーピーピー ...別にヒワイなことは言ってないです
+#Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Chancel, Pulpit, Altar, Stained Glass Windows...
+#6 SUBURB inside of house past blocker
+本日限り!なんト!ひとつぶんのお値段デ!ふたつ!ごていきょウ!
+#Limited time offer! Buy one, get one free - only today!
+# 7 APT Boss
+停電の夜に ロウソクを灯したあの頃を 覚えているかね?
+#Remember the time that you lit a candle when the power was out?
+# 8 APT Silverfish
+カサカサカサッ
+#Mmmm, your pillow was cozy last night.
+# 9 APT gasguy
+もやせ もやせ いーろいろ もやーせーええー
+#This'll teach 'em for calling me the fumi-GAY-tion guy.
+# 10 FIELDS 1 (island) - mitra 
+ウェアズとわたしはいつでも一緒!
+#Wares and I make a good team.
+# 11 FIELDS 2 (alcove) - Miao
+選ばれし者見習いです!
+#I'm the Chosen One-in-training!!!
+#12 Base of WINDMILL windmill
+たまにさ 自分が何をしたところで 世界が死にゆくのは止められない なんて感じないかい?
+#Do you ever feel like, no matter what you do, you can't stop the world from dying?
+#13 Hidden up a river in FOREST
+森のキノコに ご用心...
+#Beware the forest mushrooms...
+#14 Bottom of ladder-mini-maze on CLIFF
+本当にすみません 本能なんです
+#I am sorry. It is my nature.
+#15 Top of Cliff
+\"ただの岩じゃん\"ってどういうこと!? 岩だってカードになるよ!いいじゃん!
+#What do you mean, 'Only a rock'?? Rocks can be on cards too, you know!
+#16 Western end of BEACH past spikes
+男に魚を一匹やれば一日食いつなぐが,魚の取り方を教えてやれば息子の\n ジミーとの父子のじかんプライスレス
+#Give a man a fish and he will eat for a day. Teach a man to fish, and he will have bonding times with his son, Jimmy.
+#17 At end of path through the woods in REDSEA
+歩こう 歩こう こたえは 歩いた先にあるよ 
+#Sometimes the answer is taking a walk.
+#18 MOVER Redcave - Past 2 locks in central redcave
+なんでコウモリって いつも飛びかかってくるのかな?
+#Why do bats suddenly fly down, every time you're around?
+#19 SLASHER Redcave - West end of Northern redcveave
+歯ならびの話はやめろ!!
+#NO, *YOU* NEED BRACES!
+#20 REDBOSS Redcave - post boss
+幸せって何だったのかな?
+#ARE YOU HAPPY NOW?
+#21 NW corner of CELL - chaser
+私のー 見ている前で 叩かないでくださいー
+#Don't get violent around me.
+#22 FIRE PILLAR circus - the field of fire pillars north of entrance
+リョーリの鉄人に出るのが夢だったんだよねえ
+#I've always wanted to be on Iron Chef.
+#23 CONTORT circus - contort + firepillar room in SW chunk
+母さんにはよく\"背中曲げてると ずっとその形になっちゃうよ!\"って言われてたなあ
+#My mom always told me, 'If you do that arch long enough, your spine will stay that way!'
+#24 LION circus - end of northern gauntlet bordering boss room
+お楽しみいただけましたでしょうか
+#Are you amused yet, human?
+#25 A+J BOSS circus - basement (post boss)
+...
+#26 FROG crowd - North of entrance
+げんみつに言えば ヒキガエルはカエル目にぞくする科のひとつなんだ
+#Scientifically speaking, toads are a subset of frogs.
+#27 CROWD GUY crowd - 2nd floor
+アハハハハ!!! うん! 知ってた!
+#HAHAHAHA! Yeah! I know!
+#28 WALL BOSS crowd - post boss
+カードとか集めてるのかい? いいシュミだね インくん
+#Oh, you collect cards, too? Real classy, Ying.
+#29 end of grey end of space, for grey cube king
+たまにはコンピューターやめなさい! 友だちできないよ!ってよく言われたなあ
+#They always said, \"Get off the computer! Or you'll never make friends!\"
+#30 end of colorful end of SPACE, for color cube king
+今んとこ支配者やってます
+#I'm only the ruler for the extent of a conversation.
+#31 DUSTER hotel - end of 4th floor moving platform area
+アンタ アタシの仕事を面白くしてるとか思ってるでしょ!
+#I'll bet you think you're 'making my job interesting'!
+#32 DASH TRAP hotel - Dash trap room on 3rd floor
+ななめとか やめろよ
+#I hate diagonals.
+#33 BURST PLANT hotel - SE corner floor 2
+オレの花粉だぜ? ヒスタミンなんか効かねえよ
+#Don't even try that claritin clear shit with me.
+#34 EYE BOSS hotel - post-boss
+お部屋のカギは こちらのカードになっております
+#Swipe this card to unlock the door to your room!
+#35 end of left-most TERMINAL bridge - sage
+私に任せておきたまえ
+#I'm doing a great job.
+#36 Young (drawer APT)
+.......??
+#37 old BDRM (dialogue rock)
+ところで私たちに 文字を刻んだのは 誰なのだろう?
+#Who carved all of us anyways?
+#38 hotel room
+おくつろぎ いただけましたか?
+#I hope you enjoyed your stay.
+#39 end of debug minidungeon (old player sprite)
+ここまでの道のり見てたよ キミ面白いね
+#Seening as you've gotten to this point, you must be quite Intrasting.
+#40 end of cell - Torch? 
+迷わせるために 存在してます
+#I'm just here to lead you astray.
+#41 end of SPACE - faces/entities
+ボクらにとってはキミもピラミッドなんだけどね!
+#You like like a pyramid to us, too!
+#42 end uf suburb (killer)
+毎夜 毎夜 同じことのくり返し おまけに給料も安いと きたもんだ
+#It's the same damn play, night after night, and the pay sucks.
+#43 GOldma's room - goldman
+ほっといて! あと名字はサックスじゃないから!
+#Leave me alone! My last name isn't Sachs!
+#44 blank, ISlands - Broom
+ただのぼう じゃないだけ いいか
+#At least I'm not a stick.
+#45 fields, bottom right - (Rank)
+お金のなる木なんかない? オメ何言ってんだ! ウハハハ!
+#What do you mean money doesn't grow on trees? Eheheheh!
+#46 street, bottom (Follower bro)
+私はまぼろしに すぎない
+#I'm nothing but an illusion.
+#47 redsea, bottom eft (Bomb npc)
+八つ当たりするよ
+#I'LL TAKE IT OUT ON YOU.
+		end scene
+	end area
+end npc
+
+npc misc
+	area any
+	scene controls 
+操作設定をするには
+#Press
+# [SOMEKEY-LEFT]
+を,キャンセルするには
+#to set controls. 
+# [SOMEKEY-ENTER]
+を押してください
+#to cancel.
+上
+#Up
+下
+#Down
+左
+#Left
+右
+#Right
+ジャンプ
+#Jump
+こうげき
+#Attack
+メニュー
+#Menu
+しゅうりょうするには
+#Press
+# [SOMEKEY-ENTER]
+を,操作設定をするには
+#to exit
+# [SOMEKEY-LEFT]
+を押してください
+#to set controls.
+		end scene 
+		scene title
+黒いエリアが見えなくなるまで\n矢印キーをつかって\nウィンドウの大きさを調節してください\nおわったら
+#Please use the arrow keys to resize the window until you cannot see any black around the borders. Press
+# [SOMEKEY-C]
+を押してください
+#when done.
+ANODYNE
+#This is intentionally left in English
+Melos Han-Tani\nMarina Kittaka
+#This is intentionally left in English 
+any key
+#This is intentionally left in English, as these strings usually stay in English in Japanese games as well.
+Press
+# [SOMEKEY-C]
+to start
+バージョン
+#Version 1.508
+つづきから
+#Continue 
+はじめから
+#New Game 
+よろしいですか?\nいいえ\nはい
+#Are you sure?\nNo\nYes
+ホントに?\nやっぱダメ\nホントに
+#Really?\nNah\nYeah 
+取り消せませんからね?!\nやっぱやめる\nわかってるって
+#No going back!\nForget it\nI know
+回死亡しました
+#0 deaths 
+枚カードを集めました
+#0 cards
+Anodyneは\nコントローラー\nに対応しています\n\n使用しますか?はい いいえ\n\n使用する場合は\n接続してください\n\n矢印キーで移動\nC / スペース / Enterで決定\n\n自動で\"はい\"に設定:
+#Anodyne supports\nmost controllers.\n\nWill you use one?\n\nYes No\n\nIf so, connect it now.\n\nMove with arrow keys\n\nSelect with\nC, SPACE, or ENTER\n\nDefaulting to yes in\n
+注意\n\n入力にラグが\nある場合は\n一度ホームに\n戻ってください\n\nCで次に進みます
+#NOTE\n\nIf you have input\nlag during gameplay,\nreturn to your\nhome screen and\nre-enter Anodyne.\n\nPRESS C TO CONTINUE
+戻るをもう一度\n押すと終了します\n保存されてないデータは\n失われます
+#Press BACK again\nto exit.\nUnsaved progress\nwill be lost.
+		end scene
+ scene elevator
+何階へ行きますか?
+#Floor?
+1\n
+2\n
+3\n
+4\n
+キャンセル
+#Cancel
+ end scene
+		scene gui
+# Note - this below one is a sprite that fits into the gui
+menu=enter
+#This is intentionally left in English
+# Shows up when you save at a checkpoint
+セーブ中...
+#Saving...
+		end scene
+		scene map
+マップ
+#Map
+げんざいち
+#Current Room 
+ドア/でぐち
+#Door/Exit 
+マップなし
+#No Map
+ネクサスにもどる
+#Return to Nexus
+いりぐちにもどる
+#Return to entrance
+		end scene
+		scene items
+アイテム
+#Items
+ふつうのホウキ
+#Normal
+いれかえ
+#Swap
+えんちょう
+#Extend
+はばひろ
+#Widen
+バネが仕込まれたクツ。
+#A pair of spring-loaded shoes - press 
+# [SOMEKEY-X]
+を押すとジャンプ!
+#to jump!
+じてんしゃ用シューズ
+#A pair of shoes for biking.
+カラのダンボールばこ
+#An empty cardboard box.
+見通せし者の寺院で見つけたカギ
+#A key found in the Temple of the Seeing One.
+地下にある赤い海で見つけたカギ
+#A key found in a red, underground cave.
+山にあるどうくつで見つけたカギ
+#A key found in a mountain cave.
+		end scene
+		scene cards
+カード
+#Cards
+xカード
+#0 cards
+		end scene
+		scene save
+セーブ
+#Save
+セーブかんりょう!
+#Saved!
+エラー
+#ERROR
+セーブして\nタイトルへ
+#Save and go to title
+タイトル画面へ
+#Go to title
+セーブして終了
+#Save and quit
+ゲームを終了
+#Quit game
+死亡回数:
+#Deaths:0		
+		end scene
+		scene config
+設定
+#Config
+キー割り当て
+#Set keybinds
+音の大きさ
+#Set volume 
+チェックポイントで\n自動セーブ:
+#Autosave at checkpoints
+オン
+#On
+# 5
+オフ
+#Off
+解像度\n変更
+#Change Resolution
+UI 設定
+#Config UI
+タッチ+方向キー
+#Touch+D-Pad
+方向キーのみ
+#D-Pad Only
+# 10
+タッチのみ
+#Touch Only
+いどうそうさのタイプ
+#Move Input Type
+解像度:
+#Resolution:
+ウィンドウ
+#Windowed
+倍率
+#Integer Scaled
+# 15
+拡大
+#Stretch
+スケーリング:
+#Scaling
+ 言語:  
+#Language:
+ja
+en
+# 20
+ボタンを\nドラッグ\nしおわったら\nメニューを\n\nタップして\nください\n\n
+#Drag the buttons until you're satisfied. Then, tap the menu to continue.
+ウィンドウサイズ変更
+#Resize Window
+コントローラー設定
+#Config Joypad
+		end scene
+		scene secrets
+まいて まいてー!
+#You\'re rolling in it!
+しおづけのおにくのかんづめ すききらいがわかれる
+#Once the property of a famous Bubble Mage.
+グラフィックがおかしいときは パキモンずかんでチェックしてみよう!
+#If your graphics become scrambled, look at the pokedex entry of an official Pokemon.
+このハートには特に名前はない
+#This heart has no name.
+きみもデラモンワールドにおいでよ!
+#Please visit the electric monsters\' world.
+こねこの像 かわいいけど役には立たない
+#A kitty statue. Cute, but useless.
+ウワーーー! 見つかった!
+#Oh my!!!!
+ヤベー! 見つかった!
+#Oh no!!!!
+黒色だ
+#It\'s black.
+赤色だ
+#It\'s red.
+緑色だ
+#It\'s green.
+青色だ
+#It\'s blue.
+白色だ
+#It\'s white.
+#SOMEKEY-C
+:決定
+#:Select
+#SOMEKEY-X
+:戻る
+#:Back
+		end scene
+		scene swap
+ゴメンなさい!
+#Sorry!
+ここでは いれかえ できません
+#The swap won't work here.
+ここをスワップするには力が足りない
+#Young could not muster the strength to use the swap here.		
+		end scene
+		scene keyblock
+とびらはカギがかかっている
+#This door is locked.		
+		end scene
+		scene treasure
+なぞの力により 宝箱はふういんされている
+#Some strange force stops this treasure box from being opened.
+ホウキの取っ手に文字がきざまれている\"
+#An engraving on the broom handle reads:Press
+#SOMEKEY-C
+を押すとホウキを 振るいます\"
+#to sweep.
+このカギは一回使うとこわれてしまうようだ
+#This key may be used a single time to open up a locked barrier.
+ナゾのブーツ。ブランド名は\"
+#A mysterious pair of boots has nothing but the branding on it, which says \"Press
+#SOMEKEY-X
+ヲ オスト ジャンプ\"
+#\".
+ホウキのアタッチメントに何か書いてある\"メニューで\"はばひろ\"をえらぶと ホウキの左右にほこりが広がり こうげきはんいが広くなる\"
+#A few words on the broom extension read \"Equip the WIDEN upgrade in the menu to have the broom release harmful dust to the left and right.\"
+ホウキのアタッチメントに何か書いてある\"メニューで\"えんちょう\"をえらぶと ホウキの前方にほこりが広がり こうげきはんいが広くなる\"
+#A few words on the broom extension read \"Equip the EXTEND upgrade in the menu for the broom to release harmful dust in front of the broom's normal reach.\"
+ホウキのアタッチメントに何か書いてある\"やあ ヤング \"いれかえ\"アタッチメントは2つのものを入れ替えられる どこでも使えるわけじゃないけど とりあえずは 役に立つはず\"
+#A note next to the broom extension:\"Hello, Young. Use this SWAP upgrade on two tiles to switch their places. It may be a while before you can use this everywhere, but it should serve you well for the time being.\"
+ハートを見つけた!最大体力がゼロぞうかした!
+#YOU FOUND A HEART!!! Maximum Health increased by...zero.
+ゴールドマン:ええ? ない?! きっとあの商人がぬすんだんだ!
+#Goldman:What? It's not there? That shopkeeper must have stolen it!		
+		end scene
+		scene dust
+ホウキはほこりまみれになった!もう一度ふれば ほこりを置けそうだ
+#Your broom is now full of dust! Attack again to place it.
+		end scene
+		scene checkpoint
+セーブする?\n はい\n いいえ
+#Save game?\n Yes\n No
+チェックポイントの上で
+#While standing on a checkpoint, press
+#SOMEKEY-C
+を押すとセーブされ そこが復活ポイントに設定されます
+#to save your progress and set it as your respawn point if you die.
+		end scene
+		scene rock
+岩には何かがなぐり書きされている:
+#There is writing scrawled on this rock:
+# YA AINT GOT NO FRIENDS		
+		end scene
+		scene door
+このポータルは作動していないようだ
+#The portal does not appear to be active.
+		end scene
+		scene keyblockgate
+門の一部が石化している これを開くにはカードが4まい必要そうだ...
+#The gate stares, petrified. It won't open until it senses four cards...
+4まいのカードを感知した門が 開きはじめる...
+#Sensing four cards, the gate decides to open.
+門はズッシリとたたずんでいる
+#The gate stubbornly remains in place.
+すべてのカードを感知した門が 開きはじめる...
+#The gate senses all of the cards, and decides to open.
+カードを感知した門が 開きはじめる...
+#The gate senses enough cards, and decides to open.
+開いた!
+#It opens!
+トビラはまだ とじている
+#It remains closed.
+		end scene
+		scene solidsprite
+東を指すひょうしきだ 文字は消えてしまっている
+#The sign points to the east but the words on it are faded.
+西を指すひょうしきだ 文字は消えてしまっている
+#The sign points to the east but the words on it are faded.
+ひょうしきの文字は消えてしまっている
+#The words on the sign are faded.		
+		end scene
+		scene mitra
+あっ ヤング!
+#Hey, Young!
+え この自転車用シューズ わたしに? スゴい!ありがとうヤング!ウェアズのペダルには固定金具がついてるから ちょうどソレに合うクツを買おうかなって思ってたの じゃあ代わりに このクツあげるよ!バネがついててね すごく高くジャンプできるんだよ 
+#Are those bike shoes for me? Wow! Thanks, Young! I\'ve been thinking about getting these, since Wares has those pedals where you can clip in bike shoes. Here, Young, take my boots in exchange! They have these cool springs that let you jump really high! You press 
+#[SOMEKEY-X] 
+を押せばジャンプできるよ!
+#to jump with them on!
+やっほ ヤング!何か気づくコトない...?^... ^...正解は じゃーん! クツが新しくなってる でしたー! 見て見て ウェアズのペダルにカチッとはまるの! それでね 前のクツはいらなくなっちゃったから キミにあげるよ! バネがついててね すごく高くジャンプできるんだよ
+#Hi Young! Notice anything new? ^... ^... Oh, well, I got new biking shoes, see! They clip into Wares' pedals. Since I'll no longer be needing my old boots, I want you to have them, Young! They have these cool springs that let you jump really high! You press 
+#[SOMEKEY-X] 
+を押せばジャンプできるよ!
+#to jump with them on!
+オッケ!そんじゃね!
+#Alright, take care!
+ホラホラ はいてみて! ...そんなにクサくないはずだし!
+#Go on, try them out! ...They're not THAT smelly.
+ね? よくない?
+#Cool, huh?
+わわっ! それってフィンティのお店にあった自転車シューズじゃない? えっ!? わたしに? ヤング ありがとうー! すごくうれしい! そうだ お礼にわたしのクツあげるよ すごく便利なんだよ えーっとねブランドは...\"
+#Wow, are those the biking shoes from Finty's shop? You're giving them to me? Thanks, Young, I really appreciate it! Here, try out my old shoes in return--I think you'll find them really useful! There's an engraving on the shoes that says \"Press 
+#somekey-x
+ヲ オスト ジャンプ\"だって。イミわかんないよね クツのどこにも
+#to jump\". I've never understood that, though, because there's no \"
+#somekey-x
+ボタンなんか ついてないし!
+#\" anywhere on the shoes...
+		end scene
+		scene tradenpc
+フィンティ:いやあ よく来たネ ヤング あなた 私のトモダチ!ワタシは プラサンドフ・フィンティ・プラサンドフ! さあ見ていってネ いい品イッパイよ
+#Finty:Welcome, welcome, my friend Young! The name's Prasandhoff--Finty Prasandhoff! Take a look around at my shop and see if anything catches your eye!
+フィンティ:あの箱 ホントに助かってるヨ!
+#Finty:I still appreciate that box!
+フィンティ:ヤヤ!この箱は!アリガト アリガト! これで在庫をもちはこべるヨ お礼にこのキモい... じゃないステキなカードをあげマス!
+#Finty:Ah, a box! Thank you so much! Now I can carry all my inventory home at night and back in the morning! As a token of my gratitude, take this ugly--I mean beautiful, collector's edition card!^
+ってアレ? ないデス! 一体ドコに... まあいいデス 代わりにキズを手当てしまスヨ
+#Wait a minute...it's not here! What happened to it? Well, here, let me ease your wounds instead!
+ソレでは感謝のシルシに このカッコイイ 自転車用シューズを差し上げマス!
+#As a token of my gratitude, take these stylish biking shoes!
+# 5
+イヤア いい日でス 買い物にはもってこいでス! あとは商品を持ち運ぶ箱があったらサイコウなんですガ...
+#Fine morning out, isn't it, my friend? A fine morning for shopping! I just wish I had a box to carry my inventory around.
+ざんねんネ! お客さん お金 たりない! お金をためて また来てクダサイ
+#Too bad, looks like you can't afford this item! Come back later, when you have the cash!
+フィンティ:おお お客さん お目がたかい! いい武器は旅に欠かせナイ! 敵も一発で肉片に!この品がナント! オドロキの! 499ドルよ!
+#Finty:Ah, you have a fine eye! You need a better weapon, don't you? Blow your enemies to pieces for only $499.99!
+フィンティ:このマネーバッグがあれば ザ ランドで集めたお金をもっとたくさん持ち歩けマス! それがたったの869.99ドル!
+#Finty:That money sack will allow you to accumulate money that you find in The Land! It's yours for a mere $869.99!
+フィンティ:ホッホッホ! とくべつ品が見つかっちゃいマシタ クリップイン式自転車シューズでス もっとはやく カッコよくデスよ 今ならセールで299.99ドル!
+#Finty:Oh ho ho, here's a specialty item indeed:clip-in bike shoes so you can be speedy AND stylish! On sale now for just $299.99!
+#10
+フィンティ:ホウキにまとわりつく ほこり お手入れタイヘンでショウ? イヤなほこりは最新掃除機でイチモーダジン! 今なら749.99ドル! 月々199.99ドルの4回払いもお選びいただけマス!
+#Finty:Tired of shoving dust around with your piddling little broom? Eradicate harmful dust particles with this state-of-The-Art vacuum cleaner! Just $749.99, or four easy, monthly payments of $199.99!		
+アリガト!
+#thank you...whoops
+		end scene
+#(Translate as much or as little as you see fit - note this is a little different than normal dialogue, so you'll have to keep at most 19 characters on each line, delimited by newlines - if there are multiple newlines keep them there though, but if a translated line goes over, feel free to add a new e in the middle)
+
+		scene ending
+Anodyne\n-------\n\n\n\nせいさくしゃ:\n\nMelos Han-Tani\n\n\n\nMarina Kittaka\n\n-------------
+#Anodyne\n-------\n\n\n\nA game created by\n\nMelos Han-Tani\n\nand\n\nMarina Kittaka\n\n-------------
+せいさくきかん:\n\n2012 年 3 月\n\nから\n\n2013 年 1 月
+#Created from\n\nMarch, 2012\n\nto\n\nJanuary, 2013
+ゲームデザイン\n------\nふたりとも
+#DESIGN\n------\nBoth
+プログラミング\n-----------\nMelos:Actionscript 3\nと Flixel ライブラリ\nを使用\n\n\n\nアート\n---\nMarina\n
+#PROGRAMMING\n-----------\nMelos, using the\nFlixel library for\nActionscript 3.\n\n\n\nART\n---\nMarina\n
+おんがく/SFX\n---------\nMelos:REAPER と\n無料のサウンドフォント\nを使用\n\n\n\n会話文\n--------------\nだいたい Marina\n
+#MUSIC/SFX\n---------\nMelos, using REAPER\nand number of free\nsoundfonts.\n\n\n\nDIALOGUE\n--------------\nMostly Marina\n
+ストーリー\n-----\nふたりとも\n日本語ローカライズ:\nKakehashi Games
+#STORY\n-----\nBoth\nJapanese Localization:\nKakehashi Games
+テスターのみんなに\nありがとう\nちょうタイヘン\nだったよね!\n--------------\n\nMarina,初期のバグ\n対応 すごくタイヘン\nだったよね\n\nEtan,さいしょから\nずっと支えてくれて\nバグもたくさん\n見つけてくれて\nさいごまで手伝って\nくれて ありがとう\n 
+#Massive thanks to\nour testers, who\nsuffered so you\ndon't have to!\n--------------\n\nMarina, for suffering\nthrough most of the\ninitial bugs.\n\nEtan, for constant\nsupport since the\nbeginning, with\nmany bugs found,\nand the third human\nto play through most\nof the game.
+それから妹の Olivia も!\n\nRunnan, Nick Reineke,\nEmmett, Poe, AD1337,\n Dennis, Andrew,\nAndrew MM\n Carl, Max, Amidos,\nLyndsey, Nathan\n
+#O - thanks, sis!\n\nRunnan, Nick Reineke,\nEmmett, Poe, AD1337,\n Dennis, Andrew,\nAndrew MM\n Carl, Max, Amidos,\nLyndsey, Nathan\n
+Melos からの謝辞:\n\n父と母へ - ずっと\n支えてくれてありがとう\n\nS\n\nTIGSource のみんな\n開発者の仲間たちに\nありがとう\n\nそして Marina キミが\nいなければ完成\nしなかったよ
+#Melos would like\nto thank:\n\nMom and Dad, for\ntheir constant support\nin this endeavor.\n\nS\n\nMany TIGSourcers and\nother devs met\nalong the way!\n\nMarina, for making\nthis game possible,\nand improving it in\ncountless ways.
+Adobe,Adam Saltsman氏\nFlashDevelop の人たち\nREAPER の人たち\nDAME 開発者さん\nDesura,Gamersgate,\nIndieDB,TIGSource\n\n\nそれから友だちみんな\n支えてくれて ホントに\nありがとう\n\nさいごに... 親友の\nTina Chen へ\n\nいつも 支えてくれて\nそして Marina を紹介して\nくれて ありがとう
+#Adobe, Adam Saltsman,\nFlashDevelop devs,\nREAPER devs,\nDAME creator,\nDesura, Gamersgate,\nIndieDB, TIGSource\n\n\nAnd my other friends\nwho have shown their\nsupport. (Thanks!)\n\nAnd last, but\nnot least,\nTina Chen,\nlongtime friend,\nfor both support and\nintroducing me to Marina.
+Marina からの謝辞:\n\nColin Meloy へ\n僕の表現力を高めて\nくれて ありがとう\n\nTsugumo へ\n\"え,オマエ ドット絵\nアーティストやるの?\"\n\n家族のみんな\n支えてくれて \nご飯食わせてくれて\nありがとうでした\n\nDaniel へ\n小さな頃から\n僕と一緒に\n\"インディー開発者\"\nでいてくれてありがとう
+#Marina would like\nto thank...\n\nColin Meloy, for\nexpanding\nmy vocabulary\n\nTsugumo, for\n\"So You Want to\nBe a Pixel Artist?\"\n\nMy family,\nfor support and food.\n\nDaniel, for being an\n\"indie game dev\"\nwith me growing up.
+Molly へ\n信じてくれてありがとう\n\nTina へ\nMelos を紹介してくれて\n本当にありがとう\n\nMelos へ\n一緒にゲームを作って\nくれて そして僕を\nしんらい してくれて\nありがとう
+#Molly, for believing\n in me.\n\nTina, for introducing\nme\nto Melos.\n\nMelos, for making\na game\nand trusting me to\nbe a big part of it.
+出演\n----\n\n\nスライム\n\n\nじゃまなアレ\n\n\nポウポウ\n\n\nシールディ\n\n\n見通せし者
+#CAST\n----\n\n\nSlime\n\n\nAnnoyer\n\n\nPew Pew\n\n\nShieldy\n\n\nSeer
+押してくるアレ\n\n\nオン オフ\n\n\nフォーシューター\n\n\nスラッシャー\n\n\nローグ\n
+#Mover\n\n\nOn Off\n\n\nFour Shooter\n\n\nSlasher\n\n\nRogue\n
+イヌ\n\n\nカエル\n\n\n回るヤツ\n\n\nヒト\n\n\nカベ\n\n
+#Dog\n\n\nFrog\n\n\nRotator\n\n\nPerson\n\n\nWall\n\n
+ネズミ\n\n\nガス男\n\n\nカサカサ虫\n\n\nダッシュマシン\n\n\nローラー\n\nウォッチャー\n\n\n
+#Rat\n\n\nGasguy\n\n\nSilverfish\n\n\nDasher\n\n\nRoller\n\nWatcher\n\n\n
+ダストメイド\n\n\nはきだし草\n\n\n支配人\n\n\n
+#Dustmaid\n\n\nBurst Plant\n\n\nManager\n\n\n
+ライオン\n\n\n曲芸の人たち\n\n\n燃える柱\n\n\nしもべ\nアーサー\nハビエラ
+#Lion\n\n\nContort\n\n\nFlame Pillar\n\n\nServants\nArthur\nJaviera
+ついてくる人\n\n\nエドワード\n\n\n釣り師\n\n\nレッドウォーカー\n\nヒュウズ
+#Follower\n\n\nEdward\n\n\nFisherman\n\n\nRed Walker\n\nHews
+ウサギ\n\n\nイッキィ\n\n\n商人\n\nミャオ・シャオ・テュアン・アイ\n\nランク\n\nゴールドマン
+#Rabbit\n\n\nIcky\n\n\nShopkeeper\n\nMiao Xiao Tuan Er\n\nRank\n\nGoldman
+ソラックス\n\nジェームズ\n\nキノコ\n\nクリックソン\n\nゴーレム\n\n住民
+#Thorax\n\nJames\n\nMushroom\n\nCrickson\n\nGolem\n\nSuburbanites
+チェイサー\n\n\nホログラムのアレ\n\n\nあの空間の住人\n\nキューブキングたち
+#Chaser\n\n\nEntities\n\n\nSpace Faces\n\n\Cube Kings
+#Chaser\n\n\nEntities\n\n\nSpace Faces\n\n\Cube Kings
+#Chaser\n\n\nEntities\n\n\nSpace Faces\n\n\Cube Kings
+ヤング\n\n\nミトラ\n\n\n賢者\n\n\nブライア
+#Young\n\n\nMitra\n\n\nSage\n\n\nBriar
+そして...\nあそんでくれた\nあなたに... ありがとう!\n\n\n楽しんでもらえたなら\nウレシイです
+#And we'd like to\nthank YOU!\nFor playing our game!\n\n\nWe hope you\nenjoyed it.
+\n\n\n\n\n\n\n\n 
+スワップを活用して ヤングの世界を\n(ほとんど)制限なくぼうけん\nできるようになった!
+#Now you have the ability to explore Young's world with (almost) no limitations, via the swap.
+		end scene
+		end area
+end npc
+# Tell the python script you're done.
+DONE

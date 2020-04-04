@@ -1,0 +1,2665 @@
+### ENGLISH DIALOGUE - SPANISH TRANSLATION - by Diego Fenollar ###
+
+####################
+### INSTRUCTIONS ###
+####################
+# 0. If you could comment out the english version when you translate that would be useful for me!
+#
+# 1.  - Any line starting with "#" doesn't need to be translated
+#
+# 2. SPECIAL KEYWORDS THAT SHOULDN'T BE TRANSLATED:
+# Any line starting with: (where "..." is some other keyword , usually an NPC name or area name)
+#
+# does reset 
+# LOOP 
+# TOP
+# npc ...
+# area ...
+# scene ...
+# end scene 
+# end npc 
+# end area
+# DONE
+#
+# 3. SPECIAL INSTRUCTIONS SYMBOLS 
+# ----------------------------
+# [SOMEKEY-C] means that this can change depending on what controls the user uses - it would be "C", "A", "ENTER", etc. Sometimes in the dialogue file I write
+# Press
+# [SOMEKEY-LEFT]
+#  set controls.
+#
+# And that implies that in-game, it will read "Press LEFT to set controls."
+#
+# 4. SPECIAL CHARACTERS IN DIALOGUE TO BE TRANSLATED
+# -----------------------------------------------
+# \" and \' are for escaping the quotation characters. You can leave them like that. 
+#
+# ^  Denotes the player will have to press the progress-dialogue-button again to continue the dialogue - you can leave it there (or move it around as needed in the translated sentence)
+# \n denotes newline, you can leave it there.
+
+###################
+# BEGIN DIALOGUE #
+###################
+
+### 'test' NPC - In DEBUG
+npc test
+does reset
+    area DEBUG
+        scene scene_1
+#Like music? Talk to that terminal!
+¿Te gusta la música? ¡Habla con ese terminal!
+#Like pain? Head on down south!
+¿Te gusta el dolor? ¡Ve hacia el sur!
+        end scene
+    end area
+end npc
+
+### 'arthur' - In CIRCUS
+npc arthur
+    area CIRCUS
+        scene alone
+#That acrobat is losing balance!  Where is the safety net?
+¡Ese acróbata está perdiendo el equilibrio! ¿Dónde está la red de seguridad?
+...
+        end scene
+		
+		scene holyshit
+WOOAH
+		end scene
+    end area
+end npc
+
+### 'javiera' - In CIRCUS
+npc javiera
+    area CIRCUS
+        scene alone
+#The lions are closing in on that juggler!
+¡Los leones están acorralando a ese malabarista!
+...
+        end scene
+    end area
+end npc
+
+### 'briar' 
+
+npc briar
+	area GO
+		scene before_fight
+#Briar: I’m tired, Young.  I’m tired of all of these cycles.  I feel like I’m living the same dream, the same nightmare over and over again.
+Briar: Estoy cansado, Young. Estoy cansado de todas estas vueltas. Me siento como si estuviera viviendo el mismo sueño, la misma pesadilla una y otra vez.
+Briar: ...
+#Briar: It’s not going to change, Young.  This is all we’ll ever be.
+Briar: No va a cambiar, Young. Esto es lo que seremos por siempre.
+		end scene
+		
+		scene after_fight
+#Briar:  Goodbye, Young.
+Briar:  Adiós, Young.
+		end scene
+		
+		scene final
+#Briar: Dude, Young.
+Briar: Young, colega.
+#Briar: Kick your feet.  Move your arms.  Jeez, you wouldn’t last a minute without me!
+Briar: Patalea.  Mueve los brazos.  Dios, ¡no aguantarías ni un minuto sin mí!
+#Briar: Well, come on, let’s go get a sandwich or something.
+Briar: Bien, venga, vamos a por un sandwich o algo.
+#Sage: You... you did adequately.  Until we meet again.
+Sage: Lo... lo hiciste adecuadamente.  Hasta que nos volvamos a encontrar.
+		end scene
+	end area
+end npc
+
+### 'sage'
+npc sage
+    area BLANK
+        scene intro
+#Mysterious voice: Hello? ...Young?  ^HEY!  ... oh, you can hear me?  Good, now listen.  You are about to wake up.  You will use the arrow keys to move around.
+Voz misteriosa: ¿Hola? ¿...Young? ^EY!  ... oh, ¿puedes oírme?  Bien, ahora escucha.  Estás a punto de despertar.  Usarás las teclas de dirección para desplazarte.
+# Note, these next two lines should be assumed to have the keybinding between them when translated (hence the single quotes)
+#You will press the \'
+Pulsarás la tecla \'
+#\' key to interact with objects and people around you.
+\' para interactuar con objetos y la gente a tu alrededor.
+#And you will press the \'
+Y pulsarás la tecla \'
+#\' key to access the menu, which will provide you with information about yourself and your surroundings.
+\' para acceder al menú, el cual te proporcionará información sobre ti mismo y tus alrededores.
+        end scene
+    end area
+	
+	area GO
+	
+	
+		scene posthappy_sage
+#Young...  I just wanted to fix everything for you.
+Young... Yo sólo quería arregarlo todo para ti.
+#I hope... I hope you can do better than me.
+Espero... Espero que puedas hacerlo mejor que yo.
+		end scene
+		
+		scene posthappy_mitra
+#Good luck, Young.
+Buena suerte, Young.
+#Sage is right, in a way.  I want everything to be nice and work out perfectly, and sometimes that makes me ignore reality.
+Sage tiene razón, en parte.  Quiero que todo sea agradable y que funcione a la perfección, y algunas veces eso me hace ignorar la realidad.
+#I don’t know what you need to do to help The Briar.  I don’t understand how this world works or why everything seems so strange.  But I do want to be your friend, Young.
+No sé qué necesitas hacer para ayudar a Briar.  No entiendo cómo funciona este mundo o por qué todo parece tan extraño.  Pero quiero ser tu amiga, en serio, Young.
+#You are fighting, Young.  You are trying to understand.  I hope you can work things out.
+Estás luchando, Young.  Estás intentando entender.  Espero que puedas aclarar las cosas.
+		end scene
+		scene one
+TOP
+#Sage: Young... this is my final warning... wait, who is that?
+Sage: Young... esta es mi advertencia final... espera, ¿quién es?
+#Mitra: My name is Mitra, and this is my bike, Wares!
+Mitra: ¡Mi nombre es Mitra, y esta es mi bici, Wares!
+#Sage: I didn’t ask the name of your bicycle, what are you doing here?  I don’t remember you.
+Sage: No pregunté por el nombre de tu bicicleta, ¿qué estás haciendo aquí?  No te recuerdo.
+#Mitra: I’m here to help my friend, Young..
+Mitra: Estoy aquí para ayudar a mi amigo, Young...
+#Sage: Young doesn’t have friends.  Young doesn’t even have Briar.  And if you’re egging him on, then I want you out of my world!
+Sage: Young no tiene amigos.  Ni siquiera tiene a Briar.  Y si tú estás animándolo, ¡entonces te quiero fuera de mi mundo!
+#Mitra: What do you mean?  Wares and I--
+Mitra: ¿Qué quieres decir? Wares y yo--
+#Sage: SHUT UP ABOUT YOUR STUPID BICYCLE!!! 
+Sage: ¡¡¡DEJA DE HABLAR DE TU ESTÚPIDA BICICLETA!!!
+		end scene 
+		
+		scene hit
+TOP
+Sage: ...
+#Mitra: Young!  Are you okay?  That was a beautiful thing you just did... You go on and finish this final punk-ass area!  We know you can do it!
+Mitra: ¡Young! ¿Estás bien?  Lo que acabas de hacer ha sido realmente admirable... ¡Continúa y acaba esta estúpida área! ¡Sabemos que puedes lograrlo!
+Mitra: Wares!!! 
+Mitra: Wares... 
+#Mitra: Look, mysterious hooded character, I don’t know who you think you are, but why don’t you just leave us alone?
+Mitra: Mira, misterioso personaje encapuchado, no sé quién te crees que eres, ¿pero por qué no nos dejas a solas y punto?
+#Sage: You think you’re Young’s friend because you’ll lie to him and tell him that deep down he’s just perfect and everything will work out.  Well, if that’s what you want, FINE.  Get out of my face, Young.
+Sage: Te crees amiga de Young porque le mentirás y le dirás que en el fondo él es simplemente perfecto y que todo saldrá bien.  Bien, si eso es lo que quieres, VALE.  Apártate de mi vista, Young.
+#Sage: Go talk to your \"friend\".
+Sage: Ve a hablar con tu \"amiga\".
+#Mitra: We're just doing the best we can...
+Mitra: Estamos haciéndolo lo mejor que podemos...
+		end scene
+	end area
+	area NEXUS
+	
+	
+		scene enter_nexus
+TOP
+#Cloaked Man: Well, it’s about time.  Er...^I mean...^ Greetings, Young!  I am Sage, the Village Elder.  You have been summoned here because The Darkness has spread across The Land.  The Darkness seeks The Legendary Briar, to use The Briar’s power for evil.  You must reach it first. You must protect The Briar.	
+Hombre encapuchado: Bueno, ya va siendo hora.  Eh...^Quiero decir...^ Saludos, Young (Joven)! Yo soy Sage (Sabio), el Anciano del Pueblo. Has sido convocado aquí porque La Oscuridad se ha extendido a lo largo de la Región. La Oscuridad anda tras el Legendario Briar (Espino), para usar su poder con fines malvados.  Debes encontrarlo antes. Debes proteger el Briar.
+#Enter the active portal on your left to begin your quest.
+Entra por el portal activo a tu izquierda para empezar tu búsqueda.
+#*Sigh* it doesn’t bode well that you’re still dallying about here.  Enter the portal to begin your quest.  The Briar and, by extension, the world are in dire need!
+*Suspiro* No es de buen agüero que aún estés rondando por aquí.  Entra por el portal para empezar tu búsqueda.  ¡El Briar y, por extensión, el mundo están en extrema necesidad!
+LOOP
+#Just go in the damn door!
+¡Entra por la maldita puerta ya!
+		end scene
+		
+	# After entering STREET for the first time
+		scene after_ent_str
+#Why are you still here?
+¿Aún estás aquí?
+		end scene
+	# After finishing BEDROOM
+		scene after_bed
+#Continue on, Young. That key you have found, there may be others like it - seek them out.
+Prosigue, Young. Esa llave que has encontrado, puede que haya otras como esa - encuéntralas.
+#Travel to the far reaches of The Land, Young. This is the only way to stop The Darkness.
+Viaja hasta los límites de La Región, Young. Es la única manera de parar La Oscuridad.
+		end scene
+	# After finishing first 3 dungeons
+		scene before_windmill
+#Take those three keys, Young, and unlock the way to the deeper realms of The Land.
+Coge esas tres llaves, Young, y abre el camino a las áreas más recónditas de La Región.
+		end scene
+#After windmill, but disappears after Sage fight
+		scene after_windmill
+#You have done what I have asked, Young, though there is still much to be done.  Perhaps if you explore the deeper realms of The Land you will come to greater realizations... perhaps you'll be worth anything to Briar.
+Has hecho lo que te había pedido, Young, aunque aún queda mucho por hacer.  Quizás si exploras los terrenos más recónditos de La Región llegarás a conseguir mayores logros... quizás así le sirvas a Briar para algo.
+		end scene
+		
+		scene all_card_first
+#Good work, Young. You have found all of the cards in one area of The Land, and as a result, a gem has appeared on top of the area's portal.
+Buen trabajo, Young. Has encontrado todas las cartas de un área de La Región, y como resultado, una gema ha aparecido en lo alto del portal de ese área.
+		end scene
+	end area
+	
+	area OVERWORLD
+		scene bedroom_entrance
+#Sage: Soon your skills will be put to the test, Young.  In order to make it through this temple alive, you will need both strength and intellect.  And I assume that by this point you have found a weapon?
+Sage: Pronto tus habilidades serán puestas a prueba, Young. Para lograr atravesar este templo con vida, necesitarás fuerza y no menos intelecto.  Y llegados a este punto doy por supuesto que has encontrado un arma, ¿no es así?
+# Young swipes a few times
+#Wha-??  ... I-I mean...  Yes of course... a broom!  Er... just as was foretold in The Legend...
+¿¿Pero qu-??  ... Qu-Quiero decir...  Sí, por supuesto... ¡una escoba!  Esto... justo como fue presagiado en La Leyenda...
+#*grumble grumble* ... of all the incompetent--Hey!  What are you still standing here for?
+*gruñidos* ... de todos los incompetent--¡Eh! ¿A qué estás esperando aquí parado?
+LOOP
+#Keep your wits about you, Young.
+Ándate con mucho ojo, Young.
+		end scene
+	end area
+	
+	area BEDROOM
+		scene after_boss
+# Sage fades into room.	
+#Sage: At this point, you are still weak. If you hope to protect The Briar from The Darkness, you must face your fears.  The card you will find in this chest, and others like it, are symbols of your growth, so acquiring them is absolutely vital to your quest.
+Sage: Por el momento aún eres débil. Si esperas proteger al Briar de La Oscuridad, debes enfrentarte a tus miedos. La carta que encontrarás en este baúl, y en otros como éste, son símbolos de tu desarrollo, luego adquirirlos es absolutamente vital para tu búsqueda.
+#That key will also play an important role in your quest. You must seek out other keys, as well.  Select the map on the menu screen to teleport back to the temple's entrance, and continue your heroic quest.
+Esa llave jugará también un papel importante en tu búsqueda. Además debes buscar concienzudamente otras llaves.  Selecciona el mapa en la pantalla de menú para teletransportarte de vuelta a la entrada del templo, y continúa tu heroica búsqueda.
+#Travel East and South through the temple grounds... you will find a use for that key.
+Viaja al Este y al Sur a través de los terrenos del templo... encontrarás un uso para esa llave.
+LOOP
+#What, do you want a piggy back ride to the gate or something??
+¿Qué quieres? ¿Que te lleve a caballito hasta la puerta o qué?
+		end scene
+	end area
+	
+	area TERMINAL
+		scene before_fight
+#Sage: Why won’t you listen to me?!  If you rush into this like an idiot, you’ll only endanger The Briar, The Land, and everything I’ve worked for!  I’m sorry Young, but if you won’t listen to me, then I’ll have to convince you another way...
+Sage: ¡¿Por qué no me escuchas?!  ¡Si te precipitas en esto como un idiota, solamente conseguirás poner en peligro al Briar, a La Región, y a todo por lo que he trabajado!  Lo siento, Young, pero si no quieres escucharme tendré que convencerte de otra forma...
+		end scene
+		scene after_fight
+#Sage: Young...  This is not how I mean things to be... I meant for you to become a better person.  I meant for you to be able to help The Briar.  But all of this is just a silly game...  I can’t stop you from reaching The Briar.  Just remember what I said when it all goes to hell.
+Sage: Young...  Así no es como yo quería que sucedieran las cosas...  Yo pretendía que te convirtieras en mejor persona.  Pretendía que fueras capaz de ayudar al Briar.  Pero todo esto es solo un absurdo juego...  No puedo evitar que llegues hasta El Briar.  Tan solo recuerda lo que dije cuando todo se vaya al infierno.
+		end scene
+		scene entrance
+#Sage: Hello, Young.  When you have become a stronger and wiser individual, this path will lead you to The Briar.
+Sage: Hola, Young.  Cuando te conviertas en alguien más fuerte y más sabio, este camino te llevará al Briar.
+#Sage: You’re not ready Young, first you must face more trials in The Land.
+Sage: No estás preparado, Young, primero debes afrontar más pruebas en La Región.
+#Sage: You have made progress, Young, but you must collect at least 36 cards to pass this gate.
+Sage: Has hecho progresos, Young, pero debes poseer al menos 36 cartas para pasar a través de esta verja.
+		end scene
+# non idlnig stuff
+		scene etc
+#Sage: Oh... uh... you have at least 36 cards?  But I am not certain that you are ready for the true test.  In fact, look, we were reading this gate wrong, you actually need...\n...\n........\n92 cards to pass this gate, not 36!
+Sage: Oh... eh... ¿tienes al menos 36 cartas?  Pero no estoy seguro de que estés preparado para la verdadera prueba.  De hecho, mira, estábamos leyendo mal esta verja, en realidad necesitas...\n...\n........\n¡92 cartas para atravesarla, no 36!
+#Sage: Young, don’t go there, you’re not ready yet!  Think of The Briar!  The Land!  All of this will be for nothing if you are not ready! 
+Sage: Young, no vayas ahí, ¡aún no estás preparado!  ¡Piensa en El Briar!  ¡La Región!  ¡Todo esto no habrá valido para nada si no estás preparado!
+		end scene
+	end area
+	
+	
+	
+	area REDCAVE
+		scene one
+TOP
+#Sage: Excellent work, Young.  You had to conquer not only this monster but also your own fears to prevail!!!
+Sage: Un trabajo excelente, Young.  Tenías que conquistar no sólo este monstruo, ¡¡¡sino también tus propios miedos para prevalecer!!!
+#Sage: Of course, you still have a long way to go.  Have you been exploring The Land?
+Sage: Por supuesto, aún te queda un largo camino por recorrer.  ¿Has estado explorando La Región?
+		end scene
+	end area
+	
+	area CROWD
+		scene one
+#Sage: Well done, Young. However, there are still trials to face. Do not let your guard down.
+Sage: Bien hecho, Young. Sin embargo, aún quedan pruebas por afrontar. No bajes la guardia.
+#Sage: Have you found all of the keys yet, Young? If not, go to the beach.
+Sage: ¿Has escontrado ya todas las llaves, Young? Si no es así, ve a la playa.
+		end scene
+	end area
+	
+	
+
+end npc
+
+npc cliff_dog
+	area CLIFF
+		scene top_left
+#I'm not like the others! *woof* I won't harm you...
+¡No soy como los otros! *ladrido* No te haré daño...
+#It is a quiet existence up here.
+Aquí se vive muy tranquilamente.
+#You smell like swiss chard.
+Hueles como a acelga.
+LOOP
+*woof*
+		end scene
+	end area
+end npc
+
+npc happy_npc
+	area HAPPY
+		scene beautiful
+#You did it, Young!  You defeated The Darkness!  Look at this place!  It’s beautiful!
+¡Lo hiciste, Young! ¡Derrotaste a La Oscuridad! ¡Mira este sitio! ¡Es precioso!
+#So beautiful...
+Tan precioso...
+		end scene
+		
+		scene dump
+#Oh thank god you’re here!  I was worried you’d get stuck in that snowy dump... It’s fucking depressing over there!  Ha!
+¡Oh, gracias a Dios que estás aquí! Estaba preocupado por si te habías quedado atrapado en ese vertedero todo nevado... ¡Ahí todo es jodidamente deprimente!  ¡Ja!
+#Hahaha. Hahahahaha. HAHAHAHAHAHAHA!
+Jajaja. Jajajajaja. ¡JAJAJAJAJAJAJA!
+		end scene
+		
+		scene drink
+#Hey sexy, I’ll buy you a drink!
+Oye encanto, ¡te invito a un trago!
+#Have another drink, you little shit!  Hahaha!
+¡Toma otro trago, mierdecilla!  ¡Jajaja!
+		end scene
+		
+		scene hot
+#Fuck, it’s hot here...  I’m so hot... and sweatyyy...
+Joder, qué calor hace aquí...  Estoy tan caliente... y sudaaado...
+#Damn, working out makes me horny!
+¡Maldita sea! ¡Entrenar me pone cachondo!
+		end scene
+		
+		scene gold
+#Did you know this place is made of gold?  Like actual gold!  We could run away together and live off this brick right here!  Wahahahaha!
+¿Sabías que este lugar está hecho de oro?  ¡Oro de verdad!  ¡Podríamos escapar juntos y vivir de este ladrillo de aquí!  ¡Jajajajaja!
+#Seriously, why are you just standing there?  Help me jack this brick!
+En serio, ¿qué estás haciendo ahí parado?  ¡Ayúdame a levantar este ladrillo!
+		end scene
+		
+		scene briar
+#???: Young... You finally maDe IT!  YuO SsavED ME!  nOE EvERtyhinG WILL bE OKYA AGaIN!!!!!
+???: Young... !Al final lO hiCisTE¡  !ME AHs SalvaDO¡  !!!!!AgoRA ToDo IRa BEIN de NUeVO¡¡¡¡¡
+		end scene
+	end area
+end npc
+
+### 'mitra'
+npc mitra
+	area OVERWORLD
+		scene initial_overworld
+#HEADS UP!
+¡CUIDADO!
+#Mitra swerves to avoid you and crashes
+#Sorry about that... I was going way too fast.  Oh, I’ve never seen you before!  Are you a fellow traveller? ... Huh?  You want to protect the Briar from the Evil Darkness?  ...  ^Well... I have no clue what you’re talking about, but sounds cool, I guess!	
+Siento eso... Iba demasiado deprisa.  Oh, ¡no te había visto nunca antes!  ¿Tú también eres un viajero como yo? ... ¿Eh?  ¿Que quieres proteger al Briar de La Malvada Oscuridad?  ...  ^Bien... No tengo ni idea de lo que me hablas, ¡pero suena guay, supongo!
+#I’ve just been out and about, peddling my wares.... What?  No, I’m not a salesman.  Wares is the name of my bicycle!  
+Voy de acá para allá, llevando mi género... ¿Qué?  No, no soy una vendedora ambulante.  ¡Wares (Género) es el nombre de mi bicicleta!
+#Plays if you talk 3 times, or if you leave the screen
+#Well, maybe we’ll run into each other again sometime.  I’ll let you know if I hear anything about that Briar. 
+Bueno, puede que nos encontremos en otra ocasión.  Si oigo lo que sea acerca de ese Briar, te lo haré saber.
+#Mitra bikes away
+		end scene
+	end area
+	area BLUE
+		scene one
+#HEADS UP!  All right Wares, let’s do this!
+¡CUIDADO!  Bien, Wares, ¡vamos allá!
+#Annnd presto!
+Yyyy ¡presto!
+#Keep going, Young, we’ve got your back!
+No pares, Young, ¡nosotros te cubrimos!
+		end scene
+	end area
+	
+	area FIELDS
+		scene init
+#Remember me?  I forgot to introduce myself the last time, I only introduced my bicycle, Wares.  My name is Mitra.
+¿Te acuerdas de mí?  Olvidé presentarme la última vez, solo te presenté a mi bicicleta, Wares.  Mi nombre es Mitra.
+#Remember me?  I forgot to introduce myself the last time, I’m Mitra, and this fine young bicycle is named Wares.
+¿Te acuerdas de mí?  Olvidé presentarme la última vez, soy Mitra, y esta joven bicicleta tan bonita se llama Wares.
+LOOP
+#Mitra: So how have you been, Young?  ...what?  How did I know your name?  You think it’s weird, eh?  Well, I saw it on the back of your hoodie.  
+Mitra: ¿Y cómo te ha ido, Young?  ¿...qué?  ¿Que cómo sé tu nombre?  Te parece extraño, ¿verdad?  Bueno, lo vi en la parte trasera de tu sudadera.
+#Mitra: See you around, Young!
+Mitra: ¡Nos vemos, Young!
+		end scene
+		scene quest_event
+#Mitra: Hey, I just remembered - someone said they were trying to find something earlier. I wasn't sure what they were talking about, so they said they were going to the mountains - ran off in a hurry.
+Mitra: Eh, acabo de recordar - alguien dijo que estaban intentando encontrar algo antes. No estaba segura de a qué se referían, así que dijeron que irían hacia las montañas - salieron corriendo.
+		end scene
+		
+# Hints for the game - not cards
+		scene game_hints
+# The ordering matters in these (indexed in-game, so just keep them numbered)
+# 0 ignore this
+#Nothing.
+Nada.
+# 1. Beach hint (no dungeons finished)
+#Oh, you're lost? Have you looked around the beach? Maybe someone there can help you out. It looks like that key of yours comes in a set. Maybe you need to find more?
+Oh, ¿estás perdido? ¿Te has pasado por la playa? Quizás alguien de por allí pueda ayudarte. Parece que esa llave tuya forme parte de un manojo. ¿Tendrás que encontrar más?
+# 2. Forest hint (no dungeons finished)
+#Oh, you're lost? Have you looked in the forest to the east?  That key you have - it looks like it comes in a set. Maybe you need to find others?
+Oh, ¿estás perdido? ¿Has mirado en el bosque, hacia el Este?  Esa llave que tienes - parece que forma parte de un manojo. ¿Tendrás que encontrar otras?
+# 3. Windmill hint
+#Look at all of those keys! I think I saw some gates to the southeast. Maybe you could use them there?
+¡Mira todas esas llaves! Creo que vi algunas puertas hacia el Sudeste. ¿Tendrás que usarlas allí?
+# 4. Generic hint to go past statues
+#Hey, I saw that you turned on the wind turbine!  Do you know if it had any effect on The Land?
+¡Eh, vi que encendiste el molino de viento!  ¿Sabes si ha tenido algún efecto en La Región?
+# 5. finished 6 bosses, all 36...
+#Hey Young.  Wow!  You've really been racking up those cards!  Have you figured out what they're for yet?  Seems like you could really cash in with all those!
+Eh, Young. ¡Guau!  ¡Has estado en verdad reuniendo todas esas cartas!  ¿Has descubierto ya para qué sirven?  ¡Podrías ganar un pastón vendiéndolas!
+# 6. hints for go things
+#What is that new broom attachment you have?  It lets you alter the structure of the world...?  Honestly, that is really scary Young.  I'm glad it doesn't seem to work anywhere, perhaps just in the deepest, strangest recesses of the Land
+¿Qué es ese nuevo accesorio que tienes en la escoba?  ¿Te permite alterar la estructura del mundo...?  La verdad, eso da mucho miedo, Young.  Me alegro de que no parezca funcionar en cualquier sitio, quizás solo en los más profundos, extraños recovecos de La Región.
+# 7.  crowd finished but not redcave
+#How are my jump shoes working for you?  Pretty nifty, eh?  I’m loving my new bike shoes.  They make Wares and I an even better team!
+¿Qué tal funcionan mis zapatos saltarines?  ¿De maravilla, eh?  Me están gustando mis nuevos zapatos para ir en bici.  ¡Hacen de Wares y de mí un equipo incluso mejor!
+#8. redcave finished but not crowd
+#Cool, Young, you found another key!  Wares likes the color!  Have you found a place to use them yet?
+¡Qué guay, Young, encontraste otra llave!  ¡A Wares le gusta el color!  ¿Has encontrado ya un lugar donde usarlas?
+		end scene
+# Hints for the cards. Play after the 6 dungeons are finished.		
+		scene card_hints
+#Mitra: Hey Young, looking for a card?\nHave you checked around the area of the Seeing One's temple?
+Mitra: Eh, Young, ¿buscando una carta?\n¿Has buscado bien por el área del templo de El-Que-Todo-Lo-Ve?
+
+#Mitra: Hey Young, looking for a card?\nI heard there's a maze around the back exit of the Seeing One's temple.
+Mitra: Eh, Young, ¿buscando una carta?\nHe oído que hay un laberinto por la salida trasera del templo de El-Que-Todo-Lo-Ve.
+
+#Mitra: Hey Young, looking for a card?\nYou might find something near the Seeing One's lair.
+Mitra: Eh, Young, ¿buscando una carta?\nQuizás encuentres algo cerca de la guarida de El-Que-Todo-Lo-Ve.
+
+#Mitra: Hey Young, looking for a card?\nThere was a room filled with enemies in the Seeing One's temple, right?
+Mitra: Eh, Young, ¿buscando una carta?\nHabía una sala repleta de enemigos en el templo de El-Que-Todo-Lo-Ve, ¿me equivoco?
+
+#Mitra: Hey Young, looking for a card?\nHave you looked all over the Seeing One's temple?
+Mitra: Eh, Young, ¿buscando una carta?\n¿Has mirado bien dentro del templo de El-Que-Todo-Lo-Ve?
+
+#Mitra: Hey Young, looking for a card?\nTry looking in the vestigial area near the back exit of the Seeing One's lair.
+Mitra: Eh, Young, ¿buscando una carta?\nIntenta buscar en el área vestigial cerca de la salida trasera de la guarida de El-Que-Todo-Lo-Ve.
+
+#Mitra: Hey Young, looking for a card?\nMaybe your neighbor knows something about it.
+Mitra: Eh, Young, ¿buscando una carta?\nPuede que tu vecino sepa algo.
+
+#Mitra: Hey Young, looking for a card?\nI know the guy in your apartment was hiding something...
+Mitra: Eh, Young, ¿buscando una carta?\nEse tipo de tu cuarto estaba escondiendo algo...
+
+#Mitra: Hey Young, looking for a card?\nSomewhere near the entrance of your apartment...look around there!
+Mitra: Eh, Young, ¿buscando una carta?\nEn algún lugar cerca de la entrada de tu cuarto...¡mira por allí!
+
+#Mitra: Hey Young, looking for a card?\nHave you looked *everywhere* in your apartment?
+Mitra: Eh, Young, ¿buscando una carta?\n¿Has buscado *por todos lados* en tu cuarto?
+
+#Mitra: Hey Young, looking for a card?\nJust south of here is an island! I haven't gone there, but you should check it out.
+Mitra: Eh, Young, ¿buscando una carta?\n¡Justo al Sur de aquí hay una isla! No he ido allí, pero deberías inspeccionar el sitio.
+
+#Mitra: Hey Young, looking for a card?\nThere's a lot of stuff to be found if you follow the rivers. Look around!
+Mitra: Eh, Young, ¿buscando una carta?\nHay un montón de cosas por descubrir si sigues los ríos. ¡Mira bien!
+
+#Mitra: Hey Young, looking for a card?\nI know someone left a card near the windmill.
+Mitra: Eh, Young, ¿buscando una carta?\nSé que alguien dejó una cerca del molino de viento.
+
+#Mitra: Hey Young, looking for a card?\nLook around the rivers in the forest...
+Mitra: Eh, Young, ¿buscando una carta?\nMira cerca de los ríos del bosque...
+
+#Mitra: Hey Young, looking for a card?\nTry poking around the base of the mountains.
+Mitra: Eh, Young, ¿buscando una carta?\nFisgonea alrededor de la base de las montañas.
+
+#Mitra: Hey Young, looking for a card?\nTry going to the summit of the mountains.
+Mitra: Eh, Young, ¿buscando una carta?\nIntenta llegas hasta la cumbre de las montañas.
+
+#Mitra: Hey Young, looking for a card?\nThe far end of the beach may hold something.
+Mitra: Eh, Young, ¿buscando una carta?\nEl extremo alejado de la playa puede que guarde algo.
+
+#Mitra: Hey Young, looking for a card?\nTake a walk in the crimson woods.
+Mitra: Eh, Young, ¿buscando una carta?\nDate una vuelta por el bosque carmesí.
+
+#Mitra: Hey Young, looking for a card?\nThere were a lot of locked doors in one of those red caves, right?
+Mitra: Eh, Young, ¿buscando una carta?\nHabía muchas puertas cerradas con llave en una de esas cuevas rojizas, ¿verdad?
+
+#Mitra: Hey Young, looking for a card?\nGo to the northern red cave, check out the source of the river!
+Mitra: Eh, Young, ¿buscando una carta?\nVe a la cueva rojiza situada más al norte, ¡comprueba el nacimiento del río!
+
+#Mitra: Hey Young, looking for a card?\nHmm...did you look all over that dark labyrinth?
+Mitra: Eh, Young, ¿buscando una carta?\nMmm...¿miraste bien por todo ese laberinto oscuro?
+
+#Mitra: Hey Young, looking for a card?\nI remember there was a pretty grim looking path of flamethrowers somewhere. Something's gotta be at the end of it!
+Mitra: Eh, Young, ¿buscando una carta?\nRecuerdo que había un camino bastante lúgubre de lanzallamas en algún lugar. ¡Algo debe de haber al final del mismo!
+
+#Mitra: Hey Young, looking for a card?\nThose circus folks have got to be hiding something. Did you look everywhere?
+Mitra: Eh, Young, ¿buscando una carta?\nEsa gente del circo tiene que estar ocultando algo. ¿Miraste por todos lados?
+
+#Mitra: Hey Young, looking for a card?\nHave you looked around the area on the perimeter of that couple's large pit?
+Mitra: Eh, Young, ¿buscando una carta?\n¿Has echado un vistado por el perímetro del gran foso de esa pareja?
+
+#Mitra: Hey Young, looking for a card?\nThere's this couple that like to hang around a pit. They must be hiding something.
+Mitra: Eh, Young, ¿buscando una carta?\nEsa pareja que gusta tanto de estar por un foso. Deben estar escondiendo algo.
+
+#Mitra: Hey Young, looking for a card?\nSometimes there are things hidden across chasms - especially in mountain caves!
+Mitra: Eh, Young, ¿buscando una carta?\nAlgunas veces hay cosas escondidas al otro lado de los abismos - ¡especialmente en cuevas montañosas!
+
+#Mitra: Hey Young, looking for a card?\nHave you scoured the highest parts of the mountain cave?
+Mitra: Eh, Young, ¿buscando una carta?\n¿Has registrado las partes más altas de la cueva montañosa?
+
+#Mitra: Hey Young, looking for a card?\nIs there anything in the depths of that mountain cave?
+Mitra: Eh, Young, ¿buscando una carta?\n¿Habrá algo en las profundidades de esa cueva montañosa?
+
+#Mitra: Hey Young, looking for a card?\nThat colorful cube in that weird place - it has probably got something!
+Mitra: Eh, Young, ¿buscando una carta?\nEse cubo lleno de colorido que está en ese lugar tan raro - ¡probablemente tenga algo!
+
+#Mitra: Hey Young, looking for a card?\nHave you talked to that grayscale cube in that wild-lookin' area? Maybe it knows something.
+Mitra: Eh, Young, ¿buscando una carta?\n¿Has hablado con el cubo gris de esa zona que parece tan salvaje? Puede que sepa algo.
+
+#Mitra: Hey Young, looking for a card?\nThe top floor of that hotel is a little run down, but it's gotta have something!
+Mitra: Eh, Young, ¿buscando una carta?\nEl último piso de ese hotel está un poco desmoronado, ¡pero seguro que allí hay algo!
+
+#Mitra: Hey Young, looking for a card?\nDid you walk into all of the rooms on the 3rd floor of the hotel?
+Mitra: Eh, Young, ¿buscando una carta?\n¿Entraste a todas las habitaciones de la 3ª planta del hotel?
+
+#Mitra: Hey Young, looking for a card?\nI bet someone left something lying around the 2nd floor of the hotel.
+Mitra: Eh, Young, ¿buscando una carta?\nApuesto a que alguien dejó algo por ahí tirado en la 2ª planta del hotel.
+
+#Mitra: Hey Young, looking for a card?\nThe owner of the hotel might have left something for you! 
+Mitra: Eh, Young, ¿buscando una carta?\n¡El propietario del hotel podría haber dejado algo para ti!
+
+#Mitra: Hey Young, looking for a card?\nThose broken bridges to the northwest...look around there!
+Mitra: Eh, Young, ¿buscando una carta?\nEsos puentes rotos allá por el Noroeste...¡mira por allí!
+
+# and a bonus one if for some reason you make it this far without finding any...
+#...What? You haven't found *any* cards? Man, Young, that's crazy! Sometimes in life you just need to be adventurous, open a few boxes, you know? 
+¿...Qué? ¿Que no has encontrado *ninguna* carta? Pero hombre, Young, ¿qué locura es esta? Algunas veces en la vida es necesario ser intrépido, abrir alguna que otra caja, ¿sabes?
+		end scene
+		
+#General random stuff 
+		scene general_banter
+#Did you find that guy who was looking for something in the mountains?
+¿Encontraste a ese tipo que estaba buscando algo en las montañas?
+#Do you know what my bike’s surname is?  ...Waldo!  Get it?  Wares Waldo!  ...Just kidding, bicycles don’t have surnames.
+¿Sabes cuál es el apellido de mi bici? ...¡So!  ¿Lo pillas?  ¡Género So!  ...Es broma, las bicicletas no tienen apellidos.
+#Do you think I should get a U-Lock?  I’d hate to tie up Wares like that, but you do hear a lot about stolen bikes these days...
+¿Crees que debería comprarme un candado?  No me gustaría tener que atar a Género así, pero se oye tanto hablar sobre bicicletas robadas estos días...
+#So what is The Briar?  Some sort of ancient artifact from a lost culture?
+Así que... ¿qué es El Briar?  ¿Algún tipo de artefacto antiguo de una cultura perdida?
+#I wonder why I haven't heard anything about The Darkness coming.  I guess most people in the land are just caught up in their own daily struggles.
+Me pregunto por qué no habré oído nada acerca de la llegada de La Oscuridad.  Supongo que mucha gente de la región está concentrada en sus propias luchas diarias.
+#Hey Young, I just wanted to tell you... your hair is awesome.
+Eh, Young, solo quería decirte que... tu pelo mola un montón.
+		end scene
+		
+	end area
+end npc
+
+### Statue (wise crackin' statue) 
+npc statue
+	area NEXUS
+		scene enter_nexus
+#Statue: The Village Elder in name only, for he is neither.
+Estatua: El Anciano del Pueblo sólo en nombre, pues no es ninguno.
+		end scene
+	end area
+	
+	area OVERWORLD
+		scene bedroom_entrance
+#Statue: I’ve seen a broom in a legend... it was on the map of a janitor closet. 	
+Estatua: He visto una escoba en una leyenda... que estaba en el plano del armario de un conserje.
+		end scene
+	end area
+	
+	area BEDROOM
+		scene after_boss
+#Statue: Acquiring cards is vital to your quest.  Acquiring cards is also vital for other quests, such as earning credit or purchasing alcoholic beverages.		
+Estatua: Adquirir tarjetas es vital para tu búsqueda.  Adquirir tarjetas también es vital para otros fines, como obtener crédito o comprar bebidas alcohólicas.
+		end scene
+	end area
+	area REDCAVE
+		scene one
+#Statue: Excellent work, Sage.  You had to conquer not only your temperament but also your own self-respect to deliver such a cheesy line!!!
+Estatua: Un trabajo excelente, Sage.  ¡¡¡Has tenido que conquistar no sólo tu temperamento sino también tu amor propio para decir algo tan cutre!!!
+		end scene
+	end area
+	area TERMINAL
+		scene one
+#When you have become a more stressed and apathetic individual, this path will lead you to the Breyers.  Comfort by the pint, loser!  
+Cuando te hayas convertido en un individuo más estresado y apático, este sendero te llevará a los Breyers.  ¡Reconfórtate bebiendo, perdedor!
+		end scene
+	end area
+end npc
+
+### sadbro (outside of bedroom)
+npc sadbro
+	area OVERWORLD
+		scene initial_forced
+# This line must be played once before anything else can
+#Edward: Once a man came and installed a mirror in our bathroom.  I was afraid that there was a hidden camera inside of it.  I scoured every inch of the wooden frame, spraying Merphi’s Oil Soap into the cracks, thinking I might short-circuit the wires.  Of course, I never found anything.
+Edward: Una vez un hombre vino e instaló un espejo en nuestro cuarto de baño. Yo tenía miedo de que hubiera una cámara oculta dentro de él.  Registré cada pulgada del marco de madera, echando Don Limpio en las grietas, creyendo que eso cortocircuitaría los cables.  Por supuesto, nunca encontré nada.
+LOOP
+#Edward: This temple is dedicated to The Seeing One.  I don’t know why I came here, and I’m too afraid to go inside.
+Edward: Este templo está dedicado a El-Que-Todo-Lo-Ve.  No sé por qué he venido aquí, pero tengo demasiado miedo para entrar dentro.
+		end scene
+		
+		scene bedroom_not_done
+#Edward: Having trouble?  Well I’d imagine so.  All you have is a broom, and all brooms can do is move dirt.
+Edward: ¿Problemas?  Bueno, me imagino.  Todo lo que tienes es una escoba, y todo lo que las escobas pueden hacer es mover mugre.
+		end scene
+		
+		scene bedroom_done
+#Edward: You say you defeated the Seeing One?  Ha.  Don’t you get that it doesn’t work that way?  You’re just spraying oil soap in the cracks.	
+Edward: ¿Dices que has vencido a El-Que-Todo-Lo-Ve?  Ja.  ¿No entiendes que esto no funciona así?  Lo único que estás haciendo es echar detergente en las grietas.
+		end scene
+		
+	end area
+end npc
+
+# sun_guy (Bedroom boss)
+npc sun_guy
+	area BEDROOM
+		scene before_fight
+#Oh, isn’t it cute?  Precious little Young, playing the hero.  But I have witnessed every step you have taken in "The Land", and let me tell you, Young, not everyone here is as honest as me.  Be careful who you trust!
+Oh, ¿no es una monada?  Nuestro querido y joven Young, jugando a ser el héroe.  Pero he estado observando cada paso que has dado en \"La Región\", y déjame decirte, Young, que no todo el mundo de por aquí es tan honesto como yo.  ¡Ten cuidado en quien confías!
+		end scene
+		scene after_fight
+#I will be with you, Young, whenever you are alone.  And remember my advice on your little "adventure".
+Estaré contigo, Young, siempre que estés solo.  Y recuerda mi consejo en tu pequeña \"aventura\".
+		end scene
+	end area
+end npc
+
+# rock (Rock with words)
+npc rock
+
+	area BEDROOM
+		scene one
+#Rock: Peripheral vision is the hive of demons.	
+Roca: La visión periférica es la colmena de los demonios.
+		end scene
+		scene two
+#Rock: To-do: Construct method of transportation to Nexus. Progress: Halted - Seeing One will not give the required funds to make the venture possible. We will have to revert to the original method of the inexplicable door portal. 
+Roca: Por-hacer: Construir un método de teletransporte hasta Nexus. Progreso: Detenido - El-Que-Todo-Lo-Ve no quiere proporcionar los fondos necesarios para hacer posible la empresa. Tendremos que volver al método original del inexplicable portal.
+		end scene
+		scene three
+#Rock: I'm trapped here all by myself. Work is steady on this tunnel, and at least I can see a little bit of progress every day.
+Roca: Estoy atrapado aquí a solas. El trabajo no cesa en este túnel, y al menos puedo ver un poco de progreso cada día.
+		end scene
+	end area
+	
+	area BLUE
+		scene one
+#This wheel is used to lift the dam.
+Este torno se usa para levantar el dique.
+		end scene
+	end area
+	area CIRCUS
+
+		scene one
+#June 24th, 1957: Trapeze swing breaks.  Alice Rutgers is flung into the ground, resulting in two fractured shins.
+24 de junio de 1957: Las cuerdas del trapecio se rompen.  Alice Rutgers se precipita violentamente al suelo, acabando con dos espinillas rotas.
+		end scene
+		scene two
+#July 17th, 1957: Seven clowns retire with near fatal lung issues.  LANDBLEND brand makeup is suspect, but no formal investigation occurs.
+17 de julio de 1957: Siete payasos se retiran con problemas casi fatales de pulmón.  Se sospecha de la marca de cosméticos LANDBLEND, pero ninguna investigación oficial se lleva a cabo.
+		end scene
+		scene three
+#July 21st, 1957: Following a cage malfunction, my face and side are severely mauled by an untamed lion.  I survive, but now shudder to look at my own reflection.
+21 de julio de 1957: Debido a un fallo de la jaula, mi cara y mi costado quedan severamente destrozados por un león indomado. Sobrevivo, pero ahora estremezco al mirar mi propio reflejo.
+		end scene
+		scene four
+#August 5th, 1957: In my dream, I saw a stone face with fierce, shining eyes.  He spoke of the truth of our existence and was the first to offer freedom from the pain.
+5 de agosto de 1957: En mi sueño, vi una cara hecha de piedra con fieros, brillantes ojos.  Hablaba de la verdad de nuestra existencia y fue el primero en ofrecer la liberación del dolor.
+		end scene
+		scene five
+#August 7th, 1957: How many of us will suffer before we accept the truth of the Seeing One?
+7 de agosto de 1957: ¿Cuántos de nosotros sufrirán antes de que aceptemos la verdad de El-Que-Todo-Lo-Ve?
+		end scene
+		
+		scene six
+#August 8th, 1957: I have come to my decision.  A few of the others have said they will follow me.  This will be my final entry.  May the Seeing One look favorably upon us all.
+8 de agosto de 1957: He tomado una decisión.  Algunos de los otros han dicho que me seguirán.  Esta será mi actuación final.  Que El-Que-Todo-Lo-Ve tenga consideración por todos nosotros.
+		end scene
+	end area
+	area CLIFF
+		scene one
+#(Indecipherable markings)
+(Marcas indescifrables)
+		end scene
+		scene two
+#December 7th, 2010. (name unreadable). There's nothing up here, except this stupid rock!
+7 de diciembre de 2010. (nombre ilegible). ¡No hay nada aquí arriba, excepto esta estúpida roca!
+		end scene
+		scene three
+#Danger! This cave is unexplored.
+¡Peligro! Esta cueva está inexplorada.
+		end scene
+		scene four
+#These cliffs extend far and upwards, though I've never gone high enough to find out where they lead.
+Estos precipicios se extienden lejos hacia arriba, aunque nunca he subido lo suficiente como para saber a dónde llevan.
+		end scene
+	end area
+	
+	
+	area CROWD
+		scene one
+#Rock: How?
+Roca: ¿Cómo?
+		end scene
+		scene two
+#Rock: Warning! Vertical drop, jump at your own risk.
+Roca: ¡Advertencia! Caída en picado, salte bajo su propio riesgo.
+		end scene
+	end area
+	
+	area DEBUG
+		scene one
+#This used to be a placeholder animation for the card gates. Approach it twice to see the locked and open animations! 
+Esta solía ser una animación comodín para las verjas que se abren con cartas. ¡Acércate dos veces para ver las animaciones de cierre y apertura!
+#I forget why we ended up scrapping it. Perhaps too dramatic.
+He olvidado por qué acabamos desechándola. Quizás por demasiado dramática.
+		end scene
+		
+		scene two
+#Here are tests for various tile layers and collisions! I couldn't get one way tiles from both sides (i.e., walls) working very well so I just ended up scrapping the idea entirely...or something. 
+¡Aquí hay tests para varias capas de suelos y colisiones! No pude lograr que funcionaran bien los suelos de dirección única desde cada lado (p.ej., muros), así que acabé desechando la idea por completo... creo.
+
+#There was some reason why we didn't use them. Simplifying design, which was important for us to finish the game.
+Había alguna razón por la que no las usamos. Simplificar diseño, lo cual era importante para nosotros para acabar el juego.
+		end scene
+		
+		scene three
+#Enemies used to be able to drop keys. I scrapped this idea even though it was slightly amusing. 
+Los enemigos solían ser capaces de soltar llaves. Deseché esta idea pese a que tenía algo de encanto.
+
+#Another idea we played with was having challenge gates, which lay at the end of a gauntlet, and only opened when you reached them without getting hurt. 
+Otra idea que tanteamos fue la de tener puertas de desafío, las cuales se encontraban tras filas de enemigos, y solo se abrían cuando las alcanzabas sin que te hirieran.
+
+#We wanted to model all dungeons around this and scrap health entirely, but that turned out to be far too hard!
+Queríamos diseñar todas las mazmorras de esta forma y desechar los puntos de vida por completo, ¡pero resultó ser demasiado difícil!
+		end scene
+		
+		scene four
+#PRISON!!!
+¡¡¡PRISIÓN!!!
+#Save us!!!
+¡¡¡Sálvanos!!!
+#Please!
+¡Por favor!
+		end scene
+		
+		scene five
+#Welcome to the DEBUG WORLD! You've stepped outside of \"The Land\", so consider this world (90 PER-CENT) \"Non-canon\". Anyways.
+¡Te damos la bienvenida al MUNDO DEBUG! Has salido fuera de \"La Región\", así que considera este mundo (90 POR-CIENTO) \"No canónico\". En fin.
+#Before there were tilesets for many of the areas I used silly tiles like these to mark where doors went. In fact, every dungeon was mocked up in this area's tileset, and then Marina tiled over them with his tilesets.
+Antes de que hubieran sets de suelos para muchas de las áreas, usaba suelos como estos para marcar dónde iban las puertas. De hecho, cada mazmorra fue modelada con el set de suelos de este área, y luego Marina fue sustituyendo estos suelos por las suyas.
+		end scene
+		
+		scene six
+# Translator's note: since this word comes from French, I'll leave it as it is
+# Equivalence (for reference) --> French: fille -- English: girl -- Spanish: chica
+fille
+		end scene
+	end area
+	
+	area DRAWER
+		scene five
+#-ARCHIVES-
+-ARCHIVOS-
+#PROCEED WITH CAUTION
+PROCEDA CON PRECAUCIÓN
+		end scene
+		scene four
+#West. Rift. Reality! Low real estate values, hurricane, old, run down. Relaxing. 
+Oeste. Fisura. ¡Realidad! Valores de condición bajos y reales, huracán, viejo, acabado. Relajante.
+		end scene
+		scene three
+#The Seeing One from what I can rem- rmrr,,,,,,a Good Time At The Home.
+El-Que-Todo-Lo-Ve, por lo que puedo recor- rcrr,,,,,,un Buen Rato En Casa.
+		end scene
+		scene two
+#COLD STORAGE\n\n^  -- THE MGMT
+LUGAR DE ALMACENAMIENTO EN FRÍO\n\n^  -- LA DIRECCIÓN
+		end scene
+		scene one
+#CONTINUE
+CONTINÚA
+		end scene
+	end area
+	
+	area FIELDS
+		scene one
+#West: Beach\n\nEast: Forest\n\nSoutheast:\n  Rainy Area\n\nNorth: \nTemple Grounds\n\nNorthwest: Chasm
+Oeste: Playa\n\nEste: Bosque\n\nSudeste:\n Área lluviosa\n\nNorte: \nJardines del templo\n\nNoroeste: Abismo
+		end scene
+	end area
+	
+	area FOREST
+		scene one
+#West: Land Lake\nSouth, then east: Cliffs
+Oeste: Lago\nSur, luego Este: Precipicios
+		end scene
+		scene two
+#Relaxation pond. Stay a while, we know you have the time.
+Estanque de la relajación. Quédate un rato, sabemos que tienes tiempo de sobra.
+		end scene
+		scene three
+#I'm afraid I may be stuck on this tiny corner forever.
+Me temo que me quedaré atrapado en esta diminuta esquina para siempre.
+		end scene
+		scene four
+#East: Cliffs
+Este: Precipicios
+		end scene
+	end area
+	
+	area GO
+		scene one
+# The path will open when the dark guardian tiles are replaced by the stone of their spirit color on the square grid below.
+El sendero se abrirá cuando las baldosas de los guardianes oscuros Han-Tani reemplazadas por sus respectivos colores espirituales en el tablero de abajo.
+		end scene
+		
+		scene two
+#When the blue stone statue shifted\nThere a new path was revealed\nPast the cliffs, through strange dimensions\nStands a travelers' hotel\n\n\n\"Who is the guardian?\" I ask,\n\"Who rules this crowded business place?\"\nDespite the many human souls\nI still feel alone.
+Cuando la estatua de piedra azulada se apartó\nUn nuevo sendero fue revelado\nMás allá de los precipicios, atravesando extrañas dimensiones\nSe halla un hotel de viajeros\n\n\n\"¿Quién es el guardián?\" Pregunto,\n\"¿Quién gobierna este abarrotado lugar de negocios?\"\nA pesar de las muchas almas humanas\nAún me siento solo.
+		end scene
+		
+		scene three
+#The red and rusty statue moved\nAnd paved the way to deeper pits\nA labyrinthine dungeon follows\nThen a big-top circus tent\n\n\n\"Who are the guardians?\" I ask,\n\"Who gave up life to flee this place?\"\nI fear the pain, the same as they\nBut fear it more to die.
+La roja y oxidada estatua se movió\nY abrió el camino hacia más profundas fosas\nUna mazmorra laberíntica a continuación\nY después una gran carpa de circo\n\n\n\"¿Quiénes son los guardianes?\" Pregunto,\n\"¿Quiénes renunciaron a la vida para huir de este lugar?\"\nTemo al dolor, al igual que ellos\nPero temo a la muerte más aún.
+		end scene
+		
+		scene four
+#The green, metallic statue shifted\nOpening a deeper trail\nSuburban homes and sidewalks form\nA path to an apartment.\n\n\n\"Who is the guardian?\" I ask,\n\"Who looks for comfort in the stars?\"\nAlone, I feel like I am watched\nAnd not by friendly starlight.
+La verde, metálica estatua se apartó\nAbriendo un sendero más profundo\nHogares suburbanos y aceras forman\nUn camino hacia un apartamento.\n\n\n\"¿Quién es el guardián?\" Pregunto,\n\"¿Quién busca consuelo en las estrellas?\"\nSolo, me siento como si estuviera siendo observado\nY no por la amigable luz de las estrellas.
+		end scene
+		
+
+	end area
+	
+	area BLANK
+	#initial entrance from windmill
+		scene one
+#Rock: This is unclaimed territory - not yet a part of The Land. 
+Roca: Esto es territorio de nadie - ni siquiera de La Región.
+		end scene
+		#concentric circles
+		scene two
+#Rock: These -^ me and my^ - circles are^ - promises...I'll^ - concentric^ - really try to get everything done...^ - circles. Bzrt, bzrt.
+Roca: Estos -^ yo y mis^ - círculos son^ - promesas...^ - círculos^ - Intentaré acabarlo todo...^ - concéntricos. Bzrt, bzrt.
+		end scene
+			#islands
+		scene three
+#Rock: Watch^ -...but I always^  - your step^ - manage to reappear no?^ - when here! 
+Roca: Ten cuidado^ -...pero yo siempre^ - por dónde pisas^ - ¿consigo reaparecer, no?^ - ¡cuando estés aquí!
+		end scene
+		#mazeish place, not near the portal
+		scene four
+#Rock: Looking down^ - And I realized:^ - from here, you- ^ I'm in love with him.^ - can see...nothing, really.
+Roca: Mirando hacia abajo^ - Y me di cuenta:^ - desde aquí, tú- ^ Lo amo.^ - puedes ver...nada, realmente.
+		end scene
+		#left part of the 48 gate
+		scene five
+#Rock: My apologies -^ But yeah, we -^  on the mess here -^ ought to keep in touch-^ but that portal should^ - and I will try give you my opinions - ^ return you to to The Land.
+Roca: Mis disculpas -^ Pos claro, -^ por este desorden -^ mantengámonos en contacto-^ pero ese portal debería^ - e intentaré darte mis opiniones - ^ devolverte a La Región.
+		end scene
+	end area
+	
+	
+	area NEXUS
+		scene one
+#Sometimes if you talk to people multiple times, they have new things to say.
+A veces si hablas con la gente varias veces tiene nuevas cosas que decir.
+#But not rocks.  Rocks don’t do that.
+Pero no las rocas.  Las rocas no hacen eso.
+		end scene
+		#before 49 card agate
+		scene two
+#Rock: So close! If only...
+Roca: ¡Muy cerca! Si tan solo...
+		end scene
+		#door that goes nowhere
+		scene three
+#Rock: Curiosity is a great thing.
+Roca: La curiosidad es algo grande.
+		end scene
+		#below treasure box
+		scene four
+#Rock: Oh!...?
+Roca: ¡Oh!¿..?
+		end scene
+		scene five
+#The computer terminal has an e-mail open. Parts of the screen are broken, so only parts of the message are visible in between black blotches. The e-mail reads: \"Hello, Young! It seems that [...] fiftieth card [...] maybe you shouldn't... [...] worth thinking about! Do you think you're ready? Wake up...\" 
+El ordenador tiene un e-mail abierto. Partes de la pantalla están rotas, por eso solo algunas partes del mensaje son visibles entre manchas negras. El e-mail pone: \"¡Hola, Young!\" Parece que [...] quincuagésima carta [...] quizá no deberías... [...] la pena pensárselo! ¿Crees que estás listo?  Despierta...\"
+		end scene
+	end area
+	
+	
+	area OVERWORLD
+		scene one
+#Rock: I’ll bet you’re reading a rock because you don’t have any friends.
+Roca: Apuesto a que estás leyendo una roca porque no tienes amigos.
+		end scene
+		scene two
+#Rock: Welcome to Overworld Station. We hope you enjoyed your time in The Land. 
+Roca: Bienvenido a la estación del Mundo. Esperamos que haya disfrutado de su estancia en La Región.
+		end scene
+		scene three
+#Rock: An explorer is you!
+Roca: ¡Eres todo un explorador!
+#Rock: Please don't go south. It's under construction.
+Roca: Por favor, no vayas al Sur. Está en construcción.
+		end scene
+		scene four
+#Rock: Treasure in 5,3!
+Roca: ¡Tesoro en 5,3!
+		end scene
+		scene five
+#Rock: Haha, gotcha!
+Roca: Jaja, ¡te pillé!
+		end scene
+	end area
+	
+	area REDCAVE
+		scene one
+#WE ARE BORN INTO THE DECAY OF OUR MOTHER’S BODY.
+NACEMOS ENTRE LA DESCOMPOSICIÓN DEL CUERPO DE NUESTRA MADRE
+		end scene
+		scene two
+#ONE DAY OUR MOTHER LEFT HER MOTHER AND VENTURED INTO THE POISONOUS FOG.
+UN DÍA NUESTRA MADRE DEJÓ A SU MADRE Y SE AVENTURÓ EN LA NIEBLA VENENOSA.
+		end scene
+		scene three
+#WE NEVER ASKED FOR THIS.  WE WOULD NOT HAVE BOUGHT OUR LIVES WITH HER SUFFERING.
+NUNCA PEDIMOS ESTO.  NO HABRÍAMOS COMPRADO NUESTRAS VIDAS CON SU SUFRIMIENTO.
+		end scene
+	end area
+# area for redsea
+	area REDSEA
+		scene one
+#Rock: Signs indicate the trees have not been active for an extended period of time.
+Roca: Las señales indican que los árboles no han estado activos por un largo periodo de tiempo.
+		end scene
+		scene two
+#Rock: South: ???^   North: ???
+Roca: Sur: ???^   Norte: ???
+		end scene
+		scene three
+#Rock: The uneven terrain is said to have been formed by the ancestors of the area's inhabitants.
+Roca: Se dice que el terreno irregular ha sido formado por los ancestros de los habiantes del área.
+		end scene
+		scene four
+#Rock: They appear to be a peaceful species.
+Roca: Parecen una especie apacible.
+		end scene
+	end area
+	
+	
+	area SPACE
+		#middle
+		scene one
+			#Scribbled in what appears to be permanent marker: Greetings, fellow traveler of SPACE and TIME. You have stepped into a rift far away from the juxtaposing area of YOUNG. You've crossed an OCEAN or two, so to speak. Don't worry about the CONTRAST, you can return to your normal adventure shortly. Do not FEAR this place, though it appears FORBODING and DANGEROUS you will find its denizens to be quite FRIENDLY.\n      -- The MGMT
+			Garabateado con lo que parece un rotulador permanente: Saludos, compañero viajero del ESPACIO y TIEMPO. Te has adentrado en una grieta muy lejos del área yuxtapuesta de YOUNG. Digamos que has cruzado como un OCÉANO o dos. No te preocupes por el CONTRASTE, podrás volver a tu aventura normal en breve. No TEMAS este lugar, aunque parezca FATÍDICO y PELIGROSO descubrirás que sus habitantes son bastante SIMPÁTICOS.\n      -- La Dirección
+
+			#(Below the message, an engraving:) Here lies ____ (unreadable). He got lost in the woods.
+			(Bajo el mensaje, un grabado:) Aquí yace ____ (ilegible). Se extravió en los bosques.
+
+			#(Even further below the message:) (just don't go too far south.)
+			(Aún más abajo del mensaje:) (no vayas muy al Sur.)
+
+		end scene
+		# extra color
+		scene two
+#Here lies ____ (unreadable. Who wrote this?). He was impaled by rainbows!
+Aquí yace ____ (ilegible. ¿Quién ha escrito esto?). ¡Fue empalado por arcoíris!
+#Would've been better with achievements.
+Habría sido mejor con logros.
+		end scene
+		#grey graves
+		scene three
+#Here lies Burd. The cliffs weren't feeling too friendly.
+Aquí yace Burd. Los precipicios no fueron muy agradables que digamos.
+		end scene
+		scene four
+#Here lies bag. It never had a chance.
+Aquí yace bolsa. Nunca tuvo oportunidad.
+#Pretentious!
+¡Pretencioso!
+		end scene
+		# color graves
+		scene five
+#Here lies Savitch. He tried to fix my computer in the garage once, and didn't take up much space while doing so. Three years later, he still hadn't finished. Then, he dropped dead.
+Aquí yace Savitch. Intentó arreglar mi ordenador en el garaje una vez, y no cogió mucho espacio mientras. Tres años después, aún no había terminado. Entonces, cayó muerto.
+		end scene
+		scene six
+#Here lies Dave. He wasn't very inspirational.
+Aquí yace Dave. No era muy inspirador.
+		end scene
+	
+	end area
+	
+	area SUBURB
+		scene one
+			#---YOUNG TOWN---^\nWelcome to Young Town. Please beware of some of the citizens. They do not play well with others...tread carefully. Now, Young Town was founded sometime in the '90s by Mayor Ying as a part of a series of ongoing housing projects, the name chosen as a reflection of Ying's denial of possessing the name Ying, and assertion of possessing the name Young. We'll hope you enjoy your stay.
+			---YOUNG TOWN (CIUDAD JOVEN)---^\nBienvenido a Young Town. Por favor, tenga cuidado con algunos de los ciudadanos. No son muy sociables...camine con precaución. Young Town fue fundada en los 90 por el alcalde Ying como parte de una serie de continuos proyectos de ingeniería civil, cuyo nombre fue elegido como muestra del rechazo de Ying de poseer el nombre Ying, y el beneplácito de poseer el nombre Young. Esperamos que disfrute de su estancia.
+		end scene
+		
+		scene two
+			#To the west are the legendary temples of the Seeing One. To the east is our wonderful Mayor Ying's apartment, which has been since closed off from visits to the public - trespassers beware. 
+			Al Oeste se encuentran los legendarios templos de El-Que-Todo-Lo-Ve. Al Este se encuentra la vivienda de nuestro maravilloso alcalde Ying, que permanece cerrada al público - quedan advertidos.
+		end scene
+		
+		scene three
+			#On his fifth visit, Mayor Ying grew frustrated at the lack of parking lots. This parking lot reflects Ying's frustration of the lack of parking lots. Ying would occasionally park in this parking lot on subsequent visits.
+			En su quinta visita, el alcalde Ying se frustró por la falta de aparcamientos. Este aparcamiento refleja la frustración de Ying por la falta de aparcamientos. Ying aparcaría ocasionalmente en este aparcamiento en subsiguientes visitas.
+		end scene
+		
+		scene four
+			#I remember the long sentences I used to write. Ha! Fragmented.
+			Recuerdo las largas frases que solía escribir. ¡Ja! Fragmentado.
+		end scene
+		
+		scene five
+			#A DANGEROUS SITUATION
+			UNA SITUACIÓN PELIGROSA
+		end scene
+	end area
+	
+	
+# Area for TRAIN (it's actually CELL sorry)
+	area TRAIN
+		scene one
+#The Seeing One knows all and will lead one to enlightenment. The road to enlightenment is unlit by any torches.
+El-Que-Todo-Lo-Ve lo sabe todo y llevará a uno a la iluminación. El camino a la iluminación no está iluminado por ninguna antorcha.
+		end scene
+		scene two
+#Do not stray from the way of the Seeing One, not even for the treasures lying at the far corners of the maze.
+No te apartes del camino de El-Que-Todo-Lo-Ve, ni siquiera por los tesoros que aguardan en las esquinas lejanas del laberinto.
+		end scene
+		scene three
+#Move along.
+Muévete.
+		end scene
+		scene four
+#Do not anger the Chasers with violence.
+No hagas enfadar a los Acosadores con violencia.
+		end scene
+	end area
+	
+	area WINDMILL
+		scene one
+#SCENIC LANDMARK: Partner Towers. Built some time ago, the Partner Towers overlook the distant mountains. The first tower was damaged a while ago and has since been repurposed. The second still stands to the east, reaching into the sky. Due to safety concerns, the path to the tower has been cut off until further notice.
+LUGAR CONOCIDO: La Pareja de Torres. Construidas hace algún tiempo, la Pareja de Torres tiene vistas a las montañas lejanas. La primera torre fue dañada hace poco y desde entonces le ha sido asignada otro uso. La segunda está plantada al Este, rozando el cielo. Debido a asuntos de seguridad, el sendero hacia la torre ha sido vedado hasta nuevo aviso.
+		end scene
+		scene two
+#PUBLIC SAFETY NOTICE:^\nThis tower, while not damaged, has been said to have a dimensional rift at the top. Proceed with caution and an open mind.^\n      -- The MGMT
+AVISO DE SEGURIDAD PÚBLICA:^\nEsta torre, cuando no estaba dañada, decíase poseer una brecha dimensional en lo alto de la misma. Proceda con precaución y una mente abierta.^\n      -- La Dirección
+		end scene
+	end area 
+end npc
+
+# dungeon statue (Dungeon statue)
+npc dungeon_statue
+	area BEDROOM
+		scene one
+#The statue does not look like it will be moving anytime soon.
+No parece que la estatua vaya a moverse en breve.
+		end scene
+		scene two
+#The statue has moved.
+La estatua se ha movido.
+		end scene
+	end area
+	
+	area REDCAVE
+		scene one
+#It looks like this statue is firmly in place.
+Parece que esta estatua permanece firme en su lugar.
+		end scene
+		scene two
+#The statue has moved.
+La estatua se ha movido.
+		end scene
+	end area
+	
+	area CROWD
+		scene one
+#This statue does not seem to be movable.
+Esta estatua no parece que sea movible.
+		end scene
+		scene two
+#The statue has moved.
+La estatua se ha movido.
+		end scene
+	end area
+end npc
+
+# APT splitboss
+npc splitboss
+		area APARTMENT
+		scene before_fight
+#Fire is beautiful, isn't it?  What a shame that the glow and glare of streetlights hides the fire of the stars.
+Qué bonito es el fuego, ¿verdad?  Qué lástima que la deslumbrante luz de las farolas eclipse el fuego de las estrellas.
+		end scene
+		scene after_fight
+#Okay, so stars aren't really made of fire.  ^Who gives a shit anyway?
+Vale, pues las estrellas no están hechas de fuego.  ^De todas formas, ¿a quién coño le importa?
+		end scene
+	end area
+end npc
+
+npc cube_king
+	area SPACE
+	# kings are supposed to offer info on 
+		scene color
+			#How are you today? I'm the ruler of this partition and interpretation of space.
+			¿Qué tal estás hoy? Soy el soberano de esta partición e interpretación del espacio.
+
+			#You want to know why I'm the ruler of this place? I'll tell you, but it will take a while. Like, a long while. An obnoxiously long while.
+			¿Quieres saber por qué soy el soberano de este lugar? Te lo diré, pero va a llevarnos un rato. Un buen rato. Un aborrecible y largo rato.
+
+			#Like, quite a while. No really, I'm warning you! I tend to ramble. Maybe you'd be better off just scooping out the contents of that chest over there. Or heading off to the hotel in the distance. Don't know how that got there, I heard they have relatively cheap rates. Not that money matters here.
+			En serio, bastante rato. No, de verdad, ¡te estoy advirtiendo! Tiendo a divagar. Quizá sería mejor que te pusieras a vaciar el contenido de ese baúl de ahí. O que te dirigieras al hotel de más allá. No sé cómo llegó hasta ahí, he oído que tienen precios relativamente bajos. No es que el dinero importe aquí.
+
+			LOOP
+			#Why am I the ruler?^...I'm not sure why, but my friends around here saw it fit to put me in this position, because of the immediate state of this space. Maybe this is the case because cubes are best at sitting still on flat surfaces. As for why someone needs to sit up here - that's beyond me!
+			¿Que por qué soy el soberano?^...No estoy seguro del porqué, pero mis amigos de por aquí vieron apropiado asignarme este cargo, debido al estado apremiante de este espacio. Quizá esta sea la causa de que los cubos sean los mejores en permanecer quietos en superficies planas. En cuanto a por qué alguien necesita estar sentado aquí arriba - ¡eso es algo que me supera!
+
+			#The others - my friends over there - have merits of their own. It's not like they couldn't sit up here in the future, they just can't do it now. Sometimes, we switch off who is the ruler, but every time, we always have to reinterpret this region of space! Perhaps Mr. or Ms. Pyramid comes up here because we decide to make the throne shaped in a way that best fits them, by re-imagining this world, so to speak. Does that sound silly? It might be. But that's how it is. It happens quite fast. Minutes, hours - not necessarily a long reign.
+			Los otros - mis amigos de por ahí - tienen sus propios méritos. No es que no puedan sentarse aquí arriba en un futuro, solo que no pueden hacerlo ahora. A veces nos turnamos para ocupar el puesto de gobernante, ¡pero cada vez tenemos que reinterpretar esta región del espacio! Puede ocurrir que el Sr. o la Sra. Pirámide vengan aquí arriba porque hayamos decidido darle al trono una forma tal que se adecúe mejor a ellos, reimaginando este mundo, por decirlo de alguna forma. ¿Parece estúpido? Podría ser. Pero así es como es. Sucede bastante rápido. Minutos, horas - no necesariamente un largo reinado.
+
+			#Though, when I am ruler, it feels slightly strange...I somewhat feel isolated, wanting to be avoidant of others...
+			Aunque, cuando soy el gobernante, me siento un tanto extraño...Me siento aislado de alguna forma, evitando relacionarme con los demás...
+
+			#...but isolation is not the right word, though it covers parts of the feeling. I'm not isolated, and I don't dislike the others. We consider ourselves all friends, but you know, no one really comes up here except to say a few words. So I have to think about things or I might go crazy! Maybe that's part of the isolation. 
+			...pero aislamiento no es la palabra correcta, aunque abarca parte de la sensación. No estoy aislado, y no me disgustan los demás. Todos nos consideramos amigos, pero ya sabes, nadie sube aquí arriba excepto para decir unas palabras. ¡Así que tengo que pensar sobre cosas o puedo volverme loco! Tal vez eso sea parte del aislamiento.
+
+			#Outside of those inane questions about *why* we're here occupying this space, I'm curious as to why we're even friends.
+			Fuera de esas preguntas sin sentido sobre *por qué* estamos aquí ocupando este espacio, siento curiosidad por saber por qué somos amigos siquiera.
+
+			#I like to think that whenever we're under the interpretations that I'm best to rule, that they give me comfort in being able to hold this position for as long as it takes to reach the next interpretation. You know, encouragement and the like, their physical presence, those are comforting.
+			Me gusta pensar que siempre que estamos bajo las interpretaciones para las cuales soy el mejor para gobernar, me alientan a ser capaz de mantener esta posición tanto como se tarde en alcanzar la siguiente interpretación. Ya sabes, ánimos y tal, su presencia física, ese tipo de cosas son reconfortantes.
+
+			#I suppose that's enough to satisfy me, though it would be nice to have one or two of them try and understand how I feel about being a ruler. Not that I'm complaining about encouragement! But maybe then, we could have multiple rulers...what a thought! Maybe that implies that when I am not ruler, I must act the same way I sometimes wish they would...who knows if that can be done.
+			Supongo que eso es suficiente para satisfacerme, aunque sería genial que uno o dos probaran y entendieran cómo me siento sobre ser un gobernante. ¡No es que me esté quejando sobre los ánimos! Pero quizá entonces podríamos tener varios gobernantes...¡qué desvarío! Tal vez eso implique que cuando no sea gobernante deba actuar de la misma forma en la que a veces deseo que ellos actuaran...quién sabe si eso se puede hacer.
+
+			#I've gone on too long. If you head off in the other direction, there's another similar region of space, though I think it smells a bit different. 
+			Ya he divagado demasiado. Si te diriges hacia allá, hay otra región del espacio similar, aunque creo que huele un poco distinto.
+
+			#It was nice to meet you.
+			Un placer haberte conocido.
+
+			#Oh, you want to hear my story again?
+			Oh, ¿quieres escuchar mi historia de nuevo?
+
+			#Okay, sit tight.
+			Muy bien, ponte cómodo.
+
+		end scene
+		
+		scene gray
+		#Hello there. I'm the ruler of this part of space.
+		Qué tal. Soy el soberano de esta parte del espacio.
+
+		#What's that? You want to know why I'm here? Are you sure? It'll take me quite a few words to explain why!
+		¿Cómo está la cosa? ¿Que quieres saber por qué estoy aquí? ¿Estás seguro? ¡Me llevará bastante explicar por qué!
+
+		#Well, if you insist. Though you might be better off just walking off to that hotel in the distance. Don't know why they went through with the construction of it. If I had any money to be taxed, I'd surely be complaining!
+		Bien, si insistes. Aunque quizá sería mejor que te dirigieras a ese hotel de ahí. No sé por qué siguieron adelante con su construcción. ¡Si tuviera que pagar impuestos, seguro que me quejaría!
+
+		LOOP
+		#Well, even though I'm the ruler of this part of space, I am not really ruling over anyone.
+		Bueno, aunque sea el gobernante de esta parte del espacio, realmente no estoy gobernando sobre nadie.
+
+		#Those friends of mine - they're all rulers of their own parts of space. Ruling no one really, either - we're all alone in that respect. But we're not alone in that we talk to each other, and in other ways we are not alone, too. This is just one place in which I exist.
+		Mis amigos - todos son gobernantes de sus propias partes del espacio. No gobiernan sobre nadie tampoco - estamos solos en ese aspecto. Pero no estamos solos en tanto que hablamos entre nosotros, ni tampoco estamos solos en otros aspectos. Este es solo un lugar en el que existo.
+		
+		#My friends and I - our parts of space have a lot of commonality to them in why they exist and how they're organized. Similar interests and desires, and the like. We like to talk a lot about how to rule, and so forth.
+		Mis amigos y yo - nuestras partes del espacio tienen mucho en común con las suyas en tanto a por qué existen y cómo están organizadas. Intereses y deseos similares, y ese tipo de cosas. Nos encanta hablar sobre cómo gobernar y demás.
+
+		#But the tragic thing is that we rarely, if ever, get to meet eachother in the physical form. 
+		Pero lo triste es que raramente, si alguna vez se da el caso siquiera, alcanzamos a encontrarnos en persona.
+
+		#So you're not actually talking to their physical forms, but a representation of them in some holographic form.
+		Así que en realidad no hablas con sus formas físicas, sino con un tipo de representación holográfica suya.
+
+		#I know, it's unfortunate. It's unfortunate because we share so much in common, but we can only help eachother as friends so much.
+		Lo sé, es una lástima. Es una lástima porque tenemos tanto en común, pero tan solo podemos ayudarnos como amigos.
+		
+		#There's just a small thing lacking when you can't have a one-on-one physical conversation all the time.
+		Es una pequeña cosa que echas en falta cuando no puedes tener una conversación cara a cara todo el tiempo.
+
+		#But I'm not complaining. It's better than nothing at all! I can't imagine what it would be like otherwise. Something terrible.
+		Pero no me estoy quejando. ¡Eso es mejor que nada en absoluto! No puedo ni imaginar cómo seria de otra forma. Algo terrible.
+
+		#It was nice talking at you, good luck with whatever you're up to.
+		Ha estado bien hablar contigo, buena suerte con lo que sea que estés haciendo.
+
+		#You're still here? I can tell you everything again, if you'd like.
+		¿Aún estás aquí? Puedo contártelo todo de nuevo, si quieres.
+
+		end scene
+	end area
+end npc
+
+npc forest_npc
+	area FOREST
+		scene bunny
+#Crickson: Hey ya big bully!  I’m not afraid of you!
+Crickson: ¡Hey, tú, abusón!  ¡No te tengo miedo!
+#Crickson: Ya big lunkhead!  I won’t run away!  Not even if you try to slug me a good one!
+Crickson: ¡Cabeza hueca!  ¡No voy a salir corriendo!  ¡Ni siquiera si intentas darme una buena!
+#Crickson: Yer just a big dumb broomy pants, that’s what you are!  You oughtta be ashamed of yourself!
+Crickson: Tan solo eres un idiota de mierda, ¡eso es lo que eres!  ¡Deberías avergonzarte de ti mismo!
+		end scene
+		
+		scene thorax
+#Thorax: I am the thorax, I speak for the bees.\n^Their fate is uncertain, it’s not the bee’s knees!\n^Some colonies’ workers have all took to flight!\n^These colonies die then, it’s no pretty sight!
+Tórax: Soy el tórax, y hablo en nombre de las abejas.\n^¡Su destino es incierto, ciertamente!\n^¡En algunas colonias todas las obreras se han ido!\n^Estas colonias morirán, ¡y no es que eso sea algo agradable de ver!
+
+#Thorax: Perhaps it’s a virus or new pesticide,\n^perhaps it’s the larva of foul phorid flies!\n^That’s making these honeybees all act so strange.\n^Whatever it is, it must certainly change!
+Tórax: Quizá sea un virus o un nuevo pesticida,\n^¡quizá sean las larvas de esos asquerosos fóridos!\n^Está haciendo que todas las abejas actúen de un modo muy extraño.\n^¡Sea lo que sea, es preciso que cambie!
+
+#Thorax: Okay, so I don’t really know what’s the matter\n^I worry my efforts are nothing but chatter.\n^But how can I sit and do nothing to help?\n^So I’ll post it to Facebook and Twitter and Yelp! 
+Tórax: Vale, no sé qué está pasando realmente\n^Me preocupa que mis esfuerzos sean nada más que cháchara.\n^¿Pero cómo voy a quedarme de brazos cruzados?\n^¡Voy a escribirlo en Facebook, Twitter y Yelp!
+		end scene
+	end area
+end npc
+
+npc shopkeeper
+	area FIELDS
+		scene init
+#Buy my stuff
+Cómprame algo
+		end scene
+	end area
+end npc
+
+npc goldman
+	area FIELDS
+		scene outside
+TOP
+#What are you doing here, punk?  Get lost!  I caught it fair and square!  
+¿Qué estás haciendo aquí, tío?  ¡Piérdete!  ¡La conseguí legalmente!
+#I won’t let it go!  Not in a million years!
+¡No voy a soltarla!  ¡Ni en un millón de años!
+		end scene
+		
+		scene inside
+#Oh, did you come here to terrorize me some more?
+Oh, ¿viniste aquí para aterrorizarme más aún?
+#You’re just siding with the cats because they are cute and furry.
+Estás de parte de los gatos solo porque son monos y peludos.
+		end scene
+		
+		scene etc
+TOP
+#What are you doing here, punk?  Get lost!  I caught it fair and square!^  Wauugh!^  Is that--?^  ANOTHER CAT???^  WAUUGHHH!!! 
+¿Qué estás haciendo aquí, tío?  ¡Piérdete!  ¡La conseguí legalmente!^  ¡Hostia!^  ¿Eso es--?^  ¿¿¿OTRO GATO???^  ¡¡¡LA MADRE QUE...!!!
+
+#You... you cleaned up my house...  I’m touched!  Here, I want to give you my most beautiful possession! 
+Has... has limpiado mi casa... ¡Eso me ha llegado al alma!  ¡Toma, quiero darte mi más preciada pertenencia!
+
+#Young opens and takes the box. Something is inside it!
+Young toma y abre la caja. ¡Hay algo dentro de ella!
+
+#Icky: Oh.  Hey Miao.^\n\nMiao: I’m so glad you’re safe!^\n\nIcky: Uh... thanks for the hand, Young.
+Icky: Oh.  Hey Miao.^\n\nMiao: ¡Me alegro tanto de que estés bien!^\n\nIcky: Uh... gracias por la ayuda, Young.
+LOOP
+#Icky: To be honest, I kind of like sitting in boxes.
+Icky: Si te soy sincero, meterme en cajas es algo que me gusta.
+		end scene
+	end area
+end npc
+
+npc miao
+	area FIELDS
+	
+		scene init
+#Oh!!  You are Young, The Chosen One!!!  Omigosh, what an honor!  My name is Miao Xiao Tuan Er, Chosen One-in-training!
+¡¡Oh!!  ¡¡¡Tú eres Young, El Elegido!!!  Odiosmio, ¡qué gran honor!  Mi nombre es Miao Xiao Tuan Er, aspirante a Elegido!
+
+#Could I follow you around for a bit to watch a Chosen One in action? 
+¿Puedo seguirte un ratillo para ver a un Elegido en acción?
+
+LOOP
+#Hello again, Young!  Can I shadow you today? 
+¡Hola de nuevo, Young!  ¿Puedo seguirte hoy?
+		end scene
+		
+		scene randoms
+# 0. after talk to shopkeep
+#Miao: Hey, Young... have you ever stolen anything?
+Miao: Eh, Young... ¿alguna vez has robado algo?
+
+# 1. AFter talk to mitra
+#Miao: I like Mitra... and isn’t Wares a handsome bike?
+Miao: Me gusta Mitra... ¿y no te parece que Género es una bicicleta muy bonita?
+
+# 2. Nexus pad
+#Miao: What’s that cool stone thing, Young?  Does it make you go back in time?!
+Miao: ¿Qué es esa cosa de piedra tan chula, Young?  ¡¿Hace que puedas volver atrás en el tiempo?!
+
+# 3. Random if Icky not saved
+#Miao: I’m starting to get worried about Icky... Young, have you seen a bigger cat around recently? Icky last said he was going to walk around the small forest to the east.
+Miao: Me estoy empezando a preocupar por Icky... Young, ¿has visto un gato grande merodeando por ahí recientemente? Lo último que Icky dijo fue que iba a dar una vuelta cerca del pequeño bosque que está yendo hacia el Este.
+
+# 4. leave map
+#Miao: Icky said I shouldn’t go where it's unsafe. I’ll see you later, Young.
+Miao: Icky dijo que no debería ir donde no es seguro. Te veo luego, Young.
+
+# 5, 6, 7 - only after you've seen 0, 1, 2
+#Miao: Have you ever sat in a bunch of grocery bags?
+Miao: ¿Alguna vez te has sentado encima de un montón de bolsas de la compra?
+#Miao: Hey Young, do you think it’s wrong to do catnip?
+Miao: Eh Young, ¿crees que sería buena idea plantar menta de gato?
+#Miao: I bet it must have taken a lot of work to become The Chosen One, huh, Young?
+Miao: Apuesto a que te ha llevado mucho trabajo convertirte en El Elegido, ¿eh, Young?
+		end scene
+# musing after you save icky	
+		scene philosophy 
+#That scary situation with Icky got me thinking...  What do you think happens after we die?  How could any of us fulfill our full purpose in the span of one life?  
+Esa espantosa situación con Icky me ha hecho pensar...  ¿Qué crees que ocurre después de que muramos?  ¿Cómo podríamos cualquiera de nosotros cumplir nuestro propósito en lo que abarca una vida?
+
+#Maybe we are reincarnated again and again until we fulfill our destiny.  Or would that make things too easy?
+Puede que nos reencarnemos una y otra vez hasta que cumplamos nuestro destino.  ¿O eso sería poner las cosas demasiado fáciles?
+
+#And then what is our reward for completing our journey?  Do we just fade away?
+¿Y cuál es nuestra recompensa por completar nuestro trayecto?  ¿Simplemente desaparecemos?
+LOOP
+#Hmm...
+Hmm...
+		end scene
+# icky talking after yoh save icky
+		scene icky
+#Oh.  Hi, Young.  
+Oh.  Hola, Young.
+#My name’s not really Icky.  It’s Ichabod.
+Mi nombre no es Icky en realidad.  Es Ichabod.
+#I hope Miao Xiao Tuan Er hasn’t been too much trouble.
+Espero que Miao Xiao Tuan Er no te haya causado muchos problemas.
+#See you later, Young.
+Te veo luego, Young.
+		end scene
+	end area
+end npc
+
+npc generic_npc
+
+	area DEBUG
+		scene melos
+#Oh howdy, how is it going? You found me! I'm going to stay here, though. It's cold outside.
+Hola, ¿qué tal? ¡Me has encontrado! Voy a quedarme aquí, fuera hace frío.
+#You can blame me for all of those awful rooms! I made them with the DAME map editor.
+¡Yo soy el culpable de todas esas terribles salas! Las hice con el editor de mapas DAME.
+#I made this game with FlashDevelop IDE and the Flixel AS3 framework!
+¡He hecho este juego con FlashDevelop IDE y el framework Flixel AS3!
+#Oh yeah, and I made the music using the REAPER DAW. And sometimes Audacity.
+Ah sí, e hice la música usando REAPER DAW. Y algunas veces Audacity.
+#I actually get my nutrition from the radiation from all of these computers... ^what do you mean that's not biologically accurate?
+En realidad me nutro de la radiación de todos estos ordenadores... ^¿qué quieres decir con que eso no es biologicamente acertado?
+#Hi mom! ^And dad!
+¡Hola mamá! ^¡y papá!
+#Want to know how to finish the game in 20 minutes?
+¿Queréis saber cómo pasaros el juego en 20 minutos?
+#Ha! Like I'd tell you!
+¡Ja! ¡Como si os lo fuera a decir!
+#(...maybe if you ask me nicely...)
+(...quizá si me lo pedís amablemente...)
+		end scene
+		scene marina
+#Woah hey!
+¡Eh wow!
+#I wrote a ton of dialogue for this game!^ (...but not this dialogue. Melos is doing this.)
+¡He escrito un montón de diálogos para este juego!^ (...pero no este diálogo. Melos lo está haciendo.)
+#I used Adobe Photoshop CS5 , Graphics Gale Free Edition and Windows 7 Snipping Tool to do the art!
+¡He usado Adobe Photoshop CS5, Graphics Gale Free Edition y la Herramienta de Recorte de Windows 7 para hacer el arte!
+		end scene
+	end area
+# both redsea done in Redsea_NPC.as
+	area REDSEA
+		scene first
+#The humidity here is good for your skin, but bad for your hair.
+Esta humedad es buena para tu piel, pero mala para tu pelo.
+
+#I like standing here.  These days, people spend the whole summer rushing back and forth between sweltering heat and freezing cold AC.  Those quick temperature changes weaken your bones.
+Me gusta quedarme aquí.  Ahora la gente pasa el verano entero yendo de acá para allá cambiando entre un calor sofocante y un aire acondicionado glacial.  Esos cambios tan rápidos de temperatura debilitan los huesos.
+
+#It’s like that rotten habit of chewing your ice cubes.  My mother chewed her ice cubes into her late 20s.  Now she’s got hairline cracks all over her molars.
+Es como esa manía tan fea de masticar los cubitos de hielo.  Mi madre lo hacía cuando iba hacia los 30.  Ahora tiene pequeñas grietas por todos los molares.
+		end scene
+
+		scene second
+#Make sure you change out of those shoes and stuff them with newspapers to dry them out.  Wouldn’t want to create a breeding ground for bacteria.
+Asegúrate de cambiarte las zapatillas y envolverlas en hojas de periódico para secarlas bien.  No vaya a ser que se conviertan en un nido de bacterias.
+
+#Why do buffets only ever have RED jello cubes?  It’s like they want us to get cancer.
+¿Por qué en todos los buffets hay solamente gelatina ROJA?  Es como si quisieran que desarrolláramos cáncer.
+		end scene	
+
+		scene bomb
+#Get away from me.
+Apártate de mí.
+#I’m serious... leave me alone now.
+Te lo digo en serio... déjame a solas ya.
+		end scene
+
+	end area
+    area BLUE
+		scene one
+#I don’t need your pity, Young.
+No necesito tu compasión, Young.
+
+#Right, just go on living in your happy little world, "Chosen One"...
+Venga, continúa viviendo en tu feliz mundillo, \"Elegido\"...
+
+#You know, Young, friendship is just a trick people play on themselves.  We’re all assholes, and in the end, we’re all alone.  
+Sabes, Young, la amistad es simplemente una mentira que la gente se cree.  Todos somos unos gilipollas, y al final, todos estamos solos.
+
+#Hah, I knew you hated me, Young.
+Ja, sabía que me odiarías, Young.
+
+#I’m doing fine.
+Estoy bien.
+
+#Of course you don’t care, no one does.
+Por supuesto que no te importa, a nadie le importa.
+		end scene
+	end area
+
+	area HOTEL
+		scene one
+#I know cities can be dirty and crowded and everything, but I like to come out here and look out over all the lights.
+Sé que las ciudades son sucias, están llenas de gente y todo eso, pero me gusta salir aquí fuera y observar todas estas luces.
+
+#It's beautiful in its own way.  It’s not nearly as infinite as the stars, but there is something about its humanness that adds a layer of wonderful complexity.
+Es bonito a su manera.  No es tan infinito como las estrellas, pero hay algo sobre su humanidad que añade una capa de complejidad maravillosa.
+
+#Behind every light is a person with hopes and fears and secrets... looking out is both terrifyingly lonely and fiercely personal.
+Detrás de cada luz hay una persona con esperanzas y miedos y secretos... observar es tan espantosamente solitario como tremendamente personal.
+
+#I think I love every person behind every window.  I love you, people, for being my stars.  I love you no matter how fucked up your life is or how far you think you’ve fallen.  You are lovely for tonight...
+Creo que amo cada persona tras cada ventana.  Os amo, gente, por ser mis estrellas.  Os amo sin importar cómo de jodida sea vuestra vida ni cuán hondo creáis haber caído.  Esta noche sois encantadores...
+
+#I’m sorry, I’m babbling.  Thanks for listening.
+Lo siento, estoy diciendo tonterías.  Gracias por escuchar.
+		end scene
+	end area
+	
+	area REDCAVE
+		scene easter_egg
+#Heeyyyy, mannn...take a load off, stay a whilleee, eh?
+Eeehh, tíiioo...descansa, quédate un raaato, ¿sí?
+		end scene
+	end area
+	
+	area APARTMENT
+		scene easter_egg
+#Ah! You found me!
+¡Ah! ¡Me encontraste!
+		end scene
+	end area
+	
+# quest_normal and quest_event are the dialogue quest (pseudo-trading) people.
+# quest_normal is what they say normally, quest_event is what they say when it's their turn for a clue.
+	area CLIFF
+	
+		scene quest_normal
+#Golem: Did you get hit by a boulder on your way up?  Sometimes I throw boulders when I’m angry.  I’m sorry if I hit you.
+Golem: ¿Te golpeó alguna roca mientras subías?  Algunas veces lanzo rocas cuando estoy furioso.  Lo siento si te di.
+
+#Golem: My mother always said that if I kept doing it, I’d run out of mountain to throw.  Back before she was fracked.
+Golem: Mi madre siempre decía que si seguía haciéndolo, no quedaría montaña que lanzar.  Antes de eso ya chocheaba.
+		end scene
+		
+		scene second
+#Golem: When you’re a rock, you see many generations of people come and go.  You become ancient and wiser than the wisest among men.
+Golem: Cuando eres una roca, ves muchas generaciones de gente ir y venir.  Te vuelves más anciano y sabio que el más sabio entre los hombres.
+
+#Golem: At least, that’s the idea.  I broke my binoculars a while back so I haven’t been able to tell what’s going on.
+Golem: Al menos, esa es la idea.  Rompí mis prismáticos hace poco, así que no sabría decirte qué ha ocurrido desde entonces.
+
+#Golem: Actually, I don’t miss watching people much, it’s a bore.
+Golem: En realidad, no echo mucho de menos observar a la gente, es un aburrimiento.
+
+		end scene
+		
+		scene quest_event
+#Golem: Oh, yes, I met someone who was little lost...they told me they were going off to look around the beach.
+Golem: Oh, sí, me encontré con alguien que parecía algo perdido...me dijeron que partían hacia la playa a echar un vistazo.
+		end scene
+	end area
+	
+	
+	area BEACH
+		scene quest_normal
+#I’m not a lobster, I’m a langostino.  The name’s Hews.
+No soy una langosta, soy un langostino.  De nombre Hews.
+LOOP
+#Hews: You know what the best part of the ocean is?  Being able to see the horizon.
+Hews: ¿Sabes qué es lo mejor del océano?  Que puedes ver el horizonte.
+
+#Hews: The ocean is like a salty taste of infinity.
+Hews: El océano es como una probadita salada de infinito.
+
+#Hews: A crowded beach is robbed of its grace.
+Hews: Una playa abarrotada pierde su encanto.
+		end scene
+		
+		scene second
+#Hews: Have you heard of the mantis shrimp?  It has 16 photoreceptors that allow it to perceive ultraviolet light.  Can you imagine seeing a wider range of colors?
+Hews: ¿Has oído hablar de la langosta mantis?  Tiene 16 fotoreceptores que le permiten percibir luz ultravioleta.  ¿Te imaginas ver un rango de colores más ancho?
+
+#Hews: Maybe it would be beautiful.  Then again, we’ve found plenty of ways to hate each other with just the colors we have.
+Hews: Eso estaría muy bien.  Pero vaya, ya hemos encontrado muchísimas formas de odiarnos por los colores que tenemos.
+		end scene
+		
+		scene quest_event
+#Hews: You're looking for someone, huh? I remember I was sitting here when a few clouds passed by the sun. While the sun was occluded, someone walked up to me and asked where something was. I don't remember what it was, but the person ran off, saying they were heading to the forest.
+Hews: Así que estás buscando a alguien, ¿eh? Recuerdo que yo estaba sentado aquí cuando unas pocas nubes taparon el Sol. Entonces, alguien se me acercó y me preguntó dónde estaba algo. No recuerdo qué era, pero la persona salió corriendo, diciendo que se dirigían hacia el bosque.
+		end scene
+	end area
+	
+	area FOREST
+		scene quest_normal	
+#npc james
+#James: Berries are a good kind of food.  I like berries.
+James: Las bayas son un buen tipo de comida.  Me gustan las bayas.
+
+#James: Please make sure not to defecate on the berries.
+James: Por favor, ten cuidado de no defecar en las bayas.
+
+#James: So far I have had sexual intercourse 18 times this season.  Also, I have eaten 389 pawfuls of berries.
+James: Hasta ahora he tenido relaciones sexuales 18 veces durante esta estación.  Y me he comido 389 zarpadas de bayas.
+
+#James: Do you have any berries for James?
+James: ¿Tienes algo de bayas para James?
+		end scene
+		
+		scene second
+# -- Spanish translator's note: Literal meaning changed in order to perform a language trick
+#James: I wrote a poem:\n^I like to eat berries\n^They make me merry\n^How much do I like berries?\n^I would have to say very!
+James: He escrito un poema:\n^Me gusta comer bayas\n^Me ponen de muy buen humor\n^¿Que cuánto me gustan las bayas?\n^¡Me las como por puro amor!
+
+#James: Do you like blueberries or raspberries more?
+James: ¿Cuáles te gustan más? ¿Los arándanos o las frambuesas?
+
+#James: Do you have any berries for James?
+James: ¿Tienes algo de bayas para James?
+		end scene
+		
+		scene quest_event
+#James: Someone came by. They did not want berries. Went to southeast part of lake to the west.
+James: Alguien vino. No querían bayas. Fueron a la zona Sudeste del lago que está yendo hacia al Oeste.
+		end scene
+		
+	end area
+#npc rank
+#npc olive
+	area FIELDS
+		scene easter_egg
+#Olive: Hi, I'm Olive the rabbit.
+Olive: Hola, soy Olive la coneja.
+
+#Olive: I have so much cereal left to eat! I love cereal.
+Olive: ¡Me quedan muchos cereales por comer! Adoro los cereales.
+
+#Olive: The box is so big. It never ends!
+Olive: La caja es tan grande. ¡Nunca se acaba!
+
+#Olive: Neverending cereal!
+Olive: ¡Los cereales del nunca acabar!
+
+#Olive: Hmmm...maybe that's not such a bad thing.
+Olive: Hmmm...quizá eso no sea tan malo.
+		end scene
+		
+		scene bush
+#Rank: Eheheh, silly Young! A broom’s no tool for cutting bushes!
+Rank: Ejejej, ¡qué tonto este Young! ¡Una escoba no es para cortar arbustos!
+		end scene
+		scene quest_normal
+#Rank: I cut down the bushes for a living.  Sometimes when you cut the bushes you find gold!  Eheheh!
+Rank: Me gano la vida podando arbustos.  ¡A veces encuentro oro! ¡Ejejej!
+
+#Rank: The economy has been really struggling under this bush...
+Rank: La economía ha pegado muy duramente bajo este arbusto...
+
+#Rank: Sometimes it’s tough to support the wife and kids on bush cutting--we don’t always have enough to eat... but we’ve always got a roaring fireplace!  Eheheh!
+Rank: A veces es duro mantener a la mujer y a los niños cortando arbustos--no siempre tenemos suficiente comida...¡pero siempre hemos tenido un buen fuego! ¡Ejejej!
+		end scene
+		scene quest_event
+#Rank: Eh? Yes! Someone came by here. Said they were going to an underground labyrinth...I bet they've got a lot of bushes there, eh Young? Eheheh!
+Rank: ¿Qué? ¡Sí! Alguien vino. Dijeron que se dirigían a un laberinto subterráneo...Apuesto a que allí hay muchos arbustos, ¿eh Young?
+		end scene
+		
+		scene marvin
+#Marvin: Oh hey, how are you feeling?
+Marvin: Oh, hola, ¿qué tal te encuentras?
+#Marvin: Where is Justin?
+Marvin: ¿Dónde está Justin?
+# -- Spanish translator's note: Literal meaning changed (American band: The Bottle Rockets) (Spanish band: La Oreja de Van Gogh) for joke's sake.
+#Marvin: There's no bottle rockets around...
+Marvin: Por aquí no hay ninguna oreja de ese tal Van Gogh
+		end scene
+		
+		scene chikapu
+#Chika Chi!
+¡Chika Chi!
+#Chika Chika!!
+¡¡Chika Chika!!
+#CHIIIII^\nKAAAA^\nPUUUUUUUUUU!!!!
+#¡¡¡¡CHIIIII^\nKAAAA^\nPUUUUUUUUUU!!!!
+		end scene
+		
+		scene hamster
+#Bob: Bob the Hamster likes to refer to himself in the third person.
+Bob: A Bob el hámster le gusta referirse a sí mismo en tercera persona.
+
+#Bob: Apostrophes are the root of all e'vil.
+Bob: Los apóstrofos son la raíz de todo ma'l.
+
+#Bob: quiet! I am busy exuding an aura of hamstery ambiance.
+Bob: ¡Quieto! Estoy ocupado rezumando un aura de ambiente hamsteril.
+
+#Bob: ... I suppose you only get better by doing... But... if you do something wrong, are you just getting better at doing it wrong?
+Bob: ... Supongo que mejoras en algo si lo haces repetidas veces... Pero... si haces algo mal, ¿lo que harás no será mejorar en hacer algo mal?
+
+#Bob: A real man never cries... well, maybe he lets a single tear slide back from the corner of his eye across his sun-hardened face as he rides his bad, bad, Harley across the wind-swept Mohave desert wearing no helmet or goggles. But he never cries.
+Bob: Un hombre de verdad nunca llora... bueno, quizá se le escapa una lagrimilla por el rabillo del ojo, deslizándose por su cara acostumbrada al Sol, mientras monta su mala malota Harley a través del venteado desierto de Mojave no llevando ni casco ni gafas protectoras. Pero él nunca llora.
+
+#Bob: This game was created by an infinite number of monkeys working on an infinite number of typewriters.
+Bob: Este juego fue creado por un infinito número de monos trabajando en un infinito número de máquinas de escribir.
+
+#Bob: I miss James...
+Bob: Echo de menos a James...
+		end scene
+		
+		scene electric
+#Kuribu: Curry is yellow and spicy!
+Kuribu: ¡El curry es amarillo y picante!
+
+#Kuribu: For the clever opponent, injure increase!
+Kuribu: ¡Para el oponente inteligente, incremento de daño!
+
+#Kuribu: You got the experience of 2!
+Kuribu: ¡Conseguiste la experiencia de 2!
+
+#Kuribu: I tell you my phone number!  0*1-51*7-*4386
+Kuribu: ¡Te digo mi número de teléfono!  0*1-51*7-*4386
+		end scene
+		
+	end area
+	
+	
+	area TRAIN
+		scene quest_normal
+#What AM I doing here? Good question! I just stumbled upon here. I'm in hiding. It's safe here, if you don't venture too far out and let those guys get you.
+¿Que qué ESTOY haciendo aquí? ¡Buena pregunta! Acabo de dar con este sitio. Estoy escondiéndome. Este lugar es seguro, si no te aventuras muy lejos y dejas que esos tipos te cojan.
+
+#It looks like I'm relatively fortunate. All these dead people strewn all over the place - how did they die? It's a little fascinating, to try and think of how it happened. Were they attacked by the monsters? Tripped and fell onto the spikes?
+Parece que soy relativamente afortunado. Todos esos muertos desparramados a lo largo y ancho del lugar - ¿cómo murieron? Es un tanto fascinante, divagar sobre cómo ocurrió. ¿Fueron atacados por los monstruos? ¿Tropezaron y cayeron en los pinchos?
+
+#It is a a bit grim. I hope it doesn't happen to me. Physical pain is a terrible prospect.
+Es un poco macabro. Espero que no me pase a mi. El dolor físico es una perspectiva terrible.
+
+		end scene
+		scene quest_event
+#Oh...now that I think about it, a person walked by here a while ago. Said they were looking for something...even looked a bit like you! I don't remember when, sorry. It's hard to tell the time in here. But they said they were going to head off to a nearby town.
+Ah...ahora que lo pienso, una persona pasó por aquí hace un rato. Dijeron que estaban buscando algo... ¡incluso se parecían un poco a ti! No recuerdo cuando, lo siento. Es difícil adivinar la hora aquí. Pero dijeron que tenían pensado ir a una ciudad de por aquí cerca.
+		end scene
+	end area
+	
+	area SUBURB
+		scene quest_normal
+#Hello.
+Hola.
+
+#Are you looking for something?
+¿Estás buscando algo?
+
+#What are you looking at?
+¿Qué estás mirando?
+
+#No, I'm not a citizen of this town. What's weird is you can see and talk to me, but I can't interact with any of them. There are all of these killers running around, and no one seems to notice. It is strange. 
+No, no soy un ciudadano de esta ciudad. Lo que es extraño es que puedes verme y hablar conmigo, pero no puedo interactuar con ninguno de ellos. Todos esos asesinos andan por ahí sueltos, y nadie parece darse cuenta. Es extraño.
+
+		end scene
+		scene quest_event
+#Yes. I observed a person walk by. They were looking for something. I don't know where their 'something' could be. The person went off in a hurry. Said they needed to head to an alternate area of space. Sounds fancy.
+Sí. Vi una persona acercarse. Estaban buscando algo. No sé dónde podría estar ese 'algo' que buscaban. La persona salió disparada. Dijo que necesitaban ir a un area alternativa del espacio. Suena interesante.
+		end scene
+	end area
+	
+	area SPACE
+		scene quest_normal
+#WHOA WHOA WHOA - - - WHO ARE YOU ? ? ? 
+SOOOO SOOOO - - - ¿ ¿ ¿ QUIÉN ERES TÚ ? ? ?
+
+#I AM A DRIFTER . . . THIS IS ONE OF THE MORE POPULAR PIT STOPS ALONG THE JOURNEY FROM A TO B .
+SOY UN VAGABUNDO . . . ESTA ES UNA DE LAS ÁREAS DE DESCANSO MÁS POPULARES ENTRE EL TRAYECTO DESDE A HASTA B.
+
+#WHAT IS 'A' ? ? ? IT'S MY HOME TOWN . . . I AM VISITING AN OLD FRIEND IN B . . . IT IS A LONG JOURNEY . . . BUT I MAKE SACRIFICES . . . DON'T YOU ? ? ? MAKES LIFE MORE EXCITING ! ! !
+¿ ¿ ¿ QUE QUÉ ES 'A' ? ? ? ES MI CIUDAD NATAL . . . VOY A VISITAR A UN VIEJO AMIGO EN B . . . ES UN LARGO RECORRIDO . . . PERO YO HAGO SACRIFICIOS . . . ¿ ¿ ¿ TÚ NO ? ? ? ¡ ¡ ¡ HACE QUE LA VIDA SEA MÁS EXCITANTE ! ! !
+		end scene
+		scene quest_event
+#OHH - - - LOOKING FOR ANOTHER HUMAN - - - I SEE . ^ LET ME ACCESS MY MEMORY . . . READ ( 0X0C00400 , STDOUT , 100 ) ; \n . . . . . . \n . . . . . . \n A HA . . . \n THE PERSON HAD A FLASH OF INSIGHT AND SAID THEY WERE HEADING OFF TO A SHED IN SOME WELL-KEPT FIELD. \n NOW THAT I THINK ABOUT IT . . . YOU LOOK SIMILAR TO THEM ! ! ! ARE YOU SURE IT WASN'T YOU ? ?  HUH ? MM ?
+OHH - - - BUSCANDO A OTRO HUMANO - - - YA VEO . ^ DEJA QUE ACCEDA A MI MEMORIA . . . READ ( 0X0C00400 , STDOUT , 100 ) ; \n . . . . . . \n . . . . . . \n AJÁ . . . \N LA PERSONA TUVO UNA REVELACIÓN Y DIJO QUE SE DIRIGÍAN HACIA UN COBERTIZO EN ALGÚN CAMPO BIEN CUIDADO. \n AHORA QUE LO PIENSO . . . ¡ ¡ ¡ TE PARECES MUCHO A ELLOS ! ! ! ¿ ¿ ESTÁS SEGURO DE QUE NO ERAS TÚ ? ?  ¿EH? ¿ MM ?
+		end scene
+	end area
+	
+	area GO
+		scene quest_normal
+#You actually were...uh, ah. Well done.
+En realidad estabas...uh, ah. Bien hecho.
+LOOP
+#The shiny rock reflects only a bit of the light from the room. There is writing etched into it: \"Quickly, before I have to leave again (It is getting very light in here, this always happens) - the northwest part of the blue forest - I saw another temple entrance just to the north, past those trees - if only I could switch things at will to get through there...maybe I'll do this the next time I revisit this world.\"
+La reluciente roca refleja solo una minúscula parte de la luz de la sala. Hay algo grabado en ella: \"Rápido, antes de que me tenga que ir de nuevo (Esto se está iluminando cada vez más por momentos, siempre sucede) - la parte Noroeste del bosque azul - vi otra entrada al templo desde el norte, pasando esos árboles - si pudiera intercambiar las cosas a placer para llegar hasta allí... quizá haré esto la próxima vez que revisite este mundo.\"
+		end scene
+		scene quest_event
+#The shiny rock reflects only a bit of the light from the room. There is writing etched into it: \"Quickly, before I have to leave again (It is getting very light in here, this always happens) - the northwest part of the blue forest - I saw another temple entrance just to the north, past those trees - if only I could switch things at will to get through there...maybe I'll do this the next time I revisit this world.\"
+La reluciente roca refleja solo una minúscula parte de la luz de la sala. Hay algo grabado en ella: \"Rápido, antes de que me tenga que ir de nuevo (Esto se está iluminando cada vez más por momentos, siempre sucede) - la parte Noroeste del bosque azul - vi otra entrada al templo desde el norte, pasando esos árboles - si pudiera intercambiar las cosas a placer para llegar hasta allí... quizá haré esto la próxima vez que revisite este mundo.\"
+		end scene
+	end area
+end npc
+npc geoms
+	area SPACE
+		scene gray1
+#HELLO. HAVE YOU MET cube YET?
+HOLA. ¿HAS CONOCIDO A cubo YA?
+
+#cube IS A VERY GOOD RULER OF THIS PORTION OF SPACE. US OTHER RULERS DO OUR BEST IN OUR SPACES AS WELL.
+cubo ES UN MUY BUEN GOBERNANTE DE ESTA PORCIÓN DEL ESPACIO. LOS OTROS GOBERNANTES LO HACEMOS LO MEJOR QUE PODEMOS EN NUESTROS ESPACIOS TAMBIÉN.
+		end scene
+		
+		scene gray2
+#WHAT DO YOU THINK OF THIS CHUNK OF SPACE? IT IS A NICE WAYPOINT, NO?
+¿QUÉ OPINAS DE ESTE TROZO DE ESPACIO? ¿ES UN BUEN PUNTO EN EL CAMINO, NO?
+
+#AN INTERSECTION OF WORLDS!
+¡UNA INTERSECCIÓN DE MUNDOS!
+		end scene
+		scene gray3
+#NONE OF US GRAY PYRAMIDS ARE ACTUALLY HERE. WE USE SPECIAL DEVICES THAT LET US PROJECT OURSELVES HERE.
+NINGUNA DE LAS PIRÁMIDES GRISES ESTAMOS REALMENTE AQUÍ. USAMOS DISPOSITIVOS ESPECIALES QUE NOS PERMITEN PROYECTARNOS AQUÍ.
+
+#WHY DO WE DO THAT? BECAUSE WE WANT TO TALK TO OUR FRIEND cube AND KEEP cube COMPANY.
+¿QUE POR QUÉ HACEMOS ESO? PORQUE QUEREMOS HABLAR CON NUESTRO AMIGO cubo Y HACERLE COMPAÑÍA.
+		end scene
+		
+		
+		scene graydead
+*bzrrrrt* 
+		end scene
+		
+		scene grayspin
+#...IS THE HOLOGRAM DEVICE WORKING CORRECTLY?
+...¿EL DISPOSITIVO HOLOGRÁFICO ESTÁ FUNCIONANDO CORRECTAMENTE?
+#NO?^...^DAMN!
+¿NO?^...^¡MALDITA SEA!
+		end scene
+		
+		
+		scene color1
+#Have you met CUBE? It does such cool things! I heard once it stood on an edge for nearly twelve seconds. Oh man! Do you know what that means for the League of Edge Standers? No? Well, a lot!
+¿Has conocido a CUBO? ¡Hace cosas muy molonas! He oído que una vez se apoyó sobre un borde durante casi doce segundos. ¡Guau tío! ¿Sabes lo que eso significa para la Liga de los Apoyadores Sobre Bordes? ¿No? ¡Bueno, pues mucho!
+		end scene
+		
+		scene color2
+#CUBE does a lot of interesting work!
+¡CUBO hace un trabajo muy interesantes!
+
+#Did you hear? Apparently, it will be my turn to rule soon! In just a few minutes, I believe.
+¿Te has enterado? ¡Parece ser que pronto llegará mi turno para gobernar! En tan solo unos minutos, creo.
+		end scene
+		
+		scene color3
+#I'm from Sugar Loaf, in transit to Taipei. Why am I here? Oh, I stopped by to say hi to CUBE!
+Soy de Barra de Azúcar, de camino a Taipei. ¿Que por qué estoy aquí? ¡Oh, he parado para decir hola a CUBO!
+
+#Don't look so down! This place is just an odd representation so as to not shock all of the visitors. It's mostly harmless, as far as we can tell.
+¡No mires tanto abajo! Este lugar es simplemente una rara representación para no conmocionar a todos los visitantes. Es mayormente inofensiva, por lo que sabemos.
+		end scene
+		
+		scene colordead
+#(...is it taking a nap?)
+(¿...está echándose una siesta?)
+		end scene
+	end area
+end npc
+
+npc redboss
+	area REDCAVE
+		scene before_fight
+#EACH GENERATION IS BORN FROM PAIN TO DIE IN PAIN.  WE WILL NOT SUFFER TO REPRODUCE THE CYCLE.  WE WILL NOT GO OUTSIDE.
+CADA GENERACIÓN NACE DEL DOLOR PARA MORIR EN DOLOR.  NO SUFRIREMOS PARA REPRODUCIR EL CICLO.  NO SALDREMOS FUERA.
+		end scene
+		scene after_fight
+#IS THIS YOUR PUNISHMENT FOR OUR REBELLION?
+¿ES ESTE TU CASTIGO POR NUESTRA REBELIÓN?
+		end scene
+	end area
+end npc
+
+npc circus_folks
+	area CIRCUS
+		scene before_fight
+#Why did you deprive the Seeing One of his sacrifices?  Why did you steal from us our salvation?
+¿Por qué privas a El-Que-Todo-Lo-Ve de sus sacrificios? ¿Por qué nos has arrebatado nuestra salvación?
+		end scene
+		scene after_fight
+#...We have failed to make you pay for your interference.  And yet... you have given us back our chance to be free.  Thank you, Young.  May the Seeing One look upon you in favor once more.  
+...Hemos fallado en hacerte pagar por tu intromisión.  Y aun así... nos has devuelto nuestra oportunidad para ser libres.  Gracias, Young.  Que El-Que-Todo-Lo-Ve tenga consideración por ti una vez más.
+		end scene
+	end area
+end npc
+
+npc wallboss
+	area CROWD
+		scene before_fight
+#So good to see you, Yang.  Been too long.  Still playing those nintendos, I see?
+Qué bueno verte, Yang.  Ha pasado mucho tiempo.  Veo que aún sigues jugando a esas nintendos, ¿eh?
+		end scene
+		scene after_fight
+#Jesus, Yon, when are you just going to grow up?  You know, you're going to have to learn to deal with people sooner or later.
+Por el amor de Dios, Yon, ¿cúando vas a madurar?  ¿Sabes? Vas a tener que aprender a tratar con gente tarde o temprano.
+		end scene
+	end area
+end npc
+
+npc eyeboss
+	area HOTEL
+		scene before_fight
+#We have all the finest amenities here.  How do you like the Pool?
+Aquí disponemos de los mejores servicios.  ¿Cómo le gustaría la Piscina?
+		end scene
+		scene middle_fight
+#How about our state-of-the-art fitness center?
+¿Le apetece una sesión en nuestro gimnasio de última generación?
+		end scene
+		scene after_fight
+#We hope you enjoyed your stay!
+¡Esperamos que haya disfrutado de su estancia!
+		end scene
+	end area
+end npc
+
+npc suburb_walker
+	area SUBURB
+		scene words_adult
+#Today is a nice day.
+Hoy es un buen día.
+
+#Thanks for scratching that itch on my neck - I can't seem to reach it.
+Gracias por rascarme ese picor en la nuca - No lograba alcanzarlo.
+
+#I've heard the eggs at the local diner are quite good. I have a coupon for them, too.
+He oído que los huevos del restaurante de la zona están bastante buenos. Además tengo un cupón para ellos.
+
+#Did you see the car accident today? So horrible! He was texting. Such a shame, so young!
+¿Viste el accidente de automóvil de hoy? ¡Qué horror! Estaba chateando. ¡Qué lástima, tan joven!
+
+#My son did not make the junior varsity team. Such a disappointment. We invested so much in his sports career.
+Mi hijo no ha conseguido entrar al equipo juvenil de la universidad. Qué decepción. Invertimos mucho en su carrera deportiva.
+
+#Thanksgiving is today. I am thankful for a lot of things. Can't wait for tomorrow's early morning sales. Gonna get a lot of bargains.
+Hoy es el día de acción de gracias. Estoy agradecido por muchas cosas. No veo el momento de que llegue mañana para ir a las rebajas matutinas. Voy a pillar gangas a cascoporro.
+
+#Ah, I think I might be late for work.
+Ah, quizás llegue tarde al trabajo.
+
+#I am in a bit of a rush to get home, I need to tidy up before the in-laws come over.
+Tengo un poco de prisa por llegar a casa, necesito limpiarlo todo antes de que vengan los suegros.
+
+#We're having a garage sale!
+¡Estamos vendiendo objetos usados en el garaje!
+
+#Welcome!
+¡Bienvenido!
+		end scene
+		
+		scene words_teen
+#I didn't see the latest movie.
+No vi la última película.
+		end scene
+		
+		scene words_kid
+#I never gotta see the new cartoon!
+¡Nunca debo ver los nuevos dibujos animados!
+		end scene
+		
+		scene family
+# inside of a house, parent (insightful kid) - 73
+#Welcome to our house, stranger! You look familiar. This is a peaceful town. Pretty quiet, not many visitors.
+¡Bienvenido a nuestra casa, forastero! Tu cara me suena. Este es un pueblo tranquilo. Bastante tranquilo, sin muchos visitantes.
+
+#inside of house, younger kid
+#Do you like Davement? My brother Dave showed me this really cool song by them!
+¿Te gusta Davement? ¡Mi hermano Dave me ha enseñado esta canción tan molona suya!
+		end scene
+		
+		scene older_kid
+# inside of a house, olderkid
+#My friends like to listen to that 'None Surprises' song by 'Rayhead' and complain about this place. Sure, it's a bit of a bubble, but hell, at least show some gratitude! Or do something about it! They're all just...oh, sorry. I tend to do that sometimes..
+A mis amigos les gusta escuchar esa canción de 'Rayhead' llamada 'None Surprises' y quejarse de este lugar. A ver, sí, es un poco aburrido, ¡pero joder, al menos muestra un poco de gratitud! ¡O haz algo para cambiarlo! Son todos unos...oh, perdona. Tiendo a hacer eso a veces...
+
+#I guess I'll just go write in my blog.
+Creo que iré a escribir en mi blog y ya.
+
+#You sure look like you're in a daze.
+Parece que estás atontado, en serio.
+
+#I have trouble hearing my thoughts with sports and the like playing on the TV, but my parents like it.
+Me cuesta oír mis pensamientos cuando dan deportes y tal en la tele, pero a mis padres les gusta.
+		end scene
+		
+#inside of hanged man house 74
+		scene hanged
+#A note on the corpse: \"Placing myself in danger no more.\"
+Una nota sobre el cadáver: \"No me pondré otra vez en peligro.\"
+		end scene
+		
+		scene festive
+#Inside of another house, (festival people) - 75
+#Oh, is there something going on outside? A festival? A parade?
+Oh, ¿están haciendo algo ahí fuera? ¿Un festival? ¿Un desfile?
+
+#There seems to be quite the commotion outside! Have you looked out the window recently? I wonder what it could be.
+¡Parece que hay bastante alboroto ahí fuera! ¿Has mirado por la ventana? Me pregunto qué será.
+		end scene
+#78 
+		scene paranoid
+#My house has a lot of windows. I don't like windows. It's as if someone is always looking in. And you know there HAS to be something going on outside there. It can't just be that silent all the time, so silent and calm - it's disturbing to me.
+Mi casa tiene muchas ventanas. No me gustan las ventanas. Es como si alguien estuviera siempre mirando dentro. Y sabes que algo DEBE estar pasando ahí fuera. No puede ser que esté todo tan quieto siempre, tan callado y tranquilo - eso me inquieta.
+
+#Murderers? What? Outside? What are you talking about? Are you kidding me? There haven't been any murders in this town before, but still...you're starting to worry me...maybe you should just leave.
+¿Asesinos? ¿Qué? ¿En la calle? ¿De qué estás hablando? ¿Estás tomándome el pelo? Nunca antes ha habido ningún asesinato en este pueblo, pero aun así...estás haciendo que empiece a preocuparme...quizá sea mejor que te vayas.
+
+#Please get out.
+Por favor, vete.
+		end scene
+# 76
+		scene dead 
+#The body of this woman has been beaten to death by a blunt weapon.
+El cuerpo de esta mujer ha sido golpeado hasta la muerte por un arma contundente.
+
+# --> Spanish translator's note: if a pun were intended here, no way has been found in order to emulate the relation of both expressions \"blunt weapon\" and \"to put it bluntly\" in Spanish since they share completely different words in all their sayings.
+#The man, to put it bluntly, well...
+El hombre, francamente, pues...
+		end scene
+		
+	end area
+end npc
+
+npc suburb_blocker
+	area SUBURB
+		scene one
+#Oh, it's you! You look familiar...I can't move until you keep killing more of these townsfolk, remember? Come back in a bit.
+¡Oh, eres tú! Tu cara me suena...No puedo moverme hasta que sigas matando a más de estos ciudadanos, ¿recuerdas? Vuelve en un rato.
+
+#According to this pamphlet...you only need to kill a few more people! Keep it up.
+Según este panfleto...¡solo necesitas matar unas cuantas personas más! Sigue así.
+
+#We only need one more body, and then we can keep going.
+Solo necesitamos otro cuerpo más, y ya podremos continuar.
+
+#Well done. Feel free to go inside. I have no idea what's there. I'll see you again, same time tomorrow, right? Or the night after?
+Bien hecho. Entra si quieres. No tengo ni idea de lo que habrá. Te veré de nuevo mañana a la misma hora, ¿vale? ¿O la noche siguiente?
+
+		end scene
+	end area
+end npc
+# dialogue for the cards
+# don't enclose in quotes
+npc card
+	area ETC
+		scene one
+#0 sadbro
+#I don't mind being watched by the trees.
+No me importa ser observado por los árboles.
+
+#1 Bat(?) - extra overworld area
+#Where is she?!
+¡¿Dónde está ella?!
+
+#2 sunguy
+#I will be with you Young, whenever you are alone.
+Estaré contigo, Young, siempre que estés solo.
+
+#3 Shieldy
+#Are you an Ookchot?  My mom always warned me about the Dangerous Ookchot.
+¿Eres un Ookchot?  Mi mamá siempre me advirtió sobre el Peligroso Ookchot.
+
+#4 slime
+# --> Spanish translator's note: Phew! I did my best here! I'm very happy with it!
+#Jello there, Young!  So goo to flanly meet you!  Why don't you set for a minute?  I was just pudding on some tea!
+¡Gominhola, Young!  ¡Entartado de haberte conocido flanmente!  Pareces abatido, ¿por qué no te quesadas un rato?  ¡No tartaré en servir el té!
+
+#5 post-statue area in BEDROOM
+#Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Pew, Chancel, Pulpit, Altar, Stained Glass Windows...
+Banco, Banco, Banco, Banco, Banco, Banco, Banco, Banco, Banco, Banco, Banco, Banco, Presbiterio, Púlpito, Altar, Vidrieras de colores...
+
+#6 SUBURB inside of house past blocker
+#Limited time offer! Buy one, get one free - only today!
+¡Oferta por tiempo limitado! Compra una, y llévate otra gratis - ¡solo hoy!
+
+# 7 APT Boss
+#Remember the time that you lit a candle when the power was out?
+¿Te acuerdas de esa vez que encendiste una vela cuando se fue la luz?
+
+# 8 APT Silverfish
+#Mmmm, your pillow was cozy last night.
+Mmmm, se estaba bien en tu almohada esta pasada noche.
+
+# 9 APT gasguy
+#This'll teach 'em for calling me the fumi-GAY-tion guy.
+Esto les enseñará a no llamarme más el fumi-GAY-dor.
+
+# 10 FIELDS 1 (island) - mitra 
+#Wares and I make a good team.
+Género y yo hacemos un buen equipo.
+
+# 11 FIELDS 2 (alcove) - Miao
+#I'm the Chosen One-in-training!!!
+¡¡¡Soy el aspirante a Elegido!!!
+
+#12 Base of WINDMILL windmill
+#Do you ever feel like, no matter what you do, you can't stop the world from dying?
+¿A veces no te sientes como si, hagas lo que hagas, no pudieras evitar que el mundo se fuera muriendo?
+
+#13 Hidden up a river in FOREST
+#Beware the forest mushrooms...
+Ten cuidado con las setas del bosque...
+
+#14 Bottom of ladder-mini-maze on CLIFF
+#I am sorry.  It is my nature.
+Lo siento.  Es mi naturaleza.
+
+#15 Top of Cliff
+#What do you mean, 'Only a rock'??  Rocks can be on cards too, you know!
+¿¿Qué quieres decir con 'Solo una roca'??  ¡¿Las rocas también podemos aparecer en cartas, sabes?!
+
+#16 Western end of BEACH past spikes
+#Give a man a fish and he will eat for a day.  Teach a man to fish, and he will have bonding times with his son, Jimmy.
+Dale a un hombre un pez y comerá por un día.  Enseña a un hombre a pescar, y pasará ratos felices con su hijo Jimmy.
+
+#17 At end of path through the woods in REDSEA
+#Sometimes the answer is taking a walk.
+A veces la respuesta es dar un paseo.
+
+#18 MOVER Redcave  - Past 2 locks in central redcave
+#Why do bats suddenly fly down, every time you're around?
+¿Por qué los murciélagos pasan volando siempre que estás cerca?
+
+#19 SLASHER Redcave - West end of Northern redcveave
+#NO, *YOU* NEED BRACES!
+¡NO, *TÚ* NECESITAS APARATO!
+
+#20 REDBOSS Redcave - post boss
+#ARE YOU HAPPY NOW?
+¿YA ESTÁS CONTENTO?
+
+#21 NW corner of CELL - chaser
+#Don't get violent around me.
+No te me pongas violento.
+
+#22 FIRE PILLAR circus -  the field of fire pillars north of entrance
+#I've always wanted to be on Iron Chef.
+Siempre he querido estar en Iron Chef.
+
+#23 CONTORT circus - contort + firepillar room in SW chunk
+#My mom always told me, 'If you do that arch long enough, your spine will stay that way!'
+Mi mamá siempre me decía, '¡Si te doblas mucho, tu espalda se quedará así para siempre!'
+
+#24 LION circus - end of northern gauntlet bordering boss room
+#Are you amused yet, human?
+¿Te has divertido, humano?
+
+#25 A+J BOSS circus - basement (post boss)
+...
+
+#26 FROG crowd - North of entrance
+#Scientifically speaking, toads are a subset of frogs.
+Científicamente hablando, los sapos son una subespecie de las ranas.
+
+#27 CROWD GUY crowd - 2nd floor
+#HAHAHAHA!  Yeah!  I know!
+¡JAJAJAJA!  ¡Seh!  ¡Lo sé!
+
+#28 WALL BOSS crowd - post boss
+#Oh, you collect cards, too?  Real classy, Ying.
+¿Oh, coleccionas cartas también?  Cuánta elegancia, Ying.
+
+#29 end of grey end of space, for grey cube king
+#They always said, \"Get off the computer! Or you'll never make friends!\"
+Siempre me decían, \"¡Quítate del ordenador! ¡O nunca harás amigos!\"
+
+#30 end of colorful end of SPACE, for color cube king
+#I'm only the ruler for the extent of a conversation.
+Soy el gobernador tan sólo el tiempo que dure una conversación.
+
+#31 DUSTER hotel - end of 4th floor moving platform area
+#I'll bet you think you're 'making my job interesting'!
+¡Apostaría a que estás pensando que estás 'haciendo mi trabajo interesante'!
+
+#32 DASH TRAP hotel - Dash trap room on 3rd floor
+#I hate diagonals.
+Odio las diagonales.
+
+#33 BURST PLANT hotel - SE corner floor 2
+#Don't even try that claritin clear shit with me.
+Ningún brebaje para la alergia te salvará de mis esporas.
+
+#34 EYE BOSS hotel - post-boss
+#Swipe this card to unlock the door to your room!
+¡Pasa esta carta por un lector de tarjetas para desbloquear la puerta de tu habitación!
+
+#35 end of left-most TERMINAL bridge - sage
+#I'm doing a great job.
+Estoy haciendo un gran trabajo.
+
+#36 Young (drawer APT)
+#.......??
+¿¿.......??
+
+#37 old BDRM (dialogue rock)
+#Who carved all of us anyways?
+Por cierto, ¿quién ha sido el que ha grabado encima de nosotras?
+
+#38 hotel room
+#I hope you enjoyed your stay.
+Espero que haya disfrutado de su estancia.
+
+#39 end of debug minidungeon (old player sprite)
+#Seening as you've gotten to this point, you must be quite Intrasting.
+Biendo cómo has llegado a este punto, debes de ser bastante Interasante.
+
+#40 end of cell - Torch? 
+#I'm just here to lead you astray.
+Estoy aquí para dirigirte hacia el extravío.
+
+#41 end of SPACE - faces/entities
+#You like like a pyramid to us, too!
+¡Tú eres como una pirámide para nosotras también!
+
+#42 end uf suburb (killer)
+#It's the same damn play, night after night, and the pay sucks.
+Joder, es siempre lo mismo, noche tras noche, y encima no gano una mierda.
+
+#43 GOldma's room - goldman
+#Leave me alone! My last name isn't Sachs!
+¡Déjame en paz! ¡Mi apellido no es Sachs!
+
+#44 blank, ISlands - Broom
+#At least I'm not a stick.
+Al menos no soy un simple palo.
+
+#45 fields, bottom right - (Rank)
+#What do you mean money doesn't grow on trees? Eheheheh!
+¿Qué quieres decir con que el dinero no crece en los árboles? ¡Ejejejej!
+
+#46 street, bottom (Follower bro)
+#I'm nothing but an illusion.
+No soy nada más que una ilusión.
+
+#47 redsea, bottom eft (Bomb npc)
+#I'LL TAKE IT OUT ON YOU.
+ME VOY A DESQUITAR CONTIGO.
+		end scene
+	end area
+end npc
+
+npc misc
+	area any
+	
+		scene controls 
+#Press
+Pulsa
+# [SOMEKEY-LEFT]
+#to set controls. 
+para definir\nlos controles.
+# [SOMEKEY-ENTER]
+#to cancel.
+para cancelar.
+#Up
+Arriba
+#Down
+Abajo
+#5
+#Left
+Izquierda
+#Right
+Derecha
+#Jump
+Saltar
+#Attack
+Atacar
+#Menu
+Menú
+#10
+#Press
+Pulsa
+# [SOMEKEY-ENTER]
+#to exit
+para salir
+# [SOMEKEY-LEFT]
+#to set controls.
+para definir los controles.
+		end scene 
+		
+		scene title
+#Please use the\narrow keys to resize\nthe window until\nyou cannot see\nany black around\n the borders.\n\nPress
+Por favor, usa las\nteclas de dirección para redimensionar\nla ventana hasta que\nno puedas ver\nnada negro alrededor\nde los bordes.\n\nPulsa
+# [SOMEKEY-C]
+#when done.
+cuando acabes.
+ANODYNE
+Melos Han-Tani\nMarina Kittaka 
+#any key
+cualquier tecla
+#5
+#Press
+Pulsa
+# [SOMEKEY-C]
+#to start
+para empezar
+#Version
+Versión
+#Continue 
+Continuar 
+#New Game 
+Nueva partida
+#10
+#Are you sure?\nNo\nYes
+¿Estás seguro?\nNo\nSí
+#Really?\nNah\nYeah 
+¿De verdad?\nNah\nSeh
+#No going back!\nForget it\nI know
+¡No hay vuelta atrás!\nOlvídalo\nLo sé
+#deaths
+muertes  
+#cards
+cartas
+#15
+#Anodyne supports\nmost controllers.\n\nWill you use one?\n\nYes   No\n\nIf so, connect it now.\n\nMove with arrow keys\n\nSelect with\nC, SPACE, or ENTER\n\nDefaulting to yes in\n
+Anodyne soporta\nla mayoría de los mandos.\n\n¿Vas a usar uno?\n\nSí   No\n\nSi es así, conéctalo ahora.\n\nMuévete con las teclas de dirección\n\nSelecciona usando\nC, ESPACIO, o INTRO\n\nSe aplicará 'Sí' por defecto en\n
+
+#NOTE\n\nIf you have input\nlag during gameplay,\nreturn to your\nhome screen and\nre-enter Anodyne.\n\nPRESS C TO CONTINUE\n\nGUI displaying wrong?\nPress button below\nthen reorient device.
+Press BACK again\nto exit.\nUnsaved progress\nwill be lost.
+NOTA\n\nSi sufres de lag al pulsar las teclas\ndurante la partida,\nsal al escritorio y\nvuelve a abrir Anodyne.\n\nPULSA C PARA CONTINUAR\n\n¿La interfaz gráfica no aparece como debería?\nPulsa el botón de abajo\ny luego reorienta el dispositivo.
+		end scene
+		
+		scene gui
+# Note - this below one is a sprite that fits into the gui
+#menu=enter
+menú=intro
+
+# Shows up when you save at a checkpoint
+#Saving...
+Guardando...
+		end scene
+		
+		scene map
+#Map
+Mapa
+#Current Room  
+Sala actual 
+#Door/Exit 
+Puerta/Salida 
+#No Map
+Sin mapa
+#Return to\nNexus
+Volver a\nNexus
+#Return to\nentrance
+Volver a\nla entrada
+		end scene
+		
+		scene items
+#Items
+Objetos
+#Normal
+Normal
+#Swap
+Swap
+#Extend
+Alargar
+#Widen
+Ensanchar
+#5
+#A pair of spring-loaded shoes - press 
+Un par de zapatillas con resortes - ¡pulsa
+# [SOMEKEY-X]
+#to jump!
+para saltar!
+#A pair of shoes for biking.
+Un par de zapatillas para ir en bicicleta.
+#An empty cardboard box.
+Una caja de cartón vacía.
+#A key found in the Temple of the Seeing One.
+Una llave encontrada en el Templo de El-Que-Todo-Lo-Ve.
+#10
+#A key found in a red, underground cave.
+Una llave encontrada en una roja y subterránea cueva.
+#A key found in a mountain cave.
+Una llave encontrada en una cueva en las montañas.
+		end scene
+		
+		scene cards
+#Cards
+Cartas
+#cards
+cartas
+		end scene
+		
+		scene save
+#Save
+Guardar
+#Saved!
+¡Guardado!
+#ERROR
+ERROR
+#Save and go\nto title
+Guardar, volver\nal título
+#Go to title
+Volver al título
+#5
+#Save and quit
+Guardar y salir
+#Quit game
+Salir del juego
+#Deaths:		
+Muertes:	
+		end scene
+		
+		scene config
+#Config
+Config
+#Set keybinds
+Asignar teclas
+#Set volume 
+Ajustar volumen
+#Autosave at\ncheckpoints:
+Autoguardado en\ncheckpoints:
+#On
+Activado
+# 5
+#Off
+Desactivado
+#Change\nResolution:
+Cambiar resolución:
+#Config UI
+Configurar interfaz
+#Touch+D-Pad
+Táctil+Cruceta
+#D-Pad Only
+Solo cruceta
+# 10
+#Touch Only
+Solo táctil
+#Move Input:
+Entrada para movimiento:
+#Resolution:
+Resolución:
+#Windowed
+Modo ventana
+#Int. Scaled
+Escalado int.
+# 15
+#Stretch
+Estirar
+#Scaling:
+Escalado:
+#Language:
+Idioma:
+ja
+en
+ko
+# 20
+#Drag the\nbuttons\nuntil you're\nsatisfied.\n\nThen, tap\nthe menu\nto continue.\n\n
+Arrastra los\nbotones\nhasta que estés\nsatisfecho.\n\nLuego, toca\nel menú\npara continuar.\n\n
+#Resize Window
+Redimensionar\nventana
+#Config Joypad
+Configurar mando
+		end scene
+		
+		scene secrets
+#You\'re rolling in it!
+¡Estás forrado!
+#Once the property of a famous Bubble Mage.
+Una vez fue propiedad de un famoso Mago Burbuja.
+#If your graphics become scrambled, look at the pokedex entry of an official Pokemon.
+Si tus gráficos se entremezclan, mira la entrada de un Pokemon oficial en la pokedex.
+#This heart has no name.
+Este corazón no tiene nombre.
+#Please visit the electric monsters\' world.
+Por favor, visita el mundo de los monstruos eléctricos.
+#5
+#A kitty statue. Cute, but useless.
+Una estatua de un gatito. Mona, pero inútil.
+#Oh my!!!!
+¡¡¡¡Oh Dios!!!!
+#Oh no!!!!
+¡¡¡¡Oh no!!!!
+#It\'s black.
+Es negro
+#It\'s red.
+Es rojo.
+#10
+#It\'s green.
+Es verde.
+#It\'s blue.
+Es azul.
+#It\'s white.
+Es blanco.
+#SOMEKEY-C
+#:Select
+:Seleccionar
+#SOMEKEY-X
+#:Back
+:Volver
+		end scene
+		
+		scene swap
+#Sorry!
+¡Lo sentimos!
+#The swap won't work here.
+El swap no va a funcionar aquí.
+#Young could not muster the strength to use the swap here.
+Young no logra reunir la suficiente fuerza para poder usar el swap aquí.
+
+		end scene
+		
+		scene keyblock
+#This door is locked.		
+Esta puerta está cerrada.
+		end scene
+		
+		scene treasure
+#Some strange force stops this treasure box from being opened.
+Alguna extraña fuerza impide que este cofre del tesoro pueda abrirse.
+#An engraving on the broom handle reads: Press
+Un grabado en el palo de la escoba pone: Pulsa
+#SOMEKEY-C
+#to sweep.
+para barrer.
+#This key may be used a single time to open up a locked barrier.
+Esta llave podrá ser usada solamente una vez para abrir un obstáculo que te bloquee el camino.
+#A mysterious pair of boots has nothing but the branding on it, which says \"Press
+Un misterioso par de botas que no tiene nada más que la marca en ellas, que dice \"Pulsa
+#SOMEKEY-X
+#5
+\".
+#A few words on the broom extension read \"Equip the WIDEN upgrade in the menu to have the broom release harmful dust to the left and right.\"
+Unas pocas palabras en el accesorio para la escoba dicen \"Equipa la mejora ENSANCHAR en el menú para hacer que la escoba suelte polvo dañino hacia los lados.\"
+
+#A few words on the broom extension read \"Equip the EXTEND upgrade in the menu for the broom to release harmful dust in front of the broom's normal reach.\"
+Unas pocas palabras en el accesorio para la escoba dicen \"Equipa la mejora ALARGAR en el menú para hacer que la escoba suelte polvo dañino más allá de su alcance normal.\"
+
+#A note next to the broom extension: \"Hello, Young. Use this SWAP upgrade on two tiles to switch their places. It may be a while before you can use this everywhere, but it should serve you well for the time being.\"
+Una nota fijada en el accesorio para la escoba: \"Hola, Young. Usa esta mejora SWAP en dos suelos para intercambiarlos de lugar. Aun falta un poco antes de que puedas usarla en cualquier lado, pero te servirá por ahora.\"
+
+#YOU FOUND A HEART!!! Maximum Health increased by...zero.
+¡¡¡ENCONTRASTE UN CORAZÓN!!! Vida Máxima incrementada en...cero.
+#10
+#Goldman: What? It's not there? That shopkeeper must have stolen it!	
+Goldman: ¿Qué? ¿No está ahí? ¡Ese tendero debe haberlo robado!
+		end scene
+		
+		scene dust
+#Your broom is now full of dust!  Attack again to place it.
+¡Tu escoba está ahora cargada de polvo!  Ataca de nuevo para colocarlo.
+		end scene
+		
+		scene checkpoint
+#Save game?\n  Yes\n  No
+¿Guardar partida?\n  Sí\n  No
+#While standing on a checkpoint, press
+Mientras estés sobre un punto de control, pulsa
+#SOMEKEY-C
+#to save your progress and set it as your respawn point if you die.
+para guardar tu progreso y hacer que éste sea tu punto de reaparición por si mueres.
+		end scene
+		
+		scene rock
+#There is writing scrawled on this rock:
+Hay algo garabateado en esta roca:
+#YA AINT GOT NO FRIENDS		
+TU NO TIENES AMIJOS
+		end scene
+		
+		scene door
+#The portal does not appear to be active.
+El portal no parece estar activo.
+		end scene
+		
+		scene keyblockgate
+#The gate stares, petrified. It won't open until it senses four cards...
+La verja está quieta, petrificada. No se abrirá hasta que sienta la presencia de cuatro cartas...
+#Sensing four cards, the gate decides to open.
+Sientiendo la cercanía de cuatro cartas, la verja decide abrirse.
+#The gate stubbornly remains in place.
+La verja permanece obstinadamente en su lugar.
+#The gate senses all of the cards, and decides to open.
+La verja siente la totalidad de las cartas y decide abrirse.
+#The gate senses enough cards, and decides to open.
+La verja siente las suficientes cartas y decide abrirse.
+#5
+#It opens!
+¡Se abre!
+#It remains closed.
+Permanece cerrada.
+		end scene
+		
+		scene solidsprite
+#The sign points to the east but the words on it are faded.
+La señal apunta hacia el Este pero las palabras en ella están borrosas.
+#The sign points to the west but the words on it are faded.
+La señal apunta hacia el Oeste pero las palabras en ella están borrosas.
+#The words on the sign are faded.	
+Las palabras en la señal están borrosas.
+		end scene
+		
+		scene mitra
+#Hey, Young!
+¡Eh, Young!
+
+#Are those bike shoes for me?  Wow!  Thanks, Young!  I\'ve been thinking about getting these, since Wares has those pedals where you can clip in bike shoes.  Here, Young, take my boots in exchange!  They have these cool springs that let you jump really high! You press
+¿Esas zapatillas de bicicleta son para mí?  ¡Guau!  ¡Gracias, Young!  Había estado pensando en conseguir unas, puesto que Género tiene esos pedales donde puedes enganchar ese tipo de zapatillas.  Toma, Young, ¡coge mis botas a cambio!  ¡Tienen estos muelles tan molones que te permiten saltar muy alto! ¡Pulsa
+
+#[SOMEKEY-X] 
+#to jump with them on!
+para saltar con ellas puestas!
+
+#Hi Young!  Notice anything new? ^... ^... Oh, well, I got new biking shoes, see!  They clip into Wares' pedals.  Since I'll no longer be needing my old boots, I want you to have them, Young!  They have these cool springs that let you jump really high! You press 
+¡Hola, Young!  ¿Me notas algo nuevo? ^... ^... Oh, bueno, pues me he comprado estas zapatillas nuevas para ir en bici, ¡mira!  Se enganchan en los pedales de Género. Puesto que no voy a necesitar más mis viejas botas, ¡quiero que tú las tengas, Young!  ¡Tienen estos muelles tan molones que te permiten saltar muy alto! ¡Pulsa
+
+#[SOMEKEY-X] 
+#to jump with them on!
+para saltar con ellas puestas!
+
+#5
+#Alright, take care!
+¡Venga, cuídate!
+#Go on, try them out!  ...They're not THAT smelly.
+¡Vamos, pruébatelas!  ...No huelen TAN mal.
+#Cool, huh?
+Molan, ¿eh?
+#Wow, are those the biking shoes from Finty's shop?  You're giving them to me?  Thanks, Young, I really appreciate it!  Here, try out my old shoes in return--I think you'll find them really useful!  There's an engraving on the shoes that says \"Press
+Guau, ¿no son esas las zapatillas para bici de la tienda de Finty?  ¿Que me las regalas?  ¡Gracias, Young, te lo aprecio de verdad!  Toma, quédate con mis viejas zapatillas a cambio--¡estoy segura de que las encontrarás verdaderamente útiles!  Hay algo bordado en las zapatillas que dice \"Pulsa
+#somekey-x
+#to jump\".  I've never understood that, though, because there's no \"
+para saltar\"  Nunca entendí eso, la verdad, porque no hay ninguna \"
+#somekey-x
+#10
+#\" anywhere on the shoes...
+\" en las zapatillas...
+		end scene
+		
+		scene tradenpc
+#Finty: Welcome, welcome, my friend Young!  The name's Prasandhoff--Finty Prasandhoff!  Take a look around at my shop and see if anything catches your eye!
+Finty: ¡Bienvenido, bienvenido, Young, amigo mío!  ¡Mi nombre es Prasandhoff--Finty Prasandhoff!  ¡Echa un vistazo a lo que tengo y hazme saber si algo te interesa!
+
+#Finty: I still appreciate that box!
+Finty: ¡Te sigo estando agradecido por esa caja!
+
+#Finty: Ah, a box! Thank you so much! Now I can carry all my inventory home at night and back in the morning!
+Finty: ¡Ah, una caja! ¡Muchísimas gracias! ¡Ahora podré llevar todo mi inventario de vuelta a casa por la noche y otra vez aquí por la mañana!
+
+#Wait a minute...it's not here! What happened to it? Well, here, let me ease your wounds instead!
+Espera un momento...¡no está aquí! ¿Qué le habrá pasado? Bueno, mira, ¡deja que alivie tus heridas entonces!
+
+#As a token of my gratitude, take these stylish biking shoes!
+¡Como muestra de mi gratitud, toma estas elegantes zapatillas para ir en bici!
+
+# 5
+#Fine morning out, isn't it, my friend?  A fine morning for shopping! I just wish I had a box to carry my inventory around.
+Hace una mañana espléndida, ¿no es así, amigo mío?  ¡Una buena mañana para ir de compras! Ojalá tuviera una caja para poder transportar mi inventario.
+
+#Too bad, looks like you can't afford this item!  Come back later, when you have the cash!
+¡Qué mal, parece que no te puedes permitir este objeto!  ¡Vuelve más tarde, cuando tengas el dinero!
+
+#Finty: Ah, you have a fine eye! You need a better weapon, don't you? Blow your enemies to pieces for only $499.99!
+Finty: ¡Ah, tienes muy buen ojo! Necesitas un arma mejor, ¿no es así? ¡Vuélales la cabeza a tus enemigos por tan solo $499.99!
+
+#Finty: That money sack will allow you to accumulate money that you find in The Land! It's yours for a mere $869.99!
+Finty: ¡Ese saco de monedas te permitirá acumular dinero que encuentres en La Región! ¡Es tuyo por tan solo unos míseros $869.99!
+
+#Finty: Oh ho ho, here's a specialty item indeed: clip-in bike shoes so you can be speedy AND stylish! On sale now for just $299.99!
+Finty: Oh jo jo, este objeto es una especialidad, sí que lo es: ¡unas prácticas zapatillas de ciclista para que puedas ir rápido A LA VEZ QUE elegante! ¡Oferta de hoy, tan solo $299.99!
+
+#10
+#Finty: Tired of shoving dust around with your piddling little broom?  Eradicate harmful dust particles with this state-of-The-Art vacuum cleaner! Just $749.99, or four easy, monthly payments of $199.99!
+Finty: ¿Cansado de remover el polvo con esa ridícula y raquítica escoba?  ¡Erradica esas dañinas partículas de polvo con esta aspiradora de ultimísima generación! ¡Por tan solo $749.99, o en cuatro fáciles pagos mensuales de $199.99!
+
+#As a token of my gratitude, take this ugly--I mean beautiful, collector's edition card!^
+Como muestra de mi gratitud, toma esta fea--digo, ¡bella carta de edición coleccionista!^
+		end scene
+		
+		#(Translate as much or as little as you see fit - note this is a little different than normal dialogue, so you'll have to keep at most 19 characters on each line, delimited by newlines - if there are multiple newlines keep them there though, but if a translated line goes over, feel free to add a newline in the middle)
+		scene ending
+Anodyne\n-------\n\n\n\nUn juego creado por\n\nMelos Han-Tani\n\ny\n\nMarina Kittaka\n\n-------------
+Creado entre\n\nmarzo de 2012\n\ny\n\nenero de 2013
+DISEÑO\n------\nAmbos
+PROGRAMACIÓN\n-----------\nMelos, usando la\nlibrería Flixel\npara Actionscript 3\n\n\n\nARTE\n---\nMarina\n
+MÚSICA/SFX\n---------\nMelos, usando REAPER\ny sonidos de\nlibre uso.\n\n\n\nDIÁLOGO\n--------------\nMayormente Marina\n
+TRAMA\n-----\nAmbos\nLocalización\nal japonés:\nKakehashi Games\nTraducción al\nespañol:\nDiego Fenollar
+Gracias inmensas a\nnuestros testers,\nque han sufrido\n¡para que vosotros\nno tengáis que\nhacerlo!\n--------------\n\nMarina, por tener que\nsufrir muchos de\nlos bugs iniciales.\n\nEtan,por el apoyo\nconstante desde el\nprincipio, con\nmuchos bugs\nencontrados, y el\ntercer humano en\njugar a casi todo\nel juego entero.
+O - ¡gracias,\nhermanita!\n\nRunnan, Nick Reineke,\nEmmett, Poe, AD1337,\n Dennis, Andrew,\nAndrew MM\n Carl, Max, Amidos,\nLyndsey, Nathan\n
+Agradecimientos de\nMelos a:\n\nMamá y Papá, por su\napoyo constante\nen esta empresa.\n\nS\n\nVarios TIGSourcers\n¡y otros\ndesarrolladores que\nhe conocido por el\ncamino!\n\nMarina, por hacer este\njuego posible, y\nmejorarlo en\nincontables\nmaneras.
+Adobe, Adam Saltsman,\nFlashDevelop devs,\nREAPER devs,\nDAME creator,\nDesura, Gamersgate,\nIndieDB, TIGSource\n\n\nY mis otros amigos\nque me han\ndemostrado su apoyo\n(¡Gracias!)\n\nY por último, pero\nno por eso menos\nimportante,\nTina Chen,\namiga desde hace\nmucho, por el apoyo\nasí como también\npor presentarme\na Marina.
+Agradecimientos de\nMarina a...\n\nColin Meloy, por\nexpandir mi\nvocabulario\n\nTsugumo, por\n\"¿Así que quieres\nser un\nPixel Artist?\"\n\nMi familia,\npor el apoyo\ny la comida.\n\nDaniel, por ser un\n\"desarrollador de\njuegos indie\"\ncreciendo juntos.
+Mo, por creer\n en mí.\n\nTina, por\npresentarme\na Melos.\n\nMelos, por hacer\nun juego y confiar\nen mí para que\nformara una parte\nimportante de él.
+REPARTO\n----\n\n\nSlime\n\n\nAnnoyer\n\n\nPew Pew\n\n\nShieldy\n\n\nSeer
+Mover\n\n\nOn Off\n\n\nFour Shooter\n\n\nSlasher\n\n\nRogue\n
+Dog\n\n\nFrog\n\n\nRotator\n\n\nPerson\n\n\nWall\n\n
+Rat\n\n\nGasguy\n\n\nSilverfish\n\n\nDasher\n\n\nRoller\n\nWatcher\n\n\n
+Dustmaid\n\n\nBurst Plant\n\n\nManager\n\n\n
+Lion\n\n\nContort\n\n\nFlame Pillar\n\n\nServants\nArthur\nJaviera
+Follower\n\n\nEdward\n\n\nFisherman\n\n\nRed Walker\n\nHews
+Rabbit\n\n\nIcky\n\n\nShopkeeper\n\nMiao Xiao Tuan Er\n\nRank\n\nGoldman
+Thorax\n\nJames\n\nMushroom\n\nCrickson\n\nGolem\n\nSuburbanites
+Chaser\n\n\nEntities\n\n\nSpace Faces\n\n\Cube Kings
+Young\n\n\nMitra\n\n\nSage\n\n\nBriar
+\n\n\n\n\n\n\n\n    
+¡Y nos gustaría\nagradecerte A TI\npor jugar a\nnuestro juego!\n\n\nEsperamos que lo\nhayas disfrutado.
+Ahora tienes la\ncapacidad de\nexplorar el mundo\nde Young con (casi)\nninguna limitación,\nvia el swap (mover\ncosas de lugar).\n
+		end scene
+		
+		scene elevator
+#Floor?
+¿Planta?
+1\n
+2\n
+3\n
+4\n
+#Cancel
+Cancelar
+		end scene
+	end area
+end npc
+
+# Tell the python script you're done.
+DONE
+
