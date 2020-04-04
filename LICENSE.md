@@ -21,7 +21,7 @@ These assets may not be used for movies, films, advertisements, or any other typ
 
 Please note that to use these assets you must own a paid copy of Anodyne. This works on the honor system, but if you lie, we'll know.
 
-I am choosing to include the assets here directly out of trust: most open sourced games make you copy the assets from an installed purchased version. As we still rely on Anodyne sales for our livelihood, please don't violate this trust or I'm extremely unlikely to do this again in the future.
+I am choosing to include the assets here directly out of trust: most open sourced games make you copy the assets from an installed purchased version. As we still rely on Anodyne sales for our livelihood, please don't break this rule!
 
 
 Part 1: Anodyne Asset Library (Art, Level, Music, Sound, Text assets)
@@ -33,12 +33,12 @@ The Asset Library for Anodyne falls under a CC BY 4.0 License (https://creativec
 
 - You must own a paid copy of Anodyne to use the art assets for derivative work
 - You may not use any of the assets in a way that would infringe upon the Anodyne game copyright by creating a product that may be mistaken for Anodyne (e.g. you may not compile the unaltered game and rename it "Andoyne" and sell it).
-- You may not redistribute any of the unaltered assets in standlone packages, in a way primarily intended for or directed toward commercial advantage or private monetary compensation. This includes but is not limited to: selling the art in 'asset packages', selling the music on music distribution platforms. This does not include a fangame in which the assets have been mixed with original creative intent.
-- You may not redistribute any of the unaltered assets for free without prior written permission (e.g., you may not create a "Anodyne Sprites" itch.io product page. Use your judgment: if the edits you're making are not significantly different, you shouldn't redistribute it for free (e.g. tinting spritesheet slightly))
+- You may not redistribute any of the unaltered assets in standlone packages, in a way primarily intended for or directed toward commercial advantage or private monetary compensation. This includes but is not limited to: selling the art in 'asset packages', selling the music on music distribution platforms.
+- You may not redistribute any of the unaltered assets for free without prior written permission (e.g., you may not create a "Anodyne Sprites" itch.io product page. Use your best judgment: if the edits you're making are not significantly different, you shouldn't redistribute it for free (e.g. tinting spritesheet slightly)). If you're not sure, please reach out to us and ask.
 - Any COMMERCIAL, derivative work using these assets must include an acknowledgement visible to all users of the product (e.g. title screen of a game or game's store page) that it includes used assets that are copyright of Analgesic Productions LLC and are from the Anodyne asset library.
 - The origin of these assets must not be misrepresented; you must not claim that you created the original assets.
 
-Basically don't resell our stuff as if it was yours, and make sure to give credit where it's due and we'll be good.
+Basically don't resell our stuff as if it was yours, and make sure to give credit where it's due!
 
 
 Part 2: Anodyne Source Code 
@@ -59,19 +59,4 @@ Permission is granted to anyone to use this software and to alter it and redistr
 
 Basically, making commercial or noncommercial mods or fangames using our code is fine. Just let your users know that you can't play an "improvements" mod of this game without owning the original game. However a mod on the scale of all-new levels/dialogue would not require the user to own the original game.
 
-Also don't do stuff like reskin the game with color-tinted sprites and sell it on Steam. 
-
-Or else.
-
-
-
-
-
-
-
-
-
-
-
-
-
+Also please don't do stuff like reskin the game with color-tinted sprites and sell it on Steam!! ...or else...
