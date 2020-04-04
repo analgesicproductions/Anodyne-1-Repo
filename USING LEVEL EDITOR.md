@@ -2,9 +2,9 @@ Instructions for DAME Are included in its source code (download here and open in
 
 Steps for using DAME with Anodyne's files:
 
-1. You'll need to have a copy of DAME (Deadly Alien Map Editor) available. The version I uploaded only works on Windows - if you want to run the editor on Mac or Linux you'll have to build from source yourself (probably doable on Mac, not sure about Linux.) Get the standalone level editor from my "binaries" folder (see README for the Google Drive Link)
+1. You'll need to have a copy of DAME (Deadly Alien Map Editor) available. I uploaded a pre-built executable to the Google Drive folder I linked in the Installation instructions. If you want to run the editor on Mac or Linux you'll have to build from source yourself (probably doable on Mac, not sure about Linux.) Instructions on that are in the Installation instructions.
 
-2. Open DAME. You can then use this to open intra/Intra.dam or intra/Minimaps.dam
+2. Once you have DAME downloaded, open DAME. You can then use this to open intra/Intra.dam or intra/Minimaps.dam
 
 3. DAME is used to edit the levels and enemy placement. There should be guides on how to use it, but generally the left side ("Layers") features all of the game's level data. You tick on a top-level box to show that level. Usually there are then four tilemap layers from back to front, then two layers of entities. I believe that "stateful" entities refer to things like Gates and Treasure Chests whose state need to be saved across game exits/loads. Stateless refers to stuff like enemies, which always respawn when re-entering a level.
 
