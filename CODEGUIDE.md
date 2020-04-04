@@ -8,7 +8,9 @@ To that end, check out the level editor guide I made. Some of the Anodyne 1 leve
 
 This game uses the Flixel ActionScript 3 engine. If you're interested in modifying the code, familiarize yourself with Flixel: http://www.flixel.org/ . It's a simple 2D engine that uses blitting in Flash.
 
-Flash is a fairly simple engine: it uses the notion of "FlxGame" and "FlxState": FlxGame is an outer logic loop with some functionality that can manage containers ("FlxStates") of sprites, text, etc. By default, flixel loads up a FlxState (e.g. Title Screen) and lets the player interact with that.
+Flash is a fairly simple engine: it uses the notion of "FlxGame" and "FlxState": FlxGame is an outer logic loop with some functionality that can manage containers ("FlxStates") of sprites, text, etc. By default, flixel loads up a FlxState (e.g. Title Screen, PlayState, Credits) and lets the player interact with that.
+
+A "FlxState" is just a group of class instances. In most flxstates, I'm adding various instances (like the player, or an enemy) to the FlxState. super.update() is called in the FlxState's update() code: this actually goes up to a higher-level loop which will iterate through each object I added to the FlxState, and call each of those objects' class-specific update() functions. I believe there's also a separate function draw() called in some of the files (which FlxStates manage)
 
 ## Main.as
 
