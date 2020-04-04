@@ -23,6 +23,8 @@ Direct link to that exe: https://javadl.oracle.com/webapps/download/AutoDL?Bundl
 
 NOTE: Steps a, b, c, and e can be skipped by downloading my customized Flex folder (flex_sdk_4.6.zip- it already includes Adobe AIR 32)
 
+NOTE: I downloaded all the libraries to a folder called "installation files"  which is in the same directory level as "intra/".
+
 a. Get the Adobe Air SDK 
 
 (Note there's a lot of stuff on this page - you want "Adobe AIR 32.0.0.116 SDK". NOT THE COMPILER)
@@ -39,15 +41,15 @@ c. Copy paste the AIR SDK into the flex folder
 
 d. point FlashDevelop to this folder
 
-Project > Properties > SDK > Custom SDK > click on the flex folder that contains "ant/", etc.
+Project > Properties > SDK > Custom SDK > click on the flex_sdk_4.6 folder
 
 e. update java heap space
 
-Edit jvm.config in bin/ of the flex SDK. update the line with java.args to this (increasing the heap space)
+Edit jvm.config in bin/ of the flex SDK. update the line with java.args to this:
 
 java.args=-Xms1024m -Xmx1024m -Dsun.io.useCanonCaches=false
 
-f. Test compile. If all goes well you should get an .swf in the bin/ folder of FlashDevelop. however the game won't run yet
+f. Change the test mode to "Release" in flash develop and click the play button. If all goes well you should get an .swf in the bin/ folder of FlashDevelop. however the game won't run yet!
 
 g. Update the run script paths in SetupSDK.bat (fill out FLEX_SDK with the folder to your flex install, e.g. C:\Users\yourname\Documents\Anodyne 1 Repo\installation files\flex_sdk_4.6
 
