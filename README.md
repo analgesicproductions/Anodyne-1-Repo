@@ -78,11 +78,11 @@ Source code and Assets ("src/" folder)
 - The other .as scripts contain embeds for sprites that are used by other game code, or loading in game audio. If you want to add music you'd do that here. TileData lets you change collision info of tilemaps. CSV_Data contains embedded .csv files (tilemap data). Common_sprites contain some sprite embeds
 
 ### entity/
--decoration -  Various visual effects
--enemy - Enemies, bosses.
--gadget - dungeon entities (buttons, doors, holes, etc)
--interactive - NPCs, most cutscenes
--player - stuff relating to Young (brooms, swap, player movement)
+- decoration -  Various visual effects
+- enemy - Enemies, bosses.
+- gadget - dungeon entities (buttons, doors, holes, etc)
+- interactive - NPCs, most cutscenes
+- player - stuff relating to Young (brooms, swap, player movement)
 
 ### extension - code for joyquery
 
