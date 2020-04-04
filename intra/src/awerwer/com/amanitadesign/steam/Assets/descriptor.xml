@@ -1,0 +1,20 @@
+<extension xmlns="http://ns.adobe.com/air/extension/2.5"> 
+    <id>com.amanitadesign.steam.FRESteamWorks</id> 
+    <versionNumber>0.0.1</versionNumber> 
+    <platforms> 
+        <platform name="Windows-x86"> 
+            <applicationDeployment> 
+                <nativeLibrary>FRESteamWorks.dll</nativeLibrary> 
+                <initializer>ExtInitializer</initializer> 
+                <finalizer>ExtFinalizer</finalizer> 
+            </applicationDeployment>
+		</platform>
+		<platform name="MacOS-x86">
+			<applicationDeployment>
+				<nativeLibrary>FRESteamWorks.framework</nativeLibrary>
+				<initializer>ExtInitializer</initializer>
+				<finalizer>ExtFinalizer</finalizer>
+	        </applicationDeployment>
+        </platform> 
+    </platforms> 
+</extension>
