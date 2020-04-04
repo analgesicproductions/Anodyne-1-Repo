@@ -1,4 +1,4 @@
-Anodyne License v1.0
+Anodyne License v1.0.1
 Last updated April 4th, 2020
 Adapted from VVVVVV's source code license.
 
@@ -15,11 +15,12 @@ The license contains two parts, pertaining to the source code assets, and then l
 You may only make use of these assets and source code for 
 
 - Derivative games (Fangames, Mods, Improved versions)
-- Teaching/education purposes, self-education
+- NONCOMMERCIAL Movies, films, comics, etc (commercial please contact us)
+- Teaching/education/analysis purposes (essays, books, YouTube videos), self-education, anything that would fall under "Fair Use"
 
-These assets may not be used for movies, films, advertisements, or any other type of media without written permission.
+Everything else for commercial usage (ads, etc) must be handled on a case-by-base basis (reach out to us!)
 
-Please note that to use these assets you must own a paid copy of Anodyne. This works on the honor system, but if you lie, we'll know.
+Please note that to use these assets you must own a paid copy of Anodyne. This is only on the honor system though, so it's up to you to respect the request.
 
 I am choosing to include the assets here directly out of trust: most open sourced games make you copy the assets from an installed purchased version. As we still rely on Anodyne sales for our livelihood, please don't break this rule!
 
