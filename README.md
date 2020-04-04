@@ -55,7 +55,7 @@ Z_HELP.txt  - various ramblings to myself about updating the game or how to buil
 //////////
 
 
-Source code and Assets (src/ folder
+Source code and Assets ("src/" folder)
 
 awerwer, ca, com - various extensions for mac controllers, steam. none of these are integrated into this open sourced version so this is obsolete i think)
 
@@ -87,7 +87,7 @@ lua - Exporters for use with DAME level editor.
 
 org - Contains the open source Flixel engine. I might have made some modifications here, idk.
 
-res - art assets, more on this later
+res - art assets for the game
 
 states - various inner game loops. Using the "State" system from flixel (essentially groups of related objects that can be added/removed from the game). PlayState contains the game's most important loop, where the player and enemies are added and stuff, level loading. Some of these files aren't used I think
 

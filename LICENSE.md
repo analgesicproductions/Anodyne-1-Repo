@@ -31,7 +31,7 @@ The Asset Library of Anodyne consists of mp3, wav, txt, csv, xml, png, etc files
 
 The Asset Library for Anodyne falls under a CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/) with the additional restrictions:
 
-- You must own a paid copy of Anodyne
+- You must own a paid copy of Anodyne to use the art assets for derivative work
 - You may not use any of the assets in a way that would infringe upon the Anodyne game copyright by creating a product that may be mistaken for Anodyne (e.g. you may not compile the unaltered game and rename it "Andoyne" and sell it).
 - You may not redistribute any of the unaltered assets in standlone packages, in a way primarily intended for or directed toward commercial advantage or private monetary compensation. This includes but is not limited to: selling the art in 'asset packages', selling the music on music distribution platforms. This does not include a fangame in which the assets have been mixed with original creative intent.
 - You may not redistribute any of the unaltered assets for free without prior written permission (e.g., you may not create a "Anodyne Sprites" itch.io product page. Use your judgment: if the edits you're making are not significantly different, you shouldn't redistribute it for free (e.g. tinting spritesheet slightly))
@@ -46,7 +46,7 @@ Part 2: Anodyne Source Code
 
 This software available from here is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any claim, damages or other liability arising from the use or in connection with this software. 
 
-All materials in the repo, with the exception of the contents of the "org", "com", "mochi", and "extension" directories, are copyright of Analgesic Productions LLC 2013-2020.
+All materials in the repo, with the exception of the contents of the "org", "awerwer", "ca", "com", and "extension" directories under "intra/", are copyright of Analgesic Productions LLC 2013-2020.
 
 Permission is granted to anyone to use this software and to alter it and redistribute it freely, subject to the following restrictions:
 
