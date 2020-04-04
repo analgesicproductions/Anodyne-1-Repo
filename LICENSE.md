@@ -14,7 +14,7 @@ The license contains two parts, pertaining to the source code assets, and then l
 
 You may only make use of these assets and source code for 
 
-- Derivative games (Fangames, Mods, Improved versions)
+- Derivative commercial or noncommercial games (Fangames, Mods, Improved versions)
 - NONCOMMERCIAL Movies, films, comics, etc (commercial please contact us)
 - Teaching/education/analysis purposes (essays, books, YouTube videos), self-education, anything that would fall under "Fair Use"
 
