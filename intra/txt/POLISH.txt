@@ -1,0 +1,12 @@
+Here's a list of all things that can be done for polish, if time allows.
+
+By time allows, I mean AFTER
+All level design, SFX, music, tilesets, animations, dialogue, entity programming
+are done.
+Concurrently with testing is probably okay.
+
+1. REDCAVE boss burns away when dying - this would be done programmatically but Marina can pick the colors.
+2. HOTEL boss's pupil/iris or whatever follows your movement. Involves splitting the sprite into 3 layers - base, eyelid, eye..thing.
+xxx3. The HOTEL boss periodically appears in water throughout the dungeon at a random chance.
+5. on TITLE SCREEN, starting the game, the current frame is split into rectangles and squares and shattered
+6. Bonus pictures and short song clips with the collected cards

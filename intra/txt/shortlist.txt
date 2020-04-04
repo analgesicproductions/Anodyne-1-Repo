@@ -1,0 +1,304 @@
+Exit dead room bug:
+	- crashes game - push new build if someone complains...?
+	- i need to push a fixed humble at some point
+	- and a fixed ios at some point, not really major
+
+jp :
+	-verify steam Works with 
+		x-windows
+			To do this: run PackageApp_Win.bat , produces standalone. Then run the anodyne_windows.nsi script
+				- How do I update the init() function in the ANE??
+		x-MAC 
+			- Stick bin file in a mac
+			- Run package_mac.sh
+			- Copy back to windows after zipping
+		x-iOS
+			x-Run package APPSTORE on tassadar, need graphical session open though
+		-Linux
+			- run some script on my laptop?
+	- Package:
+		xWindows EXE
+		Mac DMG
+		Linux Version
+		iOS .ipa
+		Android .apk
+	- Distribute:
+		Steam 
+			xWindows
+			xMac
+			xLinux
+		GOG 
+			Windows
+			Mac
+		Humble 
+			xWindows
+			xMac
+			xLinux
+	
+	x- Get release date
+	x- Put release date on steam page	
+	x- Change Steam store page to japanese
+	x- M
+	x-verify startup lagnuage change works on japanese computer
+	x-Test with brand new game that system startup is respected and then saves override itake trailer - re-record hive of demons, intro, change last picture
+	x- allow choosing in mobile options menu
+	x change font elsewhere when needed
+	x allow choosing on desktop options Menu
+x-split owrds that are too long (> 18 char)
+x- change font used on en/non-en
+x-serialize language choice
+xfigure out how to get my steam thingies back -sep branch?
+xtoggle on startup based on settings in-game - need to use different reference for bla hlbah
+
+
+
+	
+-----------------
+Level Editor:
+Select from menu
+
+Editor similar to current game. outline rooms - exports to file
+
+------
+iOS build
+--------
+
+- Caveats
+- Make sure "1" and "2" set in supported  profiles 
+- Make srue expanded resolution is on
+- Make srure have correct dimension images, all the icons
+- Testflight: make sure everyone is always added
+- Make sure the auto-home-kill-app is off
+
+VNC - http://forums.macrumors.com/showpost.php?p=7221295&postcount=20
+	Follow the instructions (updating plists, stopping/starting)
+	Rebooting the computer works well. Then I used "TightVNC".	
+
+
+x- Add portrait mode
+x- Add auto-detect
+x- Fix touch detection with UI
+x- Fix pause menu for android/iOS
+x- Back button on Android should act as "back" button
+x- Add moving the UI. Make sure no overlap with game or other buttons
+x- Add saving the UI, loading it
+x- Fix touch bug, fix game starting or resuming with wrong orientation, fixed game getting cut off by on-display status bar
+- Add moving around young with touch.
+- Android: Fix status bar messing with stuff for default
+
+pushing out update for 1.506
+Humble Store:  
+Steam: Mac, Win, Linux 
+GOG: 
+
+1.507 fixes
+-?
+-fix 50 cards
+
+1.506 fixes
+-Joypad support for windows and mac
+-Change redcave room so you can't die (easily) when a tentacleis retracting
+-Fix apartment/hotel doors letting you jump out of map
+-Steam Achiveements serialized
+-Window resizing fix
+-Saves volume setting
+-Big gates opening don't stop you from attacking after they are open before you leave the screen once
+-Redboss doesn't make noise when attacking when dead, song starts properly if you die once and try to fight again
+-Harder to skip wallboss
+-Fullscreen setting really works now
+-Fix fields map so the minimap is correct
+-Tweak blue, circus to be a bit easier
+-make clues to get through maze better, fix unfair chaser placement
+
+1.5055 fixes
+- Gold area NPCs don't let you walk through walls now
+- GO Puzzle re-instated with actual clues.
+- Falling in holes is a little nicer
+
+1.505 fixes
+-save window settingss
+-quit room -> tite -> continue freezes
+
+1.504 fixes
+
+-Redcave hole bindings
+-Forest minimap fix
+-Card calculations
+-Remove GO puzzle
+-Tentacles in redcave stop you from moving till cutscenes start
+-No OHKO from Those Enemies
+-Cicada in suburb won't freeze you
+-Title screen song loops now
+
+
+---------
+x-Make dust not get stuck on shore when you walk off - snap to nearest water?
+-xnew title stuff
+z-fields grass foot
+x-window resize begn
+-xdams in blue/happy
+-xDust under Miao, keep in NW part of fields
+-xcard placement spinning change
+z-sweep lion fire
+x-super bat sprites
+z-new slime bullet	
+x-big health srite
+x-Add sprite for nexus gateway lighting up when done.
+x-fix slime bug
+-xsend build to friends tomorrow morning
+x-change checkpoint behavior (autosave only happens when you set a checkpoint by default)
+	- force stepping on one in street
+x-fix lonk
+x-check suburb blocker guy 
+x-terminal solid tiles
+x-Ending overlay
+x-Happy npcs
+x- Make sure water anim scripting in blue/happy/go work
+-xENDING: Sage fight, briar fight, final end picture, "cast photo".
+x-Scenic CLIFF bg for the beginning of credits.
+x-do scripitng for demo blocking off FIELDS doors.
+x-record footage for trailer
+x-write trailer song
+xadd page four of cards
+xnexus pad doors - placed at topleft
+x- find way to "get out of water" faster
+x-fix water in walking into walls
+-xgmae freezes on restart WHY? 
+-xfalling in crowd not good - go out of bounds while falling into boss world
+x-walking in mitra scene...no!
+x46:00 - red boss - died, went back to northern entrance, disappear?  - Something about sortables and adding, not being removed.
+-xget stuck idle after talking to rock in REDSEA
+x???can't move down in "save" select with chepoint
+xDialogue deltas - create the structure from disk, check the save file, if the save file's exists, then copy the save file's state over to the disk state tree.
+xDelta method for XML tree
+xwalking to sage, talking once, quitting and starting new games crashes game (get default "." text)
+xStarting/stopping crashes game with air? maybe a debug issue? happened in street <-> title
+xpersons walk int ocrowd
+(x?) correct handling of interrupts with mobile (BGing, volume?) 
+(x?)give way to exit with mobile
+(x?) handedness for mobile
+(x?) make actions work on tap, not on off
+(x?)switching functions broom/jump
+xmini-minimap for dungeons - mad etileset
+x- IS the water anim broken? or will anim tiles stay(well, they should, so I should be oaky)
+x-Getting ending stuff to work with the events
+x-forest briar?
+x sage dialogue buton things
+x Reduce sounds playing at once with pew lasers and flame pillars
+-Check samples of songs
+x-Correctness of cards
+x-Checked map transitions	
+x-Checked item picking up working
+x-Relatively thorough save checking
+x-REsolution switching works
+x-All debug modes off...
+
+x-Add way to resize window if extra space shows
+	x-*** Allow changing from in-game. works with saving
+	xboss: add some sort of feedback that the slow things slow you down
+-xFinal boss design
+x-last 2 areas design
+-xswap doesnt work in first room afte rentering a map
+-xLeft red cave won't rise..?
+x-shieldies slimes need to fall into holes somewhat more ocnsistently
+-xturn off ambiance with the volume
+-xminor graphics glitch with reflection
+xPROPELLED ISSUE
+xdashes go under dust (?? fixed?)
+-xStructure doors for IGF entry ,dialogue thing...
+xMinimaps + elevators and then dying don't play well? (1st -> 3rd, fill in, die, or take elevator)
+xhealth bar still? (etan had a lot from the save file?)
+xtiny contort shadows still show
+xslime shoot things too transparaent
+x-chaser sfx (reuse mover)
+x-return to nexus function for outside of dungeons
+xUp the boss health, increase letency
+xreset gates and boss health when leaving room or dying
+x-biofilm thing
+x-arrows for int scale prompt
+x-resolution switching that is more custom
+x-saving of resolution
+xpixel push need to be reset when dead
+xmake ro
+xcheckpoint before fuck you up roomtator balls flash for a bit before the y can hurt you
+xcircus dust doesnt work
+xdust management when using as a raft isn't done right
+xarthur reset state after dying
+xjump down slime before boss
+xsong stops after dying/
+xdash trap room issue?
+xdouble spike roller remove autojump, or make into a spring
+xoffset fucked up when dying from flame?
+xfix rat hitting too close
+x-nexas fucked up
+-xslasher reduce hitbox
+-xshoot laser reduce hitbox
+-xminimaps still fucked up	
+-xsuburb doors to apartment stil messed up
+x- make it more obvious to figure out dust raft
+x-put chasers into dame
+-xdebug chasers
+x-voluem things with windmill gates
+x-windill cutscenes7
+x-make sure the states save correctly
+x-make sure dungeon statues work
+x-bats go off screen and bump you back
+-xelevator dont new a playstate
+-xfix stnading position when entering nexus
+x-slime health needs o drop where it is killed
+x-stuck falling after dash jump (Fixed?)
+x-javiera sometimse run the wrong way
+x-door sound for entering/exiting
+x-down broom a little too high up
+x-walk thru block in blank
+x-door freezes end of demo (fix ref)
+x*shieldies hold down buttons whendead	
+x-way to return in opposite direction through first bedroom room north of entrance
+x-big key in post-bedroom respawns after picked up
+x*Fix resolution scaling for H > W
+x-move playstate over to recycling
+x-minimap reset on delete
+xdeath message doesnt appear after you ie onces
+x-make alt tabbing not move game to left...
+x-exit from game option?
+x-fix controls screen on main menu
+x-contorts go off screen
+x-teleguy doesnt play right anim when moving after teleport
+x-add health cicadas to bosses
+x-stop/start songs w/ bosses	
+x-remove health drops from bosses
+x-hide broom on jump
+x-silverfish don't move correctly when gassed
+x-multiple ??? !!?! in dialogue allowed without line break
+x-rats hit invisible dust
+x-gasguy gas hits too early
+x-gasguy doesnt have correct latency between getting hit
+x-darkness changes happen during transitioni, not after
+x-add keys to inventory
+x-big gate opens
+x-foot overlay disappears when attacking
+x-fix draw order of player (foot overlay goes behind player)
+-xxcheckpoints respawn you in the wrong map (go to bedroom, exit to overworld, save quit)
+-xtouching sadbro freezes you
+-xcan't attack to go through overworld sage scene
+x-key anim
+xadd health cicada to rooms
+x-autosave icon
+xfix checkpoint
+x-pew pew need to spawn laser closer
+xslime drop too much health
+x- leave menu with enter key
+x-Add "resets_pos" property to script generation - resets the
+x- new splosion sprites w/ shieldy and slime
+x- recoil flips you?
+x- Sync broom to player, draw order
+x- explain npcs
+x- Fix health bar
+x- get menuw orking with new gfx
+x-auto jump shadow only get big
+x- no minmap with z
+x- make auto-jump not work when leaving menu
+x- make player shadow disappear when landed 
+x- stop player when attacking
+x- Make moving platforms jump only
+x- move left/right on ladder

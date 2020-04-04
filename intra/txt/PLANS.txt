@@ -1,0 +1,429 @@
+EXTRA CARDS (x denotes i put it in the game)
+#0...
+x#36 : Hidden in death apartment (Young)
+x#37 : Hidden in old bedroom (Dialogue rock)
+x#38: Hidden in HOTEL roof (right)
+x#39 : End of DEBUG gauntlet (old young sprite)
+x#40 : End of CELL hidden area (Wall eye (something w/ seeing one?))
+x#41 : End of SPACE hidden area (faces/entities)
+x#42 : End of SUBURB hidden area (killer)
+x#43 : Goldman's room (Goldman)
+x$44 : Blank, islands (Broom)
+x#45: Hidden in FIELDS (bttom roight)
+x#46: Hidden in STREET (bottom)
+x#47: Hidden in REDSEA  *bottom left
+---
+x#48 : In hard-to-reach extra NEXUS (empty)
+
+Health ups: 
+	x1. nw overworld (card gate 4)
+	x2. (card gate 8) BEACH (far west)
+	x3. (card gate 16) SUBURB
+	x4. (card gate 24) CELL (Southeast)
+	xcard gate 36. (end)
+	xcard gate 47 - extra-blank-path-start
+	xcard gate 47 (changed from 48 for a bit) - end of exra-blank-path
+	xcard gate 49 - past portal there
+	xcard gate 50 - finalbalnk
+	x_Northwestern temple goes to BEDROOM, which goes to a dead end, goes to "CORRIDOR"
+	-CORRIDOR is part of a place you can get extra cards in. It leads to two portals, one goes to OLDBEACH and other goes to OLDBEDROOM
+	-logicall everything is in "DRAWER" for my convenience - grayscale and static are always on light/darkness alpha is debatable
+	-can explore the OLDBEACH with hte swapor OLDBEDROOM. leads elsewhere?
+	
+	-Anyways with 46? or so cards, you can go up the extra windmill and cross the gate, going through that puzzly area takes you to...hmm..
+
+	
+dumb ideas:
+	- flying, rotating dog corridor
+	- lots of youngs walking in sync
+	- islands of beach (old, older tilesets?)
+	
+ending
+
+24 "chunks"
+
+each takes 12 seconds
+
+24 * 12 = 288 
+12 non-cast chunks
+12 cast chunks
+
+first 6: Go, panning to the sky. Reach the top, fade out.
+
+Then (panning)
+
+Blank
+Nexus
+Street
+Overworld
+Windmill yooo
+sage fight
+
+
+
+Bedroom
+Redcave
+Crowd
+Apartment
+Hotel
+Circus
+
+Fields
+forest
+Beach
+cliff
+Redsea
+End on GO. (Briar fight?)
+
+"the end pic"
+
+=========
+
+go secret:
+	
+hotel (blue) - (5,3))
+apartment (green) - (4,1)
+circus (red) - (0,4)
+Current doors:
+	
+DUNGEON DOORS (Dungeon-dungeon, or dungeon-outside)
+0: C REDCAVE-REDSEA
+1: bedroom <-> overworld
+2: street <-> overworld
+2: STREET-OVERWORLD
+!!!!3: BEACH-FIELDS
+4: NEXUS-BLANK
+5: L REDCAVE-REDSEA
+6: BLANK-BLANK
+7: R REDCAVE-REDSEA
+8: N REDCAVE-REDSEA
+9: L REDCAVE-REDCAVE (STAIRWELL)
+10: fields -- fields (Free roam) test (use later for something?)
+11: BEACH-REDSEA
+12: debug <-> fields test (use later for something?)
+13: NEXUS-STREET
+14: crowd-crowd 1st to boss, boss
+15: crowd-crowd (1st to outside)
+16: crowd-crowd (outside to 2nd);
+17: crowd>crowd (2nd to 1st, boss)
+18-24 (APARTMENT-SUBURB, center/sw/nne/ne/nw/top floor)
+25 HOTEL-SPACE
+26-30 HOTEL-HOTEL: 26 (hotel roof to 4th fl), 27 (SW 3-2) 28 (SW 2-1), 29 (NE 3-2), 30 (NE 2-1)
+31 CIRCUS-CELL
+32 (Circus psot-boss, basement treasure room)
+33: OVERWORLD-FIELDS
+34: FIELDS-WINDMILL
+35: FIELDS-FOREST
+36: FIELDS-TERMINAL
+37: BEDROOM-SUBURB
+38: CROWD-CLIFF
+39: CLIFF-SPACE 
+40: FOREST-CLIFF
+41: REDCAVE-CELL
+42: TERMINAL-GO
+43: GO-HAPPY
+44: GO-BLUE
+
+(only 44 doors? swell! oh wait)
+4: NEXUS-BLANK (ONE WAy?)
+13: NEXUS-STREET
+45: NEXUS-CELL
+46: NEXUS-SUBURB
+47: NEXUS-SPACE
+48: NEXUS-FIELDS
+49: NEXUS-OVERWORLD
+50: NEXUS-FOREST
+51: NEXUS-TERMINAL
+52: NEXUS-GO
+53: NEXUS-redsea
+54: -windmill
+55: -beach
+56 blue
+57 happy
+58 circus
+59 hotel
+60 apt
+61 crowd
+62 redcave
+63 bedroom
+64 windmill
+----
+65 APT-APT_SECRET
+66 CROWD pre-boss to somewhere
+67 REDSEA-REDCAVE (item cave)
+68 CROWD-CLIFF (item cave)
+69 CROWD-Cliff (transition to space)
+70 BEDROOM exit 2 to OVERWORLD (to suburb transition area)
+71 GO secret.
+72 REDCAVE secret. 
+73: SUBURB family house (NO FILTER) 
+74: SUBURB paranoid house 
+75: SUBURB festive house  (NO FILTER)
+76: SUBURB dead-couple house(card house)
+77: SUBURB killers house  
+78; SUBURB hanged house 
+79: OVERWORLD-DARKPASSAGEs 
+80: FIELDS - MONSTERCAVE
+81 SUBURB blocked-off-house (Swap)
+82 WINDMILL - BLANK 
+83 OLDBEACH-DRAWER
+84 OLDBEDROOM-DRAWER
+85 OVERWORLD-HIDDENBEDROOM	
+86 BLANK (concentric) - Blank ISLANDS
+87 BLANK ISLANDS - Blank otherpath
+88 finalblank - oldoverowlrd
+89 oldoverworld - finalnexus
+90 finalnexus - debug
+91- finalnexus-finalblank
+92 - CELL hidden portals
+93 - fields-beach (rank's hose)
+94 - REDCAVE-REDCAVE (boi)
+
+card counts: bedroom: 4, redcave: 3, crowd: 3 , apartment: 3, hotel: 4, cirucs: 4
+Total: 21
+
+Overworld: 2
+Fields: 2
+Windmill: 1 (26)
+Terminal: 1
+Forest: 1
+Cliff: 2
+Suburb: 1
+Space: 2 (33)
+Cell: 1
+Beach: 1
+Redsea: 1
+(36)
+
+
+Drawer: 3
+
+	
+CIRUCS ENEMIES:
+	
+	-Javiera and Arthur (boss) - saving them - puzzle, and enemies?
+		-Javiera is trapped in a cage
+		-Arthur surrounded  by lions
+*** Need some sort of limited thing you attack that can drop health sometimes - e.g. bushes, pots
+*** Nexus doors: Overworld, street, should have some sort of animation (like the elevator). One in every area except dungeons. Possibly two in the bigger areas - one close to the dungeon entrance
+
+========
+Functions of secondary areas...involving obtaining growths and story explanation. Incorporate dungeon mechanics?
+	Overworld - some long block pushing puzzles because why the heck not? NPCs will give you the growths (cards)
+	Beach
+	Redsea
+	Forest
+	Plains
+	....
+
+
+Circus dungeon ideas: - speed tiles up on paper...large, turtle-rock-LA-esque
+Circus Boss ideeas:  Hand in hole, things chase you in circle..
+
+hotel structure: fl 4 is separate. fl 3: 3 locks, 2 keys. one goes to growth, one to 2nd floor where you can find a growth and a key, the other to 2nd floor where you can find two keys and the two stairwells that go down to the 1st floor. floor 1 has 2 locks, and 1 key in the case that the player did everything on floor 2 and 3 first. 
+
+
+others:
+figure out explanation of minimap
+
+
+
+ideas for entering APARTMENT:
+	
+ideas for CIRCUS mechs because i'm too lazy to write
+entrnce: CELL is between circus and redcave
+tileset: a pebbley/dirt ground path/?
+mechs: fire rings..uh
+
+
+ideas for HOTEL mechs "" "" 
+tileset: potted plants, desk, tiles, carpeting. nice ornate walls, wall lamps. Beds, etc.
+mechs: An elevator. room you enter, looks the same, touch a certain sprite, set a state var, sends you to that place. 
+			-Try to get to the bottom of the hotel to reach the boss.
+			-Maids - behavior is triggered by picking up dust(for yet another use of dust... ). behavior is to follow you, and grab you and pull you into a hole. you can kill it but risk being pulled. dropping the dust when it's not aggrod by the broom means it will stop chasing you.
+				-could put multiple of these in a room to create some tension when riding Propelled etc.
+
+
+APARTMENT notes:
+	First floor - 1 growth,2  keys - 1 key needed to take the stairs to the 2nd floor area that leads to the 2nd growth - key needed
+			-The bottom door leads to an outside area that will end result be a lock that goes to the 3rd floor
+			- The top right door goes to where youcan find another key.
+
+
+BIG DOORS (req, desc)
+1 - Open nexus-street door
+3 - Overworld-plains entrance
+
+How to...open up the 2nd set of 3 dungeons?
+-Cutscene? 
+-Silhouettes on some sort of world map (maybe fade them in)
+-Each of first 3 bosses killed breaks the layers of this button(?) which opens up the other 3
+-Blocking the terminal: Have 3 torches, 1 for each of the last 3 bosses (kind o flike super metroid)
+
+
+DRAW ORDER:
+	1. Background  (0)
+	2. BG Tiles, including animated tiles that don't need depth (0)
+	2.1 Anim tiles
+	2.2 BG2
+	2.3 flat_gadgets
+	3. 'Sortables'
+		- Player, light, entities, animated tiles that need depth.
+	3.1 fg sprite group
+	4. Header
+	5. Darkness,
+	6. Screen fade out/in
+	7. Death overlay
+	8. Various popup messages
+	***Deal with edge case with cracked tiles and holes etc!!
+		1. Push into anim_tiles
+	Handling drawing the player and monsters together:
+		encapsulate into flxgroup. give flxgroup a y value, based on its draw-ref so we can sort groups next to sprites and have everything in the group drawn sanely. for monsters, do this in spritefactory
+	handling 'sortables'
+	1. Everything in otherobjects, stateless, statefuls (ugh) get added into "Sortables"
+	2. On every call to draw (or every other if performance is bad), sort "sortables" by y coordinate.
+	3. On screen transitions, like normal move out the old objects from the 3 arrays, but need to both delete them from sortables, their "old_array", and null them
+	
+	
+--get hlped by some small race of things throuh some area
+--the dungeon is them next to a predatory race, you can take an easy route but
+--they all die horrible deaths...or not
+
+NEXUS DOORS:
+- positioned in a large circle (a-la-yume-nikki), but themed floors around them
+- unlocked by going through the correct one in the other map 
+    - To do this - just an array of "open or not" somewhere - where the door lookup executes and checks this array, if it's false, then if not in nexus open it. use constants for the lookup arrray, as well as mapping to the frames in DAME.
+    -CONSTANT for each pair. enum'd in door.as or whatever. 
+    -On door callback, if the door frame is one of the nexus-somwehre else pairs:
+        -If in nexus, check the "doors unlcoked" array and act accordingly
+        -Otherwise change the doors unlocked array to true.
+
+FALLING THROUGH FLOOR TO BELOW FLOOR:
+
+
+DIALOGUE WITH NPCs:
+	
+
+EVENTS:
+	
+XXXXXA guy that follows you in the street. He is lit up and oscillates behind you, then disappears. (this could be at
+ the ending of the street tutorial area.
+-Walking through an "orange storm" of decreasing noise until reaching the beach.
+	
+PUZZLE IDEAS
+
+1. Flipping rows of tiles, stopping the flipping by placing blocks on them. Uses some special item.
+2. Jumping on the correct set of tiles in succession.
+3. Dusting can clear a path for pushable things that keep traveling. Need to weigh down some buttons.
+4. XXXDusting blocks lasers, so with two you can effectively push a laser back.
+5. Little diagrams hidden somewhere, then you place dust on a grid somewhere to unlock something
+
+ENEMY IDEAS
+1. XXXFaces one way, slow, only vulnerable from the back.
+2. XXXPew pew
+3. XXXCircles you
+4. Roughly follows you, tries to poke
+
+
+RANDOM IDEAS
+1. "I don't think there's anything to see here" easter egg room?
+2. Leave a hole in one room. Use directions elsewhere to navigate.
+
+"GROWTH" ideas (the key items)
+1. They hold off an area at the end of the game. They lead to some sort of final area representing 
+   mental growth?
+2. the shape: small plants? little glowy balls?
+
+TILEMAP IDEAS
+
+The entrance realm drops you into this light area...sky like, with strange engraved tiles. slight glows show where is walkable and where is not
+To the left you can see waht is the beginning of a broken staircase. 
+to the north are a set of signs. upon growing enar there is a highlight to look at them.
+these signs explain how to save and change your controls.
+
+continuing to go north, there is a lot of dust to your left, just floating there.
+going north again, the world darkens and there is what seems to be the entrance to an alleyway, 
+which leads to the street mini-dungeon...
+
+SETTING-THE-CONTROLS TUTORIAL IDEA
+
+1. In a single room that dynamically changes.
+2. 	"You may find exploration difficult without the ability of movement."
+	"Move over here with UPKEY DOWNKEY LEFTKEY RIGHTKEY".
+	"You may press ENTER if would like to set an alternate means of movement."
+	"Now...if you were to use an ability...what key would you press?"
+		"You're already using that one to move. Try another."
+		"ACTION_1? If that's right, move over here. Otherwise press another key."
+	"Okay, what if you were to use a second ability? What key would you use?"
+		"You're already using that"
+		"ACTION_2? If that's right, move over here."
+	"Great. Press ENTER to access the menu and modify these controls further as you see fit."
+------> some intro cutscene 
+------> boom street bumbumbbum
+
+XXXGETTING THE BROOM. ("ENTER" (or pause key) dialogue pops up)
+XXXInstructions should be self-evident on the screen ( ACTION_1: Set Item 1 ACTION_2: Set Item 2 ACTION_3: KEY ITEMS ...etc)
+
+GETTING THE MAP
+:PRESS ACTION_3 TO PULL UP THE MAP
+	
+
+
+OLD
+------------
+
+health bar implementation:
+	
+	5x5 squares, spaced 1 pixel apart, in a N x 2 array.
+	
+	HealthBar FlxGroup class.
+	-Has a pool of 20 blocks, and a parameter of how many it actually has
+	-keep an index of lowest index block that's full. taking damage will lower this counter and mark things as visible
+	-restoring health the other way
+	
+	numbered like:
+		
+	3	1
+	4	2
+	
+	A player is associate with the health bar, damage things on the player should reduce its health bar in the gui.
+	(Invincibility timer for player as well!)
+	
+
+
+TIGSource Devlog
+5-27    1/0     -       -
+7-4     32/1678 11/437
+7-6     33/1773 11/503
+7-7     34/1866 11/513  2/256 (inspration adave)
+7-10    34/1969 11/548  2/314
+7-14    37/2196 11/576  2/336
+7-17    42/2371 11/589  2/345      
+7-21	46/2596	11/607	2/350
+8-7		51/3184	
+8-12	56/3512
+8-18	62/3861
+8-28 	79/4747
+9-1		85/5092		10?/702 (defunct feedback)
+9-3(1am)88/5208
+9_4 (00:18) 88/5255
+9-5 (03:07) 89/5327
+
+
+Greenlight page
+
+Started: 12:56 pm, 8-30; 
+8-31 (1:30 pm) ~4500? ~5000?
+9-1 (1:30 pm) 6,333 /  362
+9-2 (1:58 pm) 7358/413
+9-3 (1:15 am) 7641/432
+9-3 (22:42) 7925/459
+9-5 (02:51) 8234/491 (1%!)
+
+
+
+indiedb (since 8-13)
+9-1? 3992/41
+9-3 (1 am) 4108/42
+9-3 22:42 4266/42 (38 "today")
+9-5 (03:08) 4462/42

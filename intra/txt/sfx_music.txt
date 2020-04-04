@@ -1,0 +1,157 @@
+sfx
+
+Player:
+	
+	x-Broom attack (3 variants, randomly played)
+	x-Getting hurt 
+	x-Jumping up/down 
+
+	bedroom:
+		slime - move, splash, shoot (All done)
+		
+Redcave:
+	Mover - move (done), die (done)
+	On/off - steam attack: (done);
+	Four shooter: shoot (done) pop, (done)
+	Red Pillar slide into hole (done)
+	red cave rise (done) 
+	Slasher - attack (done)
+	Redboss (done) 
+	
+Crowd:
+	Dog - Bark (done), dash  (done)
+	Frog - attack/pop (done)
+	Person - (done) 
+	Spike roller - fall (done), hit wall (done)
+	moving platform - start, stop (done)
+	wallboss - hurt noise, fist fall, fist hit, fist small fall, laser charge, laser move, spit noise (bubbles but more menacing?), bubbles hitting, death sound, flooor crack (all done)
+	
+	
+apartment:
+	gasguy: gas attack, floating noise? (donedone)
+	teleguy disappear sound (done)
+	silverfish alerted noise DONE
+	rat sqeuak when turn DONE
+	dash trap - hit (done), move (need a new one, uses slasher atk)
+	splitboss - (split noise), ball appear, ball shoot noise, dash noise, hurt, dying, screen glowing sound (Rising sound) DONE except glowing/dying
+
+	
+	
+Hotel enemies:
+	Dustmaid - (done) - maybe being missed?
+	burst plant (done)
+	steampipe (done)
+	eyeboss: blink, poof, bounce, splash, shoot/explode, hurt noise
+		-todo: jump out of water, land, get killed stuff (more or less done)
+circus enemies:
+	fire pillar (done)
+	contort (distorted big laugh, distorted small laughs)
+	lion - hurt (done), fireball (done), dash(a roar of sorts?)
+	dash pad - on 1, on 2 (both done)
+	arthur/javiera: pick up, throw, jump, land, shockwave die, hurt, death scream
+General
+	-Walk into door (Done) 
+	- Health pickup (small, big, heath up)
+	- elevator (done)
+	-
+	
+	
+MUSIC:
+	
+	
+	xBoss - Done, might increase amplitude
+	Mitra - done
+	Title (Briar/Young's theme) - Done
+	Ending Theme/Credits - mostly done
+	
+	Bedroom - Done
+	Redcave - Done
+	Crowd - Done
+	Apartment  - done
+	hotel-roof - done
+	hotel - done
+	Circus - done
+	
+	Blank - Done
+	Nexus - Done
+	Street - Done
+	Overworld - Done
+	Fields - Done
+	Beach - Done 
+	Redsea - Done
+	Forest - Done
+	Cliff - Done
+	Windmill - Done
+	
+	Suburb - done
+	Space - Done
+	Cell - Done
+	Terminal - calm verson done
+	sage fight: done
+	Go - done
+	Happy - done/done
+	Blue - Done
+	ending: done
+	
+	
+track list
+
+
+1. Intro (Young's Theme)
+2. Blank 
+3. Nexus 
+4. Street
+5. Overworld
+5.5 Mitra
+6. Bedroom
+
+7. Fields
+8. Windmill
+9. Forest
+
+10. Cliff
+11. Beach
+12. Redsea
+13. Redcave
+
+14. Crowd
+15. Space
+16. Cell
+17. Suburb
+17.5 Soft
+18. Roof
+19. Hotel
+20. Apartment
+21. Circus
+
+23. Game Over
+
+24. Terminal_Init
+25. Sage Fight
+
+26. Terminal_Final
+
+27. Go
+
+28. Happy_Init
+
+29. Happy
+30. Blue
+31. Briar Fight
+
+32. Ending 
+
+Outtakes
+
+1. Older_White_Palace
+2. Old_White_Palace
+3. Old_Bedroom
+4. Old_Happy 
+5. Older_Terminal
+6. Old_Terminal
+7. Gladys
+8.  Boss (Generic)
+
+Extras
+1. Alpha Demo Trailer Song
+2. Reminiscences of Young Video Song

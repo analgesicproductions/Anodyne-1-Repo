@@ -1,0 +1,163 @@
+DNT - TITLE SCREEN STUFF 
+------------------------
+GFX Press [SOMEKEY-ENTER] (on title)
+GFX ANODYNE
+GFX menu=enter
+GFX Saving...
+
+xPlease use the arrow keys to resize the window until you cannot see any black around the borders. Press C when done.
+xMelos Han-Tani Marina Kittaka 
+xPress [SOMEKEY-C] to start
+xVersion 1.508
+xContinue 
+xNew Game 
+x	Are you sure? (Yes, No)   
+x	Really? (Nah, yeah)  
+x	No going back: (forget it, I know)
+x0 deaths  
+X0 cards
+xinput lag
+xmac controller
+xpress back toe ixt
+
+
+DNT - In-game GUI  
+-----------------
+
+DNT - Menu:
+----------------
+xMap
+x	Current Room  
+x	Door/Exit 
+x	No Map
+x	Return to Nexus
+x	Return to entrance
+xItems  - Normal, Swap, Extend, Widen
+x	A pair of spring-loaded shoes - press [SOMEKEY-X] to jump!
+x	A pair of shoes for biking.
+x	An empty cardboard box.
+x	A key found in the Temple of the Seeing One.
+x	A key found in a red, underground cave.
+x	A key found in a mountain cave.
+xCards 
+x	0 cards
+xSave  - test ios too
+x	Save
+x	Saved!
+x	ERROR
+x	Save and go to title
+x	Go to title
+x	Save and quit
+x	Quit game
+x	Deaths: 0
+xConfig 
+x	Language: (ja, en)
+	
+x	Set keybinds
+x	Set volume 
+x   Autosave at checkpoints (On, Off)
+x	Change Resolution2
+x    Config UI
+x	Touch+D-Pad , D-Pad Only, Touch Only
+x	Move Input Type
+x	Resolution: (Windowed, Integer Scaled, Stretch)
+x	Scaling: 3x
+x	Drag the buttons until you're satisfied. Then, tap the menu to continue.
+
+xxx???
+	You're rolling in it!
+	Once the property of a famous Bubble Mage.
+	If your graphics become scrambled, look at the pokedex entry of an official Pokemon.
+	This heart has no name.
+	Please visit the electric monsters' world.
+	A kitty statue. Cute, but useless.
+	Oh my!!!!
+	Oh no!!!!
+	It's black.
+	It's red.
+	It's green.
+	It's blue.
+	It's white.
+xxx[SOMEKEY-C]: Select [SOMEKEY-X]: Back"
+
+DNT -In-game dialogues 
+---------------------
+
+xxxDNT Mitra:
+	Hey, Young!
+	Are those bike shoes for me?  Wow!  Thanks, Young!  I’ve been thinking about getting these, since Wares has those pedals where you can clip in bike shoes.  Here, Young, take my boots in exchange!  They have these cool springs that let you jump really high! You press [SOMEKEY-X] to jump with them on!
+	Hi Young!  Notice anything new? ^... ^... Oh, well, I got new biking shoes, see!  They clip into Wares' pedals.  Since I’ll no longer be needing my old boots, I want you to have them, Young!  They have these cool springs that let you jump really high! You press [SOMEKEY-X] to jump with them on!
+	Alright, take care!
+	Go on, try them out!  ...They’re not THAT smelly.
+	Cool, huh?
+	Wow, are those the biking shoes from Finty's shop?  You're giving them to me?  Thanks, Young, I really appreciate it!  Here, try out my old shoes in return--I think you'll find them really useful!  There's an engraving on the shoes that says \"Press [SOMEKEY-X] to jump\".  I've never understood that, though, because there's no \"[SOMEKEY-X]\" anywhere on the shoes...
+
+	
+xxxDNT Treasures:
+xx	Some strange force stops this treasure box from being opened.
+x	An engraving on the broom handle reads: Press [SOMEKEY-C] to sweep.
+x	This key may be used a single time to open up a locked barrier.
+x	A mysterious pair of boots has nothing but the branding on it, which says \"Press [SOMEKEY-X]\".
+x	A few words on the broom extension read \"Equip the WIDEN upgrade in the menu to have the broom release harmful dust to the left and right.\"
+x	A few words on the broom extension read \"Equip the EXTEND upgrade in the menu for the broom to release harmful dust in front of the broom's normal reach.\"
+x	A note next to the broom extension: \"Hello, Young. Use this SWAP upgrade on two tiles to switch their places. It may be a while before you can use this everywhere, but it should serve you well for the time being.\"
+x	YOU FOUND A HEART!!! Maximum Health increased by...zero.
+x	Goldman: What? It's not there? That shopkeeper must have stolen it!
+
+
+xxxDNT -Swap messages referring to the tile-swapping item you get
+x	Sorry!
+x	The swap won't work here.
+x	Young could not muster the strength to use the swap here.
+
+xxxDNT Keyblock: 
+x	This door is locked.
+	
+
+xxxDNT Dust:
+	Your broom is now full of dust!  Attack again to place it.
+xxxDNT Checkpoint:
+	Save? (Yes, No)
+	While standing on a checkpoint, press [SOMEKEY-C] to save your progress and set it as your respawn point if you die.
+xxxxxDNT NPC:
+	There is writing scrawled on this rock:
+xxxDNT Door:
+	The portal does not appear to be active.
+xxxDNT KeyBlock:
+	The gate stares, petrified. It won't open until it senses four cards...
+	Sensing four cards, the gate decides to open.
+	The gate stubbornly remains in place.
+	The gate senses all of the cards, and decides to open.
+	The gate senses enough cards, and decides to open.
+	It opens!
+	It remains closed.
+	...
+	!!!
+xxxxxDNT Solid_Sprite:
+	The sign points to the east but the words on it are faded.
+	The sign points to the west but the words on it are faded.
+	The words on the sign are faded.
+	
+
+xxxDNT Trade_NPC:
+	Finty: Welcome, welcome, my friend Young!  The name’s Prasandhoff--Finty Prasandhoff!  Take a look around at my shop and see if anything catches your eye!
+	Finty: I still appreciate that box!
+	Finty: Ah, a box! Thank you so much! Now I can carry all my inventory home at night and back in the morning! As a token of my gratitude, take this ugly--I mean beautiful, collector's edition card!^ 
+	Wait a minute...it's not here! What happened to it? Well, here, let me ease your wounds instead!
+	As a token of my gratitude, take these stylish biking shoes!
+	Fine morning out, isn't it, my friend?  A fine morning for shopping! I just wish I had a box to carry my inventory around.
+	Too bad, looks like you can't afford this item!  Come back later, when you have the cash!
+	Finty: Ah, you have a fine eye! You need a better weapon, don't you? Blow your enemies to pieces for only $499.99!
+	Finty: That money sack will allow you to accumulate money that you find in The Land! It's yours for a mere $869.99!
+	Finty: Oh ho ho, here's a specialty item indeed: clip-in bike shoes so you can be speedy AND stylish! On sale now for just $299.99!
+	Finty: Tired of shoving dust around with your piddling little broom?  Eradicate harmful dust particles with this state-of-The-Art vacuum cleaner! Just $749.99, or four easy, monthly payments of $199.99!
+
+
+xxx	scene elevator
+Floor?
+1\n
+2\n
+3\n
+4\n
+Cancel
+		end scene

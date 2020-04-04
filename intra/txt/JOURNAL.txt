@@ -1,0 +1,145 @@
+
+music itself is maybe 300 hours..
+maybe more time...doesnt really count design time when away from computer
+melos school (10-2 - 12-15) average 3 hours a day? 4?  220-450
+marina school, melos not, lots of sfx (9-15? - 10-1) (~90 hours)  
+hard work till public demo, california, lots of sprites, dungeons finished (8-1 - 9-18) (300-500 hours)
+till i get home (6-25-7-29) (80-160 hours)
+non-marina summer - end of month demo release (6-9-6-24?) (40-80 hours)
+End of spring quarter (5-27-6-8) (30 hours)
+mostly retired.
+60-70 hours?
++ ? for music-  SFX, Title, blank, overworld, street, bedroom probably 20? 
+    
+5-26-12 (??? 10 hrs? no clue check github)
+did a lot of shit yo check commit looogs
+
+5-21-12 (1 hr??)
+draw some of the street tileset and its entities.
+	
+5-20-12 (2 hrs??)
+fix inventory, add settings stuff
+	5-19-12 (3 hrs? 4?) 
+	some initial inventory stuff and logic, fixing some hole crap..draw order stuff
+	
+5-18-12/5-16?? (2 hrs?)
+-some death mechanics.
+-breaky floors?
+-add character animations for stabbing
+
+5-15-12 (2 hrs?? more?)
+- i've stopped really keeping track of time, just committing to github
+- add treasure actions
+-mockup of inventory
+-LETS MAKE FIRST LEVEL!!!
+
+5-12-12 (1.5 hr?)
+
+-events for door unlock
+-some sfx for door/unlok keys
+5-8-12 (1 hr)
+holes!
+
+??? (1.5 hr?)
+keys?
+
+	5-2-12
+	-some gui mockup
+	-health logic
+5-1-12 (2 hr?)
+-some basic event stuff checking
+-fixed memory leaks
+-pushy blocks actually almost work thank god
+-add logic for movers
+-do some itnro cutscene
+    
+    4-27-12 (2 hr?)
+    -worked on songs
+    -worked on intro drawing and some assets
+	(36)
+4-26-12 (1.5 hr)
+-add save/load/reset...so far..
+-some door crap. need to implement reading the arrray but its built fine
+-oh happy day, doors work. but the fields tilemap is offset oops
+
+4-20-12  (1 hr)
+-back in action...pushy blocks
+
+***
+TWO WEEK BREAK
+***
+
+4-7-12 (1.5 hr)
+- draw some tile sets., some other tile logic
+
+
+4-6-12 (1.5 hr)
+- Change slime hit SFX
+- Draw a little of the broom
+- Flashy slime death
+- Permanence works for objects!
+-
+
+4-5-12 (1.5 hr)
+-SFX for broom swing. Light that glows.
+-Song for white dungeon place.
+-Seamless audio.
+
+4-4-12 (2.5 hr)
+-getting back into the swing of things? broom pushes slimes
+-Make laser charge/fire sfx, slime hit sfx, add logic for that.
+-Add slime death anim/etc
+
+3-30-12 (1.5 hr)
+- Add laser's laser (heh) sprite, logic to make it shoot. Fixed some bugs, added a new array
+    that represents the objects that aren't dame-generated (i.e., subsprites of the stateful sprites)
+
+3-29-12 (1.5 hr?)
+- Add Laser sprite and logic to make it flash
+
+3-28-12 (3 hr?)
+- Add basic header. 
+- Add some grayish tileset
+- Figure out more door stuff, fix
+- Drew enemy or something
+- sort of have a rough working of grid-local and map-local permanence, fixed some bugs iwth that
+
+3-27-12 (1.5 hr?)
+-Draw player sprite, animate logic..basic stuff
+-Think of other sorts of tiles
+
+3-23-12
+- "broom" appears in proper direction
+
+3-19-12 again? (2.5 hours)
+- Got stateless/stateful sprite stuff to work with XML, cool
+- fake block/sword/player sprite, attacking haha
+- Did some stuff with doors...have transport but can't focus.
+      need to fix collision bugs. also be able to set custom callbacks for each entity or whatever, yay.
+      getting that thing where I collide early...
+
+3-19-12 (1.5 hours) 
+-Figured out getting state to persist. woo-hoo.
+-Basic collisions with a fake slime sprite
+
+3-18-12 (2.5 hours) 
+- Figured out transforming the DAME generated XML into a serializable XML 
+	with grid-specific sprites for dynamic loading. Groovy!
+- Figure out more annoying intricacies with dealing with XML...but progress. sigh
+	
+3-17-12 (0.5 hours)
+- Figured out exporter for real with the sprites. lua. literally worst thing in my life
+
+3-16-12 (1.0 hours)
+- Figured out exporters with lua. Can now make sprites and give them properties which will then be parsed with some xml dohicky here
+- planned out more infrastructure
+
+3-14-12 
+- Planned out some infrastructure in journal
+
+3-12-12
+- Make screen transitions with solid tiles work.
+- Add basic implementation of single push blocks
+
+3-11-12
+- Implement basic screen transitions with dynamic loading
