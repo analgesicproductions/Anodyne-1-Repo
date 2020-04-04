@@ -4,6 +4,11 @@ If you have questions ask in our discord https://discordapp.com/invite/analgesic
 
 Note that while anyone is free to browse these assets, only paid owners of Anodyne may download and use the assets. (Anyone can use the source code, though.)
 
+LICENSE.md contains license/usage info.
+Installation.md contains how to download and install all the files to compile and run Andyne.
+FAQ.md will contain questions answering questions about the code.
+USING LEVEL EDITOR.md contains some info on how to compile/download DAME, the level editor for Anodyne.
+
 Here is a brief guide to the files.
 
 If people do end up using this code and have questions how it works, feel free to e-mail me and I'll maintain an FAQ file here. If you find any unsavory comments please let me know privately and I'll remove them.

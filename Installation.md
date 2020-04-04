@@ -1,5 +1,6 @@
 There are three steps to do to get things working:
 
+0. Download the source code and assets here! Just clone the repo.
 1. Get FlashDevelop running - IDE for editing the game
 2. Compiling the game (Get Adobe AIR/Flex installed (for compiling the game))
 3. (Optional) Compile + Install DAME (Level editor)
