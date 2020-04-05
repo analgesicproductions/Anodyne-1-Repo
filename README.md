@@ -68,7 +68,7 @@ Source code and Assets ("src/" folder)
 --------------
 
 ### awerwer, ca, com 
--various extensions for mac controllers, steam. none of these are integrated into this open sourced version so this is obsolete i think)
+-various extensions for mac controllers, steam. none of these are integrated into this public version so this is obsolete i think)
 
 ### csv/
 -tilemap data for the levels. you could edit these with DAME (the level editor). Note that collision data is elsewhere
