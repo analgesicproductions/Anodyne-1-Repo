@@ -1,10 +1,13 @@
+Adapted from VVVVVV's source code license. This is NOT an Open Source license (though it's still fairly free) - read for details. If you think something ought to be changed reach out to Melos Han-Tani at hello@analgesic.productions
+
+- Summary of license: You must own the paid game to use the game assets, but the code is open to everyone. If you're doing noncommercial or commercial things with a low budget ( < $100k), you can do anything, so long as you credit us. Don't sell anything unaltered (don't sell our sprites or music unaltered, or compile and try to sell the game unaltered.)
+
+If you are interested in distributing work that falls outside the terms in the license below, or if you are interested in distributing work that includes using any part of Anodyne not included in this repo then please get in touch - we can discuss granting a license for that on a case by case basis.
+
+---
+
 Anodyne License v1.0.3
 Last updated April 4th, 2020
-Adapted from VVVVVV's source code license. This is NOT an Open Source license (though it's still fairly free) - read for details.
-
-If you think something ought to be changed reach out to Melos Han-Tani at hello@analgesic.productions
-
-If you are interested in distributing work that falls outside the terms in the licence below, or if you are interested in distributing work that includes using any part of Anodyne not included in this repo then please get in touch - we can discuss granting a licence for that on a case by case basis. The purpose of making the contents of this repo available is for others to learn from, to inspire new work, and to allow the creation of new tools and modifications for Anodyne, and to allow commercial/noncommercial derivative works (fan games, etc).
 
 This notice may not be removed or altered from any source, binary or asset distribution.
 
