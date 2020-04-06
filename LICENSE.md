@@ -31,7 +31,7 @@ Part 1: Anodyne Asset Library (Art, Level, Music, Sound, Text assets)
 
 The Asset Library of Anodyne consists of mp3, wav, txt, csv, xml, png, etc files inside of bin/, mp3/, sfx/, src/xml, src/csv, src/res and src/data, as well as the .dam level data files.
 
-The Asset Library for Anodyne falls under a CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/) with the additional restrictions:
+The Asset Library for Anodyne falls under a CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/) with the additional restrictions. For clarity (and to make explicit we are not claiming the asset library is under a CC license), the asset library does NOT fall under a "CC BY 4.0" license, but a mixture of the CC BY 4.0 terms and the following restrictions:
 
 - You must own a paid copy of Anodyne to use the art assets for derivative work
 - You may not use any of the assets in a way that would infringe upon the Anodyne game copyright by creating a product that may be mistaken for Anodyne (e.g. you may not compile the unaltered game and rename it "Andoyne" and sell it).
