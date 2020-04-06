@@ -6,8 +6,8 @@ If you are interested in distributing work that falls outside the terms in the l
 
 ---
 
-Anodyne License v1.0.3
-Last updated April 4th, 2020
+Anodyne License v1.0.4
+Last updated April 6th, 2020
 
 This notice may not be removed or altered from any source, binary or asset distribution.
 
@@ -52,12 +52,12 @@ All materials in the repo, with the exception of the contents of the "org", "awe
 
 Permission is granted to anyone to use this software and to alter it and redistribute it freely, subject to the following restrictions:
 
-- Any branch/fork/etc of this code for slight modding or improvement (e.g. "60 fps version" or "harder bosses mod") purposes must include this license and must require its users to own a paid copy of the original game.
-- A branch/fork/etc of this code for significant modding purposes (think Mario Romhacks) does not require its users to own a paid copy of the original game. Use your best judgment here.
- - You may not alter or redistribute any unaltered versions of this software in any manner that is primarily intended for or directed toward commercial advantage or private monetary compensation. This includes, but is not limited to, selling unaltered versions of this software, or including advertisements of any kind in unaltered versions of this software.
- - The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, you are required to include an acknowledgement in the product that this software is the copyright of Analgesic Productions LLC and is based on the Anodyne source code.
- - Altered source/binary versions must be plainly marked as such, and must not be misrepresented as being the original software.
- - You must not distribute any materials from the game which are not included in this repo unless approved by us in writing. 
+- Any branch/fork/etc of this code for modding purposes must include this license. 
+- For as long as a paid version of Anodyne is available for purchase, you must *suggest* to users of the mod that they own a paid copy of any of Analgesic Productions' games in order to support the original developers (there is no need to enforce this rule - just like I have done with this license, your suggestion can just be on the honor system.)
+- You may not alter or redistribute any unaltered versions of this software in any manner that is primarily intended for or directed toward commercial advantage or private monetary compensation. This includes, but is not limited to, selling unaltered versions of this software, or including advertisements of any kind in unaltered versions of this software.
+- The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, you are required to include an acknowledgement in the product that this software is the copyright of Analgesic Productions LLC and is based on the Anodyne source code.
+- Altered source/binary versions must be plainly marked as such, and must not be misrepresented as being the original software.
+- You must not distribute any materials from the game which are not included in this repo unless approved by us in writing. 
 
 Basically, making commercial or noncommercial mods or fangames using our code is fine. Just let your users know that you can't play an "improvements" mod of this game without owning the original game. However a mod on the scale of all-new levels/dialogue would not require the user to own the original game.
 
