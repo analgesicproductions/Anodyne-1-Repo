@@ -7,7 +7,7 @@ If you are interested in distributing work that falls outside the terms in the l
 ---
 
 Anodyne License v1.0.5
-Last updated April 6th, 2020
+Last updated April 7th, 2020
 
 This notice may not be removed or altered from any source, binary or asset distribution.
 
@@ -55,12 +55,14 @@ Basically don't resell our stuff as if it was yours, and make sure to give credi
 Part 2: Anodyne Source Code 
 -------
 
+"Software" means "source code".
+
 This software available from here is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any claim, damages or other liability arising from the use or in connection with this software. 
 
 All materials in the repo, with the exception of the contents of the "org", "awerwer", "ca", "com", and "extension" directories under "intra/", are copyright of Analgesic Productions LLC 2013-2020.
 
 Permission is granted to anyone to use this software and to alter it and redistribute it freely, subject to the following restrictions:
 
-No misrepresentation of unaltered software (soure code)
+No misrepresentation of unaltered software
 - The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, you are required to include an acknowledgement in the product that this software is the copyright of Analgesic Productions LLC and is based on the Anodyne source code.
 - Altered source/binary versions must be plainly marked as such, and must not be misrepresented as being the original software.
