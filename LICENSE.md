@@ -6,7 +6,7 @@ If you are interested in distributing work that falls outside the terms in the l
 
 ---
 
-Anodyne License v1.0.4
+Anodyne License v1.0.5
 Last updated April 6th, 2020
 
 This notice may not be removed or altered from any source, binary or asset distribution.
@@ -15,25 +15,34 @@ This repo contains the source code for Anodyne, including all level, art, music,
 
 The license contains two parts, pertaining to the source code assets, and then level/art/music/sound/text assets separately.
 
-You may only make use of these assets and source code for 
 
-- Anything non-commercial (fangames, mods, books, movies, etc)
-- Anything commercial with a total budget of under $100k USD. If your budget is over $100k you must contact us on a case-by-case basis to discuss licensing fees and royalties. This is mainly here to protect us against our work being used freely by extremely wealthy companies and the like - if you're a small solo developer or small team, we don't want to restrict you. 
-- Teaching/education/analysis purposes (essays, books, YouTube videos), self-education, anything that would fall under "Fair Use"
 
-Please note that to use these assets you must own a paid copy of Anodyne. This is only on the honor system though, so it's up to you to respect the request.
+General Restrictions
+----------
 
-I am choosing to include the assets here directly out of trust: most open or public sourced games make you copy the assets from an installed purchased version. As we still rely on Anodyne sales for our livelihood, please don't break this rule!
+No resale or distribution of unaltered game
 
+- You may not alter or redistribute any **unaltered** versions of this game  in any manner that is primarily intended for or directed toward commercial advantage or private monetary compensation. This includes, but is not limited to, selling unaltered versions of this software, or including advertisements of any kind in unaltered versions of this software.  
+- You may not redistribute the **unaltered** game for free.
+- "Unaltered" means any version of the game where 90% of the average playtime contains significantly similar content to the original Anodyne (meaning you can't tint the sprite colors or change what Young looks like and call that an "altered" version.)
+
+On mods
+
+- Mods must contain wording somewhere (download page, title screen, credits) to indicate the mod is not the original Anodyne.
+- As a general, non-legally-binding, guideline, 'small' mods (60 FPS, 'faster engine',  'funny filters') should be free. "Medium" mods (harder levels, remixed dungeons) should be free. "Large" mods (totally new level and world layouts, brand new dialogue) can be sold (even if it has no different art/music assets.) Because this is so legally grey I'm not enforcing this, but please be respectful and use your best judgment when it comes to charging money for mods.
 
 Part 1: Anodyne Asset Library (Art, Level, Music, Sound, Text assets)
 -------------
 
 The Asset Library of Anodyne consists of mp3, wav, txt, csv, xml, png, etc files inside of bin/, mp3/, sfx/, src/xml, src/csv, src/res and src/data, as well as the .dam level data files.
 
+Anodyne's Asset Library is free to be used for most purposes (commercial/noncommercial fangames, mods, etc), but:
+
 The Asset Library for Anodyne falls under a CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/) with the additional restrictions. For clarity (and to make explicit we are not claiming the asset library is under a CC license), the asset library does NOT fall under a "CC BY 4.0" license, but a mixture of the CC BY 4.0 terms and the following restrictions:
 
-- You must own a paid copy of Anodyne to use the art assets for derivative work
+
+- To use these assets you must own a paid copy of Anodyne. This is only on the honor system though, so it's up to you to respect the request. I am choosing to include the assets here directly out of trust: most open or public sourced games make you copy the assets from an installed purchased version. As we still rely on Anodyne sales for our livelihood, please don't break this rule!
+- The assets may not be used for commercial purposes for budgets over $100k USD: if your budget is over $100k you must contact us on a case-by-case basis to discuss licensing fees and royalties. This is mainly here to protect us against our work being used freely by extremely wealthy companies and the like - if you're a small solo developer or small team, we don't want to restrict you. 
 - You may not use any of the assets in a way that would infringe upon the Anodyne game copyright by creating a product that may be mistaken for Anodyne (e.g. you may not compile the unaltered game and rename it "Andoyne" and sell it).
 - You may not redistribute any of the unaltered assets in standlone packages, in a way primarily intended for or directed toward commercial advantage or private monetary compensation. This includes but is not limited to: selling the art in 'asset packages', selling the music on music distribution platforms.
 - You may not redistribute any of the unaltered assets for free without prior written permission (e.g., you may not create a "Anodyne Sprites" itch.io product page. Use your best judgment: if the edits you're making are not significantly different, you shouldn't redistribute it for free (e.g. tinting spritesheet slightly)). If you're not sure, please reach out to us and ask.
@@ -52,13 +61,6 @@ All materials in the repo, with the exception of the contents of the "org", "awe
 
 Permission is granted to anyone to use this software and to alter it and redistribute it freely, subject to the following restrictions:
 
-- Any branch/fork/etc of this code for modding purposes must include this license. 
-- For as long as a paid version of Anodyne is available for purchase, you must *suggest* to users of the mod that they own a paid copy of any of Analgesic Productions' games in order to support the original developers (there is no need to enforce this rule - just like I have done with this license, your suggestion can just be on the honor system.)
-- You may not alter or redistribute any unaltered versions of this software in any manner that is primarily intended for or directed toward commercial advantage or private monetary compensation. This includes, but is not limited to, selling unaltered versions of this software, or including advertisements of any kind in unaltered versions of this software.
+No misrepresentation of unaltered software (soure code)
 - The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, you are required to include an acknowledgement in the product that this software is the copyright of Analgesic Productions LLC and is based on the Anodyne source code.
 - Altered source/binary versions must be plainly marked as such, and must not be misrepresented as being the original software.
-- You must not distribute any materials from the game which are not included in this repo unless approved by us in writing. 
-
-Basically, making commercial or noncommercial mods or fangames using our code is fine. Just let your users know that you can't play an "improvements" mod of this game without owning the original game. However a mod on the scale of all-new levels/dialogue would not require the user to own the original game.
-
-Also please don't do stuff like reskin the game with color-tinted sprites and sell it on Steam!! ...or else...
