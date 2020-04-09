@@ -1,5 +1,7 @@
 Instructions for DAME Are included in its source code (download here and open index.html in the help folder) https://github.com/XanderXevious/DAME
 
+Summary: Anodyne uses Intra.xml and the csv/ files to load level data. DAME is a software that can be used to edit Intra.dam, a file that contains level data. DAME can then export the contents of Intra.dam to Intra.xml and the csv/ files.
+
 Steps for using DAME with Anodyne's files:
 
 1. You'll need to have a copy of DAME (Deadly Alien Map Editor) available. I uploaded a pre-built executable to the Google Drive folder I linked in the Installation instructions. If you want to run the editor on Mac or Linux you'll have to build from source yourself (probably doable on Mac, not sure about Linux.) Instructions on that are in the Installation instructions.
@@ -16,4 +18,4 @@ Steps for using DAME with Anodyne's files:
 
 6. Set the "Xml dir" (Export directory) for the level data. This should be something like C:\Users\hantani\Documents\Anodyne 1 Repo\intra\src\xml
 
-7. hit export. the editor should generate a bunch of CSV files and one xml file.
+7. hit export. the editor should generate a bunch of CSV files and one xml file, which Anodyne can then read and load. There is some work that would need to be done in the code if you want to add entirely new levels.
