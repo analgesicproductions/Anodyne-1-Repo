@@ -109,12 +109,17 @@ Source code and Assets ("src/" folder)
 ### xml 
 -the exported level data (exported from the .dam file via DAME, which needs to be compiled to be used)
 
+## Loose top-level files in src/
+
 ### Main.as 
 -Entry point of the code -initializing the flash stage.
 
 ### Intra.as 
 -The FlxGame of Anodyne (if you are familiar with the Flixel engine). The vast majority of this is mobile touch controls, but some game loop management is here too
 
+### buildmap.py
+
+- This was a Python script made by a fan that can create .pngs of every map in the game
 
 
 
