@@ -1,4 +1,4 @@
-// If you are public/open sourcing anything using Anodyne's code or assets, you'll need to include this.
+// If you are public/open sourcing/distributing anything using Anodyne's code or assets, you'll need to include this.
 
 The Anodyne 1 Source Code and/or Asset Library ("ANODYNE 1") is used in this project. ANODYNE 1 is licensed under the license listed in its public repository at https://github.com/analgesicproductions/Anodyne-1-Repo.
 
