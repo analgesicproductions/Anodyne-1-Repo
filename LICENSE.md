@@ -6,8 +6,8 @@ If you are interested in distributing work that falls outside the terms in the l
 
 ---
 
-Anodyne License v1.0.5
-Last updated April 7th, 2020
+Anodyne License v1.0.6
+Last updated April 14th, 2020
 
 This notice may not be removed or altered from any source, binary or asset distribution.
 
@@ -25,6 +25,7 @@ No resale or distribution of unaltered game
 - You may not alter or redistribute any **unaltered** versions of this game  in any manner that is primarily intended for or directed toward commercial advantage or private monetary compensation. This includes, but is not limited to, selling unaltered versions of this software, or including advertisements of any kind in unaltered versions of this software.  
 - You may not redistribute the **unaltered** game for free.
 - "Unaltered" means any version of the game where 90% of the average playtime contains significantly similar content to the original Anodyne (meaning you can't tint the sprite colors or change what Young looks like and call that an "altered" version.)
+- Any project utilizing the Asset Library or Code must include "LICENSE_FOR_DERIVATIVES.md" in the project.
 
 On mods
 
