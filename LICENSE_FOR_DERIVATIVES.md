@@ -2,7 +2,6 @@
 
 The Anodyne 1 Source Code and/or Asset Library is used in this project. It is licensed under the license listed in its public repository at https://github.com/analgesicproductions/Anodyne-1-Repo.
 
-Any derivative of this project utilizing this project's modification of the Anodyne 1 Source Code and/or Asset Library must include this license and follow its guidelines.
+Any derivative of this project utilizing this project's modification of the Anodyne 1 Source Code and/or Asset Library must include this license ("LICENSE_FOR_DERIVATIVES.md") as-is and follow the original Anodyne 1 License's guidelines.
 
-
-
+This file may be renamed when used in another project.
