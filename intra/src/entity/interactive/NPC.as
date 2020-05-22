@@ -104,7 +104,7 @@ package entity.interactive
 		private const gen_id_chikapu:int = 14;
 		private const gen_id_electric:int = 15;
 		private const gen_id_marvin:int = 16;
-		private const gen_id_melos:int = 17;
+		private const gen_id_melos:int = 17;
 		private const gen_id_marina:int = 18;
 		
 		
@@ -457,7 +457,7 @@ package entity.interactive
 							addAnimation("a", [86,87], 4);
 							play("a");
 							break;
-						casegen_id_melosn:
+						case gen_id_melos:
 							generic_update = gu_easter;
 							fields_easter_scene = "melos";
 							loadGraphic(EndingState.embed_dev_npcs, true, false, 16, 16);
