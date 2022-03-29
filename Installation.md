@@ -5,11 +5,16 @@ There are three steps to do to get things working:
 2. Compiling the game (Get Adobe AIR/Flex installed (for compiling the game))
 3. (Optional) Compile + Install DAME (Level editor)
 
-Note: I made most of these files available in a google drive folder (in case one of the companies decides to get rid of it in the future): https://drive.google.com/drive/folders/1Ge-tNBqgaz7ZUVeU9RxnWwNbr_JKN4en
+Note: I made most of the installation files available (in case one of the companies decides to get rid of it in the future - 2022 update: They have, hahaha!): 
+
+Google Drive: https://drive.google.com/drive/folders/1Ge-tNBqgaz7ZUVeU9RxnWwNbr_JKN4en
 Dropbox mirror: https://www.dropbox.com/s/gg8yv1zdip1i9sg/2022%20anodyne%201%20open%20source%20installation%20binaries.zip?dl=0 
+Itch io mirror: https://han-tani.itch.io/anodyne-1-open-source-installation-binaries
 
 ----------
-1. Get Flash Develop running (IDE for opening/editing the game files - FlashDevelop 5.3.3.exe)
+1. (These three files are available from the above download links)
+
+Get Flash Develop running (IDE for opening/editing the game files - FlashDevelop 5.3.3.exe)
 Download here: https://www.flashdevelop.org/community/viewtopic.php?f=11&t=13028
 
 Get Flash Player (flashplayer_32_sa.exe)
