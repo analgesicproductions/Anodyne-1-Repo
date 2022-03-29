@@ -6,6 +6,7 @@ There are three steps to do to get things working:
 3. (Optional) Compile + Install DAME (Level editor)
 
 Note: I made most of these files available in a google drive folder (in case one of the companies decides to get rid of it in the future): https://drive.google.com/drive/folders/1Ge-tNBqgaz7ZUVeU9RxnWwNbr_JKN4en
+Dropbox mirror: https://www.dropbox.com/s/gg8yv1zdip1i9sg/2022%20anodyne%201%20open%20source%20installation%20binaries.zip?dl=0 
 
 ----------
 1. Get Flash Develop running (IDE for opening/editing the game files - FlashDevelop 5.3.3.exe)
