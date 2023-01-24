@@ -55,6 +55,8 @@ Explanation of files in intra/
 Top Level files:
 -----------
 
+Analgesic Music Source Files - this is all of the original music source files which you can open in REAPER and play back using the free sfz plugin with some freely available soundfont files. There's more instructions inside! REAPER lets you easily export these projects as MIDI files to use in other DAWs, even if you don't have the original plugins.
+
 Intra.dam - The level data. You'll need to figure out how to build a working version of DAME level editor, unfortunately, but I did include the source code for that.
 
 Intra-AIR.as3proj - the flashdevelop IDE file.
