@@ -4,7 +4,7 @@ For license info, see LICENSE.md.
 
 If you have questions ask in our discord https://discordapp.com/invite/analgesic
 
-Note that while anyone is free to browse the game assets and codebase, only paid owners of Anodyne may download and use the game assets (see below for detail.) Anyone can use the source code, though.
+As of 9/23 2023, Anyone may download and use the game assets and source code! Even without owning Anodyne. However, to play any identical remakes/spinoffs, we would appreciate it if you purchased a copy of the game first.
 
 - Purchase the game here: https://store.steampowered.com/app/234900/Anodyne/
 - or here: https://han-tani.itch.io/anodyne
