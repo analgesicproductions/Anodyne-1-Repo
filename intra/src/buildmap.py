@@ -8,7 +8,7 @@
 #
 # Anodyne game: http://www.anodynegame.com/
 #
-# The source folder should be in ./Anodyne/src/
+# The source folder should be in ./
 # The map images will be outputted to ./maps/ in PNG format.
 #
 
@@ -18,7 +18,7 @@ from PIL import Image
 from xml import sax
 
 def read_layer(filename):
-	f = open(filename, "rb")
+	f = open(filename, "r")
 	map_reader = csv.reader(f, delimiter=",")
 	map = []
 	for row in map_reader:
@@ -28,9 +28,9 @@ def read_layer(filename):
 
 
 def read_tileset(filename):
-	tilesetimage = Image.open(filename);
-	tilesetimage_xblocks = tilesetimage.size[0] / 16
-	tilesetimage_yblocks = tilesetimage.size[1] / 16
+	tilesetimage = Image.open(filename).convert("RGBA");
+	tilesetimage_xblocks = int(tilesetimage.size[0] / 16)
+	tilesetimage_yblocks = int(tilesetimage.size[1] / 16)
 	tileset = []
 	for i in range(tilesetimage_yblocks):
 		for j in range(tilesetimage_xblocks):
@@ -80,7 +80,7 @@ def read_registry():
 	parser = sax.make_parser()
 	handler = RegistryHandler()
 	parser.setContentHandler( handler )
-	parser.parse( 'Anodyne/src/global/Registry_embedXML.dat')
+	parser.parse( 'xml/Intra.xml')
 	return handler.registry
 
 	
@@ -88,151 +88,151 @@ def read_registry():
 mapfiles = [ 
 	{
 		"world": "APARTMENT", 
-		"tileset": "Anodyne/src/data/TileData__Apartment_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_APARTMENT_BG.dat", "Anodyne/src/data/CSV_Data_APARTMENT_BG2.dat", "Anodyne/src/data/CSV_Data_APARTMENT_FG.dat"]
+		"tileset": "res/tilemaps/Apartment_tilemap.png",
+		"layers": ["csv/APARTMENT_BG.csv", "csv/APARTMENT_BG2.csv", "csv/APARTMENT_FG.csv"]
 	},
 	{
 		"world": "BEACH", 
-		"tileset": "Anodyne/src/data/TileData__Beach_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_BEACH_BG.dat"]
+		"tileset": "res/tilemaps/Beach_tilemap.png",
+		"layers": ["csv/BEACH_BG.csv"]
 	},
 	{
 		"world": "BEDROOM", 
-		"tileset": "Anodyne/src/data/TileData__Bedroom_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_BEDROOM_BG.dat"]
+		"tileset": "res/tilemaps/Bedroom_tilemap.png",
+		"layers": ["csv/BEDROOM_BG.csv"]
 	},
 	{
 		"world": "BLANK", 
-		"tileset": "Anodyne/src/data/TileData_Blank_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_BLANK_BG.dat"]
+		"tileset": "res/tilemaps/Blank_tiles.png",
+		"layers": ["csv/BLANK_BG.csv"]
 	},
 	{
 		"world": "BLUE", 
-		"tileset": "Anodyne/src/data/TileData_Blue_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_BLUE_BG.dat", "Anodyne/src/data/CSV_Data_BLUE_BG2.dat"]
+		"tileset": "res/tilemaps/Blue_tilemap.png",
+		"layers": ["csv/BLUE_BG.csv", "csv/BLUE_BG2.csv"]
 	},
 	{
 		"world": "CELL", 
-		"tileset": "Anodyne/src/data/TileData_Cell_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_CELL_BG.dat"]
+		"tileset": "res/tilemaps/Cell_tilemap.png",
+		"layers": ["csv/TRAIN_BG.csv"]
 	},
 	{
 		"world": "CIRCUS", 
-		"tileset": "Anodyne/src/data/TileData__Circus_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_CIRCUS_BG.dat", "Anodyne/src/data/CSV_Data_CIRCUS_FG.dat"]
+		"tileset": "res/tilemaps/Circus_tilemap.png",
+		"layers": ["csv/CIRCUS_BG.csv", "csv/CIRCUS_FG.csv"]
 	},
 	{
 		"world": "CLIFF", 
-		"tileset": "Anodyne/src/data/TileData_Cliff_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_CLIFF_BG.dat", "Anodyne/src/data/CSV_Data_CLIFF_BG2.dat"]
+		"tileset": "res/tilemaps/Cliff_tilemap.png",
+		"layers": ["csv/CLIFF_BG.csv", "csv/CLIFF_BG2.csv"]
 	},
 	{
 		"world": "CROWD", 
-		"tileset": "Anodyne/src/data/TileData__Crowd_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_CROWD_BG.dat", "Anodyne/src/data/CSV_Data_CROWD_BG2.dat"]
+		"tileset": "res/tilemaps/Crowd_tilemap.png",
+		"layers": ["csv/CROWD_BG.csv", "csv/CROWD_BG2.csv"]
 	},
 	{
 		"world": "DEBUG", 
-		"tileset": "Anodyne/src/data/TileData_Debug_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_DEBUG_BG.dat", "Anodyne/src/data/CSV_Data_DEBUG_BG2.dat", "Anodyne/src/data/CSV_Data_DEBUG_FG.dat"]
+		"tileset": "res/tilemaps/mockup_tiles.png",
+		"layers": ["csv/DEBUG_BG.csv", "csv/DEBUG_BG2.csv", "csv/DEBUG_FG.csv"]
 	},
 	{
 		"world": "DRAWER", 
-		"tileset": "Anodyne/src/data/TileData_BlackWhite_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_DRAWER_BG.dat"]
+		"tileset": "res/tilemaps/BlackWhite_tilemap.png",
+		"layers": ["csv/DRAWER_BG.csv"]
 	},
 	{
 		"world": "FIELDS", 
-		"tileset": "Anodyne/src/data/TileData__Fields_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_FIELDS_BG.dat", "Anodyne/src/data/CSV_Data_FIELDS_FG.dat"]
+		"tileset": "res/tilemaps/Fields_tilemap.png",
+		"layers": ["csv/FIELDS_BG.csv", "csv/FIELDS_FG.csv"]
 	},
 	{
 		"world": "FOREST", 
-		"tileset": "Anodyne/src/data/TileData_Forest_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_FOREST_BG.dat", "Anodyne/src/data/CSV_Data_FOREST_BG2.dat", "Anodyne/src/data/CSV_Data_FOREST_FG.dat"]
+		"tileset": "res/tilemaps/Forest_tilemap.png",
+		"layers": ["csv/FOREST_BG.csv", "csv/FOREST_BG2.csv", "csv/FOREST_FG.csv"]
 	},
 	{
 		"world": "GO", 
-		"tileset": "Anodyne/src/data/TileData_Go_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_GO_BG.dat", "Anodyne/src/data/CSV_Data_GO_BG2.dat"]
+		"tileset": "res/tilemaps/Go_tilemap.png",
+		"layers": ["csv/GO_BG.csv", "csv/GO_BG2.csv"]
 	},
 	{
 		"world": "HAPPY", 
-		"tileset": "Anodyne/src/data/TileData_Happy_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_HAPPY_BG.dat", "Anodyne/src/data/CSV_Data_HAPPY_BG2.dat"]
+		"tileset": "res/tilemaps/Happy_tilemap.png",
+		"layers": ["csv/HAPPY_BG.csv", "csv/HAPPY_BG2.csv"]
 	},
 	{
 		"world": "HOTEL", 
-		"tileset": "Anodyne/src/data/TileData__Hotel_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_HOTEL_BG.dat", "Anodyne/src/data/CSV_Data_HOTEL_BG2.dat", "Anodyne/src/data/CSV_Data_HOTEL_FG.dat"]
+		"tileset": "res/tilemaps/Hotel_tilemap.png",
+		"layers": ["csv/HOTEL_BG.csv", "csv/HOTEL_BG2.csv", "csv/HOTEL_FG.csv"]
 	},
 	{
 		"world": "NEXUS", 
-		"tileset": "Anodyne/src/data/TileData__Nexus_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_NEXUS_BG.dat", "Anodyne/src/data/CSV_Data_NEXUS_FG.dat"]
+		"tileset": "res/tilemaps/Nexus_tilemap.png",
+		"layers": ["csv/NEXUS_BG.csv", "csv/NEXUS_FG.csv"]
 	},
 	{
 		"world": "OVERWORLD", 
-		"tileset": "Anodyne/src/data/TileData__Overworld_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_OVERWORLD_BG.dat", "Anodyne/src/data/CSV_Data_OVERWORLD_BG2.dat"]
+		"tileset": "res/tilemaps/Overworld_tilemap.png",
+		"layers": ["csv/OVERWORLD_BG.csv", "csv/OVERWORLD_BG2.csv"]
 	},
 	{
 		"world": "REDCAVE", 
-		"tileset": "Anodyne/src/data/TileData_REDCAVE_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_REDCAVE_BG.dat", "Anodyne/src/data/CSV_Data_REDCAVE_BG2.dat"]
+		"tileset": "res/tilemaps/REDCAVE_tiles.png",
+		"layers": ["csv/REDCAVE_BG.csv", "csv/REDCAVE_BG2.csv"]
 	},
 	{
 		"world": "REDSEA", 
-		"tileset": "Anodyne/src/data/TileData_Red_Sea_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_REDSEA_BG.dat", "Anodyne/src/data/CSV_Data_REDSEA_FG.dat"]
+		"tileset": "res/tilemaps/redsea_tiles.png",
+		"layers": ["csv/REDSEA_BG.csv", "csv/REDSEA_FG.csv"]
 	},
 	{
 		"world": "SPACE", 
-		"tileset": "Anodyne/src/data/TileData_Space_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_SPACE_BG.dat", "Anodyne/src/data/CSV_Data_SPACE_BG2.dat", "Anodyne/src/data/CSV_Data_SPACE_FG.dat"]
+		"tileset": "res/tilemaps/Space_tilemap.png",
+		"layers": ["csv/SPACE_BG.csv", "csv/SPACE_BG2.csv", "csv/SPACE_FG.csv"]
 	},
 	{
 		"world": "STREET", 
-		"tileset": "Anodyne/src/data/TileData__Street_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_STREET_BG.dat", "Anodyne/src/data/CSV_Data_STREET_BG2.dat", "Anodyne/src/data/CSV_Data_STREET_FG.dat"]
+		"tileset": "res/tilemaps/Street_tilemap.png",
+		"layers": ["csv/STREET_BG.csv", "csv/STREET_BG2.csv", "csv/STREET_FG.csv"]
 	},
 	{
 		"world": "SUBURB", 
-		"tileset": "Anodyne/src/data/TileData_Suburb_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_SUBURB_BG.dat"]
+		"tileset": "res/tilemaps/Suburb_tilemap.png",
+		"layers": ["csv/SUBURB_BG.csv"]
 	},
 	{
 		"world": "TERMINAL", 
-		"tileset": "Anodyne/src/data/TileData_Terminal_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_TERMINAL_BG.dat", "Anodyne/src/data/CSV_Data_TERMINAL_BG2.dat"]
+		"tileset": "res/tilemaps/Terminal_tilemap.png",
+		"layers": ["csv/TERMINAL_BG.csv", "csv/TERMINAL_BG2.csv"]
 	},
 	{
 		"world": "WINDMILL", 
-		"tileset": "Anodyne/src/data/TileData__Windmill_Tiles.png",
-		"layers": ["Anodyne/src/data/CSV_Data_WINDMILL_BG.dat", "Anodyne/src/data/CSV_Data_WINDMILL_BG2.dat"]
+		"tileset": "res/tilemaps/Windmill_tilemap.png",
+		"layers": ["csv/WINDMILL_BG.csv", "csv/WINDMILL_BG2.csv"]
 	}
 ]
 
 entities = {
-	"Treasure": { "image": "Anodyne/src/entity/gadget/Treasure_S_TREASURE_SPRITE.png", "tile_index": 1}
+	"Treasure": { "image": "res/sprites/gadgets/treasureboxes.png", "tile_index": 1}
 }
 
 
 # build initial map images
 maps = {}
 for mapfile in mapfiles:
-	print "Processing: " + mapfile["world"]
+	print("Processing: " + mapfile["world"])
 	map = generate_map_image(mapfile)
 	maps[mapfile["world"]] = map
 
 
 # read registry XML file that contains entity information
 registry = read_registry()
-treasure_tiles = read_tileset("Anodyne/src/entity/gadget/Treasure_S_TREASURE_SPRITE.png");
+treasure_tiles = read_tileset("res/sprites/gadgets/treasureboxes.png");
 
 # draw the supported entites on the maps
 for worlds in registry.keys():
-	print "Processing entities: " + worlds
+	print("Processing entities: " + worlds)
 	if worlds in maps.keys():
 		apartment = maps[worlds]
 		apartment_regs = registry[worlds]
@@ -252,5 +252,5 @@ if not os.path.exists("maps"):
 
 for map in maps.keys():
 	map_image = maps[map];
-	print "Saving " + map
+	print("Saving " + map)
 	map_image.save("maps/" + map + ".png", "PNG")
